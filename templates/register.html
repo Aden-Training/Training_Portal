@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="container centered">
+  <div class="loginForm">
+    <h2>Register</h2>
+    <form class="form-group" action="/registercust" method="post">
+      <input autocomplete="off" class="form-control formInput" type="text" name="username" value="" placeholder="Username">
+      <br>
+      <input autocomplete="off" class="form-control formInput" type="password" name="password" value="" placeholder="Password">
+      <br>
+      <button autocomplete="off" type="submit" name="button" class="btn btn-default">Register</button>
+      <br>
+      <br>
+      <p>Got an account? Sign in <strong><a href="/logincust">here</a></strong> </p>
+      <br>
+      <p>Businesss account? Sign in <strong><a href="/registerbus">here</a></strong></p>
+    </form>
+  </div>
+</div>
+
+{% endblock %}
