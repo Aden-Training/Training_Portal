@@ -142,3 +142,7 @@ def loginbus():
                     return redirect('/businesstraining')
 
     return render_template('loginbus.html')
+
+
+if __name__ == "__main__":
+    app.run(host="0.0.0.0", debug=True)
