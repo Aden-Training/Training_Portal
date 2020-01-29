@@ -1,0 +1,17 @@
+<html>
+    <head>
+        <title>Prototype App</title>
+        <link rel="stylesheet" href="{{url_for('static', filename = 'css/bootstrap.min.css')}}">
+        <link rel="stylesheet" href="{{url_for('static', filename = 'css/bigboi.css')}}">
+    </head>
+    <body>
+        <div class="jumbotron">
+            <h2>Course Application</h2>
+        </div>
+
+        {% block content %}
+
+        {% endblock %}
+    </body>
+
+</html>
