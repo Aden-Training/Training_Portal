@@ -14,7 +14,7 @@
         <li> <a href="">link 3</a> </li>
       </ul> -->
       {% if session['user'] %}
-      <h2>Logged in {{session['user']}}</h2>
+      <p>Welcome {{session['user']}}</p>
       <a href="/logout">Logout</a>
       {% endif %}
     </div>

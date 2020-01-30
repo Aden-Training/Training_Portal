@@ -31,6 +31,7 @@ conn = sqlite3.connect("db/database.db")
 
 conn.execute("CREATE TABLE IF NOT EXISTS customers (username TEXT, password TEXT)")
 conn.execute("CREATE TABLE IF NOT EXISTS businesses (username TEXT, password TEXT, industry TEXT)")
+conn.execute("CREATE TABLE IF NOT EXISTS courses (business TEXT, course_name TEXT, description TEXT)")
 
 #   CUSTOMER PAGES
 
@@ -49,6 +50,13 @@ def logout():
 @requires_bus_login
 def bustraining():
     return render_template('businessTraining.html')
+
+#   COURSE HANDLING
+
+# @app.route('/postcourse', methods = ["GET","POST"])
+# def postcourse():
+
+
 
 
 #   LOGGING IN CUSTOMERS
