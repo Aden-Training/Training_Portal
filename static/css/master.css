@@ -1,0 +1,57 @@
+.formInput{
+  width: 200px;
+}
+
+body{
+  background-color: #6b4d57;
+}
+
+p{
+  color: #ddc8c4;
+}
+
+.centered{
+  text-align: center;
+}
+
+.loginForm{
+  text-align: center;
+  display: inline-block;
+}
+
+ul{
+
+}
+
+ul li{
+  list-style-type: none;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+a{
+  color: #EFF9F0;
+}
+
+a:hover{
+  text-decoration: none;
+  color: #896A67;
+}
+
+ul li a{
+  color: #EFF9F0;
+}
+
+h2{
+}
+
+ul li a:hover{
+  text-decoration: none;
+  color: #896A67;
+}
+
+.jumbotron{
+  background-color: #13070C;
+  border-bottom-color: white;
+  border-bottom-style: solid;
+}
