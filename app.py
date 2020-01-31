@@ -53,11 +53,35 @@ def bustraining():
 
 #   COURSE HANDLING
 
-# @app.route('/postcourse', methods = ["GET","POST"])
-# def postcourse():
+@app.route('/postcourse', methods = ["GET","POST"])
+def postcourse():
+    if request.method == "POST":
 
+        business = session['user']
+        name = request.form['courseName']
+        desc = request.form['courseDescription']
 
+        with sqlite3.connect('db/database.db') as con:
+            con.execute("INSERT INTO courses VALUES (?,?,?)", (business, name, desc))
+    
+    return redirect('/businesstraining')
 
+@app.route('/postcourses')
+def postcourses():
+    return render_template('postcourse.html')
+
+@app.route('/courses', methods=["GET"])
+def courses():
+    con = sqlite3.connect('db/database.db')
+    con.row_factory = sqlite3.Row
+
+    cur = con.cursor()
+
+    cur.execute("SELECT * FROM courses WHERE business = ?", [session['user']])
+
+    courses = cur.fetchall()
+
+    render_template('courses.html', courses = courses)
 
 #   LOGGING IN CUSTOMERS
 
