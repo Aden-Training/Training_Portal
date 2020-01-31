@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="container">
+    <h2>Home</h2>
+    <h4>Welcome {{session['user']}}</h4>
+
+    <h4><a href="/postcourses">Post a course</a></h4>
+    <h4><a href="/courses">Your courses</a></h4>
+
+</div>
+{% endblock %}

@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="container">
+    <form class="form-group" action="/postcourse" method="post">
+        <h4>Course details</h4>
+        <p>Name</p>
+        <br>
+        <input type="text" name="courseName" class="form-control formInput">
+        <br>
+        <p>Description</p>
+        <br>
+        <input type="text" name="courseDescription" class="form-control">
+        <br>
+        <button class="btn btn-default" type="submit">submit</button>
+    </form>
+</div>
+
+{% endblock %}
