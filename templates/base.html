@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Prototype</title>
+    <link rel="stylesheet" href="{{url_for('static', filename = 'css/bootstrap.min.css')}}">
+    <link rel="stylesheet" href="{{url_for('static', filename = 'css/master.css')}}">
+  </head>
+  <body>
+    <div class="jumbotron">
+      <!-- <ul>
+        <li> <a href="">link 1</a> </li>
+        <li> <a href="">link 2</a> </li>
+        <li> <a href="">link 3</a> </li>
+      </ul> -->
+      {% if session['user'] %}
+      <p>Welcome {{session['user']}}</p>
+      <a href="/logout">Logout</a>
+      {% endif %}
+    </div>
+    {% block content %}
+      
+    {% endblock %}
+  </body>
+</html>
