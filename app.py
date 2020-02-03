@@ -1,5 +1,11 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+<<<<<<< HEAD
+>>>>>>> tyler
+>>>>>>> master
 =======
 =======
 <<<<<<< HEAD
@@ -223,6 +229,10 @@ if __name__ == "__main__":
     app.run(host='0.0.0.0', debug=True)
 >>>>>>> master
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> tyler
+>>>>>>> master
 =======
 >>>>>>> tyler
 >>>>>>> master

@@ -1,11 +1,17 @@
 /*!
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> master
  * Bootstrap v3.3.5 (http://getbootstrap.com)
  * Copyright 2011-2015 Twitter, Inc.
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> master
+=======
 >>>>>>> master
  * Bootstrap v3.3.5 (http://getbootstrap.com)
  * Copyright 2011-2015 Twitter, Inc.
@@ -14,6 +20,10 @@
  * Copyright 2011-2019 Twitter, Inc.
 >>>>>>> master
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> tyler
+>>>>>>> master
 =======
 >>>>>>> tyler
 >>>>>>> master
@@ -27,12 +37,18 @@
 .btn-danger {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> master
   text-shadow: 0 -1px 0 rgba(0, 0, 0, .2);
   -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, .15), 0 1px 1px rgba(0, 0, 0, .075);
           box-shadow: inset 0 1px 0 rgba(255, 255, 255, .15), 0 1px 1px rgba(0, 0, 0, .075);
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> master
+=======
 >>>>>>> master
   text-shadow: 0 -1px 0 rgba(0, 0, 0, .2);
   -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, .15), 0 1px 1px rgba(0, 0, 0, .075);
@@ -43,6 +59,10 @@
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 1px rgba(0, 0, 0, 0.075);
 >>>>>>> master
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> tyler
+>>>>>>> master
 =======
 >>>>>>> tyler
 >>>>>>> master
@@ -60,6 +80,7 @@
 .btn-warning.active,
 .btn-danger.active {
 <<<<<<< HEAD
+<<<<<<< HEAD
   -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
           box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
 =======
@@ -72,10 +93,22 @@
   -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
           box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
 =======
+=======
+  -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
+          box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
+=======
+<<<<<<< HEAD
+  -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
+          box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
+=======
+>>>>>>> master
   -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
   box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
 >>>>>>> master
 >>>>>>> tyler
+<<<<<<< HEAD
+>>>>>>> master
+=======
 >>>>>>> master
 }
 .btn-default.disabled,
@@ -99,6 +132,12 @@ fieldset[disabled] .btn-danger {
   -webkit-box-shadow: none;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+          box-shadow: none;
+=======
+<<<<<<< HEAD
+>>>>>>> master
 =======
           box-shadow: none;
 =======
@@ -109,6 +148,10 @@ fieldset[disabled] .btn-danger {
   box-shadow: none;
 >>>>>>> master
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> tyler
+>>>>>>> master
 =======
 >>>>>>> tyler
 >>>>>>> master
@@ -128,6 +171,12 @@ fieldset[disabled] .btn-danger {
 .btn-default {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+<<<<<<< HEAD
+>>>>>>> tyler
+>>>>>>> master
 =======
 =======
 <<<<<<< HEAD
@@ -141,6 +190,9 @@ fieldset[disabled] .btn-danger {
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> master
 =======
 >>>>>>> master
 =======
@@ -150,6 +202,10 @@ fieldset[disabled] .btn-danger {
   background-image: linear-gradient(to bottom, #fff 0%, #e0e0e0 100%);
 >>>>>>> master
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> tyler
+>>>>>>> master
 =======
 >>>>>>> tyler
 >>>>>>> master
@@ -160,14 +216,20 @@ fieldset[disabled] .btn-danger {
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
   text-shadow: 0 1px 0 #fff;
 >>>>>>> master
 =======
 <<<<<<< HEAD
 =======
+>>>>>>> master
+=======
   text-shadow: 0 1px 0 #fff;
 >>>>>>> master
 >>>>>>> tyler
+<<<<<<< HEAD
+>>>>>>> master
+=======
 >>>>>>> master
   border-color: #ccc;
 }
@@ -206,12 +268,18 @@ fieldset[disabled] .btn-default.active {
   background-image: -webkit-linear-gradient(top, #337ab7 0%, #265a88 100%);
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> master
   background-image:      -o-linear-gradient(top, #337ab7 0%, #265a88 100%);
   background-image: -webkit-gradient(linear, left top, left bottom, from(#337ab7), to(#265a88));
   background-image:         linear-gradient(to bottom, #337ab7 0%, #265a88 100%);
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> master
+=======
 >>>>>>> master
   background-image:      -o-linear-gradient(top, #337ab7 0%, #265a88 100%);
   background-image: -webkit-gradient(linear, left top, left bottom, from(#337ab7), to(#265a88));
@@ -222,6 +290,10 @@ fieldset[disabled] .btn-default.active {
   background-image: linear-gradient(to bottom, #337ab7 0%, #265a88 100%);
 >>>>>>> master
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> tyler
+>>>>>>> master
 =======
 >>>>>>> tyler
 >>>>>>> master
@@ -265,12 +337,18 @@ fieldset[disabled] .btn-primary.active {
   background-image: -webkit-linear-gradient(top, #5cb85c 0%, #419641 100%);
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> master
   background-image:      -o-linear-gradient(top, #5cb85c 0%, #419641 100%);
   background-image: -webkit-gradient(linear, left top, left bottom, from(#5cb85c), to(#419641));
   background-image:         linear-gradient(to bottom, #5cb85c 0%, #419641 100%);
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> master
+=======
 >>>>>>> master
   background-image:      -o-linear-gradient(top, #5cb85c 0%, #419641 100%);
   background-image: -webkit-gradient(linear, left top, left bottom, from(#5cb85c), to(#419641));
@@ -281,6 +359,10 @@ fieldset[disabled] .btn-primary.active {
   background-image: linear-gradient(to bottom, #5cb85c 0%, #419641 100%);
 >>>>>>> master
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> tyler
+>>>>>>> master
 =======
 >>>>>>> tyler
 >>>>>>> master
@@ -324,12 +406,18 @@ fieldset[disabled] .btn-success.active {
   background-image: -webkit-linear-gradient(top, #5bc0de 0%, #2aabd2 100%);
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> master
   background-image:      -o-linear-gradient(top, #5bc0de 0%, #2aabd2 100%);
   background-image: -webkit-gradient(linear, left top, left bottom, from(#5bc0de), to(#2aabd2));
   background-image:         linear-gradient(to bottom, #5bc0de 0%, #2aabd2 100%);
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> master
+=======
 >>>>>>> master
   background-image:      -o-linear-gradient(top, #5bc0de 0%, #2aabd2 100%);
   background-image: -webkit-gradient(linear, left top, left bottom, from(#5bc0de), to(#2aabd2));
@@ -340,6 +428,10 @@ fieldset[disabled] .btn-success.active {
   background-image: linear-gradient(to bottom, #5bc0de 0%, #2aabd2 100%);
 >>>>>>> master
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> tyler
+>>>>>>> master
 =======
 >>>>>>> tyler
 >>>>>>> master
@@ -383,12 +475,18 @@ fieldset[disabled] .btn-info.active {
   background-image: -webkit-linear-gradient(top, #f0ad4e 0%, #eb9316 100%);
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> master
   background-image:      -o-linear-gradient(top, #f0ad4e 0%, #eb9316 100%);
   background-image: -webkit-gradient(linear, left top, left bottom, from(#f0ad4e), to(#eb9316));
   background-image:         linear-gradient(to bottom, #f0ad4e 0%, #eb9316 100%);
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> master
+=======
 >>>>>>> master
   background-image:      -o-linear-gradient(top, #f0ad4e 0%, #eb9316 100%);
   background-image: -webkit-gradient(linear, left top, left bottom, from(#f0ad4e), to(#eb9316));
@@ -399,6 +497,10 @@ fieldset[disabled] .btn-info.active {
   background-image: linear-gradient(to bottom, #f0ad4e 0%, #eb9316 100%);
 >>>>>>> master
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> tyler
+>>>>>>> master
 =======
 >>>>>>> tyler
 >>>>>>> master
@@ -442,12 +544,18 @@ fieldset[disabled] .btn-warning.active {
   background-image: -webkit-linear-gradient(top, #d9534f 0%, #c12e2a 100%);
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> master
   background-image:      -o-linear-gradient(top, #d9534f 0%, #c12e2a 100%);
   background-image: -webkit-gradient(linear, left top, left bottom, from(#d9534f), to(#c12e2a));
   background-image:         linear-gradient(to bottom, #d9534f 0%, #c12e2a 100%);
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> master
+=======
 >>>>>>> master
   background-image:      -o-linear-gradient(top, #d9534f 0%, #c12e2a 100%);
   background-image: -webkit-gradient(linear, left top, left bottom, from(#d9534f), to(#c12e2a));
@@ -458,6 +566,10 @@ fieldset[disabled] .btn-warning.active {
   background-image: linear-gradient(to bottom, #d9534f 0%, #c12e2a 100%);
 >>>>>>> master
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> tyler
+>>>>>>> master
 =======
 >>>>>>> tyler
 >>>>>>> master
@@ -503,11 +615,17 @@ fieldset[disabled] .btn-danger.active {
   -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, .075);
           box-shadow: 0 1px 2px rgba(0, 0, 0, .075);
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> master
 =======
 <<<<<<< HEAD
   -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, .075);
           box-shadow: 0 1px 2px rgba(0, 0, 0, .075);
+<<<<<<< HEAD
+>>>>>>> master
+=======
 >>>>>>> master
 }
 .dropdown-menu > li > a:hover,
@@ -523,6 +641,10 @@ fieldset[disabled] .btn-danger.active {
   -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.075);
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.075);
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> tyler
+>>>>>>> master
 =======
 >>>>>>> tyler
 >>>>>>> master
@@ -536,14 +658,20 @@ fieldset[disabled] .btn-danger.active {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fff5f5f5', endColorstr='#ffe8e8e8', GradientType=0);
   background-repeat: repeat-x;
 <<<<<<< HEAD
+<<<<<<< HEAD
   background-color: #e8e8e8;
 >>>>>>> master
 =======
 <<<<<<< HEAD
 =======
+>>>>>>> master
+=======
   background-color: #e8e8e8;
 >>>>>>> master
 >>>>>>> tyler
+<<<<<<< HEAD
+>>>>>>> master
+=======
 >>>>>>> master
 }
 .dropdown-menu > .active > a,
@@ -551,6 +679,12 @@ fieldset[disabled] .btn-danger.active {
 .dropdown-menu > .active > a:focus {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+<<<<<<< HEAD
+>>>>>>> tyler
+>>>>>>> master
 =======
 =======
 <<<<<<< HEAD
@@ -578,6 +712,9 @@ fieldset[disabled] .btn-danger.active {
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> master
 =======
 >>>>>>> master
 =======
@@ -602,6 +739,10 @@ fieldset[disabled] .btn-danger.active {
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 5px rgba(0, 0, 0, 0.075);
 >>>>>>> master
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> tyler
+>>>>>>> master
 =======
 >>>>>>> tyler
 >>>>>>> master
@@ -612,6 +753,12 @@ fieldset[disabled] .btn-danger.active {
 <<<<<<< HEAD
   background-image:      -o-linear-gradient(top, #dbdbdb 0%, #e2e2e2 100%);
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+<<<<<<< HEAD
+  background-image:      -o-linear-gradient(top, #dbdbdb 0%, #e2e2e2 100%);
+>>>>>>> master
 =======
 =======
 <<<<<<< HEAD
@@ -639,6 +786,10 @@ fieldset[disabled] .btn-danger.active {
 =======
   background-image: -o-linear-gradient(top, #dbdbdb 0%, #e2e2e2 100%);
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> tyler
+>>>>>>> master
 =======
 >>>>>>> tyler
 >>>>>>> master
@@ -661,14 +812,20 @@ fieldset[disabled] .btn-danger.active {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff3c3c3c', endColorstr='#ff222222', GradientType=0);
   background-repeat: repeat-x;
 <<<<<<< HEAD
+<<<<<<< HEAD
   filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
 >>>>>>> master
 =======
 <<<<<<< HEAD
 =======
+>>>>>>> master
+=======
   filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
 >>>>>>> master
 >>>>>>> tyler
+<<<<<<< HEAD
+>>>>>>> master
+=======
 >>>>>>> master
   border-radius: 4px;
 }
@@ -678,6 +835,12 @@ fieldset[disabled] .btn-danger.active {
 <<<<<<< HEAD
   background-image:      -o-linear-gradient(top, #080808 0%, #0f0f0f 100%);
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+<<<<<<< HEAD
+  background-image:      -o-linear-gradient(top, #080808 0%, #0f0f0f 100%);
+>>>>>>> master
 =======
 =======
 <<<<<<< HEAD
@@ -696,6 +859,10 @@ fieldset[disabled] .btn-danger.active {
 =======
   background-image: -o-linear-gradient(top, #080808 0%, #0f0f0f 100%);
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> tyler
+>>>>>>> master
 =======
 >>>>>>> tyler
 >>>>>>> master
@@ -709,15 +876,21 @@ fieldset[disabled] .btn-danger.active {
 .navbar-inverse .navbar-brand,
 .navbar-inverse .navbar-nav > li > a {
 <<<<<<< HEAD
+<<<<<<< HEAD
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
 >>>>>>> master
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> master
   text-shadow: 0 -1px 0 rgba(0, 0, 0, .25);
 =======
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
 >>>>>>> master
 >>>>>>> tyler
+<<<<<<< HEAD
+>>>>>>> master
+=======
 >>>>>>> master
 }
 .navbar-static-top,
@@ -733,12 +906,18 @@ fieldset[disabled] .btn-danger.active {
     background-image: -webkit-linear-gradient(top, #337ab7 0%, #2e6da4 100%);
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> master
     background-image:      -o-linear-gradient(top, #337ab7 0%, #2e6da4 100%);
     background-image: -webkit-gradient(linear, left top, left bottom, from(#337ab7), to(#2e6da4));
     background-image:         linear-gradient(to bottom, #337ab7 0%, #2e6da4 100%);
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> master
+=======
 >>>>>>> master
     background-image:      -o-linear-gradient(top, #337ab7 0%, #2e6da4 100%);
     background-image: -webkit-gradient(linear, left top, left bottom, from(#337ab7), to(#2e6da4));
@@ -749,6 +928,10 @@ fieldset[disabled] .btn-danger.active {
     background-image: linear-gradient(to bottom, #337ab7 0%, #2e6da4 100%);
 >>>>>>> master
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> tyler
+>>>>>>> master
 =======
 >>>>>>> tyler
 >>>>>>> master
@@ -759,6 +942,12 @@ fieldset[disabled] .btn-danger.active {
 .alert {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+<<<<<<< HEAD
+>>>>>>> tyler
+>>>>>>> master
 =======
 =======
 <<<<<<< HEAD
@@ -776,6 +965,9 @@ fieldset[disabled] .btn-danger.active {
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> master
 =======
 >>>>>>> master
 =======
@@ -790,6 +982,10 @@ fieldset[disabled] .btn-danger.active {
   background-image: linear-gradient(to bottom, #dff0d8 0%, #c8e5bc 100%);
 >>>>>>> master
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> tyler
+>>>>>>> master
 =======
 >>>>>>> tyler
 >>>>>>> master
@@ -801,12 +997,18 @@ fieldset[disabled] .btn-danger.active {
   background-image: -webkit-linear-gradient(top, #d9edf7 0%, #b9def0 100%);
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> master
   background-image:      -o-linear-gradient(top, #d9edf7 0%, #b9def0 100%);
   background-image: -webkit-gradient(linear, left top, left bottom, from(#d9edf7), to(#b9def0));
   background-image:         linear-gradient(to bottom, #d9edf7 0%, #b9def0 100%);
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> master
+=======
 >>>>>>> master
   background-image:      -o-linear-gradient(top, #d9edf7 0%, #b9def0 100%);
   background-image: -webkit-gradient(linear, left top, left bottom, from(#d9edf7), to(#b9def0));
@@ -817,6 +1019,10 @@ fieldset[disabled] .btn-danger.active {
   background-image: linear-gradient(to bottom, #d9edf7 0%, #b9def0 100%);
 >>>>>>> master
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> tyler
+>>>>>>> master
 =======
 >>>>>>> tyler
 >>>>>>> master
@@ -828,12 +1034,18 @@ fieldset[disabled] .btn-danger.active {
   background-image: -webkit-linear-gradient(top, #fcf8e3 0%, #f8efc0 100%);
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> master
   background-image:      -o-linear-gradient(top, #fcf8e3 0%, #f8efc0 100%);
   background-image: -webkit-gradient(linear, left top, left bottom, from(#fcf8e3), to(#f8efc0));
   background-image:         linear-gradient(to bottom, #fcf8e3 0%, #f8efc0 100%);
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> master
+=======
 >>>>>>> master
   background-image:      -o-linear-gradient(top, #fcf8e3 0%, #f8efc0 100%);
   background-image: -webkit-gradient(linear, left top, left bottom, from(#fcf8e3), to(#f8efc0));
@@ -844,6 +1056,10 @@ fieldset[disabled] .btn-danger.active {
   background-image: linear-gradient(to bottom, #fcf8e3 0%, #f8efc0 100%);
 >>>>>>> master
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> tyler
+>>>>>>> master
 =======
 >>>>>>> tyler
 >>>>>>> master
@@ -855,12 +1071,18 @@ fieldset[disabled] .btn-danger.active {
   background-image: -webkit-linear-gradient(top, #f2dede 0%, #e7c3c3 100%);
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> master
   background-image:      -o-linear-gradient(top, #f2dede 0%, #e7c3c3 100%);
   background-image: -webkit-gradient(linear, left top, left bottom, from(#f2dede), to(#e7c3c3));
   background-image:         linear-gradient(to bottom, #f2dede 0%, #e7c3c3 100%);
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> master
+=======
 >>>>>>> master
   background-image:      -o-linear-gradient(top, #f2dede 0%, #e7c3c3 100%);
   background-image: -webkit-gradient(linear, left top, left bottom, from(#f2dede), to(#e7c3c3));
@@ -871,6 +1093,10 @@ fieldset[disabled] .btn-danger.active {
   background-image: linear-gradient(to bottom, #f2dede 0%, #e7c3c3 100%);
 >>>>>>> master
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> tyler
+>>>>>>> master
 =======
 >>>>>>> tyler
 >>>>>>> master
@@ -882,12 +1108,18 @@ fieldset[disabled] .btn-danger.active {
   background-image: -webkit-linear-gradient(top, #ebebeb 0%, #f5f5f5 100%);
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> master
   background-image:      -o-linear-gradient(top, #ebebeb 0%, #f5f5f5 100%);
   background-image: -webkit-gradient(linear, left top, left bottom, from(#ebebeb), to(#f5f5f5));
   background-image:         linear-gradient(to bottom, #ebebeb 0%, #f5f5f5 100%);
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> master
+=======
 >>>>>>> master
   background-image:      -o-linear-gradient(top, #ebebeb 0%, #f5f5f5 100%);
   background-image: -webkit-gradient(linear, left top, left bottom, from(#ebebeb), to(#f5f5f5));
@@ -898,6 +1130,10 @@ fieldset[disabled] .btn-danger.active {
   background-image: linear-gradient(to bottom, #ebebeb 0%, #f5f5f5 100%);
 >>>>>>> master
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> tyler
+>>>>>>> master
 =======
 >>>>>>> tyler
 >>>>>>> master
@@ -908,12 +1144,18 @@ fieldset[disabled] .btn-danger.active {
   background-image: -webkit-linear-gradient(top, #337ab7 0%, #286090 100%);
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> master
   background-image:      -o-linear-gradient(top, #337ab7 0%, #286090 100%);
   background-image: -webkit-gradient(linear, left top, left bottom, from(#337ab7), to(#286090));
   background-image:         linear-gradient(to bottom, #337ab7 0%, #286090 100%);
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> master
+=======
 >>>>>>> master
   background-image:      -o-linear-gradient(top, #337ab7 0%, #286090 100%);
   background-image: -webkit-gradient(linear, left top, left bottom, from(#337ab7), to(#286090));
@@ -924,6 +1166,10 @@ fieldset[disabled] .btn-danger.active {
   background-image: linear-gradient(to bottom, #337ab7 0%, #286090 100%);
 >>>>>>> master
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> tyler
+>>>>>>> master
 =======
 >>>>>>> tyler
 >>>>>>> master
@@ -934,12 +1180,18 @@ fieldset[disabled] .btn-danger.active {
   background-image: -webkit-linear-gradient(top, #5cb85c 0%, #449d44 100%);
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> master
   background-image:      -o-linear-gradient(top, #5cb85c 0%, #449d44 100%);
   background-image: -webkit-gradient(linear, left top, left bottom, from(#5cb85c), to(#449d44));
   background-image:         linear-gradient(to bottom, #5cb85c 0%, #449d44 100%);
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> master
+=======
 >>>>>>> master
   background-image:      -o-linear-gradient(top, #5cb85c 0%, #449d44 100%);
   background-image: -webkit-gradient(linear, left top, left bottom, from(#5cb85c), to(#449d44));
@@ -950,6 +1202,10 @@ fieldset[disabled] .btn-danger.active {
   background-image: linear-gradient(to bottom, #5cb85c 0%, #449d44 100%);
 >>>>>>> master
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> tyler
+>>>>>>> master
 =======
 >>>>>>> tyler
 >>>>>>> master
@@ -960,12 +1216,18 @@ fieldset[disabled] .btn-danger.active {
   background-image: -webkit-linear-gradient(top, #5bc0de 0%, #31b0d5 100%);
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> master
   background-image:      -o-linear-gradient(top, #5bc0de 0%, #31b0d5 100%);
   background-image: -webkit-gradient(linear, left top, left bottom, from(#5bc0de), to(#31b0d5));
   background-image:         linear-gradient(to bottom, #5bc0de 0%, #31b0d5 100%);
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> master
+=======
 >>>>>>> master
   background-image:      -o-linear-gradient(top, #5bc0de 0%, #31b0d5 100%);
   background-image: -webkit-gradient(linear, left top, left bottom, from(#5bc0de), to(#31b0d5));
@@ -976,6 +1238,10 @@ fieldset[disabled] .btn-danger.active {
   background-image: linear-gradient(to bottom, #5bc0de 0%, #31b0d5 100%);
 >>>>>>> master
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> tyler
+>>>>>>> master
 =======
 >>>>>>> tyler
 >>>>>>> master
@@ -986,12 +1252,18 @@ fieldset[disabled] .btn-danger.active {
   background-image: -webkit-linear-gradient(top, #f0ad4e 0%, #ec971f 100%);
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> master
   background-image:      -o-linear-gradient(top, #f0ad4e 0%, #ec971f 100%);
   background-image: -webkit-gradient(linear, left top, left bottom, from(#f0ad4e), to(#ec971f));
   background-image:         linear-gradient(to bottom, #f0ad4e 0%, #ec971f 100%);
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> master
+=======
 >>>>>>> master
   background-image:      -o-linear-gradient(top, #f0ad4e 0%, #ec971f 100%);
   background-image: -webkit-gradient(linear, left top, left bottom, from(#f0ad4e), to(#ec971f));
@@ -1002,6 +1274,10 @@ fieldset[disabled] .btn-danger.active {
   background-image: linear-gradient(to bottom, #f0ad4e 0%, #ec971f 100%);
 >>>>>>> master
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> tyler
+>>>>>>> master
 =======
 >>>>>>> tyler
 >>>>>>> master
@@ -1012,12 +1288,18 @@ fieldset[disabled] .btn-danger.active {
   background-image: -webkit-linear-gradient(top, #d9534f 0%, #c9302c 100%);
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> master
   background-image:      -o-linear-gradient(top, #d9534f 0%, #c9302c 100%);
   background-image: -webkit-gradient(linear, left top, left bottom, from(#d9534f), to(#c9302c));
   background-image:         linear-gradient(to bottom, #d9534f 0%, #c9302c 100%);
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> master
+=======
 >>>>>>> master
   background-image:      -o-linear-gradient(top, #d9534f 0%, #c9302c 100%);
   background-image: -webkit-gradient(linear, left top, left bottom, from(#d9534f), to(#c9302c));
@@ -1028,6 +1310,10 @@ fieldset[disabled] .btn-danger.active {
   background-image: linear-gradient(to bottom, #d9534f 0%, #c9302c 100%);
 >>>>>>> master
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> tyler
+>>>>>>> master
 =======
 >>>>>>> tyler
 >>>>>>> master
@@ -1037,6 +1323,12 @@ fieldset[disabled] .btn-danger.active {
 .progress-bar-striped {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+<<<<<<< HEAD
+>>>>>>> tyler
+>>>>>>> master
 =======
 =======
 <<<<<<< HEAD
@@ -1053,6 +1345,9 @@ fieldset[disabled] .btn-danger.active {
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> master
 =======
 >>>>>>> master
 =======
@@ -1066,6 +1361,10 @@ fieldset[disabled] .btn-danger.active {
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.075);
 >>>>>>> master
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> tyler
+>>>>>>> master
 =======
 >>>>>>> tyler
 >>>>>>> master
@@ -1077,12 +1376,18 @@ fieldset[disabled] .btn-danger.active {
   background-image: -webkit-linear-gradient(top, #337ab7 0%, #2b669a 100%);
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> master
   background-image:      -o-linear-gradient(top, #337ab7 0%, #2b669a 100%);
   background-image: -webkit-gradient(linear, left top, left bottom, from(#337ab7), to(#2b669a));
   background-image:         linear-gradient(to bottom, #337ab7 0%, #2b669a 100%);
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> master
+=======
 >>>>>>> master
   background-image:      -o-linear-gradient(top, #337ab7 0%, #2b669a 100%);
   background-image: -webkit-gradient(linear, left top, left bottom, from(#337ab7), to(#2b669a));
@@ -1093,6 +1398,10 @@ fieldset[disabled] .btn-danger.active {
   background-image: linear-gradient(to bottom, #337ab7 0%, #2b669a 100%);
 >>>>>>> master
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> tyler
+>>>>>>> master
 =======
 >>>>>>> tyler
 >>>>>>> master
@@ -1108,6 +1417,12 @@ fieldset[disabled] .btn-danger.active {
 .panel {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+<<<<<<< HEAD
+>>>>>>> tyler
+>>>>>>> master
 =======
 =======
 <<<<<<< HEAD
@@ -1124,6 +1439,9 @@ fieldset[disabled] .btn-danger.active {
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> master
 =======
 >>>>>>> master
 =======
@@ -1137,6 +1455,10 @@ fieldset[disabled] .btn-danger.active {
   background-image: linear-gradient(to bottom, #f5f5f5 0%, #e8e8e8 100%);
 >>>>>>> master
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> tyler
+>>>>>>> master
 =======
 >>>>>>> tyler
 >>>>>>> master
@@ -1147,12 +1469,18 @@ fieldset[disabled] .btn-danger.active {
   background-image: -webkit-linear-gradient(top, #337ab7 0%, #2e6da4 100%);
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> master
   background-image:      -o-linear-gradient(top, #337ab7 0%, #2e6da4 100%);
   background-image: -webkit-gradient(linear, left top, left bottom, from(#337ab7), to(#2e6da4));
   background-image:         linear-gradient(to bottom, #337ab7 0%, #2e6da4 100%);
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> master
+=======
 >>>>>>> master
   background-image:      -o-linear-gradient(top, #337ab7 0%, #2e6da4 100%);
   background-image: -webkit-gradient(linear, left top, left bottom, from(#337ab7), to(#2e6da4));
@@ -1163,6 +1491,10 @@ fieldset[disabled] .btn-danger.active {
   background-image: linear-gradient(to bottom, #337ab7 0%, #2e6da4 100%);
 >>>>>>> master
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> tyler
+>>>>>>> master
 =======
 >>>>>>> tyler
 >>>>>>> master
@@ -1173,12 +1505,18 @@ fieldset[disabled] .btn-danger.active {
   background-image: -webkit-linear-gradient(top, #dff0d8 0%, #d0e9c6 100%);
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> master
   background-image:      -o-linear-gradient(top, #dff0d8 0%, #d0e9c6 100%);
   background-image: -webkit-gradient(linear, left top, left bottom, from(#dff0d8), to(#d0e9c6));
   background-image:         linear-gradient(to bottom, #dff0d8 0%, #d0e9c6 100%);
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> master
+=======
 >>>>>>> master
   background-image:      -o-linear-gradient(top, #dff0d8 0%, #d0e9c6 100%);
   background-image: -webkit-gradient(linear, left top, left bottom, from(#dff0d8), to(#d0e9c6));
@@ -1189,6 +1527,10 @@ fieldset[disabled] .btn-danger.active {
   background-image: linear-gradient(to bottom, #dff0d8 0%, #d0e9c6 100%);
 >>>>>>> master
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> tyler
+>>>>>>> master
 =======
 >>>>>>> tyler
 >>>>>>> master
@@ -1199,12 +1541,18 @@ fieldset[disabled] .btn-danger.active {
   background-image: -webkit-linear-gradient(top, #d9edf7 0%, #c4e3f3 100%);
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> master
   background-image:      -o-linear-gradient(top, #d9edf7 0%, #c4e3f3 100%);
   background-image: -webkit-gradient(linear, left top, left bottom, from(#d9edf7), to(#c4e3f3));
   background-image:         linear-gradient(to bottom, #d9edf7 0%, #c4e3f3 100%);
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> master
+=======
 >>>>>>> master
   background-image:      -o-linear-gradient(top, #d9edf7 0%, #c4e3f3 100%);
   background-image: -webkit-gradient(linear, left top, left bottom, from(#d9edf7), to(#c4e3f3));
@@ -1215,6 +1563,10 @@ fieldset[disabled] .btn-danger.active {
   background-image: linear-gradient(to bottom, #d9edf7 0%, #c4e3f3 100%);
 >>>>>>> master
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> tyler
+>>>>>>> master
 =======
 >>>>>>> tyler
 >>>>>>> master
@@ -1225,12 +1577,18 @@ fieldset[disabled] .btn-danger.active {
   background-image: -webkit-linear-gradient(top, #fcf8e3 0%, #faf2cc 100%);
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> master
   background-image:      -o-linear-gradient(top, #fcf8e3 0%, #faf2cc 100%);
   background-image: -webkit-gradient(linear, left top, left bottom, from(#fcf8e3), to(#faf2cc));
   background-image:         linear-gradient(to bottom, #fcf8e3 0%, #faf2cc 100%);
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> master
+=======
 >>>>>>> master
   background-image:      -o-linear-gradient(top, #fcf8e3 0%, #faf2cc 100%);
   background-image: -webkit-gradient(linear, left top, left bottom, from(#fcf8e3), to(#faf2cc));
@@ -1241,6 +1599,10 @@ fieldset[disabled] .btn-danger.active {
   background-image: linear-gradient(to bottom, #fcf8e3 0%, #faf2cc 100%);
 >>>>>>> master
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> tyler
+>>>>>>> master
 =======
 >>>>>>> tyler
 >>>>>>> master
@@ -1251,12 +1613,18 @@ fieldset[disabled] .btn-danger.active {
   background-image: -webkit-linear-gradient(top, #f2dede 0%, #ebcccc 100%);
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> master
   background-image:      -o-linear-gradient(top, #f2dede 0%, #ebcccc 100%);
   background-image: -webkit-gradient(linear, left top, left bottom, from(#f2dede), to(#ebcccc));
   background-image:         linear-gradient(to bottom, #f2dede 0%, #ebcccc 100%);
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> master
+=======
 >>>>>>> master
   background-image:      -o-linear-gradient(top, #f2dede 0%, #ebcccc 100%);
   background-image: -webkit-gradient(linear, left top, left bottom, from(#f2dede), to(#ebcccc));
@@ -1267,6 +1635,10 @@ fieldset[disabled] .btn-danger.active {
   background-image: linear-gradient(to bottom, #f2dede 0%, #ebcccc 100%);
 >>>>>>> master
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> tyler
+>>>>>>> master
 =======
 >>>>>>> tyler
 >>>>>>> master
@@ -1278,6 +1650,12 @@ fieldset[disabled] .btn-danger.active {
 <<<<<<< HEAD
   background-image:      -o-linear-gradient(top, #e8e8e8 0%, #f5f5f5 100%);
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+<<<<<<< HEAD
+  background-image:      -o-linear-gradient(top, #e8e8e8 0%, #f5f5f5 100%);
+>>>>>>> master
 =======
 =======
 <<<<<<< HEAD
@@ -1295,6 +1673,10 @@ fieldset[disabled] .btn-danger.active {
 =======
   background-image: -o-linear-gradient(top, #e8e8e8 0%, #f5f5f5 100%);
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> tyler
+>>>>>>> master
 =======
 >>>>>>> tyler
 >>>>>>> master
@@ -1308,9 +1690,15 @@ fieldset[disabled] .btn-danger.active {
 }
 /*# sourceMappingURL=bootstrap-theme.css.map */
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> master
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> master
+>>>>>>> tyler
+>>>>>>> master
+=======
 =======
 >>>>>>> master
 >>>>>>> tyler

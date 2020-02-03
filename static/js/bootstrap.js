@@ -1,11 +1,17 @@
 /*!
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> master
  * Bootstrap v3.3.5 (http://getbootstrap.com)
  * Copyright 2011-2015 Twitter, Inc.
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> master
+=======
 >>>>>>> master
  * Bootstrap v3.3.5 (http://getbootstrap.com)
  * Copyright 2011-2015 Twitter, Inc.
@@ -14,6 +20,10 @@
  * Copyright 2011-2019 Twitter, Inc.
 >>>>>>> master
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> tyler
+>>>>>>> master
 =======
 >>>>>>> tyler
 >>>>>>> master
@@ -28,6 +38,7 @@ if (typeof jQuery === 'undefined') {
   'use strict';
   var version = $.fn.jquery.split(' ')[0].split('.')
 <<<<<<< HEAD
+<<<<<<< HEAD
   if ((version[0] < 2 && version[1] < 9) || (version[0] == 1 && version[1] == 9 && version[2] < 1)) {
     throw new Error('Bootstrap\'s JavaScript requires jQuery version 1.9.1 or higher')
 =======
@@ -40,10 +51,22 @@ if (typeof jQuery === 'undefined') {
   if ((version[0] < 2 && version[1] < 9) || (version[0] == 1 && version[1] == 9 && version[2] < 1)) {
     throw new Error('Bootstrap\'s JavaScript requires jQuery version 1.9.1 or higher')
 =======
+=======
+  if ((version[0] < 2 && version[1] < 9) || (version[0] == 1 && version[1] == 9 && version[2] < 1)) {
+    throw new Error('Bootstrap\'s JavaScript requires jQuery version 1.9.1 or higher')
+=======
+<<<<<<< HEAD
+  if ((version[0] < 2 && version[1] < 9) || (version[0] == 1 && version[1] == 9 && version[2] < 1)) {
+    throw new Error('Bootstrap\'s JavaScript requires jQuery version 1.9.1 or higher')
+=======
+>>>>>>> master
   if ((version[0] < 2 && version[1] < 9) || (version[0] == 1 && version[1] == 9 && version[2] < 1) || (version[0] > 3)) {
     throw new Error('Bootstrap\'s JavaScript requires jQuery version 1.9.1 or higher, but lower than version 4')
 >>>>>>> master
 >>>>>>> tyler
+<<<<<<< HEAD
+>>>>>>> master
+=======
 >>>>>>> master
   }
 }(jQuery);
@@ -51,6 +74,12 @@ if (typeof jQuery === 'undefined') {
 /* ========================================================================
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+<<<<<<< HEAD
+>>>>>>> tyler
+>>>>>>> master
 =======
 =======
 <<<<<<< HEAD
@@ -63,6 +92,9 @@ if (typeof jQuery === 'undefined') {
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> master
 =======
 >>>>>>> master
 =======
@@ -72,6 +104,10 @@ if (typeof jQuery === 'undefined') {
  * Copyright 2011-2019 Twitter, Inc.
 >>>>>>> master
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> tyler
+>>>>>>> master
 =======
 >>>>>>> tyler
 >>>>>>> master
@@ -82,6 +118,7 @@ if (typeof jQuery === 'undefined') {
 +function ($) {
   'use strict';
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -95,6 +132,16 @@ if (typeof jQuery === 'undefined') {
 >>>>>>> master
 <<<<<<< HEAD
 =======
+>>>>>>> tyler
+>>>>>>> master
+=======
+  // CSS TRANSITION SUPPORT (Shoutout: http://www.modernizr.com/)
+=======
+<<<<<<< HEAD
+  // CSS TRANSITION SUPPORT (Shoutout: http://www.modernizr.com/)
+=======
+  // CSS TRANSITION SUPPORT (Shoutout: https://modernizr.com/)
+>>>>>>> master
 >>>>>>> tyler
 >>>>>>> master
   // ============================================================
@@ -120,6 +167,12 @@ if (typeof jQuery === 'undefined') {
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+  // http://blog.alexmaccaw.com/css-transitions
+=======
+<<<<<<< HEAD
+>>>>>>> master
 =======
   // http://blog.alexmaccaw.com/css-transitions
 =======
@@ -130,6 +183,10 @@ if (typeof jQuery === 'undefined') {
   // https://blog.alexmaccaw.com/css-transitions
 >>>>>>> master
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> tyler
+>>>>>>> master
 =======
 >>>>>>> tyler
 >>>>>>> master
@@ -161,6 +218,12 @@ if (typeof jQuery === 'undefined') {
 /* ========================================================================
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+<<<<<<< HEAD
+>>>>>>> tyler
+>>>>>>> master
 =======
 =======
 <<<<<<< HEAD
@@ -173,6 +236,9 @@ if (typeof jQuery === 'undefined') {
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> master
 =======
 >>>>>>> master
 =======
@@ -182,6 +248,10 @@ if (typeof jQuery === 'undefined') {
  * Copyright 2011-2019 Twitter, Inc.
 >>>>>>> master
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> tyler
+>>>>>>> master
 =======
 >>>>>>> tyler
 >>>>>>> master
@@ -202,6 +272,12 @@ if (typeof jQuery === 'undefined') {
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+  Alert.VERSION = '3.3.5'
+=======
+<<<<<<< HEAD
+>>>>>>> master
 =======
   Alert.VERSION = '3.3.5'
 =======
@@ -212,6 +288,10 @@ if (typeof jQuery === 'undefined') {
   Alert.VERSION = '3.4.1'
 >>>>>>> master
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> tyler
+>>>>>>> master
 =======
 >>>>>>> tyler
 >>>>>>> master
@@ -231,11 +311,20 @@ if (typeof jQuery === 'undefined') {
     var $parent = $(selector)
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
     selector    = selector === '#' ? [] : selector
     var $parent = $(document).find(selector)
 >>>>>>> master
 =======
 <<<<<<< HEAD
+    var $parent = $(selector)
+=======
+    selector    = selector === '#' ? [] : selector
+    var $parent = $(document).find(selector)
+>>>>>>> master
+>>>>>>> tyler
+>>>>>>> master
+=======
     var $parent = $(selector)
 =======
     selector    = selector === '#' ? [] : selector
@@ -307,6 +396,12 @@ if (typeof jQuery === 'undefined') {
 /* ========================================================================
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+<<<<<<< HEAD
+>>>>>>> tyler
+>>>>>>> master
 =======
 =======
 <<<<<<< HEAD
@@ -319,6 +414,9 @@ if (typeof jQuery === 'undefined') {
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> master
 =======
 >>>>>>> master
 =======
@@ -328,6 +426,10 @@ if (typeof jQuery === 'undefined') {
  * Copyright 2011-2019 Twitter, Inc.
 >>>>>>> master
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> tyler
+>>>>>>> master
 =======
 >>>>>>> tyler
 >>>>>>> master
@@ -348,11 +450,22 @@ if (typeof jQuery === 'undefined') {
   }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
   Button.VERSION  = '3.3.5'
 =======
 <<<<<<< HEAD
   Button.VERSION  = '3.4.1'
 >>>>>>> master
+=======
+<<<<<<< HEAD
+  Button.VERSION  = '3.3.5'
+=======
+  Button.VERSION  = '3.4.1'
+>>>>>>> master
+>>>>>>> tyler
+>>>>>>> master
+=======
+  Button.VERSION  = '3.3.5'
 =======
 <<<<<<< HEAD
   Button.VERSION  = '3.3.5'
@@ -384,6 +497,12 @@ if (typeof jQuery === 'undefined') {
         this.isLoading = true
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+<<<<<<< HEAD
+>>>>>>> tyler
+>>>>>>> master
 =======
 =======
 <<<<<<< HEAD
@@ -396,6 +515,9 @@ if (typeof jQuery === 'undefined') {
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> master
 =======
 >>>>>>> master
 =======
@@ -405,6 +527,10 @@ if (typeof jQuery === 'undefined') {
         $el.removeClass(d).removeAttr(d).prop(d, false)
 >>>>>>> master
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> tyler
+>>>>>>> master
 =======
 >>>>>>> tyler
 >>>>>>> master
@@ -473,6 +599,12 @@ if (typeof jQuery === 'undefined') {
     .on('click.bs.button.data-api', '[data-toggle^="button"]', function (e) {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+<<<<<<< HEAD
+>>>>>>> tyler
+>>>>>>> master
 =======
 =======
 <<<<<<< HEAD
@@ -485,6 +617,9 @@ if (typeof jQuery === 'undefined') {
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> master
 =======
 >>>>>>> master
 =======
@@ -499,6 +634,10 @@ if (typeof jQuery === 'undefined') {
       }
 >>>>>>> master
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> tyler
+>>>>>>> master
 =======
 >>>>>>> tyler
 >>>>>>> master
@@ -512,6 +651,12 @@ if (typeof jQuery === 'undefined') {
 /* ========================================================================
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+<<<<<<< HEAD
+>>>>>>> tyler
+>>>>>>> master
 =======
 =======
 <<<<<<< HEAD
@@ -524,6 +669,9 @@ if (typeof jQuery === 'undefined') {
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> master
 =======
 >>>>>>> master
 =======
@@ -533,6 +681,10 @@ if (typeof jQuery === 'undefined') {
  * Copyright 2011-2019 Twitter, Inc.
 >>>>>>> master
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> tyler
+>>>>>>> master
 =======
 >>>>>>> tyler
 >>>>>>> master
@@ -565,6 +717,7 @@ if (typeof jQuery === 'undefined') {
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
   Carousel.VERSION  = '3.3.5'
 =======
@@ -576,6 +729,16 @@ if (typeof jQuery === 'undefined') {
 >>>>>>> master
 <<<<<<< HEAD
 =======
+>>>>>>> tyler
+>>>>>>> master
+=======
+  Carousel.VERSION  = '3.3.5'
+=======
+<<<<<<< HEAD
+  Carousel.VERSION  = '3.3.5'
+=======
+  Carousel.VERSION  = '3.4.1'
+>>>>>>> master
 >>>>>>> tyler
 >>>>>>> master
 
@@ -695,8 +858,13 @@ if (typeof jQuery === 'undefined') {
       $next[0].offsetWidth // force reflow
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
+      $next[0].offsetWidth // force reflow
+=======
+>>>>>>> master
+=======
       $next[0].offsetWidth // force reflow
 =======
 >>>>>>> master
@@ -705,6 +873,10 @@ if (typeof jQuery === 'undefined') {
       }
 >>>>>>> master
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> tyler
+>>>>>>> master
 =======
 >>>>>>> tyler
 >>>>>>> master
@@ -771,6 +943,12 @@ if (typeof jQuery === 'undefined') {
   var clickHandler = function (e) {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+<<<<<<< HEAD
+>>>>>>> tyler
+>>>>>>> master
 =======
 =======
 <<<<<<< HEAD
@@ -783,6 +961,9 @@ if (typeof jQuery === 'undefined') {
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> master
 =======
 >>>>>>> master
 =======
@@ -799,6 +980,10 @@ if (typeof jQuery === 'undefined') {
 
 >>>>>>> master
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> tyler
+>>>>>>> master
 =======
 >>>>>>> tyler
 >>>>>>> master
@@ -833,11 +1018,17 @@ if (typeof jQuery === 'undefined') {
  * Bootstrap: collapse.js v3.3.5
  * http://getbootstrap.com/javascript/#collapse
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> master
 =======
 <<<<<<< HEAD
  * Bootstrap: collapse.js v3.3.5
  * http://getbootstrap.com/javascript/#collapse
+<<<<<<< HEAD
+>>>>>>> master
+=======
 >>>>>>> master
  * ========================================================================
  * Copyright 2011-2015 Twitter, Inc.
@@ -848,6 +1039,10 @@ if (typeof jQuery === 'undefined') {
  * Bootstrap: collapse.js v3.4.1
  * https://getbootstrap.com/docs/3.4/javascript/#collapse
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> tyler
+>>>>>>> master
 =======
 >>>>>>> tyler
 >>>>>>> master
@@ -857,14 +1052,20 @@ if (typeof jQuery === 'undefined') {
  * ======================================================================== */
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /* jshint latedef: false */
 >>>>>>> master
 =======
 <<<<<<< HEAD
 =======
+>>>>>>> master
+=======
 /* jshint latedef: false */
 >>>>>>> master
 >>>>>>> tyler
+<<<<<<< HEAD
+>>>>>>> master
+=======
 >>>>>>> master
 
 +function ($) {
@@ -890,11 +1091,22 @@ if (typeof jQuery === 'undefined') {
   }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
   Collapse.VERSION  = '3.3.5'
 =======
 <<<<<<< HEAD
   Collapse.VERSION  = '3.4.1'
 >>>>>>> master
+=======
+<<<<<<< HEAD
+  Collapse.VERSION  = '3.3.5'
+=======
+  Collapse.VERSION  = '3.4.1'
+>>>>>>> master
+>>>>>>> tyler
+>>>>>>> master
+=======
+  Collapse.VERSION  = '3.3.5'
 =======
 <<<<<<< HEAD
   Collapse.VERSION  = '3.3.5'
@@ -1010,11 +1222,22 @@ if (typeof jQuery === 'undefined') {
 
   Collapse.prototype.getParent = function () {
 <<<<<<< HEAD
+<<<<<<< HEAD
     return $(this.options.parent)
 =======
 <<<<<<< HEAD
     return $(document).find(this.options.parent)
 >>>>>>> master
+=======
+<<<<<<< HEAD
+    return $(this.options.parent)
+=======
+    return $(document).find(this.options.parent)
+>>>>>>> master
+>>>>>>> tyler
+>>>>>>> master
+=======
+    return $(this.options.parent)
 =======
 <<<<<<< HEAD
     return $(this.options.parent)
@@ -1046,11 +1269,22 @@ if (typeof jQuery === 'undefined') {
       || (href = $trigger.attr('href')) && href.replace(/.*(?=#[^\s]+$)/, '') // strip for ie7
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     return $(target)
 =======
 <<<<<<< HEAD
     return $(document).find(target)
 >>>>>>> master
+=======
+<<<<<<< HEAD
+    return $(target)
+=======
+    return $(document).find(target)
+>>>>>>> master
+>>>>>>> tyler
+>>>>>>> master
+=======
+    return $(target)
 =======
 <<<<<<< HEAD
     return $(target)
@@ -1112,6 +1346,12 @@ if (typeof jQuery === 'undefined') {
 /* ========================================================================
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+<<<<<<< HEAD
+>>>>>>> tyler
+>>>>>>> master
 =======
 =======
 <<<<<<< HEAD
@@ -1124,6 +1364,9 @@ if (typeof jQuery === 'undefined') {
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> master
 =======
 >>>>>>> master
 =======
@@ -1133,6 +1376,10 @@ if (typeof jQuery === 'undefined') {
  * Copyright 2011-2019 Twitter, Inc.
 >>>>>>> master
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> tyler
+>>>>>>> master
 =======
 >>>>>>> tyler
 >>>>>>> master
@@ -1154,6 +1401,12 @@ if (typeof jQuery === 'undefined') {
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+  Dropdown.VERSION = '3.3.5'
+=======
+<<<<<<< HEAD
+>>>>>>> master
 =======
   Dropdown.VERSION = '3.3.5'
 =======
@@ -1164,6 +1417,10 @@ if (typeof jQuery === 'undefined') {
   Dropdown.VERSION = '3.4.1'
 >>>>>>> master
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> tyler
+>>>>>>> master
 =======
 >>>>>>> tyler
 >>>>>>> master
@@ -1178,6 +1435,12 @@ if (typeof jQuery === 'undefined') {
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+    var $parent = selector && $(selector)
+=======
+<<<<<<< HEAD
+>>>>>>> master
 =======
     var $parent = selector && $(selector)
 =======
@@ -1188,6 +1451,10 @@ if (typeof jQuery === 'undefined') {
     var $parent = selector !== '#' ? $(document).find(selector) : null
 >>>>>>> master
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> tyler
+>>>>>>> master
 =======
 >>>>>>> tyler
 >>>>>>> master
@@ -1214,6 +1481,7 @@ if (typeof jQuery === 'undefined') {
       $this.attr('aria-expanded', 'false')
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
       $parent.removeClass('open').trigger('hidden.bs.dropdown', relatedTarget)
 =======
@@ -1225,6 +1493,16 @@ if (typeof jQuery === 'undefined') {
 >>>>>>> master
 <<<<<<< HEAD
 =======
+>>>>>>> tyler
+>>>>>>> master
+=======
+      $parent.removeClass('open').trigger('hidden.bs.dropdown', relatedTarget)
+=======
+<<<<<<< HEAD
+      $parent.removeClass('open').trigger('hidden.bs.dropdown', relatedTarget)
+=======
+      $parent.removeClass('open').trigger($.Event('hidden.bs.dropdown', relatedTarget))
+>>>>>>> master
 >>>>>>> tyler
 >>>>>>> master
     })
@@ -1262,6 +1540,7 @@ if (typeof jQuery === 'undefined') {
         .toggleClass('open')
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
         .trigger('shown.bs.dropdown', relatedTarget)
 =======
@@ -1273,6 +1552,16 @@ if (typeof jQuery === 'undefined') {
 >>>>>>> master
 <<<<<<< HEAD
 =======
+>>>>>>> tyler
+>>>>>>> master
+=======
+        .trigger('shown.bs.dropdown', relatedTarget)
+=======
+<<<<<<< HEAD
+        .trigger('shown.bs.dropdown', relatedTarget)
+=======
+        .trigger($.Event('shown.bs.dropdown', relatedTarget))
+>>>>>>> master
 >>>>>>> tyler
 >>>>>>> master
     }
@@ -1356,6 +1645,12 @@ if (typeof jQuery === 'undefined') {
 /* ========================================================================
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+<<<<<<< HEAD
+>>>>>>> tyler
+>>>>>>> master
 =======
 =======
 <<<<<<< HEAD
@@ -1368,6 +1663,9 @@ if (typeof jQuery === 'undefined') {
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> master
 =======
 >>>>>>> master
 =======
@@ -1377,6 +1675,10 @@ if (typeof jQuery === 'undefined') {
  * Copyright 2011-2019 Twitter, Inc.
 >>>>>>> master
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> tyler
+>>>>>>> master
 =======
 >>>>>>> tyler
 >>>>>>> master
@@ -1393,6 +1695,12 @@ if (typeof jQuery === 'undefined') {
   var Modal = function (element, options) {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+<<<<<<< HEAD
+>>>>>>> tyler
+>>>>>>> master
 =======
 =======
 <<<<<<< HEAD
@@ -1410,6 +1718,9 @@ if (typeof jQuery === 'undefined') {
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> master
 =======
 >>>>>>> master
 =======
@@ -1425,6 +1736,10 @@ if (typeof jQuery === 'undefined') {
     this.fixedContent = '.navbar-fixed-top, .navbar-fixed-bottom'
 >>>>>>> master
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> tyler
+>>>>>>> master
 =======
 >>>>>>> tyler
 >>>>>>> master
@@ -1440,6 +1755,12 @@ if (typeof jQuery === 'undefined') {
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+  Modal.VERSION  = '3.3.5'
+=======
+<<<<<<< HEAD
+>>>>>>> master
 =======
   Modal.VERSION  = '3.3.5'
 =======
@@ -1450,6 +1771,10 @@ if (typeof jQuery === 'undefined') {
   Modal.VERSION = '3.4.1'
 >>>>>>> master
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> tyler
+>>>>>>> master
 =======
 >>>>>>> tyler
 >>>>>>> master
@@ -1470,11 +1795,22 @@ if (typeof jQuery === 'undefined') {
   Modal.prototype.show = function (_relatedTarget) {
     var that = this
 <<<<<<< HEAD
+<<<<<<< HEAD
     var e    = $.Event('show.bs.modal', { relatedTarget: _relatedTarget })
 =======
 <<<<<<< HEAD
     var e = $.Event('show.bs.modal', { relatedTarget: _relatedTarget })
 >>>>>>> master
+=======
+<<<<<<< HEAD
+    var e    = $.Event('show.bs.modal', { relatedTarget: _relatedTarget })
+=======
+    var e = $.Event('show.bs.modal', { relatedTarget: _relatedTarget })
+>>>>>>> master
+>>>>>>> tyler
+>>>>>>> master
+=======
+    var e    = $.Event('show.bs.modal', { relatedTarget: _relatedTarget })
 =======
 <<<<<<< HEAD
     var e    = $.Event('show.bs.modal', { relatedTarget: _relatedTarget })
@@ -1576,8 +1912,13 @@ if (typeof jQuery === 'undefined') {
         if (this.$element[0] !== e.target && !this.$element.has(e.target).length) {
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
+        if (this.$element[0] !== e.target && !this.$element.has(e.target).length) {
+=======
+>>>>>>> master
+=======
         if (this.$element[0] !== e.target && !this.$element.has(e.target).length) {
 =======
 >>>>>>> master
@@ -1586,6 +1927,10 @@ if (typeof jQuery === 'undefined') {
           !this.$element.has(e.target).length) {
 >>>>>>> master
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> tyler
+>>>>>>> master
 =======
 >>>>>>> tyler
 >>>>>>> master
@@ -1692,6 +2037,12 @@ if (typeof jQuery === 'undefined') {
     this.$element.css({
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+      paddingLeft:  !this.bodyIsOverflowing && modalIsOverflowing ? this.scrollbarWidth : '',
+=======
+<<<<<<< HEAD
+>>>>>>> master
 =======
       paddingLeft:  !this.bodyIsOverflowing && modalIsOverflowing ? this.scrollbarWidth : '',
 =======
@@ -1702,6 +2053,10 @@ if (typeof jQuery === 'undefined') {
       paddingLeft: !this.bodyIsOverflowing && modalIsOverflowing ? this.scrollbarWidth : '',
 >>>>>>> master
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> tyler
+>>>>>>> master
 =======
 >>>>>>> tyler
 >>>>>>> master
@@ -1733,8 +2088,13 @@ if (typeof jQuery === 'undefined') {
     if (this.bodyIsOverflowing) this.$body.css('padding-right', bodyPad + this.scrollbarWidth)
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
+    if (this.bodyIsOverflowing) this.$body.css('padding-right', bodyPad + this.scrollbarWidth)
+=======
+>>>>>>> master
+=======
     if (this.bodyIsOverflowing) this.$body.css('padding-right', bodyPad + this.scrollbarWidth)
 =======
 >>>>>>> master
@@ -1751,6 +2111,10 @@ if (typeof jQuery === 'undefined') {
     }
 >>>>>>> master
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> tyler
+>>>>>>> master
 =======
 >>>>>>> tyler
 >>>>>>> master
@@ -1763,6 +2127,9 @@ if (typeof jQuery === 'undefined') {
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> master
 =======
 >>>>>>> master
     $(this.fixedContent).each(function (index, element) {
@@ -1772,6 +2139,10 @@ if (typeof jQuery === 'undefined') {
     })
 >>>>>>> master
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> tyler
+>>>>>>> master
 =======
 >>>>>>> tyler
 >>>>>>> master
@@ -1793,6 +2164,7 @@ if (typeof jQuery === 'undefined') {
   function Plugin(option, _relatedTarget) {
     return this.each(function () {
 <<<<<<< HEAD
+<<<<<<< HEAD
       var $this   = $(this)
       var data    = $this.data('bs.modal')
 =======
@@ -1805,10 +2177,22 @@ if (typeof jQuery === 'undefined') {
       var $this   = $(this)
       var data    = $this.data('bs.modal')
 =======
+=======
+      var $this   = $(this)
+      var data    = $this.data('bs.modal')
+=======
+<<<<<<< HEAD
+      var $this   = $(this)
+      var data    = $this.data('bs.modal')
+=======
+>>>>>>> master
       var $this = $(this)
       var data = $this.data('bs.modal')
 >>>>>>> master
 >>>>>>> tyler
+<<<<<<< HEAD
+>>>>>>> master
+=======
 >>>>>>> master
       var options = $.extend({}, Modal.DEFAULTS, $this.data(), typeof option == 'object' && option)
 
@@ -1822,6 +2206,7 @@ if (typeof jQuery === 'undefined') {
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
   $.fn.modal             = Plugin
 =======
@@ -1833,6 +2218,16 @@ if (typeof jQuery === 'undefined') {
 >>>>>>> master
 <<<<<<< HEAD
 =======
+>>>>>>> tyler
+>>>>>>> master
+=======
+  $.fn.modal             = Plugin
+=======
+<<<<<<< HEAD
+  $.fn.modal             = Plugin
+=======
+  $.fn.modal = Plugin
+>>>>>>> master
 >>>>>>> tyler
 >>>>>>> master
   $.fn.modal.Constructor = Modal
@@ -1853,6 +2248,12 @@ if (typeof jQuery === 'undefined') {
   $(document).on('click.bs.modal.data-api', '[data-toggle="modal"]', function (e) {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+<<<<<<< HEAD
+>>>>>>> tyler
+>>>>>>> master
 =======
 =======
 <<<<<<< HEAD
@@ -1865,6 +2266,9 @@ if (typeof jQuery === 'undefined') {
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> master
 =======
 >>>>>>> master
 =======
@@ -1877,6 +2281,10 @@ if (typeof jQuery === 'undefined') {
     var option = $target.data('bs.modal') ? 'toggle' : $.extend({ remote: !/#/.test(href) && href }, $target.data(), $this.data())
 >>>>>>> master
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> tyler
+>>>>>>> master
 =======
 >>>>>>> tyler
 >>>>>>> master
@@ -1897,6 +2305,12 @@ if (typeof jQuery === 'undefined') {
 /* ========================================================================
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+<<<<<<< HEAD
+>>>>>>> tyler
+>>>>>>> master
 =======
 =======
 <<<<<<< HEAD
@@ -1917,6 +2331,9 @@ if (typeof jQuery === 'undefined') {
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> master
 =======
 >>>>>>> master
 =======
@@ -2064,6 +2481,10 @@ if (typeof jQuery === 'undefined') {
 
 >>>>>>> master
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> tyler
+>>>>>>> master
 =======
 >>>>>>> tyler
 >>>>>>> master
@@ -2084,6 +2505,7 @@ if (typeof jQuery === 'undefined') {
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
   Tooltip.VERSION  = '3.3.5'
 =======
@@ -2095,6 +2517,16 @@ if (typeof jQuery === 'undefined') {
 >>>>>>> master
 <<<<<<< HEAD
 =======
+>>>>>>> tyler
+>>>>>>> master
+=======
+  Tooltip.VERSION  = '3.3.5'
+=======
+<<<<<<< HEAD
+  Tooltip.VERSION  = '3.3.5'
+=======
+  Tooltip.VERSION  = '3.4.1'
+>>>>>>> master
 >>>>>>> tyler
 >>>>>>> master
 
@@ -2117,8 +2549,13 @@ if (typeof jQuery === 'undefined') {
     }
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
+    }
+=======
+>>>>>>> master
+=======
     }
 =======
 >>>>>>> master
@@ -2128,6 +2565,10 @@ if (typeof jQuery === 'undefined') {
     whiteList : DefaultWhitelist
 >>>>>>> master
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> tyler
+>>>>>>> master
 =======
 >>>>>>> tyler
 >>>>>>> master
@@ -2139,11 +2580,22 @@ if (typeof jQuery === 'undefined') {
     this.$element  = $(element)
     this.options   = this.getOptions(options)
 <<<<<<< HEAD
+<<<<<<< HEAD
     this.$viewport = this.options.viewport && $($.isFunction(this.options.viewport) ? this.options.viewport.call(this, this.$element) : (this.options.viewport.selector || this.options.viewport))
 =======
 <<<<<<< HEAD
     this.$viewport = this.options.viewport && $(document).find($.isFunction(this.options.viewport) ? this.options.viewport.call(this, this.$element) : (this.options.viewport.selector || this.options.viewport))
 >>>>>>> master
+=======
+<<<<<<< HEAD
+    this.$viewport = this.options.viewport && $($.isFunction(this.options.viewport) ? this.options.viewport.call(this, this.$element) : (this.options.viewport.selector || this.options.viewport))
+=======
+    this.$viewport = this.options.viewport && $(document).find($.isFunction(this.options.viewport) ? this.options.viewport.call(this, this.$element) : (this.options.viewport.selector || this.options.viewport))
+>>>>>>> master
+>>>>>>> tyler
+>>>>>>> master
+=======
+    this.$viewport = this.options.viewport && $($.isFunction(this.options.viewport) ? this.options.viewport.call(this, this.$element) : (this.options.viewport.selector || this.options.viewport))
 =======
 <<<<<<< HEAD
     this.$viewport = this.options.viewport && $($.isFunction(this.options.viewport) ? this.options.viewport.call(this, this.$element) : (this.options.viewport.selector || this.options.viewport))
@@ -2188,8 +2640,13 @@ if (typeof jQuery === 'undefined') {
     options = $.extend({}, this.getDefaults(), this.$element.data(), options)
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
+    options = $.extend({}, this.getDefaults(), this.$element.data(), options)
+=======
+>>>>>>> master
+=======
     options = $.extend({}, this.getDefaults(), this.$element.data(), options)
 =======
 >>>>>>> master
@@ -2204,6 +2661,10 @@ if (typeof jQuery === 'undefined') {
     options = $.extend({}, this.getDefaults(), dataAttributes, options)
 >>>>>>> master
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> tyler
+>>>>>>> master
 =======
 >>>>>>> tyler
 >>>>>>> master
@@ -2220,6 +2681,9 @@ if (typeof jQuery === 'undefined') {
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> master
 =======
 >>>>>>> master
     if (options.sanitize) {
@@ -2228,6 +2692,10 @@ if (typeof jQuery === 'undefined') {
 
 >>>>>>> master
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> tyler
+>>>>>>> master
 =======
 >>>>>>> tyler
 >>>>>>> master
@@ -2344,6 +2812,7 @@ if (typeof jQuery === 'undefined') {
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
       this.options.container ? $tip.appendTo(this.options.container) : $tip.insertAfter(this.$element)
 =======
@@ -2355,6 +2824,16 @@ if (typeof jQuery === 'undefined') {
 >>>>>>> master
 <<<<<<< HEAD
 =======
+>>>>>>> tyler
+>>>>>>> master
+=======
+      this.options.container ? $tip.appendTo(this.options.container) : $tip.insertAfter(this.$element)
+=======
+<<<<<<< HEAD
+      this.options.container ? $tip.appendTo(this.options.container) : $tip.insertAfter(this.$element)
+=======
+      this.options.container ? $tip.appendTo($(document).find(this.options.container)) : $tip.insertAfter(this.$element)
+>>>>>>> master
 >>>>>>> tyler
 >>>>>>> master
       this.$element.trigger('inserted.bs.' + this.type)
@@ -2462,8 +2941,13 @@ if (typeof jQuery === 'undefined') {
     $tip.find('.tooltip-inner')[this.options.html ? 'html' : 'text'](title)
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
+    $tip.find('.tooltip-inner')[this.options.html ? 'html' : 'text'](title)
+=======
+>>>>>>> master
+=======
     $tip.find('.tooltip-inner')[this.options.html ? 'html' : 'text'](title)
 =======
 >>>>>>> master
@@ -2479,6 +2963,10 @@ if (typeof jQuery === 'undefined') {
 
 >>>>>>> master
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> tyler
+>>>>>>> master
 =======
 >>>>>>> tyler
 >>>>>>> master
@@ -2498,11 +2986,17 @@ if (typeof jQuery === 'undefined') {
         .trigger('hidden.bs.' + that.type)
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> master
       that.$element
         .removeAttr('aria-describedby')
         .trigger('hidden.bs.' + that.type)
+=======
+<<<<<<< HEAD
+>>>>>>> master
 =======
 >>>>>>> master
       if (that.$element) { // TODO: Check whether guarding this code with this `if` is really necessary.
@@ -2512,6 +3006,10 @@ if (typeof jQuery === 'undefined') {
       }
 >>>>>>> master
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> tyler
+>>>>>>> master
 =======
 >>>>>>> tyler
 >>>>>>> master
@@ -2561,8 +3059,13 @@ if (typeof jQuery === 'undefined') {
     var elOffset  = isBody ? { top: 0, left: 0 } : $element.offset()
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
+    var elOffset  = isBody ? { top: 0, left: 0 } : $element.offset()
+=======
+>>>>>>> master
+=======
     var elOffset  = isBody ? { top: 0, left: 0 } : $element.offset()
 =======
 >>>>>>> master
@@ -2572,6 +3075,10 @@ if (typeof jQuery === 'undefined') {
     var elOffset  = isBody ? { top: 0, left: 0 } : (isSvg ? null : $element.offset())
 >>>>>>> master
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> tyler
+>>>>>>> master
 =======
 >>>>>>> tyler
 >>>>>>> master
@@ -2692,6 +3199,7 @@ if (typeof jQuery === 'undefined') {
       that.$viewport = null
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     })
   }
 
@@ -2699,6 +3207,8 @@ if (typeof jQuery === 'undefined') {
       that.$element = null
 =======
 >>>>>>> master
+=======
+>>>>>>> master
     })
   }
 
@@ -2707,8 +3217,11 @@ if (typeof jQuery === 'undefined') {
     })
   }
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> master
 =======
+=======
+>>>>>>> master
 
 =======
       that.$element = null
@@ -2720,6 +3233,9 @@ if (typeof jQuery === 'undefined') {
   }
 >>>>>>> master
 >>>>>>> tyler
+<<<<<<< HEAD
+>>>>>>> master
+=======
 >>>>>>> master
 
   // TOOLTIP PLUGIN DEFINITION
@@ -2756,6 +3272,12 @@ if (typeof jQuery === 'undefined') {
 /* ========================================================================
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+<<<<<<< HEAD
+>>>>>>> tyler
+>>>>>>> master
 =======
 =======
 <<<<<<< HEAD
@@ -2768,6 +3290,9 @@ if (typeof jQuery === 'undefined') {
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> master
 =======
 >>>>>>> master
 =======
@@ -2777,6 +3302,10 @@ if (typeof jQuery === 'undefined') {
  * Copyright 2011-2019 Twitter, Inc.
 >>>>>>> master
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> tyler
+>>>>>>> master
 =======
 >>>>>>> tyler
 >>>>>>> master
@@ -2798,6 +3327,12 @@ if (typeof jQuery === 'undefined') {
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+  Popover.VERSION  = '3.3.5'
+=======
+<<<<<<< HEAD
+>>>>>>> master
 =======
   Popover.VERSION  = '3.3.5'
 =======
@@ -2808,6 +3343,10 @@ if (typeof jQuery === 'undefined') {
   Popover.VERSION  = '3.4.1'
 >>>>>>> master
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> tyler
+>>>>>>> master
 =======
 >>>>>>> tyler
 >>>>>>> master
@@ -2838,6 +3377,12 @@ if (typeof jQuery === 'undefined') {
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+<<<<<<< HEAD
+>>>>>>> tyler
+>>>>>>> master
 =======
 =======
 <<<<<<< HEAD
@@ -2850,6 +3395,9 @@ if (typeof jQuery === 'undefined') {
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> master
 =======
 >>>>>>> master
 =======
@@ -2874,6 +3422,10 @@ if (typeof jQuery === 'undefined') {
     }
 >>>>>>> master
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> tyler
+>>>>>>> master
 =======
 >>>>>>> tyler
 >>>>>>> master
@@ -2897,11 +3449,17 @@ if (typeof jQuery === 'undefined') {
       || (typeof o.content == 'function' ?
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> master
             o.content.call($e[0]) :
             o.content)
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> master
+=======
 >>>>>>> master
             o.content.call($e[0]) :
             o.content)
@@ -2910,6 +3468,10 @@ if (typeof jQuery === 'undefined') {
         o.content)
 >>>>>>> master
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> tyler
+>>>>>>> master
 =======
 >>>>>>> tyler
 >>>>>>> master
@@ -2954,6 +3516,12 @@ if (typeof jQuery === 'undefined') {
 /* ========================================================================
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+<<<<<<< HEAD
+>>>>>>> tyler
+>>>>>>> master
 =======
 =======
 <<<<<<< HEAD
@@ -2966,6 +3534,9 @@ if (typeof jQuery === 'undefined') {
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> master
 =======
 >>>>>>> master
 =======
@@ -2975,6 +3546,10 @@ if (typeof jQuery === 'undefined') {
  * Copyright 2011-2019 Twitter, Inc.
 >>>>>>> master
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> tyler
+>>>>>>> master
 =======
 >>>>>>> tyler
 >>>>>>> master
@@ -3004,11 +3579,22 @@ if (typeof jQuery === 'undefined') {
   }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
   ScrollSpy.VERSION  = '3.3.5'
 =======
 <<<<<<< HEAD
   ScrollSpy.VERSION  = '3.4.1'
 >>>>>>> master
+=======
+<<<<<<< HEAD
+  ScrollSpy.VERSION  = '3.3.5'
+=======
+  ScrollSpy.VERSION  = '3.4.1'
+>>>>>>> master
+>>>>>>> tyler
+>>>>>>> master
+=======
+  ScrollSpy.VERSION  = '3.3.5'
 =======
 <<<<<<< HEAD
   ScrollSpy.VERSION  = '3.3.5'
@@ -3162,6 +3748,12 @@ if (typeof jQuery === 'undefined') {
 /* ========================================================================
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+<<<<<<< HEAD
+>>>>>>> tyler
+>>>>>>> master
 =======
 =======
 <<<<<<< HEAD
@@ -3174,6 +3766,9 @@ if (typeof jQuery === 'undefined') {
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> master
 =======
 >>>>>>> master
 =======
@@ -3183,6 +3778,10 @@ if (typeof jQuery === 'undefined') {
  * Copyright 2011-2019 Twitter, Inc.
 >>>>>>> master
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> tyler
+>>>>>>> master
 =======
 >>>>>>> tyler
 >>>>>>> master
@@ -3204,6 +3803,12 @@ if (typeof jQuery === 'undefined') {
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+  Tab.VERSION = '3.3.5'
+=======
+<<<<<<< HEAD
+>>>>>>> master
 =======
   Tab.VERSION = '3.3.5'
 =======
@@ -3214,6 +3819,10 @@ if (typeof jQuery === 'undefined') {
   Tab.VERSION = '3.4.1'
 >>>>>>> master
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> tyler
+>>>>>>> master
 =======
 >>>>>>> tyler
 >>>>>>> master
@@ -3247,6 +3856,12 @@ if (typeof jQuery === 'undefined') {
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+    var $target = $(selector)
+=======
+<<<<<<< HEAD
+>>>>>>> master
 =======
     var $target = $(selector)
 =======
@@ -3257,6 +3872,10 @@ if (typeof jQuery === 'undefined') {
     var $target = $(document).find(selector)
 >>>>>>> master
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> tyler
+>>>>>>> master
 =======
 >>>>>>> tyler
 >>>>>>> master
@@ -3286,6 +3905,12 @@ if (typeof jQuery === 'undefined') {
         .find('> .dropdown-menu > .active')
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+<<<<<<< HEAD
+>>>>>>> tyler
+>>>>>>> master
 =======
 =======
 <<<<<<< HEAD
@@ -3298,6 +3923,9 @@ if (typeof jQuery === 'undefined') {
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> master
 =======
 >>>>>>> master
 =======
@@ -3307,6 +3935,10 @@ if (typeof jQuery === 'undefined') {
         .attr('aria-expanded', false)
 >>>>>>> master
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> tyler
+>>>>>>> master
 =======
 >>>>>>> tyler
 >>>>>>> master
@@ -3316,6 +3948,12 @@ if (typeof jQuery === 'undefined') {
         .find('[data-toggle="tab"]')
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+          .attr('aria-expanded', true)
+=======
+<<<<<<< HEAD
+>>>>>>> master
 =======
           .attr('aria-expanded', true)
 =======
@@ -3326,6 +3964,10 @@ if (typeof jQuery === 'undefined') {
         .attr('aria-expanded', true)
 >>>>>>> master
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> tyler
+>>>>>>> master
 =======
 >>>>>>> tyler
 >>>>>>> master
@@ -3342,6 +3984,12 @@ if (typeof jQuery === 'undefined') {
           .closest('li.dropdown')
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+<<<<<<< HEAD
+>>>>>>> tyler
+>>>>>>> master
 =======
 =======
 <<<<<<< HEAD
@@ -3354,6 +4002,9 @@ if (typeof jQuery === 'undefined') {
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> master
 =======
 >>>>>>> master
 =======
@@ -3363,6 +4014,10 @@ if (typeof jQuery === 'undefined') {
           .attr('aria-expanded', true)
 >>>>>>> master
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> tyler
+>>>>>>> master
 =======
 >>>>>>> tyler
 >>>>>>> master
@@ -3426,6 +4081,12 @@ if (typeof jQuery === 'undefined') {
 /* ========================================================================
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+<<<<<<< HEAD
+>>>>>>> tyler
+>>>>>>> master
 =======
 =======
 <<<<<<< HEAD
@@ -3438,6 +4099,9 @@ if (typeof jQuery === 'undefined') {
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> master
 =======
 >>>>>>> master
 =======
@@ -3447,6 +4111,10 @@ if (typeof jQuery === 'undefined') {
  * Copyright 2011-2019 Twitter, Inc.
 >>>>>>> master
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> tyler
+>>>>>>> master
 =======
 >>>>>>> tyler
 >>>>>>> master
@@ -3467,8 +4135,13 @@ if (typeof jQuery === 'undefined') {
     this.$target = $(this.options.target)
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
+    this.$target = $(this.options.target)
+=======
+>>>>>>> master
+=======
     this.$target = $(this.options.target)
 =======
 >>>>>>> master
@@ -3477,6 +4150,10 @@ if (typeof jQuery === 'undefined') {
     this.$target = target
 >>>>>>> master
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> tyler
+>>>>>>> master
 =======
 >>>>>>> tyler
 >>>>>>> master
@@ -3492,11 +4169,22 @@ if (typeof jQuery === 'undefined') {
   }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
   Affix.VERSION  = '3.3.5'
 =======
 <<<<<<< HEAD
   Affix.VERSION  = '3.4.1'
 >>>>>>> master
+=======
+<<<<<<< HEAD
+  Affix.VERSION  = '3.3.5'
+=======
+  Affix.VERSION  = '3.4.1'
+>>>>>>> master
+>>>>>>> tyler
+>>>>>>> master
+=======
+  Affix.VERSION  = '3.3.5'
 =======
 <<<<<<< HEAD
   Affix.VERSION  = '3.3.5'

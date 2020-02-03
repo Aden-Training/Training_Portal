@@ -1,11 +1,17 @@
 /*!
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> master
  * Bootstrap v3.3.5 (http://getbootstrap.com)
  * Copyright 2011-2015 Twitter, Inc.
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> master
+=======
 >>>>>>> master
  * Bootstrap v3.3.5 (http://getbootstrap.com)
  * Copyright 2011-2015 Twitter, Inc.
@@ -14,6 +20,10 @@
  * Copyright 2011-2019 Twitter, Inc.
 >>>>>>> master
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> tyler
+>>>>>>> master
 =======
 >>>>>>> tyler
 >>>>>>> master
@@ -24,11 +34,17 @@ html {
   font-family: sans-serif;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> master
   -webkit-text-size-adjust: 100%;
       -ms-text-size-adjust: 100%;
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> master
+=======
 >>>>>>> master
   -webkit-text-size-adjust: 100%;
       -ms-text-size-adjust: 100%;
@@ -37,6 +53,10 @@ html {
   -webkit-text-size-adjust: 100%;
 >>>>>>> master
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> tyler
+>>>>>>> master
 =======
 >>>>>>> tyler
 >>>>>>> master
@@ -86,8 +106,13 @@ abbr[title] {
   border-bottom: 1px dotted;
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
+  border-bottom: 1px dotted;
+=======
+>>>>>>> master
+=======
   border-bottom: 1px dotted;
 =======
 >>>>>>> master
@@ -98,6 +123,10 @@ abbr[title] {
   text-decoration: underline dotted;
 >>>>>>> master
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> tyler
+>>>>>>> master
 =======
 >>>>>>> tyler
 >>>>>>> master
@@ -113,6 +142,12 @@ h1 {
 <<<<<<< HEAD
   margin: .67em 0;
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+<<<<<<< HEAD
+  margin: .67em 0;
+>>>>>>> master
 =======
 =======
 <<<<<<< HEAD
@@ -125,6 +160,10 @@ mark {
   background: #ff0;
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> tyler
+>>>>>>> master
 =======
 >>>>>>> tyler
 >>>>>>> master
@@ -134,14 +173,20 @@ mark {
 mark {
   background: #ff0;
 <<<<<<< HEAD
+<<<<<<< HEAD
   color: #000;
 >>>>>>> master
 =======
 <<<<<<< HEAD
 =======
+>>>>>>> master
+=======
   color: #000;
 >>>>>>> master
 >>>>>>> tyler
+<<<<<<< HEAD
+>>>>>>> master
+=======
 >>>>>>> master
 }
 small {
@@ -152,6 +197,12 @@ sup {
 <<<<<<< HEAD
   position: relative;
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+<<<<<<< HEAD
+  position: relative;
+>>>>>>> master
 =======
 =======
 <<<<<<< HEAD
@@ -168,6 +219,10 @@ sub {
   bottom: -.25em;
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> tyler
+>>>>>>> master
 =======
 >>>>>>> tyler
 >>>>>>> master
@@ -181,15 +236,21 @@ sup {
 }
 sub {
 <<<<<<< HEAD
+<<<<<<< HEAD
   bottom: -0.25em;
 >>>>>>> master
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> master
   bottom: -.25em;
 =======
   bottom: -0.25em;
 >>>>>>> master
 >>>>>>> tyler
+<<<<<<< HEAD
+>>>>>>> master
+=======
 >>>>>>> master
 }
 img {
@@ -204,6 +265,12 @@ figure {
 hr {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+<<<<<<< HEAD
+>>>>>>> tyler
+>>>>>>> master
 =======
 =======
 <<<<<<< HEAD
@@ -216,6 +283,9 @@ hr {
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> master
 =======
 >>>>>>> master
 =======
@@ -225,6 +295,10 @@ hr {
   height: 0;
 >>>>>>> master
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> tyler
+>>>>>>> master
 =======
 >>>>>>> tyler
 >>>>>>> master
@@ -246,12 +320,18 @@ select,
 textarea {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> master
   margin: 0;
   font: inherit;
   color: inherit;
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> master
+=======
 >>>>>>> master
   margin: 0;
   font: inherit;
@@ -262,6 +342,10 @@ textarea {
   margin: 0;
 >>>>>>> master
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> tyler
+>>>>>>> master
 =======
 >>>>>>> tyler
 >>>>>>> master
@@ -288,11 +372,17 @@ button::-moz-focus-inner,
 input::-moz-focus-inner {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> master
   padding: 0;
   border: 0;
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> master
+=======
 >>>>>>> master
   padding: 0;
   border: 0;
@@ -301,6 +391,10 @@ input::-moz-focus-inner {
   padding: 0;
 >>>>>>> master
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> tyler
+>>>>>>> master
 =======
 >>>>>>> tyler
 >>>>>>> master
@@ -313,11 +407,17 @@ input[type="radio"] {
   -webkit-box-sizing: border-box;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> master
      -moz-box-sizing: border-box;
           box-sizing: border-box;
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> master
+=======
 >>>>>>> master
      -moz-box-sizing: border-box;
           box-sizing: border-box;
@@ -326,6 +426,10 @@ input[type="radio"] {
   box-sizing: border-box;
 >>>>>>> master
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> tyler
+>>>>>>> master
 =======
 >>>>>>> tyler
 >>>>>>> master
@@ -338,6 +442,12 @@ input[type="number"]::-webkit-outer-spin-button {
 input[type="search"] {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+<<<<<<< HEAD
+>>>>>>> tyler
+>>>>>>> master
 =======
 =======
 <<<<<<< HEAD
@@ -350,6 +460,9 @@ input[type="search"] {
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> master
 =======
 >>>>>>> master
 =======
@@ -359,6 +472,10 @@ input[type="search"] {
   box-sizing: content-box;
 >>>>>>> master
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> tyler
+>>>>>>> master
 =======
 >>>>>>> tyler
 >>>>>>> master
@@ -372,6 +489,7 @@ fieldset {
   padding: .35em .625em .75em;
   margin: 0 2px;
 <<<<<<< HEAD
+<<<<<<< HEAD
   border: 1px solid #c0c0c0;
 }
 legend {
@@ -379,6 +497,8 @@ legend {
   border: 0;
 =======
 =======
+=======
+>>>>>>> master
 =======
 <<<<<<< HEAD
   padding: .35em .625em .75em;
@@ -404,9 +524,23 @@ legend {
   border: 0;
 <<<<<<< HEAD
 =======
+=======
+>>>>>>> tyler
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+legend {
+  border: 0;
+>>>>>>> master
+<<<<<<< HEAD
+=======
   padding: 0;
 >>>>>>> master
 >>>>>>> tyler
+<<<<<<< HEAD
+>>>>>>> master
+=======
 >>>>>>> master
 }
 textarea {
@@ -418,11 +552,17 @@ optgroup {
 table {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> master
   border-spacing: 0;
   border-collapse: collapse;
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> master
+=======
 >>>>>>> master
   border-spacing: 0;
   border-collapse: collapse;
@@ -431,6 +571,10 @@ table {
   border-spacing: 0;
 >>>>>>> master
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> tyler
+>>>>>>> master
 =======
 >>>>>>> tyler
 >>>>>>> master
@@ -449,11 +593,22 @@ th {
     background: transparent !important;
     -webkit-box-shadow: none !important;
 <<<<<<< HEAD
+<<<<<<< HEAD
             box-shadow: none !important;
 =======
 <<<<<<< HEAD
     box-shadow: none !important;
 >>>>>>> master
+=======
+<<<<<<< HEAD
+            box-shadow: none !important;
+=======
+    box-shadow: none !important;
+>>>>>>> master
+>>>>>>> tyler
+>>>>>>> master
+=======
+            box-shadow: none !important;
 =======
 <<<<<<< HEAD
             box-shadow: none !important;
@@ -484,13 +639,19 @@ th {
 
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> master
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> master
 
 =======
 >>>>>>> master
 >>>>>>> tyler
+<<<<<<< HEAD
+>>>>>>> master
+=======
 >>>>>>> master
     page-break-inside: avoid;
   }
@@ -539,6 +700,12 @@ th {
 @font-face {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+<<<<<<< HEAD
+>>>>>>> tyler
+>>>>>>> master
 =======
 =======
 <<<<<<< HEAD
@@ -551,6 +718,9 @@ th {
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> master
 =======
 >>>>>>> master
 =======
@@ -559,6 +729,10 @@ th {
   src: url("../fonts/glyphicons-halflings-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/glyphicons-halflings-regular.woff2") format("woff2"), url("../fonts/glyphicons-halflings-regular.woff") format("woff"), url("../fonts/glyphicons-halflings-regular.ttf") format("truetype"), url("../fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular") format("svg");
 >>>>>>> master
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> tyler
+>>>>>>> master
 =======
 >>>>>>> tyler
 >>>>>>> master
@@ -569,6 +743,12 @@ th {
   display: inline-block;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+<<<<<<< HEAD
+>>>>>>> tyler
+>>>>>>> master
 =======
 =======
 <<<<<<< HEAD
@@ -582,6 +762,9 @@ th {
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> master
 =======
 >>>>>>> master
 =======
@@ -591,6 +774,10 @@ th {
   line-height: 1;
 >>>>>>> master
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> tyler
+>>>>>>> master
 =======
 >>>>>>> tyler
 >>>>>>> master
@@ -600,6 +787,12 @@ th {
 .glyphicon-asterisk:before {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+<<<<<<< HEAD
+>>>>>>> tyler
+>>>>>>> master
 =======
 =======
 <<<<<<< HEAD
@@ -612,6 +805,9 @@ th {
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> master
 =======
 >>>>>>> master
 =======
@@ -621,6 +817,10 @@ th {
   content: "\002b";
 >>>>>>> master
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> tyler
+>>>>>>> master
 =======
 >>>>>>> tyler
 >>>>>>> master
@@ -1410,11 +1610,17 @@ th {
   -webkit-box-sizing: border-box;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> master
      -moz-box-sizing: border-box;
           box-sizing: border-box;
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> master
+=======
 >>>>>>> master
      -moz-box-sizing: border-box;
           box-sizing: border-box;
@@ -1423,6 +1629,10 @@ th {
   box-sizing: border-box;
 >>>>>>> master
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> tyler
+>>>>>>> master
 =======
 >>>>>>> tyler
 >>>>>>> master
@@ -1432,6 +1642,12 @@ th {
   -webkit-box-sizing: border-box;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+<<<<<<< HEAD
+>>>>>>> tyler
+>>>>>>> master
 =======
 =======
 <<<<<<< HEAD
@@ -1446,6 +1662,9 @@ html {
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> master
 =======
 >>>>>>> master
 =======
@@ -1456,6 +1675,10 @@ html {
   font-size: 10px;
 >>>>>>> master
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> tyler
+>>>>>>> master
 =======
 >>>>>>> tyler
 >>>>>>> master
@@ -1466,11 +1689,22 @@ body {
   font-size: 14px;
   line-height: 1.42857143;
 <<<<<<< HEAD
+<<<<<<< HEAD
   color: #333;
 =======
 <<<<<<< HEAD
   color: #333333;
 >>>>>>> master
+=======
+<<<<<<< HEAD
+  color: #333;
+=======
+  color: #333333;
+>>>>>>> master
+>>>>>>> tyler
+>>>>>>> master
+=======
+  color: #333;
 =======
 <<<<<<< HEAD
   color: #333;
@@ -1500,10 +1734,20 @@ a:focus {
 }
 a:focus {
 <<<<<<< HEAD
+<<<<<<< HEAD
   outline: thin dotted;
 =======
 <<<<<<< HEAD
 >>>>>>> master
+=======
+<<<<<<< HEAD
+  outline: thin dotted;
+=======
+>>>>>>> master
+>>>>>>> tyler
+>>>>>>> master
+=======
+  outline: thin dotted;
 =======
 <<<<<<< HEAD
   outline: thin dotted;
@@ -1535,6 +1779,8 @@ img {
 .img-thumbnail {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
 =======
   display: inline-block;
   max-width: 100%;
@@ -1546,9 +1792,20 @@ img {
   max-width: 100%;
   height: auto;
 =======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> master
+  display: inline-block;
+  max-width: 100%;
+  height: auto;
+=======
 >>>>>>> master
 <<<<<<< HEAD
 =======
+>>>>>>> tyler
+>>>>>>> master
+=======
+>>>>>>> master
 >>>>>>> tyler
 >>>>>>> master
   padding: 4px;
@@ -1562,11 +1819,17 @@ img {
           transition: all .2s ease-in-out;
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> master
   -webkit-transition: all .2s ease-in-out;
        -o-transition: all .2s ease-in-out;
           transition: all .2s ease-in-out;
+=======
+<<<<<<< HEAD
+>>>>>>> master
 =======
 >>>>>>> master
   -webkit-transition: all 0.2s ease-in-out;
@@ -1577,6 +1840,10 @@ img {
   height: auto;
 >>>>>>> master
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> tyler
+>>>>>>> master
 =======
 >>>>>>> tyler
 >>>>>>> master
@@ -1589,11 +1856,22 @@ hr {
   margin-bottom: 20px;
   border: 0;
 <<<<<<< HEAD
+<<<<<<< HEAD
   border-top: 1px solid #eee;
 =======
 <<<<<<< HEAD
   border-top: 1px solid #eeeeee;
 >>>>>>> master
+=======
+<<<<<<< HEAD
+  border-top: 1px solid #eee;
+=======
+  border-top: 1px solid #eeeeee;
+>>>>>>> master
+>>>>>>> tyler
+>>>>>>> master
+=======
+  border-top: 1px solid #eee;
 =======
 <<<<<<< HEAD
   border-top: 1px solid #eee;
@@ -1668,12 +1946,18 @@ h6 .small,
 .h6 .small {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> master
   font-weight: normal;
   line-height: 1;
   color: #777;
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> master
+=======
 >>>>>>> master
   font-weight: normal;
   line-height: 1;
@@ -1684,6 +1968,10 @@ h6 .small,
   color: #777777;
 >>>>>>> master
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> tyler
+>>>>>>> master
 =======
 >>>>>>> tyler
 >>>>>>> master
@@ -1779,11 +2067,22 @@ small,
 mark,
 .mark {
 <<<<<<< HEAD
+<<<<<<< HEAD
   padding: .2em;
 =======
 <<<<<<< HEAD
   padding: 0.2em;
 >>>>>>> master
+=======
+<<<<<<< HEAD
+  padding: .2em;
+=======
+  padding: 0.2em;
+>>>>>>> master
+>>>>>>> tyler
+>>>>>>> master
+=======
+  padding: .2em;
 =======
 <<<<<<< HEAD
   padding: .2em;
@@ -1821,6 +2120,7 @@ mark,
 .text-muted {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
   color: #777;
 =======
@@ -1832,6 +2132,16 @@ mark,
 >>>>>>> master
 <<<<<<< HEAD
 =======
+>>>>>>> tyler
+>>>>>>> master
+=======
+  color: #777;
+=======
+<<<<<<< HEAD
+  color: #777;
+=======
+  color: #777777;
+>>>>>>> master
 >>>>>>> tyler
 >>>>>>> master
 }
@@ -1910,11 +2220,22 @@ a.bg-danger:focus {
   padding-bottom: 9px;
   margin: 40px 0 20px;
 <<<<<<< HEAD
+<<<<<<< HEAD
   border-bottom: 1px solid #eee;
 =======
 <<<<<<< HEAD
   border-bottom: 1px solid #eeeeee;
 >>>>>>> master
+=======
+<<<<<<< HEAD
+  border-bottom: 1px solid #eee;
+=======
+  border-bottom: 1px solid #eeeeee;
+>>>>>>> master
+>>>>>>> tyler
+>>>>>>> master
+=======
+  border-bottom: 1px solid #eee;
 =======
 <<<<<<< HEAD
   border-bottom: 1px solid #eee;
@@ -1943,11 +2264,17 @@ ol ol {
   padding-left: 0;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> master
   margin-left: -5px;
   list-style: none;
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> master
+=======
 >>>>>>> master
   margin-left: -5px;
   list-style: none;
@@ -1956,6 +2283,10 @@ ol ol {
   margin-left: -5px;
 >>>>>>> master
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> tyler
+>>>>>>> master
 =======
 >>>>>>> tyler
 >>>>>>> master
@@ -1976,6 +2307,12 @@ dd {
 dt {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+  font-weight: bold;
+=======
+<<<<<<< HEAD
+>>>>>>> master
 =======
   font-weight: bold;
 =======
@@ -1986,6 +2323,10 @@ dt {
   font-weight: 700;
 >>>>>>> master
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> tyler
+>>>>>>> master
 =======
 >>>>>>> tyler
 >>>>>>> master
@@ -1999,17 +2340,25 @@ dd {
     width: 160px;
 <<<<<<< HEAD
     overflow: hidden;
+<<<<<<< HEAD
     clear: left;
     text-align: right;
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> master
     clear: left;
     text-align: right;
+=======
+<<<<<<< HEAD
     overflow: hidden;
+<<<<<<< HEAD
 >>>>>>> master
 =======
 <<<<<<< HEAD
     overflow: hidden;
+=======
+>>>>>>> master
     clear: left;
     text-align: right;
 =======
@@ -2018,6 +2367,9 @@ dd {
     overflow: hidden;
 >>>>>>> master
 >>>>>>> tyler
+<<<<<<< HEAD
+>>>>>>> master
+=======
 >>>>>>> master
     text-overflow: ellipsis;
     white-space: nowrap;
@@ -2030,10 +2382,20 @@ abbr[title],
 abbr[data-original-title] {
   cursor: help;
 <<<<<<< HEAD
+<<<<<<< HEAD
   border-bottom: 1px dotted #777;
 =======
 <<<<<<< HEAD
 >>>>>>> master
+=======
+<<<<<<< HEAD
+  border-bottom: 1px dotted #777;
+=======
+>>>>>>> master
+>>>>>>> tyler
+>>>>>>> master
+=======
+  border-bottom: 1px dotted #777;
 =======
 <<<<<<< HEAD
   border-bottom: 1px dotted #777;
@@ -2051,11 +2413,22 @@ blockquote {
   margin: 0 0 20px;
   font-size: 17.5px;
 <<<<<<< HEAD
+<<<<<<< HEAD
   border-left: 5px solid #eee;
 =======
 <<<<<<< HEAD
   border-left: 5px solid #eeeeee;
 >>>>>>> master
+=======
+<<<<<<< HEAD
+  border-left: 5px solid #eee;
+=======
+  border-left: 5px solid #eeeeee;
+>>>>>>> master
+>>>>>>> tyler
+>>>>>>> master
+=======
+  border-left: 5px solid #eee;
 =======
 <<<<<<< HEAD
   border-left: 5px solid #eee;
@@ -2078,6 +2451,12 @@ blockquote .small {
   line-height: 1.42857143;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+  color: #777;
+=======
+<<<<<<< HEAD
+>>>>>>> master
 =======
   color: #777;
 =======
@@ -2088,6 +2467,10 @@ blockquote .small {
   color: #777777;
 >>>>>>> master
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> tyler
+>>>>>>> master
 =======
 >>>>>>> tyler
 >>>>>>> master
@@ -2096,11 +2479,22 @@ blockquote footer:before,
 blockquote small:before,
 blockquote .small:before {
 <<<<<<< HEAD
+<<<<<<< HEAD
   content: '\2014 \00A0';
 =======
 <<<<<<< HEAD
   content: "\2014 \00A0";
 >>>>>>> master
+=======
+<<<<<<< HEAD
+  content: '\2014 \00A0';
+=======
+  content: "\2014 \00A0";
+>>>>>>> master
+>>>>>>> tyler
+>>>>>>> master
+=======
+  content: '\2014 \00A0';
 =======
 <<<<<<< HEAD
   content: '\2014 \00A0';
@@ -2117,6 +2511,7 @@ blockquote.pull-right {
   text-align: right;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
   border-right: 5px solid #eee;
 =======
@@ -2130,6 +2525,16 @@ blockquote.pull-right {
 =======
 >>>>>>> tyler
 >>>>>>> master
+=======
+  border-right: 5px solid #eee;
+=======
+<<<<<<< HEAD
+  border-right: 5px solid #eee;
+=======
+  border-right: 5px solid #eeeeee;
+>>>>>>> master
+>>>>>>> tyler
+>>>>>>> master
   border-left: 0;
 }
 .blockquote-reverse footer:before,
@@ -2139,11 +2544,22 @@ blockquote.pull-right small:before,
 .blockquote-reverse .small:before,
 blockquote.pull-right .small:before {
 <<<<<<< HEAD
+<<<<<<< HEAD
   content: '';
 =======
 <<<<<<< HEAD
   content: "";
 >>>>>>> master
+=======
+<<<<<<< HEAD
+  content: '';
+=======
+  content: "";
+>>>>>>> master
+>>>>>>> tyler
+>>>>>>> master
+=======
+  content: '';
 =======
 <<<<<<< HEAD
   content: '';
@@ -2161,6 +2577,12 @@ blockquote.pull-right small:after,
 blockquote.pull-right .small:after {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+  content: '\00A0 \2014';
+=======
+<<<<<<< HEAD
+>>>>>>> master
 =======
   content: '\00A0 \2014';
 =======
@@ -2171,6 +2593,10 @@ blockquote.pull-right .small:after {
   content: "\00A0 \2014";
 >>>>>>> master
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> tyler
+>>>>>>> master
 =======
 >>>>>>> tyler
 >>>>>>> master
@@ -2201,11 +2627,17 @@ kbd {
   border-radius: 3px;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> master
   -webkit-box-shadow: inset 0 -1px 0 rgba(0, 0, 0, .25);
           box-shadow: inset 0 -1px 0 rgba(0, 0, 0, .25);
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> master
+=======
 >>>>>>> master
   -webkit-box-shadow: inset 0 -1px 0 rgba(0, 0, 0, .25);
           box-shadow: inset 0 -1px 0 rgba(0, 0, 0, .25);
@@ -2214,6 +2646,10 @@ kbd {
   box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.25);
 >>>>>>> master
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> tyler
+>>>>>>> master
 =======
 >>>>>>> tyler
 >>>>>>> master
@@ -2223,12 +2659,18 @@ kbd kbd {
   font-size: 100%;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> master
   font-weight: bold;
   -webkit-box-shadow: none;
           box-shadow: none;
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> master
+=======
 >>>>>>> master
   font-weight: bold;
   -webkit-box-shadow: none;
@@ -2239,6 +2681,10 @@ kbd kbd {
   box-shadow: none;
 >>>>>>> master
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> tyler
+>>>>>>> master
 =======
 >>>>>>> tyler
 >>>>>>> master
@@ -2251,6 +2697,12 @@ pre {
   line-height: 1.42857143;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+  color: #333;
+=======
+<<<<<<< HEAD
+>>>>>>> master
 =======
   color: #333;
 =======
@@ -2261,6 +2713,10 @@ pre {
   color: #333333;
 >>>>>>> master
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> tyler
+>>>>>>> master
 =======
 >>>>>>> tyler
 >>>>>>> master
@@ -2317,8 +2773,13 @@ pre code {
 .col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
+.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
+=======
+>>>>>>> master
+=======
 .col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
 =======
 >>>>>>> master
@@ -2380,6 +2841,10 @@ pre code {
 .col-lg-12 {
 >>>>>>> master
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> tyler
+>>>>>>> master
 =======
 >>>>>>> tyler
 >>>>>>> master
@@ -2392,8 +2857,13 @@ pre code {
 .col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12 {
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
+.col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12 {
+=======
+>>>>>>> master
+=======
 .col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12 {
 =======
 >>>>>>> master
@@ -2411,6 +2881,10 @@ pre code {
 .col-xs-12 {
 >>>>>>> master
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> tyler
+>>>>>>> master
 =======
 >>>>>>> tyler
 >>>>>>> master
@@ -2569,6 +3043,12 @@ pre code {
 .col-xs-offset-0 {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+<<<<<<< HEAD
+>>>>>>> tyler
+>>>>>>> master
 =======
 =======
 <<<<<<< HEAD
@@ -2581,6 +3061,9 @@ pre code {
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> master
 =======
 >>>>>>> master
 =======
@@ -2601,6 +3084,10 @@ pre code {
   .col-sm-12 {
 >>>>>>> master
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> tyler
+>>>>>>> master
 =======
 >>>>>>> tyler
 >>>>>>> master
@@ -2759,6 +3246,12 @@ pre code {
   .col-sm-offset-0 {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+<<<<<<< HEAD
+>>>>>>> tyler
+>>>>>>> master
 =======
 =======
 <<<<<<< HEAD
@@ -2772,6 +3265,9 @@ pre code {
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> master
 =======
 >>>>>>> master
 =======
@@ -2793,6 +3289,10 @@ pre code {
   .col-md-12 {
 >>>>>>> master
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> tyler
+>>>>>>> master
 =======
 >>>>>>> tyler
 >>>>>>> master
@@ -2951,6 +3451,12 @@ pre code {
   .col-md-offset-0 {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+<<<<<<< HEAD
+>>>>>>> tyler
+>>>>>>> master
 =======
 =======
 <<<<<<< HEAD
@@ -2964,6 +3470,9 @@ pre code {
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> master
 =======
 >>>>>>> master
 =======
@@ -2985,6 +3494,10 @@ pre code {
   .col-lg-12 {
 >>>>>>> master
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> tyler
+>>>>>>> master
 =======
 >>>>>>> tyler
 >>>>>>> master
@@ -3142,11 +3655,22 @@ pre code {
   }
   .col-lg-offset-0 {
 <<<<<<< HEAD
+<<<<<<< HEAD
     margin-left: 0;
 =======
 <<<<<<< HEAD
     margin-left: 0%;
 >>>>>>> master
+=======
+<<<<<<< HEAD
+    margin-left: 0;
+=======
+    margin-left: 0%;
+>>>>>>> master
+>>>>>>> tyler
+>>>>>>> master
+=======
+    margin-left: 0;
 =======
 <<<<<<< HEAD
     margin-left: 0;
@@ -3162,6 +3686,12 @@ table {
 }
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+<<<<<<< HEAD
+>>>>>>> tyler
+>>>>>>> master
 =======
 =======
 <<<<<<< HEAD
@@ -3174,6 +3704,9 @@ caption {
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> master
 =======
 >>>>>>> master
 =======
@@ -3194,6 +3727,10 @@ caption {
   color: #777777;
 >>>>>>> master
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> tyler
+>>>>>>> master
 =======
 >>>>>>> tyler
 >>>>>>> master
@@ -3267,6 +3804,12 @@ th {
 }
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+<<<<<<< HEAD
+>>>>>>> tyler
+>>>>>>> master
 =======
 =======
 <<<<<<< HEAD
@@ -3285,9 +3828,15 @@ table th[class*="col-"] {
 }
 <<<<<<< HEAD
 =======
+<<<<<<< HEAD
 >>>>>>> master
 =======
 <<<<<<< HEAD
+=======
+=======
+>>>>>>> master
+>>>>>>> tyler
+>>>>>>> master
 =======
 =======
 >>>>>>> master
@@ -3400,11 +3949,22 @@ table th[class*="col-"] {
 }
 .table-responsive {
 <<<<<<< HEAD
+<<<<<<< HEAD
   min-height: .01%;
 =======
 <<<<<<< HEAD
   min-height: 0.01%;
 >>>>>>> master
+=======
+<<<<<<< HEAD
+  min-height: .01%;
+=======
+  min-height: 0.01%;
+>>>>>>> master
+>>>>>>> tyler
+>>>>>>> master
+=======
+  min-height: .01%;
 =======
 <<<<<<< HEAD
   min-height: .01%;
@@ -3474,11 +4034,22 @@ legend {
   font-size: 21px;
   line-height: inherit;
 <<<<<<< HEAD
+<<<<<<< HEAD
   color: #333;
 =======
 <<<<<<< HEAD
   color: #333333;
 >>>>>>> master
+=======
+<<<<<<< HEAD
+  color: #333;
+=======
+  color: #333333;
+>>>>>>> master
+>>>>>>> tyler
+>>>>>>> master
+=======
+  color: #333;
 =======
 <<<<<<< HEAD
   color: #333;
@@ -3496,12 +4067,28 @@ label {
   margin-bottom: 5px;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 <<<<<<< HEAD
 >>>>>>> tyler
 >>>>>>> master
   font-weight: bold;
+=======
+=======
+<<<<<<< HEAD
+>>>>>>> tyler
+  font-weight: bold;
+}
+input[type="search"] {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+<<<<<<< HEAD
+=======
+=======
+  font-weight: 700;
+>>>>>>> master
 }
 input[type="search"] {
   -webkit-box-sizing: border-box;
@@ -3524,6 +4111,10 @@ input[type="search"] {
   appearance: none;
 >>>>>>> master
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> tyler
+>>>>>>> master
 =======
 >>>>>>> tyler
 >>>>>>> master
@@ -3539,6 +4130,9 @@ input[type="checkbox"] {
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> master
 =======
 >>>>>>> master
 input[type="radio"][disabled],
@@ -3551,6 +4145,10 @@ fieldset[disabled] input[type="checkbox"] {
 }
 >>>>>>> master
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> tyler
+>>>>>>> master
 =======
 >>>>>>> tyler
 >>>>>>> master
@@ -3569,10 +4167,20 @@ input[type="file"]:focus,
 input[type="radio"]:focus,
 input[type="checkbox"]:focus {
 <<<<<<< HEAD
+<<<<<<< HEAD
   outline: thin dotted;
 =======
 <<<<<<< HEAD
 >>>>>>> master
+=======
+<<<<<<< HEAD
+  outline: thin dotted;
+=======
+>>>>>>> master
+>>>>>>> tyler
+>>>>>>> master
+=======
+  outline: thin dotted;
 =======
 <<<<<<< HEAD
   outline: thin dotted;
@@ -3589,11 +4197,22 @@ output {
   font-size: 14px;
   line-height: 1.42857143;
 <<<<<<< HEAD
+<<<<<<< HEAD
   color: #555;
 =======
 <<<<<<< HEAD
   color: #555555;
 >>>>>>> master
+=======
+<<<<<<< HEAD
+  color: #555;
+=======
+  color: #555555;
+>>>>>>> master
+>>>>>>> tyler
+>>>>>>> master
+=======
+  color: #555;
 =======
 <<<<<<< HEAD
   color: #555;
@@ -3612,6 +4231,12 @@ output {
   line-height: 1.42857143;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+  color: #555;
+=======
+<<<<<<< HEAD
+>>>>>>> master
 =======
   color: #555;
 =======
@@ -3622,6 +4247,10 @@ output {
   color: #555555;
 >>>>>>> master
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> tyler
+>>>>>>> master
 =======
 >>>>>>> tyler
 >>>>>>> master
@@ -3631,6 +4260,12 @@ output {
   border-radius: 4px;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+<<<<<<< HEAD
+>>>>>>> tyler
+>>>>>>> master
 =======
 =======
 <<<<<<< HEAD
@@ -3644,6 +4279,9 @@ output {
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> master
 =======
 >>>>>>> master
 =======
@@ -3657,6 +4295,10 @@ output {
   transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
 >>>>>>> master
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> tyler
+>>>>>>> master
 =======
 >>>>>>> tyler
 >>>>>>> master
@@ -3666,11 +4308,17 @@ output {
   outline: 0;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> master
   -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, .6);
           box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, .6);
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> master
+=======
 >>>>>>> master
   -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, .6);
           box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, .6);
@@ -3679,6 +4327,10 @@ output {
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(102, 175, 233, 0.6);
 >>>>>>> master
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> tyler
+>>>>>>> master
 =======
 >>>>>>> tyler
 >>>>>>> master
@@ -3695,6 +4347,12 @@ output {
 }
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+<<<<<<< HEAD
+>>>>>>> tyler
+>>>>>>> master
 =======
 =======
 <<<<<<< HEAD
@@ -3707,6 +4365,9 @@ fieldset[disabled] .form-control {
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> master
 =======
 >>>>>>> master
 =======
@@ -3720,6 +4381,10 @@ fieldset[disabled] .form-control {
   background-color: #eeeeee;
 >>>>>>> master
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> tyler
+>>>>>>> master
 =======
 >>>>>>> tyler
 >>>>>>> master
@@ -3734,12 +4399,18 @@ textarea.form-control {
 }
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> master
 input[type="search"] {
   -webkit-appearance: none;
 }
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> master
+=======
 >>>>>>> master
 input[type="search"] {
   -webkit-appearance: none;
@@ -3747,6 +4418,10 @@ input[type="search"] {
 =======
 >>>>>>> master
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> tyler
+>>>>>>> master
 =======
 >>>>>>> tyler
 >>>>>>> master
@@ -3793,6 +4468,9 @@ input[type="search"] {
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> master
 =======
 >>>>>>> master
 .radio.disabled label,
@@ -3803,6 +4481,10 @@ fieldset[disabled] .checkbox label {
 }
 >>>>>>> master
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> tyler
+>>>>>>> master
 =======
 >>>>>>> tyler
 >>>>>>> master
@@ -3813,6 +4495,12 @@ fieldset[disabled] .checkbox label {
   margin-bottom: 0;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+  font-weight: normal;
+=======
+<<<<<<< HEAD
+>>>>>>> master
 =======
   font-weight: normal;
 =======
@@ -3823,6 +4511,10 @@ fieldset[disabled] .checkbox label {
   font-weight: 400;
 >>>>>>> master
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> tyler
+>>>>>>> master
 =======
 >>>>>>> tyler
 >>>>>>> master
@@ -3848,6 +4540,12 @@ fieldset[disabled] .checkbox label {
   margin-bottom: 0;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+<<<<<<< HEAD
+>>>>>>> tyler
+>>>>>>> master
 =======
 =======
 <<<<<<< HEAD
@@ -3873,6 +4571,9 @@ fieldset[disabled] input[type="checkbox"] {
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> master
 =======
 >>>>>>> master
 =======
@@ -3882,6 +4583,10 @@ fieldset[disabled] input[type="checkbox"] {
 }
 >>>>>>> master
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> tyler
+>>>>>>> master
 =======
 >>>>>>> tyler
 >>>>>>> master
@@ -3893,6 +4598,12 @@ fieldset[disabled] .checkbox-inline {
 }
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+<<<<<<< HEAD
+>>>>>>> tyler
+>>>>>>> master
 =======
 =======
 <<<<<<< HEAD
@@ -3906,6 +4617,9 @@ fieldset[disabled] .checkbox label {
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> master
 =======
 >>>>>>> master
 =======
@@ -3915,6 +4629,10 @@ fieldset[disabled] .checkbox label {
   margin-left: 10px;
 >>>>>>> master
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> tyler
+>>>>>>> master
 =======
 >>>>>>> tyler
 >>>>>>> master
@@ -4052,6 +4770,12 @@ select[multiple].input-lg {
   border-color: #3c763d;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+<<<<<<< HEAD
+>>>>>>> tyler
+>>>>>>> master
 =======
 =======
 <<<<<<< HEAD
@@ -4067,6 +4791,9 @@ select[multiple].input-lg {
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> master
 =======
 >>>>>>> master
 =======
@@ -4079,6 +4806,10 @@ select[multiple].input-lg {
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #67b168;
 >>>>>>> master
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> tyler
+>>>>>>> master
 =======
 >>>>>>> tyler
 >>>>>>> master
@@ -4107,6 +4838,12 @@ select[multiple].input-lg {
   border-color: #8a6d3b;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+<<<<<<< HEAD
+>>>>>>> tyler
+>>>>>>> master
 =======
 =======
 <<<<<<< HEAD
@@ -4122,6 +4859,9 @@ select[multiple].input-lg {
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> master
 =======
 >>>>>>> master
 =======
@@ -4134,6 +4874,10 @@ select[multiple].input-lg {
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #c0a16b;
 >>>>>>> master
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> tyler
+>>>>>>> master
 =======
 >>>>>>> tyler
 >>>>>>> master
@@ -4162,6 +4906,12 @@ select[multiple].input-lg {
   border-color: #a94442;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+<<<<<<< HEAD
+>>>>>>> tyler
+>>>>>>> master
 =======
 =======
 <<<<<<< HEAD
@@ -4177,6 +4927,9 @@ select[multiple].input-lg {
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> master
 =======
 >>>>>>> master
 =======
@@ -4189,6 +4942,10 @@ select[multiple].input-lg {
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #ce8483;
 >>>>>>> master
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> tyler
+>>>>>>> master
 =======
 >>>>>>> tyler
 >>>>>>> master
@@ -4292,11 +5049,22 @@ select[multiple].input-lg {
 @media (min-width: 768px) {
   .form-horizontal .form-group-lg .control-label {
 <<<<<<< HEAD
+<<<<<<< HEAD
     padding-top: 14.333333px;
 =======
 <<<<<<< HEAD
     padding-top: 11px;
 >>>>>>> master
+=======
+<<<<<<< HEAD
+    padding-top: 14.333333px;
+=======
+    padding-top: 11px;
+>>>>>>> master
+>>>>>>> tyler
+>>>>>>> master
+=======
+    padding-top: 14.333333px;
 =======
 <<<<<<< HEAD
     padding-top: 14.333333px;
@@ -4318,6 +5086,12 @@ select[multiple].input-lg {
   display: inline-block;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+<<<<<<< HEAD
+>>>>>>> tyler
+>>>>>>> master
 =======
 =======
 <<<<<<< HEAD
@@ -4331,6 +5105,9 @@ select[multiple].input-lg {
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> master
 =======
 >>>>>>> master
 =======
@@ -4338,6 +5115,10 @@ select[multiple].input-lg {
   font-weight: normal;
 >>>>>>> master
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> tyler
+>>>>>>> master
 =======
 >>>>>>> tyler
 >>>>>>> master
@@ -4347,6 +5128,12 @@ select[multiple].input-lg {
   -ms-touch-action: manipulation;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+<<<<<<< HEAD
+>>>>>>> tyler
+>>>>>>> master
 =======
 =======
 <<<<<<< HEAD
@@ -4364,6 +5151,9 @@ select[multiple].input-lg {
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> master
 =======
 >>>>>>> master
 =======
@@ -4381,6 +5171,10 @@ select[multiple].input-lg {
   user-select: none;
 >>>>>>> master
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> tyler
+>>>>>>> master
 =======
 >>>>>>> tyler
 >>>>>>> master
@@ -4392,10 +5186,20 @@ select[multiple].input-lg {
 .btn:active.focus,
 .btn.active.focus {
 <<<<<<< HEAD
+<<<<<<< HEAD
   outline: thin dotted;
 =======
 <<<<<<< HEAD
 >>>>>>> master
+=======
+<<<<<<< HEAD
+  outline: thin dotted;
+=======
+>>>>>>> master
+>>>>>>> tyler
+>>>>>>> master
+=======
+  outline: thin dotted;
 =======
 <<<<<<< HEAD
   outline: thin dotted;
@@ -4418,11 +5222,17 @@ select[multiple].input-lg {
   outline: 0;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> master
   -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
           box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> master
+=======
 >>>>>>> master
   -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
           box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
@@ -4431,6 +5241,10 @@ select[multiple].input-lg {
   box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
 >>>>>>> master
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> tyler
+>>>>>>> master
 =======
 >>>>>>> tyler
 >>>>>>> master
@@ -4442,12 +5256,18 @@ fieldset[disabled] .btn {
   filter: alpha(opacity=65);
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> master
   -webkit-box-shadow: none;
           box-shadow: none;
   opacity: .65;
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> master
+=======
 >>>>>>> master
   -webkit-box-shadow: none;
           box-shadow: none;
@@ -4458,6 +5278,10 @@ fieldset[disabled] .btn {
   box-shadow: none;
 >>>>>>> master
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> tyler
+>>>>>>> master
 =======
 >>>>>>> tyler
 >>>>>>> master
@@ -4490,14 +5314,20 @@ fieldset[disabled] a.btn {
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
   background-image: none;
 >>>>>>> master
 =======
 <<<<<<< HEAD
 =======
+>>>>>>> master
+=======
   background-image: none;
 >>>>>>> master
 >>>>>>> tyler
+<<<<<<< HEAD
+>>>>>>> master
+=======
 >>>>>>> master
   border-color: #adadad;
 }
@@ -4516,6 +5346,12 @@ fieldset[disabled] a.btn {
 }
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+<<<<<<< HEAD
+>>>>>>> tyler
+>>>>>>> master
 =======
 =======
 <<<<<<< HEAD
@@ -4531,9 +5367,15 @@ fieldset[disabled] a.btn {
 fieldset[disabled] .btn-default,
 <<<<<<< HEAD
 =======
+<<<<<<< HEAD
 >>>>>>> master
 =======
 <<<<<<< HEAD
+=======
+=======
+>>>>>>> master
+>>>>>>> tyler
+>>>>>>> master
 =======
 =======
 >>>>>>> master
@@ -4549,6 +5391,12 @@ fieldset[disabled] .btn-default:focus,
 .btn-default[disabled].focus,
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+<<<<<<< HEAD
+>>>>>>> tyler
+>>>>>>> master
 =======
 =======
 <<<<<<< HEAD
@@ -4563,15 +5411,21 @@ fieldset[disabled] .btn-default:active,
 fieldset[disabled] .btn-default.active {
 <<<<<<< HEAD
 =======
+<<<<<<< HEAD
 fieldset[disabled] .btn-default.focus {
 >>>>>>> master
 =======
 <<<<<<< HEAD
 =======
 =======
+>>>>>>> master
+=======
 fieldset[disabled] .btn-default.focus {
 >>>>>>> master
 >>>>>>> tyler
+<<<<<<< HEAD
+>>>>>>> master
+=======
 >>>>>>> master
   background-color: #fff;
   border-color: #ccc;
@@ -4604,14 +5458,20 @@ fieldset[disabled] .btn-default.focus {
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
   background-image: none;
 >>>>>>> master
 =======
 <<<<<<< HEAD
 =======
+>>>>>>> master
+=======
   background-image: none;
 >>>>>>> master
 >>>>>>> tyler
+<<<<<<< HEAD
+>>>>>>> master
+=======
 >>>>>>> master
   border-color: #204d74;
 }
@@ -4630,6 +5490,12 @@ fieldset[disabled] .btn-default.focus {
 }
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+<<<<<<< HEAD
+>>>>>>> tyler
+>>>>>>> master
 =======
 =======
 <<<<<<< HEAD
@@ -4645,9 +5511,15 @@ fieldset[disabled] .btn-default.focus {
 fieldset[disabled] .btn-primary,
 <<<<<<< HEAD
 =======
+<<<<<<< HEAD
 >>>>>>> master
 =======
 <<<<<<< HEAD
+=======
+=======
+>>>>>>> master
+>>>>>>> tyler
+>>>>>>> master
 =======
 =======
 >>>>>>> master
@@ -4663,6 +5535,12 @@ fieldset[disabled] .btn-primary:focus,
 .btn-primary[disabled].focus,
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+<<<<<<< HEAD
+>>>>>>> tyler
+>>>>>>> master
 =======
 =======
 <<<<<<< HEAD
@@ -4677,15 +5555,21 @@ fieldset[disabled] .btn-primary:active,
 fieldset[disabled] .btn-primary.active {
 <<<<<<< HEAD
 =======
+<<<<<<< HEAD
 fieldset[disabled] .btn-primary.focus {
 >>>>>>> master
 =======
 <<<<<<< HEAD
 =======
 =======
+>>>>>>> master
+=======
 fieldset[disabled] .btn-primary.focus {
 >>>>>>> master
 >>>>>>> tyler
+<<<<<<< HEAD
+>>>>>>> master
+=======
 >>>>>>> master
   background-color: #337ab7;
   border-color: #2e6da4;
@@ -4718,14 +5602,20 @@ fieldset[disabled] .btn-primary.focus {
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
   background-image: none;
 >>>>>>> master
 =======
 <<<<<<< HEAD
 =======
+>>>>>>> master
+=======
   background-image: none;
 >>>>>>> master
 >>>>>>> tyler
+<<<<<<< HEAD
+>>>>>>> master
+=======
 >>>>>>> master
   border-color: #398439;
 }
@@ -4744,6 +5634,12 @@ fieldset[disabled] .btn-primary.focus {
 }
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+<<<<<<< HEAD
+>>>>>>> tyler
+>>>>>>> master
 =======
 =======
 <<<<<<< HEAD
@@ -4759,9 +5655,15 @@ fieldset[disabled] .btn-primary.focus {
 fieldset[disabled] .btn-success,
 <<<<<<< HEAD
 =======
+<<<<<<< HEAD
 >>>>>>> master
 =======
 <<<<<<< HEAD
+=======
+=======
+>>>>>>> master
+>>>>>>> tyler
+>>>>>>> master
 =======
 =======
 >>>>>>> master
@@ -4777,6 +5679,12 @@ fieldset[disabled] .btn-success:focus,
 .btn-success[disabled].focus,
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+<<<<<<< HEAD
+>>>>>>> tyler
+>>>>>>> master
 =======
 =======
 <<<<<<< HEAD
@@ -4791,15 +5699,21 @@ fieldset[disabled] .btn-success:active,
 fieldset[disabled] .btn-success.active {
 <<<<<<< HEAD
 =======
+<<<<<<< HEAD
 fieldset[disabled] .btn-success.focus {
 >>>>>>> master
 =======
 <<<<<<< HEAD
 =======
 =======
+>>>>>>> master
+=======
 fieldset[disabled] .btn-success.focus {
 >>>>>>> master
 >>>>>>> tyler
+<<<<<<< HEAD
+>>>>>>> master
+=======
 >>>>>>> master
   background-color: #5cb85c;
   border-color: #4cae4c;
@@ -4832,14 +5746,20 @@ fieldset[disabled] .btn-success.focus {
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
   background-image: none;
 >>>>>>> master
 =======
 <<<<<<< HEAD
 =======
+>>>>>>> master
+=======
   background-image: none;
 >>>>>>> master
 >>>>>>> tyler
+<<<<<<< HEAD
+>>>>>>> master
+=======
 >>>>>>> master
   border-color: #269abc;
 }
@@ -4858,6 +5778,12 @@ fieldset[disabled] .btn-success.focus {
 }
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+<<<<<<< HEAD
+>>>>>>> tyler
+>>>>>>> master
 =======
 =======
 <<<<<<< HEAD
@@ -4873,9 +5799,15 @@ fieldset[disabled] .btn-success.focus {
 fieldset[disabled] .btn-info,
 <<<<<<< HEAD
 =======
+<<<<<<< HEAD
 >>>>>>> master
 =======
 <<<<<<< HEAD
+=======
+=======
+>>>>>>> master
+>>>>>>> tyler
+>>>>>>> master
 =======
 =======
 >>>>>>> master
@@ -4891,6 +5823,12 @@ fieldset[disabled] .btn-info:focus,
 .btn-info[disabled].focus,
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+<<<<<<< HEAD
+>>>>>>> tyler
+>>>>>>> master
 =======
 =======
 <<<<<<< HEAD
@@ -4905,15 +5843,21 @@ fieldset[disabled] .btn-info:active,
 fieldset[disabled] .btn-info.active {
 <<<<<<< HEAD
 =======
+<<<<<<< HEAD
 fieldset[disabled] .btn-info.focus {
 >>>>>>> master
 =======
 <<<<<<< HEAD
 =======
 =======
+>>>>>>> master
+=======
 fieldset[disabled] .btn-info.focus {
 >>>>>>> master
 >>>>>>> tyler
+<<<<<<< HEAD
+>>>>>>> master
+=======
 >>>>>>> master
   background-color: #5bc0de;
   border-color: #46b8da;
@@ -4946,14 +5890,20 @@ fieldset[disabled] .btn-info.focus {
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
   background-image: none;
 >>>>>>> master
 =======
 <<<<<<< HEAD
 =======
+>>>>>>> master
+=======
   background-image: none;
 >>>>>>> master
 >>>>>>> tyler
+<<<<<<< HEAD
+>>>>>>> master
+=======
 >>>>>>> master
   border-color: #d58512;
 }
@@ -4972,6 +5922,12 @@ fieldset[disabled] .btn-info.focus {
 }
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+<<<<<<< HEAD
+>>>>>>> tyler
+>>>>>>> master
 =======
 =======
 <<<<<<< HEAD
@@ -4987,9 +5943,15 @@ fieldset[disabled] .btn-info.focus {
 fieldset[disabled] .btn-warning,
 <<<<<<< HEAD
 =======
+<<<<<<< HEAD
 >>>>>>> master
 =======
 <<<<<<< HEAD
+=======
+=======
+>>>>>>> master
+>>>>>>> tyler
+>>>>>>> master
 =======
 =======
 >>>>>>> master
@@ -5005,6 +5967,12 @@ fieldset[disabled] .btn-warning:focus,
 .btn-warning[disabled].focus,
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+<<<<<<< HEAD
+>>>>>>> tyler
+>>>>>>> master
 =======
 =======
 <<<<<<< HEAD
@@ -5019,15 +5987,21 @@ fieldset[disabled] .btn-warning:active,
 fieldset[disabled] .btn-warning.active {
 <<<<<<< HEAD
 =======
+<<<<<<< HEAD
 fieldset[disabled] .btn-warning.focus {
 >>>>>>> master
 =======
 <<<<<<< HEAD
 =======
 =======
+>>>>>>> master
+=======
 fieldset[disabled] .btn-warning.focus {
 >>>>>>> master
 >>>>>>> tyler
+<<<<<<< HEAD
+>>>>>>> master
+=======
 >>>>>>> master
   background-color: #f0ad4e;
   border-color: #eea236;
@@ -5060,14 +6034,20 @@ fieldset[disabled] .btn-warning.focus {
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
   background-image: none;
 >>>>>>> master
 =======
 <<<<<<< HEAD
 =======
+>>>>>>> master
+=======
   background-image: none;
 >>>>>>> master
 >>>>>>> tyler
+<<<<<<< HEAD
+>>>>>>> master
+=======
 >>>>>>> master
   border-color: #ac2925;
 }
@@ -5086,6 +6066,12 @@ fieldset[disabled] .btn-warning.focus {
 }
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+<<<<<<< HEAD
+>>>>>>> tyler
+>>>>>>> master
 =======
 =======
 <<<<<<< HEAD
@@ -5101,9 +6087,15 @@ fieldset[disabled] .btn-warning.focus {
 fieldset[disabled] .btn-danger,
 <<<<<<< HEAD
 =======
+<<<<<<< HEAD
 >>>>>>> master
 =======
 <<<<<<< HEAD
+=======
+=======
+>>>>>>> master
+>>>>>>> tyler
+>>>>>>> master
 =======
 =======
 >>>>>>> master
@@ -5119,6 +6111,12 @@ fieldset[disabled] .btn-danger:focus,
 .btn-danger[disabled].focus,
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+<<<<<<< HEAD
+>>>>>>> tyler
+>>>>>>> master
 =======
 =======
 <<<<<<< HEAD
@@ -5133,15 +6131,21 @@ fieldset[disabled] .btn-danger:active,
 fieldset[disabled] .btn-danger.active {
 <<<<<<< HEAD
 =======
+<<<<<<< HEAD
 fieldset[disabled] .btn-danger.focus {
 >>>>>>> master
 =======
 <<<<<<< HEAD
 =======
 =======
+>>>>>>> master
+=======
 fieldset[disabled] .btn-danger.focus {
 >>>>>>> master
 >>>>>>> tyler
+<<<<<<< HEAD
+>>>>>>> master
+=======
 >>>>>>> master
   background-color: #d9534f;
   border-color: #d43f3a;
@@ -5151,6 +6155,7 @@ fieldset[disabled] .btn-danger.focus {
   background-color: #fff;
 }
 .btn-link {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -5166,6 +6171,16 @@ fieldset[disabled] .btn-danger.focus {
 =======
 >>>>>>> tyler
 >>>>>>> master
+=======
+  font-weight: normal;
+=======
+<<<<<<< HEAD
+  font-weight: normal;
+=======
+  font-weight: 400;
+>>>>>>> master
+>>>>>>> tyler
+>>>>>>> master
   color: #337ab7;
   border-radius: 0;
 }
@@ -5177,11 +6192,22 @@ fieldset[disabled] .btn-link {
   background-color: transparent;
   -webkit-box-shadow: none;
 <<<<<<< HEAD
+<<<<<<< HEAD
           box-shadow: none;
 =======
 <<<<<<< HEAD
   box-shadow: none;
 >>>>>>> master
+=======
+<<<<<<< HEAD
+          box-shadow: none;
+=======
+  box-shadow: none;
+>>>>>>> master
+>>>>>>> tyler
+>>>>>>> master
+=======
+          box-shadow: none;
 =======
 <<<<<<< HEAD
           box-shadow: none;
@@ -5209,6 +6235,12 @@ fieldset[disabled] .btn-link:hover,
 fieldset[disabled] .btn-link:focus {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+  color: #777;
+=======
+<<<<<<< HEAD
+>>>>>>> master
 =======
   color: #777;
 =======
@@ -5219,6 +6251,10 @@ fieldset[disabled] .btn-link:focus {
   color: #777777;
 >>>>>>> master
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> tyler
+>>>>>>> master
 =======
 >>>>>>> tyler
 >>>>>>> master
@@ -5265,11 +6301,17 @@ input[type="button"].btn-block {
           transition: opacity .15s linear;
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> master
   -webkit-transition: opacity .15s linear;
        -o-transition: opacity .15s linear;
           transition: opacity .15s linear;
+=======
+<<<<<<< HEAD
+>>>>>>> master
 =======
 >>>>>>> master
   -webkit-transition: opacity 0.15s linear;
@@ -5277,6 +6319,10 @@ input[type="button"].btn-block {
   transition: opacity 0.15s linear;
 >>>>>>> master
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> tyler
+>>>>>>> master
 =======
 >>>>>>> tyler
 >>>>>>> master
@@ -5302,6 +6348,12 @@ tbody.collapse.in {
   overflow: hidden;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+<<<<<<< HEAD
+>>>>>>> tyler
+>>>>>>> master
 =======
 =======
 <<<<<<< HEAD
@@ -5319,6 +6371,9 @@ tbody.collapse.in {
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> master
 =======
 >>>>>>> master
 =======
@@ -5333,6 +6388,10 @@ tbody.collapse.in {
   transition-timing-function: ease;
 >>>>>>> master
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> tyler
+>>>>>>> master
 =======
 >>>>>>> tyler
 >>>>>>> master
@@ -5371,6 +6430,12 @@ tbody.collapse.in {
   background-color: #fff;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+<<<<<<< HEAD
+>>>>>>> tyler
+>>>>>>> master
 =======
 =======
 <<<<<<< HEAD
@@ -5386,6 +6451,9 @@ tbody.collapse.in {
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> master
 =======
 >>>>>>> master
 =======
@@ -5397,6 +6465,10 @@ tbody.collapse.in {
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
 >>>>>>> master
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> tyler
+>>>>>>> master
 =======
 >>>>>>> tyler
 >>>>>>> master
@@ -5417,12 +6489,18 @@ tbody.collapse.in {
   clear: both;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> master
   font-weight: normal;
   line-height: 1.42857143;
   color: #333;
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> master
+=======
 >>>>>>> master
   font-weight: normal;
   line-height: 1.42857143;
@@ -5433,6 +6511,10 @@ tbody.collapse.in {
   color: #333333;
 >>>>>>> master
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> tyler
+>>>>>>> master
 =======
 >>>>>>> tyler
 >>>>>>> master
@@ -5456,11 +6538,22 @@ tbody.collapse.in {
 .dropdown-menu > .disabled > a:hover,
 .dropdown-menu > .disabled > a:focus {
 <<<<<<< HEAD
+<<<<<<< HEAD
   color: #777;
 =======
 <<<<<<< HEAD
   color: #777777;
 >>>>>>> master
+=======
+<<<<<<< HEAD
+  color: #777;
+=======
+  color: #777777;
+>>>>>>> master
+>>>>>>> tyler
+>>>>>>> master
+=======
+  color: #777;
 =======
 <<<<<<< HEAD
   color: #777;
@@ -5499,6 +6592,7 @@ tbody.collapse.in {
   line-height: 1.42857143;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
   color: #777;
 =======
@@ -5510,6 +6604,16 @@ tbody.collapse.in {
 >>>>>>> master
 <<<<<<< HEAD
 =======
+>>>>>>> tyler
+>>>>>>> master
+=======
+  color: #777;
+=======
+<<<<<<< HEAD
+  color: #777;
+=======
+  color: #777777;
+>>>>>>> master
 >>>>>>> tyler
 >>>>>>> master
   white-space: nowrap;
@@ -5634,6 +6738,12 @@ tbody.collapse.in {
 .btn-group.open .dropdown-toggle {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+<<<<<<< HEAD
+>>>>>>> tyler
+>>>>>>> master
 =======
 =======
 <<<<<<< HEAD
@@ -5648,6 +6758,9 @@ tbody.collapse.in {
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> master
 =======
 >>>>>>> master
 =======
@@ -5659,6 +6772,10 @@ tbody.collapse.in {
   box-shadow: none;
 >>>>>>> master
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> tyler
+>>>>>>> master
 =======
 >>>>>>> tyler
 >>>>>>> master
@@ -5698,10 +6815,17 @@ tbody.collapse.in {
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
   border-top-left-radius: 4px;
 >>>>>>> master
 =======
 <<<<<<< HEAD
+=======
+  border-top-left-radius: 4px;
+>>>>>>> master
+>>>>>>> tyler
+>>>>>>> master
+=======
 =======
   border-top-left-radius: 4px;
 >>>>>>> master
@@ -5717,14 +6841,20 @@ tbody.collapse.in {
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
   border-bottom-right-radius: 4px;
 >>>>>>> master
 =======
 <<<<<<< HEAD
 =======
+>>>>>>> master
+=======
   border-bottom-right-radius: 4px;
 >>>>>>> master
 >>>>>>> tyler
+<<<<<<< HEAD
+>>>>>>> master
+=======
 >>>>>>> master
   border-bottom-left-radius: 4px;
 }
@@ -5788,6 +6918,9 @@ tbody.collapse.in {
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> master
 =======
 >>>>>>> master
 .input-group .form-control:focus {
@@ -5795,6 +6928,10 @@ tbody.collapse.in {
 }
 >>>>>>> master
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> tyler
+>>>>>>> master
 =======
 >>>>>>> tyler
 >>>>>>> master
@@ -5865,6 +7002,12 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   font-size: 14px;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+<<<<<<< HEAD
+>>>>>>> tyler
+>>>>>>> master
 =======
 =======
 <<<<<<< HEAD
@@ -5878,6 +7021,9 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> master
 =======
 >>>>>>> master
 =======
@@ -5888,6 +7034,10 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   background-color: #eeeeee;
 >>>>>>> master
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> tyler
+>>>>>>> master
 =======
 >>>>>>> tyler
 >>>>>>> master
@@ -5979,6 +7129,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 <<<<<<< HEAD
   background-color: #eee;
 <<<<<<< HEAD
+<<<<<<< HEAD
 }
 .nav > li.disabled > a {
   color: #777;
@@ -5989,6 +7140,8 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 =======
   background-color: #eeeeee;
 =======
+=======
+>>>>>>> master
 =======
 <<<<<<< HEAD
   background-color: #eee;
@@ -6004,6 +7157,23 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 >>>>>>> master
 =======
   color: #777;
+=======
+  background-color: #eeeeee;
+>>>>>>> tyler
+}
+.nav > li.disabled > a {
+  color: #777777;
+}
+.nav > li.disabled > a:hover,
+.nav > li.disabled > a:focus {
+<<<<<<< HEAD
+  color: #777;
+=======
+<<<<<<< HEAD
+  color: #777777;
+>>>>>>> master
+>>>>>>> tyler
+>>>>>>> master
 =======
   background-color: #eeeeee;
 >>>>>>> tyler
@@ -6028,11 +7198,22 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .nav .open > a:hover,
 .nav .open > a:focus {
 <<<<<<< HEAD
+<<<<<<< HEAD
   background-color: #eee;
 =======
 <<<<<<< HEAD
   background-color: #eeeeee;
 >>>>>>> master
+=======
+<<<<<<< HEAD
+  background-color: #eee;
+=======
+  background-color: #eeeeee;
+>>>>>>> master
+>>>>>>> tyler
+>>>>>>> master
+=======
+  background-color: #eee;
 =======
 <<<<<<< HEAD
   background-color: #eee;
@@ -6068,6 +7249,12 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .nav-tabs > li > a:hover {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+  border-color: #eee #eee #ddd;
+=======
+<<<<<<< HEAD
+>>>>>>> master
 =======
   border-color: #eee #eee #ddd;
 =======
@@ -6078,6 +7265,10 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   border-color: #eeeeee #eeeeee #ddd;
 >>>>>>> master
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> tyler
+>>>>>>> master
 =======
 >>>>>>> tyler
 >>>>>>> master
@@ -6085,6 +7276,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .nav-tabs > li.active > a,
 .nav-tabs > li.active > a:hover,
 .nav-tabs > li.active > a:focus {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -6098,6 +7290,16 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 >>>>>>> master
 <<<<<<< HEAD
 =======
+>>>>>>> tyler
+>>>>>>> master
+=======
+  color: #555;
+=======
+<<<<<<< HEAD
+  color: #555;
+=======
+  color: #555555;
+>>>>>>> master
 >>>>>>> tyler
 >>>>>>> master
   cursor: default;
@@ -6250,6 +7452,12 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   overflow-x: visible;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+<<<<<<< HEAD
+>>>>>>> tyler
+>>>>>>> master
 =======
 =======
 <<<<<<< HEAD
@@ -6262,6 +7470,9 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> master
 =======
 >>>>>>> master
 =======
@@ -6271,6 +7482,10 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   -webkit-overflow-scrolling: touch;
 >>>>>>> master
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> tyler
+>>>>>>> master
 =======
 >>>>>>> tyler
 >>>>>>> master
@@ -6284,11 +7499,22 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
     border-top: 0;
     -webkit-box-shadow: none;
 <<<<<<< HEAD
+<<<<<<< HEAD
             box-shadow: none;
 =======
 <<<<<<< HEAD
     box-shadow: none;
 >>>>>>> master
+=======
+<<<<<<< HEAD
+            box-shadow: none;
+=======
+    box-shadow: none;
+>>>>>>> master
+>>>>>>> tyler
+>>>>>>> master
+=======
+            box-shadow: none;
 =======
 <<<<<<< HEAD
             box-shadow: none;
@@ -6319,6 +7545,9 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> master
 =======
 >>>>>>> master
 .navbar-fixed-top,
@@ -6330,6 +7559,10 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 >>>>>>> master
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> tyler
+>>>>>>> master
 =======
 >>>>>>> tyler
 >>>>>>> master
@@ -6348,6 +7581,9 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> master
 =======
 >>>>>>> master
 @media (min-width: 768px) {
@@ -6367,6 +7603,10 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 >>>>>>> master
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> tyler
+>>>>>>> master
 =======
 >>>>>>> tyler
 >>>>>>> master
@@ -6397,6 +7637,12 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+<<<<<<< HEAD
+>>>>>>> tyler
+>>>>>>> master
 =======
 =======
 <<<<<<< HEAD
@@ -6426,9 +7672,15 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 <<<<<<< HEAD
 =======
+<<<<<<< HEAD
 >>>>>>> master
 =======
 <<<<<<< HEAD
+=======
+=======
+>>>>>>> master
+>>>>>>> tyler
+>>>>>>> master
 =======
 =======
 >>>>>>> master
@@ -6460,11 +7712,17 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   padding: 9px 10px;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> master
   margin-top: 8px;
   margin-right: 15px;
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> master
+=======
 >>>>>>> master
   margin-top: 8px;
   margin-right: 15px;
@@ -6473,6 +7731,10 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   margin-top: 8px;
 >>>>>>> master
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> tyler
+>>>>>>> master
 =======
 >>>>>>> tyler
 >>>>>>> master
@@ -6517,11 +7779,22 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
     border: 0;
     -webkit-box-shadow: none;
 <<<<<<< HEAD
+<<<<<<< HEAD
             box-shadow: none;
 =======
 <<<<<<< HEAD
     box-shadow: none;
 >>>>>>> master
+=======
+<<<<<<< HEAD
+            box-shadow: none;
+=======
+    box-shadow: none;
+>>>>>>> master
+>>>>>>> tyler
+>>>>>>> master
+=======
+            box-shadow: none;
 =======
 <<<<<<< HEAD
             box-shadow: none;
@@ -6560,6 +7833,12 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   padding: 10px 15px;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+<<<<<<< HEAD
+>>>>>>> tyler
+>>>>>>> master
 =======
 =======
 <<<<<<< HEAD
@@ -6576,6 +7855,9 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> master
 =======
 >>>>>>> master
 =======
@@ -6589,6 +7871,10 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   margin-bottom: 8px;
 >>>>>>> master
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> tyler
+>>>>>>> master
 =======
 >>>>>>> tyler
 >>>>>>> master
@@ -6662,6 +7948,12 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
     -webkit-box-shadow: none;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+            box-shadow: none;
+=======
+<<<<<<< HEAD
+>>>>>>> master
 =======
             box-shadow: none;
 =======
@@ -6672,6 +7964,10 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
     box-shadow: none;
 >>>>>>> master
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> tyler
+>>>>>>> master
 =======
 >>>>>>> tyler
 >>>>>>> master
@@ -6761,6 +8057,12 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+<<<<<<< HEAD
+>>>>>>> tyler
+>>>>>>> master
 =======
 =======
 <<<<<<< HEAD
@@ -6782,9 +8084,15 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 <<<<<<< HEAD
 =======
+<<<<<<< HEAD
 >>>>>>> master
 =======
 <<<<<<< HEAD
+=======
+=======
+>>>>>>> master
+>>>>>>> tyler
+>>>>>>> master
 =======
 =======
 >>>>>>> master
@@ -6823,6 +8131,9 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> master
 =======
 >>>>>>> master
 .navbar-default .navbar-toggle {
@@ -6841,6 +8152,10 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 >>>>>>> master
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> tyler
+>>>>>>> master
 =======
 >>>>>>> tyler
 >>>>>>> master
@@ -6900,6 +8215,12 @@ fieldset[disabled] .navbar-default .btn-link:focus {
 }
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+<<<<<<< HEAD
+>>>>>>> tyler
+>>>>>>> master
 =======
 =======
 <<<<<<< HEAD
@@ -6921,9 +8242,15 @@ fieldset[disabled] .navbar-default .btn-link:focus {
 }
 <<<<<<< HEAD
 =======
+<<<<<<< HEAD
 >>>>>>> master
 =======
 <<<<<<< HEAD
+=======
+=======
+>>>>>>> master
+>>>>>>> tyler
+>>>>>>> master
 =======
 =======
 >>>>>>> master
@@ -6968,6 +8295,9 @@ fieldset[disabled] .navbar-default .btn-link:focus {
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> master
 =======
 >>>>>>> master
 .navbar-inverse .navbar-toggle {
@@ -6986,6 +8316,10 @@ fieldset[disabled] .navbar-default .btn-link:focus {
 }
 >>>>>>> master
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> tyler
+>>>>>>> master
 =======
 >>>>>>> tyler
 >>>>>>> master
@@ -7025,11 +8359,22 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
 }
 .breadcrumb > .active {
 <<<<<<< HEAD
+<<<<<<< HEAD
   color: #777;
 =======
 <<<<<<< HEAD
   color: #777777;
 >>>>>>> master
+=======
+<<<<<<< HEAD
+  color: #777;
+=======
+  color: #777777;
+>>>>>>> master
+>>>>>>> tyler
+>>>>>>> master
+=======
+  color: #777;
 =======
 <<<<<<< HEAD
   color: #777;
@@ -7065,6 +8410,9 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> master
 =======
 >>>>>>> master
 .pagination > li > a:hover,
@@ -7078,6 +8426,10 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
 }
 >>>>>>> master
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> tyler
+>>>>>>> master
 =======
 >>>>>>> tyler
 >>>>>>> master
@@ -7094,6 +8446,12 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
 }
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+<<<<<<< HEAD
+>>>>>>> tyler
+>>>>>>> master
 =======
 =======
 <<<<<<< HEAD
@@ -7110,9 +8468,15 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
 }
 <<<<<<< HEAD
 =======
+<<<<<<< HEAD
 >>>>>>> master
 =======
 <<<<<<< HEAD
+=======
+=======
+>>>>>>> master
+>>>>>>> tyler
+>>>>>>> master
 =======
 =======
 >>>>>>> master
@@ -7125,11 +8489,22 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
 .pagination > .active > a:focus,
 .pagination > .active > span:focus {
 <<<<<<< HEAD
+<<<<<<< HEAD
   z-index: 2;
 =======
 <<<<<<< HEAD
   z-index: 3;
 >>>>>>> master
+=======
+<<<<<<< HEAD
+  z-index: 2;
+=======
+  z-index: 3;
+>>>>>>> master
+>>>>>>> tyler
+>>>>>>> master
+=======
+  z-index: 2;
 =======
 <<<<<<< HEAD
   z-index: 2;
@@ -7151,6 +8526,12 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
 .pagination > .disabled > a:focus {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+  color: #777;
+=======
+<<<<<<< HEAD
+>>>>>>> master
 =======
   color: #777;
 =======
@@ -7161,6 +8542,10 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
   color: #777777;
 >>>>>>> master
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> tyler
+>>>>>>> master
 =======
 >>>>>>> tyler
 >>>>>>> master
@@ -7221,11 +8606,22 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
 .pager li > a:focus {
   text-decoration: none;
 <<<<<<< HEAD
+<<<<<<< HEAD
   background-color: #eee;
 =======
 <<<<<<< HEAD
   background-color: #eeeeee;
 >>>>>>> master
+=======
+<<<<<<< HEAD
+  background-color: #eee;
+=======
+  background-color: #eeeeee;
+>>>>>>> master
+>>>>>>> tyler
+>>>>>>> master
+=======
+  background-color: #eee;
 =======
 <<<<<<< HEAD
   background-color: #eee;
@@ -7249,6 +8645,7 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
 .pager .disabled > span {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
   color: #777;
 =======
@@ -7262,6 +8659,16 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
 =======
 >>>>>>> tyler
 >>>>>>> master
+=======
+  color: #777;
+=======
+<<<<<<< HEAD
+  color: #777;
+=======
+  color: #777777;
+>>>>>>> master
+>>>>>>> tyler
+>>>>>>> master
   cursor: not-allowed;
   background-color: #fff;
 }
@@ -7269,12 +8676,18 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
   display: inline;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> master
   padding: .2em .6em .3em;
   font-size: 75%;
   font-weight: bold;
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> master
+=======
 >>>>>>> master
   padding: .2em .6em .3em;
   font-size: 75%;
@@ -7285,6 +8698,10 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
   font-weight: 700;
 >>>>>>> master
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> tyler
+>>>>>>> master
 =======
 >>>>>>> tyler
 >>>>>>> master
@@ -7294,11 +8711,22 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
   white-space: nowrap;
   vertical-align: baseline;
 <<<<<<< HEAD
+<<<<<<< HEAD
   border-radius: .25em;
 =======
 <<<<<<< HEAD
   border-radius: 0.25em;
 >>>>>>> master
+=======
+<<<<<<< HEAD
+  border-radius: .25em;
+=======
+  border-radius: 0.25em;
+>>>>>>> master
+>>>>>>> tyler
+>>>>>>> master
+=======
+  border-radius: .25em;
 =======
 <<<<<<< HEAD
   border-radius: .25em;
@@ -7323,11 +8751,22 @@ a.label:focus {
 }
 .label-default {
 <<<<<<< HEAD
+<<<<<<< HEAD
   background-color: #777;
 =======
 <<<<<<< HEAD
   background-color: #777777;
 >>>>>>> master
+=======
+<<<<<<< HEAD
+  background-color: #777;
+=======
+  background-color: #777777;
+>>>>>>> master
+>>>>>>> tyler
+>>>>>>> master
+=======
+  background-color: #777;
 =======
 <<<<<<< HEAD
   background-color: #777;
@@ -7389,6 +8828,7 @@ a.label:focus {
   vertical-align: middle;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
   background-color: #777;
 =======
@@ -7400,6 +8840,16 @@ a.label:focus {
 >>>>>>> master
 <<<<<<< HEAD
 =======
+>>>>>>> tyler
+>>>>>>> master
+=======
+  background-color: #777;
+=======
+<<<<<<< HEAD
+  background-color: #777;
+=======
+  background-color: #777777;
+>>>>>>> master
 >>>>>>> tyler
 >>>>>>> master
   border-radius: 10px;
@@ -7443,6 +8893,12 @@ a.badge:focus {
   color: inherit;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+  background-color: #eee;
+=======
+<<<<<<< HEAD
+>>>>>>> master
 =======
   background-color: #eee;
 =======
@@ -7453,6 +8909,10 @@ a.badge:focus {
   background-color: #eeeeee;
 >>>>>>> master
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> tyler
+>>>>>>> master
 =======
 >>>>>>> tyler
 >>>>>>> master
@@ -7474,16 +8934,22 @@ a.badge:focus {
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
   padding-right: 15px;
   padding-left: 15px;
 >>>>>>> master
 =======
 <<<<<<< HEAD
 =======
+>>>>>>> master
+=======
   padding-right: 15px;
   padding-left: 15px;
 >>>>>>> master
 >>>>>>> tyler
+<<<<<<< HEAD
+>>>>>>> master
+=======
 >>>>>>> master
   border-radius: 6px;
 }
@@ -7519,11 +8985,17 @@ a.badge:focus {
           transition: border .2s ease-in-out;
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> master
   -webkit-transition: border .2s ease-in-out;
        -o-transition: border .2s ease-in-out;
           transition: border .2s ease-in-out;
+=======
+<<<<<<< HEAD
+>>>>>>> master
 =======
 >>>>>>> master
   -webkit-transition: border 0.2s ease-in-out;
@@ -7531,6 +9003,10 @@ a.badge:focus {
   transition: border 0.2s ease-in-out;
 >>>>>>> master
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> tyler
+>>>>>>> master
 =======
 >>>>>>> tyler
 >>>>>>> master
@@ -7549,6 +9025,12 @@ a.thumbnail.active {
   padding: 9px;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+  color: #333;
+=======
+<<<<<<< HEAD
+>>>>>>> master
 =======
   color: #333;
 =======
@@ -7559,6 +9041,10 @@ a.thumbnail.active {
   color: #333333;
 >>>>>>> master
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> tyler
+>>>>>>> master
 =======
 >>>>>>> tyler
 >>>>>>> master
@@ -7670,6 +9156,12 @@ a.thumbnail.active {
   border-radius: 4px;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+<<<<<<< HEAD
+>>>>>>> tyler
+>>>>>>> master
 =======
 =======
 <<<<<<< HEAD
@@ -7684,6 +9176,9 @@ a.thumbnail.active {
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> master
 =======
 >>>>>>> master
 =======
@@ -7695,6 +9190,10 @@ a.thumbnail.active {
   width: 0%;
 >>>>>>> master
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> tyler
+>>>>>>> master
 =======
 >>>>>>> tyler
 >>>>>>> master
@@ -7706,6 +9205,12 @@ a.thumbnail.active {
   background-color: #337ab7;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+<<<<<<< HEAD
+>>>>>>> tyler
+>>>>>>> master
 =======
 =======
 <<<<<<< HEAD
@@ -7727,6 +9232,9 @@ a.thumbnail.active {
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> master
 =======
 >>>>>>> master
 =======
@@ -7745,6 +9253,10 @@ a.thumbnail.active {
   background-size: 40px 40px;
 >>>>>>> master
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> tyler
+>>>>>>> master
 =======
 >>>>>>> tyler
 >>>>>>> master
@@ -7754,11 +9266,17 @@ a.thumbnail.active {
   -webkit-animation: progress-bar-stripes 2s linear infinite;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> master
        -o-animation: progress-bar-stripes 2s linear infinite;
           animation: progress-bar-stripes 2s linear infinite;
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> master
+=======
 >>>>>>> master
        -o-animation: progress-bar-stripes 2s linear infinite;
           animation: progress-bar-stripes 2s linear infinite;
@@ -7767,6 +9285,10 @@ a.thumbnail.active {
   animation: progress-bar-stripes 2s linear infinite;
 >>>>>>> master
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> tyler
+>>>>>>> master
 =======
 >>>>>>> tyler
 >>>>>>> master
@@ -7777,12 +9299,18 @@ a.thumbnail.active {
 .progress-striped .progress-bar-success {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> master
   background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent);
   background-image:      -o-linear-gradient(45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent);
   background-image:         linear-gradient(45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent);
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> master
+=======
 >>>>>>> master
   background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent);
   background-image:      -o-linear-gradient(45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent);
@@ -7793,6 +9321,10 @@ a.thumbnail.active {
   background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
 >>>>>>> master
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> tyler
+>>>>>>> master
 =======
 >>>>>>> tyler
 >>>>>>> master
@@ -7807,11 +9339,17 @@ a.thumbnail.active {
   background-image:         linear-gradient(45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent);
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> master
   background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent);
   background-image:      -o-linear-gradient(45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent);
   background-image:         linear-gradient(45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent);
+=======
+<<<<<<< HEAD
+>>>>>>> master
 =======
 >>>>>>> master
   background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
@@ -7819,6 +9357,10 @@ a.thumbnail.active {
   background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
 >>>>>>> master
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> tyler
+>>>>>>> master
 =======
 >>>>>>> tyler
 >>>>>>> master
@@ -7829,12 +9371,18 @@ a.thumbnail.active {
 .progress-striped .progress-bar-warning {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> master
   background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent);
   background-image:      -o-linear-gradient(45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent);
   background-image:         linear-gradient(45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent);
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> master
+=======
 >>>>>>> master
   background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent);
   background-image:      -o-linear-gradient(45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent);
@@ -7845,6 +9393,10 @@ a.thumbnail.active {
   background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
 >>>>>>> master
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> tyler
+>>>>>>> master
 =======
 >>>>>>> tyler
 >>>>>>> master
@@ -7859,11 +9411,17 @@ a.thumbnail.active {
   background-image:         linear-gradient(45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent);
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> master
   background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent);
   background-image:      -o-linear-gradient(45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent);
   background-image:         linear-gradient(45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent);
+=======
+<<<<<<< HEAD
+>>>>>>> master
 =======
 >>>>>>> master
   background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
@@ -7871,6 +9429,10 @@ a.thumbnail.active {
   background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
 >>>>>>> master
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> tyler
+>>>>>>> master
 =======
 >>>>>>> tyler
 >>>>>>> master
@@ -7946,6 +9508,12 @@ a.thumbnail.active {
 }
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+<<<<<<< HEAD
+>>>>>>> tyler
+>>>>>>> master
 =======
 =======
 <<<<<<< HEAD
@@ -7980,6 +9548,9 @@ button.list-group-item {
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> master
 =======
 >>>>>>> master
 =======
@@ -7991,6 +9562,10 @@ button.list-group-item {
   background-color: #eeeeee;
 >>>>>>> master
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> tyler
+>>>>>>> master
 =======
 >>>>>>> tyler
 >>>>>>> master
@@ -8004,11 +9579,22 @@ button.list-group-item {
 .list-group-item.disabled:hover .list-group-item-text,
 .list-group-item.disabled:focus .list-group-item-text {
 <<<<<<< HEAD
+<<<<<<< HEAD
   color: #777;
 =======
 <<<<<<< HEAD
   color: #777777;
 >>>>>>> master
+=======
+<<<<<<< HEAD
+  color: #777;
+=======
+  color: #777777;
+>>>>>>> master
+>>>>>>> tyler
+>>>>>>> master
+=======
+  color: #777;
 =======
 <<<<<<< HEAD
   color: #777;
@@ -8047,6 +9633,9 @@ button.list-group-item {
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> master
 =======
 >>>>>>> master
 a.list-group-item,
@@ -8071,6 +9660,10 @@ button.list-group-item {
 }
 >>>>>>> master
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> tyler
+>>>>>>> master
 =======
 >>>>>>> tyler
 >>>>>>> master
@@ -8205,6 +9798,7 @@ button.list-group-item-danger.active:focus {
   border-radius: 4px;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
   -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
           box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
@@ -8219,6 +9813,19 @@ button.list-group-item-danger.active:focus {
 >>>>>>> master
 <<<<<<< HEAD
 =======
+>>>>>>> tyler
+>>>>>>> master
+=======
+  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
+          box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
+=======
+<<<<<<< HEAD
+  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
+          box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
+=======
+  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+>>>>>>> master
 >>>>>>> tyler
 >>>>>>> master
 }
@@ -8455,6 +10062,12 @@ button.list-group-item-danger.active:focus {
 .panel-default > .panel-heading {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+  color: #333;
+=======
+<<<<<<< HEAD
+>>>>>>> master
 =======
   color: #333;
 =======
@@ -8465,6 +10078,10 @@ button.list-group-item-danger.active:focus {
   color: #333333;
 >>>>>>> master
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> tyler
+>>>>>>> master
 =======
 >>>>>>> tyler
 >>>>>>> master
@@ -8477,11 +10094,22 @@ button.list-group-item-danger.active:focus {
 .panel-default > .panel-heading .badge {
   color: #f5f5f5;
 <<<<<<< HEAD
+<<<<<<< HEAD
   background-color: #333;
 =======
 <<<<<<< HEAD
   background-color: #333333;
 >>>>>>> master
+=======
+<<<<<<< HEAD
+  background-color: #333;
+=======
+  background-color: #333333;
+>>>>>>> master
+>>>>>>> tyler
+>>>>>>> master
+=======
+  background-color: #333;
 =======
 <<<<<<< HEAD
   background-color: #333;
@@ -8619,6 +10247,12 @@ button.list-group-item-danger.active:focus {
   border-radius: 4px;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+<<<<<<< HEAD
+>>>>>>> tyler
+>>>>>>> master
 =======
 =======
 <<<<<<< HEAD
@@ -8633,6 +10267,9 @@ button.list-group-item-danger.active:focus {
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> master
 =======
 >>>>>>> master
 =======
@@ -8644,6 +10281,10 @@ button.list-group-item-danger.active:focus {
   border-color: rgba(0, 0, 0, 0.15);
 >>>>>>> master
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> tyler
+>>>>>>> master
 =======
 >>>>>>> tyler
 >>>>>>> master
@@ -8665,11 +10306,22 @@ button.list-group-item-danger.active:focus {
   text-shadow: 0 1px 0 #fff;
   filter: alpha(opacity=20);
 <<<<<<< HEAD
+<<<<<<< HEAD
   opacity: .2;
 =======
 <<<<<<< HEAD
   opacity: 0.2;
 >>>>>>> master
+=======
+<<<<<<< HEAD
+  opacity: .2;
+=======
+  opacity: 0.2;
+>>>>>>> master
+>>>>>>> tyler
+>>>>>>> master
+=======
+  opacity: .2;
 =======
 <<<<<<< HEAD
   opacity: .2;
@@ -8687,6 +10339,12 @@ button.list-group-item-danger.active:focus {
   filter: alpha(opacity=50);
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+<<<<<<< HEAD
+>>>>>>> tyler
+>>>>>>> master
 =======
 =======
 <<<<<<< HEAD
@@ -8699,6 +10357,9 @@ button.close {
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> master
 =======
 >>>>>>> master
 =======
@@ -8707,6 +10368,10 @@ button.close {
 button.close {
 >>>>>>> master
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> tyler
+>>>>>>> master
 =======
 >>>>>>> tyler
 >>>>>>> master
@@ -8719,6 +10384,9 @@ button.close {
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> master
 =======
 >>>>>>> master
   -webkit-appearance: none;
@@ -8726,6 +10394,10 @@ button.close {
   appearance: none;
 >>>>>>> master
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> tyler
+>>>>>>> master
 =======
 >>>>>>> tyler
 >>>>>>> master
@@ -8748,6 +10420,12 @@ button.close {
 .modal.fade .modal-dialog {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+<<<<<<< HEAD
+>>>>>>> tyler
+>>>>>>> master
 =======
 =======
 <<<<<<< HEAD
@@ -8769,6 +10447,9 @@ button.close {
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> master
 =======
 >>>>>>> master
 =======
@@ -8789,6 +10470,10 @@ button.close {
   transform: translate(0, 0);
 >>>>>>> master
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> tyler
+>>>>>>> master
 =======
 >>>>>>> tyler
 >>>>>>> master
@@ -8807,6 +10492,12 @@ button.close {
   background-color: #fff;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+<<<<<<< HEAD
+>>>>>>> tyler
+>>>>>>> master
 =======
 =======
 <<<<<<< HEAD
@@ -8823,6 +10514,9 @@ button.close {
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> master
 =======
 >>>>>>> master
 =======
@@ -8835,6 +10529,10 @@ button.close {
   outline: 0;
 >>>>>>> master
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> tyler
+>>>>>>> master
 =======
 >>>>>>> tyler
 >>>>>>> master
@@ -8856,6 +10554,12 @@ button.close {
   filter: alpha(opacity=50);
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+<<<<<<< HEAD
+>>>>>>> tyler
+>>>>>>> master
 =======
 =======
 <<<<<<< HEAD
@@ -8868,6 +10572,9 @@ button.close {
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> master
 =======
 >>>>>>> master
 =======
@@ -8876,6 +10583,10 @@ button.close {
 .modal-header {
 >>>>>>> master
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> tyler
+>>>>>>> master
 =======
 >>>>>>> tyler
 >>>>>>> master
@@ -8922,6 +10633,7 @@ button.close {
   }
   .modal-content {
 <<<<<<< HEAD
+<<<<<<< HEAD
     -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
             box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
 =======
@@ -8934,10 +10646,22 @@ button.close {
     -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
             box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
 =======
+=======
+    -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
+=======
+<<<<<<< HEAD
+    -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
+=======
+>>>>>>> master
     -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
 >>>>>>> master
 >>>>>>> tyler
+<<<<<<< HEAD
+>>>>>>> master
+=======
 >>>>>>> master
   }
   .modal-sm {
@@ -8956,6 +10680,12 @@ button.close {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+<<<<<<< HEAD
+>>>>>>> tyler
+>>>>>>> master
 =======
 =======
 <<<<<<< HEAD
@@ -8968,6 +10698,9 @@ button.close {
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> master
 =======
 >>>>>>> master
 =======
@@ -8977,6 +10710,10 @@ button.close {
   line-break: auto;
 >>>>>>> master
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> tyler
+>>>>>>> master
 =======
 >>>>>>> tyler
 >>>>>>> master
@@ -8992,6 +10729,11 @@ button.close {
   white-space: normal;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+<<<<<<< HEAD
+>>>>>>> master
 =======
 =======
 <<<<<<< HEAD
@@ -9007,6 +10749,10 @@ button.close {
 =======
   font-size: 12px;
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> tyler
+>>>>>>> master
 =======
 >>>>>>> tyler
 >>>>>>> master
@@ -9016,15 +10762,21 @@ button.close {
 .tooltip.in {
   filter: alpha(opacity=90);
 <<<<<<< HEAD
+<<<<<<< HEAD
   opacity: 0.9;
 >>>>>>> master
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> master
   opacity: .9;
 =======
   opacity: 0.9;
 >>>>>>> master
 >>>>>>> tyler
+<<<<<<< HEAD
+>>>>>>> master
+=======
 >>>>>>> master
 }
 .tooltip.top {
@@ -9045,6 +10797,12 @@ button.close {
 }
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+<<<<<<< HEAD
+>>>>>>> tyler
+>>>>>>> master
 =======
 =======
 <<<<<<< HEAD
@@ -9067,9 +10825,15 @@ button.close {
 }
 <<<<<<< HEAD
 =======
+<<<<<<< HEAD
 >>>>>>> master
 =======
 <<<<<<< HEAD
+=======
+=======
+>>>>>>> master
+>>>>>>> tyler
+>>>>>>> master
 =======
 =======
 >>>>>>> master
@@ -9136,6 +10900,9 @@ button.close {
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> master
 =======
 >>>>>>> master
 .tooltip-inner {
@@ -9155,6 +10922,10 @@ button.close {
 }
 >>>>>>> master
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> tyler
+>>>>>>> master
 =======
 >>>>>>> tyler
 >>>>>>> master
@@ -9169,6 +10940,12 @@ button.close {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+<<<<<<< HEAD
+>>>>>>> tyler
+>>>>>>> master
 =======
 =======
 <<<<<<< HEAD
@@ -9181,6 +10958,9 @@ button.close {
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> master
 =======
 >>>>>>> master
 =======
@@ -9190,6 +10970,10 @@ button.close {
   line-break: auto;
 >>>>>>> master
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> tyler
+>>>>>>> master
 =======
 >>>>>>> tyler
 >>>>>>> master
@@ -9205,6 +10989,12 @@ button.close {
   white-space: normal;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+<<<<<<< HEAD
+>>>>>>> tyler
+>>>>>>> master
 =======
 =======
 <<<<<<< HEAD
@@ -9223,6 +11013,9 @@ button.close {
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> master
 =======
 >>>>>>> master
 =======
@@ -9236,6 +11029,10 @@ button.close {
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 >>>>>>> master
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> tyler
+>>>>>>> master
 =======
 >>>>>>> tyler
 >>>>>>> master
@@ -9254,6 +11051,12 @@ button.close {
 }
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+<<<<<<< HEAD
+>>>>>>> tyler
+>>>>>>> master
 =======
 =======
 <<<<<<< HEAD
@@ -9272,6 +11075,9 @@ button.close {
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> master
 =======
 >>>>>>> master
 =======
@@ -9279,6 +11085,10 @@ button.close {
   border-width: 11px;
 >>>>>>> master
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> tyler
+>>>>>>> master
 =======
 >>>>>>> tyler
 >>>>>>> master
@@ -9294,6 +11104,8 @@ button.close {
 }
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
 =======
 .popover > .arrow {
   border-width: 11px;
@@ -9305,9 +11117,20 @@ button.close {
   border-width: 11px;
 }
 =======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> master
+.popover > .arrow {
+  border-width: 11px;
+}
+=======
 >>>>>>> master
 <<<<<<< HEAD
 =======
+>>>>>>> tyler
+>>>>>>> master
+=======
+>>>>>>> master
 >>>>>>> tyler
 >>>>>>> master
 .popover > .arrow:after {
@@ -9320,11 +11143,17 @@ button.close {
   margin-left: -11px;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> master
   border-top-color: #999;
   border-top-color: rgba(0, 0, 0, .25);
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> master
+=======
 >>>>>>> master
   border-top-color: #999;
   border-top-color: rgba(0, 0, 0, .25);
@@ -9333,6 +11162,10 @@ button.close {
   border-top-color: rgba(0, 0, 0, 0.25);
 >>>>>>> master
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> tyler
+>>>>>>> master
 =======
 >>>>>>> tyler
 >>>>>>> master
@@ -9351,6 +11184,7 @@ button.close {
   margin-top: -11px;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
   border-right-color: #999;
   border-right-color: rgba(0, 0, 0, .25);
@@ -9365,6 +11199,19 @@ button.close {
 >>>>>>> master
 <<<<<<< HEAD
 =======
+>>>>>>> tyler
+>>>>>>> master
+=======
+  border-right-color: #999;
+  border-right-color: rgba(0, 0, 0, .25);
+=======
+<<<<<<< HEAD
+  border-right-color: #999;
+  border-right-color: rgba(0, 0, 0, .25);
+=======
+  border-right-color: #999999;
+  border-right-color: rgba(0, 0, 0, 0.25);
+>>>>>>> master
 >>>>>>> tyler
 >>>>>>> master
   border-left-width: 0;
@@ -9382,6 +11229,7 @@ button.close {
   margin-left: -11px;
   border-top-width: 0;
 <<<<<<< HEAD
+<<<<<<< HEAD
   border-bottom-color: #999;
   border-bottom-color: rgba(0, 0, 0, .25);
 =======
@@ -9394,10 +11242,22 @@ button.close {
   border-bottom-color: #999;
   border-bottom-color: rgba(0, 0, 0, .25);
 =======
+=======
+  border-bottom-color: #999;
+  border-bottom-color: rgba(0, 0, 0, .25);
+=======
+<<<<<<< HEAD
+  border-bottom-color: #999;
+  border-bottom-color: rgba(0, 0, 0, .25);
+=======
+>>>>>>> master
   border-bottom-color: #999999;
   border-bottom-color: rgba(0, 0, 0, 0.25);
 >>>>>>> master
 >>>>>>> tyler
+<<<<<<< HEAD
+>>>>>>> master
+=======
 >>>>>>> master
 }
 .popover.bottom > .arrow:after {
@@ -9413,6 +11273,7 @@ button.close {
   margin-top: -11px;
   border-right-width: 0;
 <<<<<<< HEAD
+<<<<<<< HEAD
   border-left-color: #999;
   border-left-color: rgba(0, 0, 0, .25);
 =======
@@ -9425,10 +11286,22 @@ button.close {
   border-left-color: #999;
   border-left-color: rgba(0, 0, 0, .25);
 =======
+=======
+  border-left-color: #999;
+  border-left-color: rgba(0, 0, 0, .25);
+=======
+<<<<<<< HEAD
+  border-left-color: #999;
+  border-left-color: rgba(0, 0, 0, .25);
+=======
+>>>>>>> master
   border-left-color: #999999;
   border-left-color: rgba(0, 0, 0, 0.25);
 >>>>>>> master
 >>>>>>> tyler
+<<<<<<< HEAD
+>>>>>>> master
+=======
 >>>>>>> master
 }
 .popover.left > .arrow:after {
@@ -9443,6 +11316,9 @@ button.close {
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> master
 =======
 >>>>>>> master
 .popover-title {
@@ -9458,6 +11334,10 @@ button.close {
 }
 >>>>>>> master
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> tyler
+>>>>>>> master
 =======
 >>>>>>> tyler
 >>>>>>> master
@@ -9473,11 +11353,22 @@ button.close {
   position: relative;
   display: none;
 <<<<<<< HEAD
+<<<<<<< HEAD
   -webkit-transition: .6s ease-in-out left;
        -o-transition: .6s ease-in-out left;
           transition: .6s ease-in-out left;
 =======
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> master
+  -webkit-transition: .6s ease-in-out left;
+       -o-transition: .6s ease-in-out left;
+          transition: .6s ease-in-out left;
+=======
+<<<<<<< HEAD
+>>>>>>> master
 =======
 <<<<<<< HEAD
   -webkit-transition: .6s ease-in-out left;
@@ -9490,6 +11381,10 @@ button.close {
   transition: 0.6s ease-in-out left;
 >>>>>>> master
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> tyler
+>>>>>>> master
 =======
 >>>>>>> tyler
 >>>>>>> master
@@ -9502,6 +11397,12 @@ button.close {
   .carousel-inner > .item {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+<<<<<<< HEAD
+>>>>>>> tyler
+>>>>>>> master
 =======
 =======
 <<<<<<< HEAD
@@ -9530,6 +11431,9 @@ button.close {
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> master
 =======
 >>>>>>> master
 =======
@@ -9556,6 +11460,10 @@ button.close {
     left: 0;
 >>>>>>> master
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> tyler
+>>>>>>> master
 =======
 >>>>>>> tyler
 >>>>>>> master
@@ -9565,12 +11473,18 @@ button.close {
   .carousel-inner > .item.active {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> master
     left: 0;
     -webkit-transform: translate3d(0, 0, 0);
             transform: translate3d(0, 0, 0);
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> master
+=======
 >>>>>>> master
     left: 0;
     -webkit-transform: translate3d(0, 0, 0);
@@ -9581,6 +11495,10 @@ button.close {
     left: 0;
 >>>>>>> master
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> tyler
+>>>>>>> master
 =======
 >>>>>>> tyler
 >>>>>>> master
@@ -9627,6 +11545,12 @@ button.close {
   text-align: center;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+<<<<<<< HEAD
+>>>>>>> tyler
+>>>>>>> master
 =======
 =======
 <<<<<<< HEAD
@@ -9644,6 +11568,9 @@ button.close {
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> master
 =======
 >>>>>>> master
 =======
@@ -9659,6 +11586,10 @@ button.close {
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.0001) 100%);
 >>>>>>> master
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> tyler
+>>>>>>> master
 =======
 >>>>>>> tyler
 >>>>>>> master
@@ -9670,6 +11601,12 @@ button.close {
   left: auto;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+<<<<<<< HEAD
+>>>>>>> tyler
+>>>>>>> master
 =======
 =======
 <<<<<<< HEAD
@@ -9682,6 +11619,9 @@ button.close {
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> master
 =======
 >>>>>>> master
 =======
@@ -9691,6 +11631,10 @@ button.close {
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0.0001) 0%, rgba(0, 0, 0, 0.5) 100%);
 >>>>>>> master
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> tyler
+>>>>>>> master
 =======
 >>>>>>> tyler
 >>>>>>> master
@@ -9703,12 +11647,18 @@ button.close {
   text-decoration: none;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> master
   filter: alpha(opacity=90);
   outline: 0;
   opacity: .9;
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> master
+=======
 >>>>>>> master
   filter: alpha(opacity=90);
   outline: 0;
@@ -9719,6 +11669,10 @@ button.close {
   opacity: 0.9;
 >>>>>>> master
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> tyler
+>>>>>>> master
 =======
 >>>>>>> tyler
 >>>>>>> master
@@ -9753,6 +11707,12 @@ button.close {
 .carousel-control .icon-prev:before {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+<<<<<<< HEAD
+>>>>>>> tyler
+>>>>>>> master
 =======
 =======
 <<<<<<< HEAD
@@ -9765,6 +11725,9 @@ button.close {
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> master
 =======
 >>>>>>> master
 =======
@@ -9774,6 +11737,10 @@ button.close {
   content: "\203a";
 >>>>>>> master
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> tyler
+>>>>>>> master
 =======
 >>>>>>> tyler
 >>>>>>> master
@@ -9819,6 +11786,12 @@ button.close {
   text-align: center;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+  text-shadow: 0 1px 2px rgba(0, 0, 0, .6);
+=======
+<<<<<<< HEAD
+>>>>>>> master
 =======
   text-shadow: 0 1px 2px rgba(0, 0, 0, .6);
 =======
@@ -9829,6 +11802,10 @@ button.close {
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
 >>>>>>> master
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> tyler
+>>>>>>> master
 =======
 >>>>>>> tyler
 >>>>>>> master
@@ -9844,11 +11821,22 @@ button.close {
     width: 30px;
     height: 30px;
 <<<<<<< HEAD
+<<<<<<< HEAD
     margin-top: -15px;
 =======
 <<<<<<< HEAD
     margin-top: -10px;
 >>>>>>> master
+=======
+<<<<<<< HEAD
+    margin-top: -15px;
+=======
+    margin-top: -10px;
+>>>>>>> master
+>>>>>>> tyler
+>>>>>>> master
+=======
+    margin-top: -15px;
 =======
 <<<<<<< HEAD
     margin-top: -15px;
@@ -9863,6 +11851,7 @@ button.close {
   .carousel-control .icon-prev {
 <<<<<<< HEAD
     margin-left: -15px;
+<<<<<<< HEAD
   }
   .carousel-control .glyphicon-chevron-right,
   .carousel-control .icon-next {
@@ -9874,6 +11863,12 @@ button.close {
   .carousel-control .glyphicon-chevron-right,
   .carousel-control .icon-next {
     margin-right: -10px;
+>>>>>>> master
+=======
+  }
+  .carousel-control .glyphicon-chevron-right,
+  .carousel-control .icon-next {
+    margin-right: -15px;
 >>>>>>> master
 =======
 <<<<<<< HEAD
@@ -9890,6 +11885,9 @@ button.close {
     margin-right: -10px;
 >>>>>>> master
 >>>>>>> tyler
+<<<<<<< HEAD
+>>>>>>> master
+=======
 >>>>>>> master
   }
   .carousel-caption {
@@ -9932,11 +11930,19 @@ button.close {
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 .modal-header:before,
 .modal-header:after,
 >>>>>>> master
 =======
 <<<<<<< HEAD
+=======
+.modal-header:before,
+.modal-header:after,
+>>>>>>> master
+>>>>>>> tyler
+>>>>>>> master
+=======
 =======
 .modal-header:before,
 .modal-header:after,
@@ -9965,14 +11971,20 @@ button.close {
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 .modal-header:after,
 >>>>>>> master
 =======
 <<<<<<< HEAD
 =======
+>>>>>>> master
+=======
 .modal-header:after,
 >>>>>>> master
 >>>>>>> tyler
+<<<<<<< HEAD
+>>>>>>> master
+=======
 >>>>>>> master
 .modal-footer:after {
   clear: both;
@@ -10222,6 +12234,12 @@ button.close {
 }
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+/*# sourceMappingURL=bootstrap.css.map */
+=======
+<<<<<<< HEAD
+>>>>>>> master
 =======
 /*# sourceMappingURL=bootstrap.css.map */
 =======
@@ -10232,6 +12250,10 @@ button.close {
 /*# sourceMappingURL=bootstrap.css.map */
 >>>>>>> master
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> tyler
+>>>>>>> master
 =======
 >>>>>>> tyler
 >>>>>>> master
