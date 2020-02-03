@@ -1,4 +1,10 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+<<<<<<< HEAD
+>>>>>>> tyler
+>>>>>>> master
 from flask import Flask, render_template, url_for, request, redirect, session, flash
 from functools import wraps
 import sqlite3
@@ -178,6 +184,9 @@ def loginbus():
 
 
 if __name__ == "__main__":
+<<<<<<< HEAD
+    app.run(host="0.0.0.0", debug=True)
+=======
     app.run(host="0.0.0.0", debug=True)
 =======
 from flask import Flask, render_template, request, redirect, url_for, session
@@ -212,4 +221,8 @@ def makeEmail(recEmail, courseT, reqDay):
 
 if __name__ == "__main__":
     app.run(host='0.0.0.0', debug=True)
+>>>>>>> master
+<<<<<<< HEAD
+=======
+>>>>>>> tyler
 >>>>>>> master
