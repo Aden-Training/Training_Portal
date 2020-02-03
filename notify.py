@@ -6,6 +6,7 @@ from email.mime.multipart import MIMEMultipart
 current = datetime.datetime.now()
 renew = current.minute + 3
 print(renew)
+print(current)
 
 while(True):
     current = datetime.datetime.now()
@@ -19,8 +20,8 @@ while(True):
         receiverEmail = "rosscameronclarkbell@gmail.com"  
         password = "DevPw2020*" 
 
-        requestedDay = "13th June"
-        courseT = "forklift"
+        requestedDay = "13th June" #Will need to be taken from db or site etc
+        courseT = "forklift" #Will need to be taken from db or site etc 
 
         
         message = MIMEMultipart("alternative")
