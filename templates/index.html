@@ -1,5 +1,9 @@
 {% extends "base.html" %}
 {% block content %}
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> tyler
 <div class="container">
 <h2>Home</h2>
 <h4>Welcome {{session['user']}}</h4>
@@ -7,3 +11,29 @@
 
 
 {% endblock %}
+<<<<<<< HEAD
+=======
+=======
+<div class ="row">
+  <div class="col-md-4"></div>
+  <div class="col-md-4">
+    <div class="form-group" action="/sendEmail" method="post">
+      <br>
+      <h3>Fill the form below</h3>
+      <br>
+      <input autocomplete="off" class="form-control formInput" type="text" name="emailAddress" value="" placeholder="Email Address" required>
+      <br>
+      <input autocomplete="off" class="form-control formInput" type="text" name="courseType" value="" placeholder="Course Type" required>
+      <br>
+      <input autocomplete="off" class="form-control formInput" type="text" name="requestedDay" value="" placeholder="Requested Day" required>
+      <br>
+      <button type="submit" name="button" class="btn btn-default">Submit</button>            
+    </div>
+  </div>
+  <div class="col-md-4"></div>
+</row>
+
+{% endblock %}
+
+>>>>>>> master
+>>>>>>> tyler
