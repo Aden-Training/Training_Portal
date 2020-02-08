@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+{% block content %}
+
+<h3>Courses</h3>
+<div class="container">
+    {% with messages = get_flashed_messages() %}
+        {% if messages %}
+            {% for message in messages %}
+                <h4>{{message}}</h4>
+            {% endfor %}
+        {% endif %}
+
+    {% endwith %}
+    <div class="jumbotron">
+        {% for course in courses %}
+        
+        <div class="course">
+            <h3>{{course.business}}</h3>
+            <h4>{{course.course_name}}</h4>
+            <p>{{course.description}}</p>
+            <form action="/bookcourse/{{course.course_name}}" method="POST">
+            <button type="submit" class="btn btn-default">Book Course <span class="glyphicon glyphicon-ok"></span></button>
+            </form>
+             
+        </div>
+
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}

@@ -2,16 +2,74 @@
   width: 200px;
 }
 
+/* Main body of page */
 body{
-  background-color: #6b4d57;
+  background-color: #ffffff;
+  font-family: 'Raleway', sans-serif;
+  overflow-x: hidden; 
 }
 
 p{
-  color: #ddc8c4;
+  color: #000000;
 }
 
 .centered{
   text-align: center;
+}
+
+/* Page header */
+.jumbotron{
+  background-color: #ff4040;
+  border-bottom-color: #ff4040;
+  border-bottom-style: solid;
+  border-radius: 0px;
+  height: 100px;
+  margin-top: -5px;
+}
+
+/* Header text */
+.headerText{
+  color: #ffffff;
+  font-family: 'Raleway', sans-serif;
+  text-align: left;
+  margin-top: -15px;
+  margin-left: 10px;
+}
+
+/* Header Image */
+.headerImage {
+  border-radius: 8px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -50px;
+  width: 50%;
+}
+
+/* Block image underneath header*/
+#findCourse{
+  position: relative;
+  text-align: center;
+  color: #ffffff;
+  opacity: 0.6;
+}
+
+/* Text on block image */
+.findCourseText{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #000000;
+  font-size: large;
+}
+
+/* Center Images */
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
 }
 
 .loginForm{
@@ -19,14 +77,41 @@ p{
   display: inline-block;
 }
 
-ul{
+/* Navigation bar */
+.navigationBar{
+  margin-top: -32px;
+  font-family: 'Raleway', sans-serif;
+}
 
+ul{
+  list-style-type: none;
+  margin: 0;
+  overflow: hidden;
+  background-color: #ffffff;
+  width: 100%;
+}
+
+li{
+  float: left;
+  border-right: 1px solid #bbb;
 }
 
 ul li{
   list-style-type: none;
   display: inline-block;
-  margin-right: 10px;
+}
+
+li a{
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-image: linear-gradient(#ff4040, #f2b929);
+  transition: 0.3s;
 }
 
 a{
@@ -35,30 +120,25 @@ a{
 
 a:hover{
   text-decoration: none;
-  color: #896A67;
+  color: #ffffff;
 }
 
 ul li a{
-  color: #EFF9F0;
+  color: #ff4040;
 }
 
 h2{
 }
 
+/* NEEDS TO BE DELETED
 ul li a:hover{
   text-decoration: none;
   color: #896A67;
 }
 
-.jumbotron{
-  background-color: #13070C;
-  border-bottom-color: white;
-  border-bottom-style: solid;
-  height: 150px;
-}
-
+/* Catergory bar */
 .catbar{
-  color: white;
+  color: #000000;
   padding-left: 10px;
 }
 
@@ -79,5 +159,15 @@ ul li a:hover{
   display: inline-block;
   margin-right: 20px;
   margin-top: 20px;
-  min-height:400px;
+}
+
+/* Buttons */
+.btn{
+  background-color: #ff4040;
+  border-color: #ff4040;
+}
+
+.btn:hover{
+  background-color: #c53d3d;
+  border-color: #c53d3d;
 }

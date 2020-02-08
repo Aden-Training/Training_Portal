@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+{% block content %}
+    <div class="container">
+        <h1>People booked on this course</h1>
+        {% for people in people %}
+            <p>{{people.person_booked}}</p>
+        {% endfor %}
+    </div>
+{% endblock %}
