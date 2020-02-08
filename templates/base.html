@@ -5,16 +5,20 @@
     <title>Prototype</title>
     <link rel="stylesheet" href="{{url_for('static', filename = 'css/bootstrap.min.css')}}">
     <link rel="stylesheet" href="{{url_for('static', filename = 'css/master.css')}}">
+    <script src="../static/js/functions.js" type="text/javascript">
+    </script>
+    <link rel="shortcut icon" href="#">
   </head>
-  <body>
-    <div class="jumbotron">
-      {% if session['user'] %}
-      <p>Welcome {{session['user']}}</p>
-      <a href="/logout">Logout</a>
-      {% endif %}
-    </div>
-    {% block content %}
-      
-    {% endblock %}
-  </body>
+    <body>
+      <div class="jumbotron">
+        {% if session['user'] %}
+        <p>Welcome {{session['user']}}</p>
+        <a href="/logout">Logout</a>
+        {% endif %}
+      </div>
+      {% block content %}
+        
+      {% endblock %}
+    </body>
+  
 </html>

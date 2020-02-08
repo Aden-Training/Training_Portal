@@ -1,0 +1,73 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>Find a course here</h2>
+<div class="coursefinder">
+    <div class="row">
+        <div class="col-md-3">
+            <div class="catbar" id="catbarTo">
+                <h3>Categories</h3>
+                <div class="catlist">
+                    <br>
+                    <button class="btn btn-primary" onclick="switchVisibleHGV()">HGV</button> 
+                    <br><br>
+                    <button class="btn btn-primary" onclick="switchVisibleOffshore()">Offshore</button> 
+                </div>
+            </div>
+        </div>
+        <div class="col-md-8" id="coursesTo">
+            <div class="catexpand">
+                <div class="catexpandHGV" id="divHGV">
+                    <div class="card" style="width: 18rem;">
+                        <img width="200px" height="200px" class="card-img-top" src="{{url_for('static', filename='img/forklift.jpg')}}" alt="Card image cap">
+                        <div class="card-body">
+                          <h5 class="card-title">Fork lift Training</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <a href="#" class="btn btn-primary">Book Now!</a>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;">
+                        <img width="200px" height="200px" class="card-img-top" src="{{url_for('static', filename='img/lorry.jpg')}}" alt="Card image cap">
+                        <div class="card-body">
+                          <h5 class="card-title">HGV Operation</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <a href="#" class="btn btn-primary">Book Now!</a>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;">
+                        <img width="200px" height="200px" class="card-img-top" src="{{url_for('static', filename='img/crane.jpg')}}" alt="Card image cap">
+                        <div class="card-body">
+                          <h5 class="card-title">Crane</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <a href="#" class="btn btn-primary">Book Now!</a>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;">
+                        <img width="200px" height="200px" class="card-img-top" src="{{url_for('static', filename='img/sawmill.jpg')}}" alt="Card image cap">
+                        <div class="card-body">
+                          <h5 class="card-title">Saw Mill Training</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <a href="#" class="btn btn-primary">Book Now!</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="catexpandOffshore" id="divOffshore">
+                    {% for course in course %}
+                        <div class="card" style="width: 18rem;">
+                            <img width="200px" height="200px" class="card-img-top" src="{{course.thumbnail}}" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">{{course["course_name"]}}</h5>
+                                <p class="card-text">{{course["description"]}}</p>
+                                <a href="#" class="btn btn-primary">Book Now!</a>
+                            </div>
+                        </div>
+                    {% endfor %}
+            </div>
+        </div>
+    </div>
+    <div class="mainresults">
+
+    </div>
+
+</div>
+
+{% endblock %}
