@@ -8,6 +8,11 @@
   </head>
   <body>
     <div class="jumbotron">
+      <!-- <ul>
+        <li> <a href="">link 1</a> </li>
+        <li> <a href="">link 2</a> </li>
+        <li> <a href="">link 3</a> </li>
+      </ul> -->
       {% if session['user'] %}
       <p>Welcome {{session['user']}}</p>
       <a href="/logout">Logout</a>

@@ -1,8 +1,12 @@
 from flask import Flask, render_template, url_for, request, redirect, session, flash
 from functools import wraps
+from email.mime.text import MIMEText
+from email.mime.multipart import MIMEMultipart
+
 import sqlite3
 import bcrypt
 import random
+import smtplib, ssl
 
 app = Flask(__name__)
 app.secret_key = "lmaosecretkeylmao"
@@ -31,7 +35,8 @@ conn = sqlite3.connect("db/database.db")
 
 conn.execute("CREATE TABLE IF NOT EXISTS customers (username TEXT, password TEXT)")
 conn.execute("CREATE TABLE IF NOT EXISTS businesses (username TEXT, password TEXT, industry TEXT)")
-conn.execute("CREATE TABLE IF NOT EXISTS courses (business TEXT, course_name TEXT, description TEXT)")
+conn.execute("CREATE TABLE IF NOT EXISTS courses (id INTEGER PRIMARY KEY AUTOINCREMENT, business TEXT, course_name TEXT, description TEXT)")
+conn.execute("CREATE TABLE IF NOT EXISTS bookings (person_booked TEXT, course_name TEXT)")
 
 #   CUSTOMER PAGES
 
@@ -62,7 +67,7 @@ def postcourse():
         desc = request.form['courseDescription']
 
         with sqlite3.connect('db/database.db') as con:
-            con.execute("INSERT INTO courses VALUES (?,?,?)", (business, name, desc))
+            con.execute("INSERT INTO courses VALUES (null,?,?,?)", (business, name, desc))
     
     return redirect('/businesstraining')
 
@@ -78,12 +83,24 @@ def courses():
     cur = con.cursor()
 
     cur.execute("SELECT * FROM courses WHERE business = ?", [session['user']])
-
     courses = cur.fetchall()
 
-    render_template('courses.html', courses = courses)
+    return render_template('courses.html', courses = courses)
 
 #   LOGGING IN CUSTOMERS
+
+@app.route('/coursesavailable', methods=["GET"])
+def coursesavailable():
+    con = sqlite3.connect('db/database.db')
+    con.row_factory = sqlite3.Row
+
+    cur = con.cursor()
+
+    cur.execute("SELECT * FROM courses")
+    courses = cur.fetchall()
+
+    return render_template('coursesavailable.html', courses = courses)
+
 
 @app.route('/registercust', methods = ["GET","POST"])
 def register():
@@ -176,15 +193,43 @@ def loginbus():
     return render_template('loginbus.html')
 
 
-if __name__ == "__main__":
-    app.run(host="0.0.0.0", debug=True)
+@app.route('/removecourse/<id>', methods=["GET", "POST"])
+def removecourse(id):
+    if request.method == "POST":
+        with sqlite3.connect('db/database.db') as con:
+            con.execute("DELETE FROM courses WHERE id = ?", [id])
+            con.commit()
 
-# from flask import Flask, render_template, request, redirect, url_for, session
-# import smtplib, ssl
-# from email.mime.text import MIMEText
-# from email.mime.multipart import MIMEMultipart
+        return redirect('/courses')
 
-# app = Flask(__name__)
+@app.route('/bookcourse/<coursename>', methods=["POST","GET"])
+def bookcourse(coursename):
+    if request.method == "POST":
+
+        course = coursename
+        user = session['user']
+
+
+        with sqlite3.connect('db/database.db') as con:
+            con.execute("INSERT INTO bookings VALUES (?,?)",(user,course))
+            con.commit()
+
+    flash("You're Successfully booked onto %s!" % course)
+
+    return redirect('/coursesavailable')
+
+@app.route('/peoplebooked/<coursename>', methods=["GET"])
+def peoplebooked(coursename):
+    con = sqlite3.connect('db/database.db')
+    cur = con.cursor()
+
+    cur.execute("SELECT person_booked FROM bookings WHERE course_name = ?", [coursename])
+
+    people = cur.fetchall()
+
+    return render_template('peoplebooked.html', people = people)
+
+
 
 # @app.route('/')
 # def root():
@@ -207,8 +252,5 @@ if __name__ == "__main__":
 #     #Add the shit pls ross
 
 
-
-
-# if __name__ == "__main__":
-#     app.run(host='0.0.0.0', debug=True)
-
+if __name__ == "__main__":
+    app.run(host='0.0.0.0', debug=True)

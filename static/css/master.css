@@ -1,3 +1,4 @@
+
 .formInput{
   width: 200px;
 }
@@ -35,7 +36,7 @@ a{
 
 a:hover{
   text-decoration: none;
-  color: #896A67;
+  color: rgb(87, 127, 214);
 }
 
 ul li a{
@@ -49,35 +50,20 @@ ul li a:hover{
   text-decoration: none;
   color: #896A67;
 }
-
+/* 
 .jumbotron{
   background-color: #13070C;
   border-bottom-color: white;
   border-bottom-style: solid;
-  height: 150px;
+} */
+
+.jumbotron{
+    background-color: rgba(255, 255, 255, 0.158);
+    color: white;
+    padding: 20px;
 }
 
-.catbar{
-  color: white;
-  padding-left: 10px;
-}
-
-.catlist{
-  color: black;
-}
-
-.catexpand{
-  padding: 10px;
-}
-
-
-#divOffshore{
-  display:none;
-}
-
-.card{
-  display: inline-block;
-  margin-right: 20px;
-  margin-top: 20px;
-  min-height:400px;
+.course{
+  margin-top: 10px;
+  border-top-style: solid;
 }

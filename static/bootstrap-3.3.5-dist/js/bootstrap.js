@@ -1,32 +1,6 @@
 /*!
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> master
  * Bootstrap v3.3.5 (http://getbootstrap.com)
  * Copyright 2011-2015 Twitter, Inc.
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> master
-=======
->>>>>>> master
- * Bootstrap v3.3.5 (http://getbootstrap.com)
- * Copyright 2011-2015 Twitter, Inc.
-=======
- * Bootstrap v3.4.1 (https://getbootstrap.com/)
- * Copyright 2011-2019 Twitter, Inc.
->>>>>>> master
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> tyler
->>>>>>> master
-=======
->>>>>>> tyler
->>>>>>> master
  * Licensed under the MIT license
  */
 
@@ -37,80 +11,16 @@ if (typeof jQuery === 'undefined') {
 +function ($) {
   'use strict';
   var version = $.fn.jquery.split(' ')[0].split('.')
-<<<<<<< HEAD
-<<<<<<< HEAD
   if ((version[0] < 2 && version[1] < 9) || (version[0] == 1 && version[1] == 9 && version[2] < 1)) {
     throw new Error('Bootstrap\'s JavaScript requires jQuery version 1.9.1 or higher')
-=======
-<<<<<<< HEAD
-  if ((version[0] < 2 && version[1] < 9) || (version[0] == 1 && version[1] == 9 && version[2] < 1) || (version[0] > 3)) {
-    throw new Error('Bootstrap\'s JavaScript requires jQuery version 1.9.1 or higher, but lower than version 4')
->>>>>>> master
-=======
-<<<<<<< HEAD
-  if ((version[0] < 2 && version[1] < 9) || (version[0] == 1 && version[1] == 9 && version[2] < 1)) {
-    throw new Error('Bootstrap\'s JavaScript requires jQuery version 1.9.1 or higher')
-=======
-=======
-  if ((version[0] < 2 && version[1] < 9) || (version[0] == 1 && version[1] == 9 && version[2] < 1)) {
-    throw new Error('Bootstrap\'s JavaScript requires jQuery version 1.9.1 or higher')
-=======
-<<<<<<< HEAD
-  if ((version[0] < 2 && version[1] < 9) || (version[0] == 1 && version[1] == 9 && version[2] < 1)) {
-    throw new Error('Bootstrap\'s JavaScript requires jQuery version 1.9.1 or higher')
-=======
->>>>>>> master
-  if ((version[0] < 2 && version[1] < 9) || (version[0] == 1 && version[1] == 9 && version[2] < 1) || (version[0] > 3)) {
-    throw new Error('Bootstrap\'s JavaScript requires jQuery version 1.9.1 or higher, but lower than version 4')
->>>>>>> master
->>>>>>> tyler
-<<<<<<< HEAD
->>>>>>> master
-=======
->>>>>>> master
   }
 }(jQuery);
 
 /* ========================================================================
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
-<<<<<<< HEAD
->>>>>>> tyler
->>>>>>> master
-=======
-=======
-<<<<<<< HEAD
->>>>>>> tyler
->>>>>>> master
  * Bootstrap: transition.js v3.3.5
  * http://getbootstrap.com/javascript/#transitions
  * ========================================================================
  * Copyright 2011-2015 Twitter, Inc.
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> master
-=======
->>>>>>> master
-=======
- * Bootstrap: transition.js v3.4.1
- * https://getbootstrap.com/docs/3.4/javascript/#transitions
- * ========================================================================
- * Copyright 2011-2019 Twitter, Inc.
->>>>>>> master
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> tyler
->>>>>>> master
-=======
->>>>>>> tyler
->>>>>>> master
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  * ======================================================================== */
 
@@ -118,32 +28,7 @@ if (typeof jQuery === 'undefined') {
 +function ($) {
   'use strict';
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
   // CSS TRANSITION SUPPORT (Shoutout: http://www.modernizr.com/)
-=======
-<<<<<<< HEAD
->>>>>>> master
-  // CSS TRANSITION SUPPORT (Shoutout: http://www.modernizr.com/)
-=======
-  // CSS TRANSITION SUPPORT (Shoutout: https://modernizr.com/)
->>>>>>> master
-<<<<<<< HEAD
-=======
->>>>>>> tyler
->>>>>>> master
-=======
-  // CSS TRANSITION SUPPORT (Shoutout: http://www.modernizr.com/)
-=======
-<<<<<<< HEAD
-  // CSS TRANSITION SUPPORT (Shoutout: http://www.modernizr.com/)
-=======
-  // CSS TRANSITION SUPPORT (Shoutout: https://modernizr.com/)
->>>>>>> master
->>>>>>> tyler
->>>>>>> master
   // ============================================================
 
   function transitionEnd() {
@@ -165,31 +50,7 @@ if (typeof jQuery === 'undefined') {
     return false // explicit for ie8 (  ._.)
   }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
   // http://blog.alexmaccaw.com/css-transitions
-=======
-<<<<<<< HEAD
->>>>>>> master
-=======
-  // http://blog.alexmaccaw.com/css-transitions
-=======
-<<<<<<< HEAD
->>>>>>> master
-  // http://blog.alexmaccaw.com/css-transitions
-=======
-  // https://blog.alexmaccaw.com/css-transitions
->>>>>>> master
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> tyler
->>>>>>> master
-=======
->>>>>>> tyler
->>>>>>> master
   $.fn.emulateTransitionEnd = function (duration) {
     var called = false
     var $el = this
@@ -216,45 +77,10 @@ if (typeof jQuery === 'undefined') {
 }(jQuery);
 
 /* ========================================================================
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
-<<<<<<< HEAD
->>>>>>> tyler
->>>>>>> master
-=======
-=======
-<<<<<<< HEAD
->>>>>>> tyler
->>>>>>> master
  * Bootstrap: alert.js v3.3.5
  * http://getbootstrap.com/javascript/#alerts
  * ========================================================================
  * Copyright 2011-2015 Twitter, Inc.
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> master
-=======
->>>>>>> master
-=======
- * Bootstrap: alert.js v3.4.1
- * https://getbootstrap.com/docs/3.4/javascript/#alerts
- * ========================================================================
- * Copyright 2011-2019 Twitter, Inc.
->>>>>>> master
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> tyler
->>>>>>> master
-=======
->>>>>>> tyler
->>>>>>> master
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  * ======================================================================== */
 
@@ -270,31 +96,7 @@ if (typeof jQuery === 'undefined') {
     $(el).on('click', dismiss, this.close)
   }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
   Alert.VERSION = '3.3.5'
-=======
-<<<<<<< HEAD
->>>>>>> master
-=======
-  Alert.VERSION = '3.3.5'
-=======
-<<<<<<< HEAD
->>>>>>> master
-  Alert.VERSION = '3.3.5'
-=======
-  Alert.VERSION = '3.4.1'
->>>>>>> master
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> tyler
->>>>>>> master
-=======
->>>>>>> tyler
->>>>>>> master
 
   Alert.TRANSITION_DURATION = 150
 
@@ -307,31 +109,7 @@ if (typeof jQuery === 'undefined') {
       selector = selector && selector.replace(/.*(?=#[^\s]*$)/, '') // strip for ie7
     }
 
-<<<<<<< HEAD
     var $parent = $(selector)
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-    selector    = selector === '#' ? [] : selector
-    var $parent = $(document).find(selector)
->>>>>>> master
-=======
-<<<<<<< HEAD
-    var $parent = $(selector)
-=======
-    selector    = selector === '#' ? [] : selector
-    var $parent = $(document).find(selector)
->>>>>>> master
->>>>>>> tyler
->>>>>>> master
-=======
-    var $parent = $(selector)
-=======
-    selector    = selector === '#' ? [] : selector
-    var $parent = $(document).find(selector)
->>>>>>> master
->>>>>>> tyler
->>>>>>> master
 
     if (e) e.preventDefault()
 
@@ -394,45 +172,10 @@ if (typeof jQuery === 'undefined') {
 }(jQuery);
 
 /* ========================================================================
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
-<<<<<<< HEAD
->>>>>>> tyler
->>>>>>> master
-=======
-=======
-<<<<<<< HEAD
->>>>>>> tyler
->>>>>>> master
  * Bootstrap: button.js v3.3.5
  * http://getbootstrap.com/javascript/#buttons
  * ========================================================================
  * Copyright 2011-2015 Twitter, Inc.
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> master
-=======
->>>>>>> master
-=======
- * Bootstrap: button.js v3.4.1
- * https://getbootstrap.com/docs/3.4/javascript/#buttons
- * ========================================================================
- * Copyright 2011-2019 Twitter, Inc.
->>>>>>> master
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> tyler
->>>>>>> master
-=======
->>>>>>> tyler
->>>>>>> master
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  * ======================================================================== */
 
@@ -449,31 +192,7 @@ if (typeof jQuery === 'undefined') {
     this.isLoading = false
   }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
   Button.VERSION  = '3.3.5'
-=======
-<<<<<<< HEAD
-  Button.VERSION  = '3.4.1'
->>>>>>> master
-=======
-<<<<<<< HEAD
-  Button.VERSION  = '3.3.5'
-=======
-  Button.VERSION  = '3.4.1'
->>>>>>> master
->>>>>>> tyler
->>>>>>> master
-=======
-  Button.VERSION  = '3.3.5'
-=======
-<<<<<<< HEAD
-  Button.VERSION  = '3.3.5'
-=======
-  Button.VERSION  = '3.4.1'
->>>>>>> master
->>>>>>> tyler
->>>>>>> master
 
   Button.DEFAULTS = {
     loadingText: 'loading...'
@@ -495,45 +214,10 @@ if (typeof jQuery === 'undefined') {
 
       if (state == 'loadingText') {
         this.isLoading = true
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
-<<<<<<< HEAD
->>>>>>> tyler
->>>>>>> master
-=======
-=======
-<<<<<<< HEAD
->>>>>>> tyler
->>>>>>> master
         $el.addClass(d).attr(d, d)
       } else if (this.isLoading) {
         this.isLoading = false
         $el.removeClass(d).removeAttr(d)
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> master
-=======
->>>>>>> master
-=======
-        $el.addClass(d).attr(d, d).prop(d, true)
-      } else if (this.isLoading) {
-        this.isLoading = false
-        $el.removeClass(d).removeAttr(d).prop(d, false)
->>>>>>> master
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> tyler
->>>>>>> master
-=======
->>>>>>> tyler
->>>>>>> master
       }
     }, this), 0)
   }
@@ -597,50 +281,10 @@ if (typeof jQuery === 'undefined') {
 
   $(document)
     .on('click.bs.button.data-api', '[data-toggle^="button"]', function (e) {
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
-<<<<<<< HEAD
->>>>>>> tyler
->>>>>>> master
-=======
-=======
-<<<<<<< HEAD
->>>>>>> tyler
->>>>>>> master
       var $btn = $(e.target)
       if (!$btn.hasClass('btn')) $btn = $btn.closest('.btn')
       Plugin.call($btn, 'toggle')
       if (!($(e.target).is('input[type="radio"]') || $(e.target).is('input[type="checkbox"]'))) e.preventDefault()
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> master
-=======
->>>>>>> master
-=======
-      var $btn = $(e.target).closest('.btn')
-      Plugin.call($btn, 'toggle')
-      if (!($(e.target).is('input[type="radio"], input[type="checkbox"]'))) {
-        // Prevent double click on radios, and the double selections (so cancellation) on checkboxes
-        e.preventDefault()
-        // The target component still receive the focus
-        if ($btn.is('input,button')) $btn.trigger('focus')
-        else $btn.find('input:visible,button:visible').first().trigger('focus')
-      }
->>>>>>> master
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> tyler
->>>>>>> master
-=======
->>>>>>> tyler
->>>>>>> master
     })
     .on('focus.bs.button.data-api blur.bs.button.data-api', '[data-toggle^="button"]', function (e) {
       $(e.target).closest('.btn').toggleClass('focus', /^focus(in)?$/.test(e.type))
@@ -649,45 +293,10 @@ if (typeof jQuery === 'undefined') {
 }(jQuery);
 
 /* ========================================================================
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
-<<<<<<< HEAD
->>>>>>> tyler
->>>>>>> master
-=======
-=======
-<<<<<<< HEAD
->>>>>>> tyler
->>>>>>> master
  * Bootstrap: carousel.js v3.3.5
  * http://getbootstrap.com/javascript/#carousel
  * ========================================================================
  * Copyright 2011-2015 Twitter, Inc.
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> master
-=======
->>>>>>> master
-=======
- * Bootstrap: carousel.js v3.4.1
- * https://getbootstrap.com/docs/3.4/javascript/#carousel
- * ========================================================================
- * Copyright 2011-2019 Twitter, Inc.
->>>>>>> master
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> tyler
->>>>>>> master
-=======
->>>>>>> tyler
->>>>>>> master
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  * ======================================================================== */
 
@@ -715,32 +324,7 @@ if (typeof jQuery === 'undefined') {
       .on('mouseleave.bs.carousel', $.proxy(this.cycle, this))
   }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
   Carousel.VERSION  = '3.3.5'
-=======
-<<<<<<< HEAD
->>>>>>> master
-  Carousel.VERSION  = '3.3.5'
-=======
-  Carousel.VERSION  = '3.4.1'
->>>>>>> master
-<<<<<<< HEAD
-=======
->>>>>>> tyler
->>>>>>> master
-=======
-  Carousel.VERSION  = '3.3.5'
-=======
-<<<<<<< HEAD
-  Carousel.VERSION  = '3.3.5'
-=======
-  Carousel.VERSION  = '3.4.1'
->>>>>>> master
->>>>>>> tyler
->>>>>>> master
 
   Carousel.TRANSITION_DURATION = 600
 
@@ -854,32 +438,7 @@ if (typeof jQuery === 'undefined') {
     var slidEvent = $.Event('slid.bs.carousel', { relatedTarget: relatedTarget, direction: direction }) // yes, "slid"
     if ($.support.transition && this.$element.hasClass('slide')) {
       $next.addClass(type)
-<<<<<<< HEAD
       $next[0].offsetWidth // force reflow
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-      $next[0].offsetWidth // force reflow
-=======
->>>>>>> master
-=======
-      $next[0].offsetWidth // force reflow
-=======
->>>>>>> master
-      if (typeof $next === 'object' && $next.length) {
-        $next[0].offsetWidth // force reflow
-      }
->>>>>>> master
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> tyler
->>>>>>> master
-=======
->>>>>>> tyler
->>>>>>> master
       $active.addClass(direction)
       $next.addClass(direction)
       $active
@@ -941,52 +500,10 @@ if (typeof jQuery === 'undefined') {
   // =================
 
   var clickHandler = function (e) {
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
-<<<<<<< HEAD
->>>>>>> tyler
->>>>>>> master
-=======
-=======
-<<<<<<< HEAD
->>>>>>> tyler
->>>>>>> master
     var href
     var $this   = $(this)
     var $target = $($this.attr('data-target') || (href = $this.attr('href')) && href.replace(/.*(?=#[^\s]+$)/, '')) // strip for ie7
     if (!$target.hasClass('carousel')) return
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> master
-=======
->>>>>>> master
-=======
-    var $this   = $(this)
-    var href    = $this.attr('href')
-    if (href) {
-      href = href.replace(/.*(?=#[^\s]+$)/, '') // strip for ie7
-    }
-
-    var target  = $this.attr('data-target') || href
-    var $target = $(document).find(target)
-
-    if (!$target.hasClass('carousel')) return
-
->>>>>>> master
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> tyler
->>>>>>> master
-=======
->>>>>>> tyler
->>>>>>> master
     var options = $.extend({}, $target.data(), $this.data())
     var slideIndex = $this.attr('data-slide-to')
     if (slideIndex) options.interval = false
@@ -1014,59 +531,13 @@ if (typeof jQuery === 'undefined') {
 }(jQuery);
 
 /* ========================================================================
-<<<<<<< HEAD
  * Bootstrap: collapse.js v3.3.5
  * http://getbootstrap.com/javascript/#collapse
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> master
-=======
-<<<<<<< HEAD
- * Bootstrap: collapse.js v3.3.5
- * http://getbootstrap.com/javascript/#collapse
-<<<<<<< HEAD
->>>>>>> master
-=======
->>>>>>> master
  * ========================================================================
  * Copyright 2011-2015 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  * ======================================================================== */
 
-=======
- * Bootstrap: collapse.js v3.4.1
- * https://getbootstrap.com/docs/3.4/javascript/#collapse
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> tyler
->>>>>>> master
-=======
->>>>>>> tyler
->>>>>>> master
- * ========================================================================
- * Copyright 2011-2019 Twitter, Inc.
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
- * ======================================================================== */
-
-<<<<<<< HEAD
-<<<<<<< HEAD
-/* jshint latedef: false */
->>>>>>> master
-=======
-<<<<<<< HEAD
-=======
->>>>>>> master
-=======
-/* jshint latedef: false */
->>>>>>> master
->>>>>>> tyler
-<<<<<<< HEAD
->>>>>>> master
-=======
->>>>>>> master
 
 +function ($) {
   'use strict';
@@ -1090,31 +561,7 @@ if (typeof jQuery === 'undefined') {
     if (this.options.toggle) this.toggle()
   }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
   Collapse.VERSION  = '3.3.5'
-=======
-<<<<<<< HEAD
-  Collapse.VERSION  = '3.4.1'
->>>>>>> master
-=======
-<<<<<<< HEAD
-  Collapse.VERSION  = '3.3.5'
-=======
-  Collapse.VERSION  = '3.4.1'
->>>>>>> master
->>>>>>> tyler
->>>>>>> master
-=======
-  Collapse.VERSION  = '3.3.5'
-=======
-<<<<<<< HEAD
-  Collapse.VERSION  = '3.3.5'
-=======
-  Collapse.VERSION  = '3.4.1'
->>>>>>> master
->>>>>>> tyler
->>>>>>> master
 
   Collapse.TRANSITION_DURATION = 350
 
@@ -1221,31 +668,7 @@ if (typeof jQuery === 'undefined') {
   }
 
   Collapse.prototype.getParent = function () {
-<<<<<<< HEAD
-<<<<<<< HEAD
     return $(this.options.parent)
-=======
-<<<<<<< HEAD
-    return $(document).find(this.options.parent)
->>>>>>> master
-=======
-<<<<<<< HEAD
-    return $(this.options.parent)
-=======
-    return $(document).find(this.options.parent)
->>>>>>> master
->>>>>>> tyler
->>>>>>> master
-=======
-    return $(this.options.parent)
-=======
-<<<<<<< HEAD
-    return $(this.options.parent)
-=======
-    return $(document).find(this.options.parent)
->>>>>>> master
->>>>>>> tyler
->>>>>>> master
       .find('[data-toggle="collapse"][data-parent="' + this.options.parent + '"]')
       .each($.proxy(function (i, element) {
         var $element = $(element)
@@ -1268,31 +691,7 @@ if (typeof jQuery === 'undefined') {
     var target = $trigger.attr('data-target')
       || (href = $trigger.attr('href')) && href.replace(/.*(?=#[^\s]+$)/, '') // strip for ie7
 
-<<<<<<< HEAD
-<<<<<<< HEAD
     return $(target)
-=======
-<<<<<<< HEAD
-    return $(document).find(target)
->>>>>>> master
-=======
-<<<<<<< HEAD
-    return $(target)
-=======
-    return $(document).find(target)
->>>>>>> master
->>>>>>> tyler
->>>>>>> master
-=======
-    return $(target)
-=======
-<<<<<<< HEAD
-    return $(target)
-=======
-    return $(document).find(target)
->>>>>>> master
->>>>>>> tyler
->>>>>>> master
   }
 
 
@@ -1344,45 +743,10 @@ if (typeof jQuery === 'undefined') {
 }(jQuery);
 
 /* ========================================================================
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
-<<<<<<< HEAD
->>>>>>> tyler
->>>>>>> master
-=======
-=======
-<<<<<<< HEAD
->>>>>>> tyler
->>>>>>> master
  * Bootstrap: dropdown.js v3.3.5
  * http://getbootstrap.com/javascript/#dropdowns
  * ========================================================================
  * Copyright 2011-2015 Twitter, Inc.
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> master
-=======
->>>>>>> master
-=======
- * Bootstrap: dropdown.js v3.4.1
- * https://getbootstrap.com/docs/3.4/javascript/#dropdowns
- * ========================================================================
- * Copyright 2011-2019 Twitter, Inc.
->>>>>>> master
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> tyler
->>>>>>> master
-=======
->>>>>>> tyler
->>>>>>> master
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  * ======================================================================== */
 
@@ -1399,31 +763,7 @@ if (typeof jQuery === 'undefined') {
     $(element).on('click.bs.dropdown', this.toggle)
   }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
   Dropdown.VERSION = '3.3.5'
-=======
-<<<<<<< HEAD
->>>>>>> master
-=======
-  Dropdown.VERSION = '3.3.5'
-=======
-<<<<<<< HEAD
->>>>>>> master
-  Dropdown.VERSION = '3.3.5'
-=======
-  Dropdown.VERSION = '3.4.1'
->>>>>>> master
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> tyler
->>>>>>> master
-=======
->>>>>>> tyler
->>>>>>> master
 
   function getParent($this) {
     var selector = $this.attr('data-target')
@@ -1433,31 +773,7 @@ if (typeof jQuery === 'undefined') {
       selector = selector && /#[A-Za-z]/.test(selector) && selector.replace(/.*(?=#[^\s]*$)/, '') // strip for ie7
     }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
     var $parent = selector && $(selector)
-=======
-<<<<<<< HEAD
->>>>>>> master
-=======
-    var $parent = selector && $(selector)
-=======
-<<<<<<< HEAD
->>>>>>> master
-    var $parent = selector && $(selector)
-=======
-    var $parent = selector !== '#' ? $(document).find(selector) : null
->>>>>>> master
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> tyler
->>>>>>> master
-=======
->>>>>>> tyler
->>>>>>> master
 
     return $parent && $parent.length ? $parent : $this.parent()
   }
@@ -1479,32 +795,7 @@ if (typeof jQuery === 'undefined') {
       if (e.isDefaultPrevented()) return
 
       $this.attr('aria-expanded', 'false')
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
       $parent.removeClass('open').trigger('hidden.bs.dropdown', relatedTarget)
-=======
-<<<<<<< HEAD
->>>>>>> master
-      $parent.removeClass('open').trigger('hidden.bs.dropdown', relatedTarget)
-=======
-      $parent.removeClass('open').trigger($.Event('hidden.bs.dropdown', relatedTarget))
->>>>>>> master
-<<<<<<< HEAD
-=======
->>>>>>> tyler
->>>>>>> master
-=======
-      $parent.removeClass('open').trigger('hidden.bs.dropdown', relatedTarget)
-=======
-<<<<<<< HEAD
-      $parent.removeClass('open').trigger('hidden.bs.dropdown', relatedTarget)
-=======
-      $parent.removeClass('open').trigger($.Event('hidden.bs.dropdown', relatedTarget))
->>>>>>> master
->>>>>>> tyler
->>>>>>> master
     })
   }
 
@@ -1538,32 +829,7 @@ if (typeof jQuery === 'undefined') {
 
       $parent
         .toggleClass('open')
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
         .trigger('shown.bs.dropdown', relatedTarget)
-=======
-<<<<<<< HEAD
->>>>>>> master
-        .trigger('shown.bs.dropdown', relatedTarget)
-=======
-        .trigger($.Event('shown.bs.dropdown', relatedTarget))
->>>>>>> master
-<<<<<<< HEAD
-=======
->>>>>>> tyler
->>>>>>> master
-=======
-        .trigger('shown.bs.dropdown', relatedTarget)
-=======
-<<<<<<< HEAD
-        .trigger('shown.bs.dropdown', relatedTarget)
-=======
-        .trigger($.Event('shown.bs.dropdown', relatedTarget))
->>>>>>> master
->>>>>>> tyler
->>>>>>> master
     }
 
     return false
@@ -1643,45 +909,10 @@ if (typeof jQuery === 'undefined') {
 }(jQuery);
 
 /* ========================================================================
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
-<<<<<<< HEAD
->>>>>>> tyler
->>>>>>> master
-=======
-=======
-<<<<<<< HEAD
->>>>>>> tyler
->>>>>>> master
  * Bootstrap: modal.js v3.3.5
  * http://getbootstrap.com/javascript/#modals
  * ========================================================================
  * Copyright 2011-2015 Twitter, Inc.
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> master
-=======
->>>>>>> master
-=======
- * Bootstrap: modal.js v3.4.1
- * https://getbootstrap.com/docs/3.4/javascript/#modals
- * ========================================================================
- * Copyright 2011-2019 Twitter, Inc.
->>>>>>> master
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> tyler
->>>>>>> master
-=======
->>>>>>> tyler
->>>>>>> master
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  * ======================================================================== */
 
@@ -1693,19 +924,6 @@ if (typeof jQuery === 'undefined') {
   // ======================
 
   var Modal = function (element, options) {
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
-<<<<<<< HEAD
->>>>>>> tyler
->>>>>>> master
-=======
-=======
-<<<<<<< HEAD
->>>>>>> tyler
->>>>>>> master
     this.options             = options
     this.$body               = $(document.body)
     this.$element            = $(element)
@@ -1715,34 +933,6 @@ if (typeof jQuery === 'undefined') {
     this.originalBodyPad     = null
     this.scrollbarWidth      = 0
     this.ignoreBackdropClick = false
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> master
-=======
->>>>>>> master
-=======
-    this.options = options
-    this.$body = $(document.body)
-    this.$element = $(element)
-    this.$dialog = this.$element.find('.modal-dialog')
-    this.$backdrop = null
-    this.isShown = null
-    this.originalBodyPad = null
-    this.scrollbarWidth = 0
-    this.ignoreBackdropClick = false
-    this.fixedContent = '.navbar-fixed-top, .navbar-fixed-bottom'
->>>>>>> master
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> tyler
->>>>>>> master
-=======
->>>>>>> tyler
->>>>>>> master
 
     if (this.options.remote) {
       this.$element
@@ -1753,31 +943,7 @@ if (typeof jQuery === 'undefined') {
     }
   }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
   Modal.VERSION  = '3.3.5'
-=======
-<<<<<<< HEAD
->>>>>>> master
-=======
-  Modal.VERSION  = '3.3.5'
-=======
-<<<<<<< HEAD
->>>>>>> master
-  Modal.VERSION  = '3.3.5'
-=======
-  Modal.VERSION = '3.4.1'
->>>>>>> master
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> tyler
->>>>>>> master
-=======
->>>>>>> tyler
->>>>>>> master
 
   Modal.TRANSITION_DURATION = 300
   Modal.BACKDROP_TRANSITION_DURATION = 150
@@ -1794,31 +960,7 @@ if (typeof jQuery === 'undefined') {
 
   Modal.prototype.show = function (_relatedTarget) {
     var that = this
-<<<<<<< HEAD
-<<<<<<< HEAD
     var e    = $.Event('show.bs.modal', { relatedTarget: _relatedTarget })
-=======
-<<<<<<< HEAD
-    var e = $.Event('show.bs.modal', { relatedTarget: _relatedTarget })
->>>>>>> master
-=======
-<<<<<<< HEAD
-    var e    = $.Event('show.bs.modal', { relatedTarget: _relatedTarget })
-=======
-    var e = $.Event('show.bs.modal', { relatedTarget: _relatedTarget })
->>>>>>> master
->>>>>>> tyler
->>>>>>> master
-=======
-    var e    = $.Event('show.bs.modal', { relatedTarget: _relatedTarget })
-=======
-<<<<<<< HEAD
-    var e    = $.Event('show.bs.modal', { relatedTarget: _relatedTarget })
-=======
-    var e = $.Event('show.bs.modal', { relatedTarget: _relatedTarget })
->>>>>>> master
->>>>>>> tyler
->>>>>>> master
 
     this.$element.trigger(e)
 
@@ -1908,32 +1050,7 @@ if (typeof jQuery === 'undefined') {
     $(document)
       .off('focusin.bs.modal') // guard against infinite focus loop
       .on('focusin.bs.modal', $.proxy(function (e) {
-<<<<<<< HEAD
         if (this.$element[0] !== e.target && !this.$element.has(e.target).length) {
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-        if (this.$element[0] !== e.target && !this.$element.has(e.target).length) {
-=======
->>>>>>> master
-=======
-        if (this.$element[0] !== e.target && !this.$element.has(e.target).length) {
-=======
->>>>>>> master
-        if (document !== e.target &&
-          this.$element[0] !== e.target &&
-          !this.$element.has(e.target).length) {
->>>>>>> master
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> tyler
->>>>>>> master
-=======
->>>>>>> tyler
->>>>>>> master
           this.$element.trigger('focus')
         }
       }, this))
@@ -2035,31 +1152,7 @@ if (typeof jQuery === 'undefined') {
     var modalIsOverflowing = this.$element[0].scrollHeight > document.documentElement.clientHeight
 
     this.$element.css({
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
       paddingLeft:  !this.bodyIsOverflowing && modalIsOverflowing ? this.scrollbarWidth : '',
-=======
-<<<<<<< HEAD
->>>>>>> master
-=======
-      paddingLeft:  !this.bodyIsOverflowing && modalIsOverflowing ? this.scrollbarWidth : '',
-=======
-<<<<<<< HEAD
->>>>>>> master
-      paddingLeft:  !this.bodyIsOverflowing && modalIsOverflowing ? this.scrollbarWidth : '',
-=======
-      paddingLeft: !this.bodyIsOverflowing && modalIsOverflowing ? this.scrollbarWidth : '',
->>>>>>> master
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> tyler
->>>>>>> master
-=======
->>>>>>> tyler
->>>>>>> master
       paddingRight: this.bodyIsOverflowing && !modalIsOverflowing ? this.scrollbarWidth : ''
     })
   }
@@ -2084,68 +1177,11 @@ if (typeof jQuery === 'undefined') {
   Modal.prototype.setScrollbar = function () {
     var bodyPad = parseInt((this.$body.css('padding-right') || 0), 10)
     this.originalBodyPad = document.body.style.paddingRight || ''
-<<<<<<< HEAD
     if (this.bodyIsOverflowing) this.$body.css('padding-right', bodyPad + this.scrollbarWidth)
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-    if (this.bodyIsOverflowing) this.$body.css('padding-right', bodyPad + this.scrollbarWidth)
-=======
->>>>>>> master
-=======
-    if (this.bodyIsOverflowing) this.$body.css('padding-right', bodyPad + this.scrollbarWidth)
-=======
->>>>>>> master
-    var scrollbarWidth = this.scrollbarWidth
-    if (this.bodyIsOverflowing) {
-      this.$body.css('padding-right', bodyPad + scrollbarWidth)
-      $(this.fixedContent).each(function (index, element) {
-        var actualPadding = element.style.paddingRight
-        var calculatedPadding = $(element).css('padding-right')
-        $(element)
-          .data('padding-right', actualPadding)
-          .css('padding-right', parseFloat(calculatedPadding) + scrollbarWidth + 'px')
-      })
-    }
->>>>>>> master
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> tyler
->>>>>>> master
-=======
->>>>>>> tyler
->>>>>>> master
   }
 
   Modal.prototype.resetScrollbar = function () {
     this.$body.css('padding-right', this.originalBodyPad)
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> master
-=======
->>>>>>> master
-    $(this.fixedContent).each(function (index, element) {
-      var padding = $(element).data('padding-right')
-      $(element).removeData('padding-right')
-      element.style.paddingRight = padding ? padding : ''
-    })
->>>>>>> master
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> tyler
->>>>>>> master
-=======
->>>>>>> tyler
->>>>>>> master
   }
 
   Modal.prototype.measureScrollbar = function () { // thx walsh
@@ -2163,37 +1199,8 @@ if (typeof jQuery === 'undefined') {
 
   function Plugin(option, _relatedTarget) {
     return this.each(function () {
-<<<<<<< HEAD
-<<<<<<< HEAD
       var $this   = $(this)
       var data    = $this.data('bs.modal')
-=======
-<<<<<<< HEAD
-      var $this = $(this)
-      var data = $this.data('bs.modal')
->>>>>>> master
-=======
-<<<<<<< HEAD
-      var $this   = $(this)
-      var data    = $this.data('bs.modal')
-=======
-=======
-      var $this   = $(this)
-      var data    = $this.data('bs.modal')
-=======
-<<<<<<< HEAD
-      var $this   = $(this)
-      var data    = $this.data('bs.modal')
-=======
->>>>>>> master
-      var $this = $(this)
-      var data = $this.data('bs.modal')
->>>>>>> master
->>>>>>> tyler
-<<<<<<< HEAD
->>>>>>> master
-=======
->>>>>>> master
       var options = $.extend({}, Modal.DEFAULTS, $this.data(), typeof option == 'object' && option)
 
       if (!data) $this.data('bs.modal', (data = new Modal(this, options)))
@@ -2204,32 +1211,7 @@ if (typeof jQuery === 'undefined') {
 
   var old = $.fn.modal
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
   $.fn.modal             = Plugin
-=======
-<<<<<<< HEAD
->>>>>>> master
-  $.fn.modal             = Plugin
-=======
-  $.fn.modal = Plugin
->>>>>>> master
-<<<<<<< HEAD
-=======
->>>>>>> tyler
->>>>>>> master
-=======
-  $.fn.modal             = Plugin
-=======
-<<<<<<< HEAD
-  $.fn.modal             = Plugin
-=======
-  $.fn.modal = Plugin
->>>>>>> master
->>>>>>> tyler
->>>>>>> master
   $.fn.modal.Constructor = Modal
 
 
@@ -2246,48 +1228,10 @@ if (typeof jQuery === 'undefined') {
   // ==============
 
   $(document).on('click.bs.modal.data-api', '[data-toggle="modal"]', function (e) {
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
-<<<<<<< HEAD
->>>>>>> tyler
->>>>>>> master
-=======
-=======
-<<<<<<< HEAD
->>>>>>> tyler
->>>>>>> master
     var $this   = $(this)
     var href    = $this.attr('href')
     var $target = $($this.attr('data-target') || (href && href.replace(/.*(?=#[^\s]+$)/, ''))) // strip for ie7
     var option  = $target.data('bs.modal') ? 'toggle' : $.extend({ remote: !/#/.test(href) && href }, $target.data(), $this.data())
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> master
-=======
->>>>>>> master
-=======
-    var $this = $(this)
-    var href = $this.attr('href')
-    var target = $this.attr('data-target') ||
-      (href && href.replace(/.*(?=#[^\s]+$)/, '')) // strip for ie7
-
-    var $target = $(document).find(target)
-    var option = $target.data('bs.modal') ? 'toggle' : $.extend({ remote: !/#/.test(href) && href }, $target.data(), $this.data())
->>>>>>> master
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> tyler
->>>>>>> master
-=======
->>>>>>> tyler
->>>>>>> master
 
     if ($this.is('a')) e.preventDefault()
 
@@ -2303,19 +1247,6 @@ if (typeof jQuery === 'undefined') {
 }(jQuery);
 
 /* ========================================================================
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
-<<<<<<< HEAD
->>>>>>> tyler
->>>>>>> master
-=======
-=======
-<<<<<<< HEAD
->>>>>>> tyler
->>>>>>> master
  * Bootstrap: tooltip.js v3.3.5
  * http://getbootstrap.com/javascript/#tooltip
  * Inspired by the original jQuery.tipsy by Jason Frame
@@ -2328,166 +1259,6 @@ if (typeof jQuery === 'undefined') {
 +function ($) {
   'use strict';
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> master
-=======
->>>>>>> master
-=======
- * Bootstrap: tooltip.js v3.4.1
- * https://getbootstrap.com/docs/3.4/javascript/#tooltip
- * Inspired by the original jQuery.tipsy by Jason Frame
- * ========================================================================
- * Copyright 2011-2019 Twitter, Inc.
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
- * ======================================================================== */
-
-+function ($) {
-  'use strict';
-
-  var DISALLOWED_ATTRIBUTES = ['sanitize', 'whiteList', 'sanitizeFn']
-
-  var uriAttrs = [
-    'background',
-    'cite',
-    'href',
-    'itemtype',
-    'longdesc',
-    'poster',
-    'src',
-    'xlink:href'
-  ]
-
-  var ARIA_ATTRIBUTE_PATTERN = /^aria-[\w-]*$/i
-
-  var DefaultWhitelist = {
-    // Global attributes allowed on any supplied element below.
-    '*': ['class', 'dir', 'id', 'lang', 'role', ARIA_ATTRIBUTE_PATTERN],
-    a: ['target', 'href', 'title', 'rel'],
-    area: [],
-    b: [],
-    br: [],
-    col: [],
-    code: [],
-    div: [],
-    em: [],
-    hr: [],
-    h1: [],
-    h2: [],
-    h3: [],
-    h4: [],
-    h5: [],
-    h6: [],
-    i: [],
-    img: ['src', 'alt', 'title', 'width', 'height'],
-    li: [],
-    ol: [],
-    p: [],
-    pre: [],
-    s: [],
-    small: [],
-    span: [],
-    sub: [],
-    sup: [],
-    strong: [],
-    u: [],
-    ul: []
-  }
-
-  /**
-   * A pattern that recognizes a commonly useful subset of URLs that are safe.
-   *
-   * Shoutout to Angular 7 https://github.com/angular/angular/blob/7.2.4/packages/core/src/sanitization/url_sanitizer.ts
-   */
-  var SAFE_URL_PATTERN = /^(?:(?:https?|mailto|ftp|tel|file):|[^&:/?#]*(?:[/?#]|$))/gi
-
-  /**
-   * A pattern that matches safe data URLs. Only matches image, video and audio types.
-   *
-   * Shoutout to Angular 7 https://github.com/angular/angular/blob/7.2.4/packages/core/src/sanitization/url_sanitizer.ts
-   */
-  var DATA_URL_PATTERN = /^data:(?:image\/(?:bmp|gif|jpeg|jpg|png|tiff|webp)|video\/(?:mpeg|mp4|ogg|webm)|audio\/(?:mp3|oga|ogg|opus));base64,[a-z0-9+/]+=*$/i
-
-  function allowedAttribute(attr, allowedAttributeList) {
-    var attrName = attr.nodeName.toLowerCase()
-
-    if ($.inArray(attrName, allowedAttributeList) !== -1) {
-      if ($.inArray(attrName, uriAttrs) !== -1) {
-        return Boolean(attr.nodeValue.match(SAFE_URL_PATTERN) || attr.nodeValue.match(DATA_URL_PATTERN))
-      }
-
-      return true
-    }
-
-    var regExp = $(allowedAttributeList).filter(function (index, value) {
-      return value instanceof RegExp
-    })
-
-    // Check if a regular expression validates the attribute.
-    for (var i = 0, l = regExp.length; i < l; i++) {
-      if (attrName.match(regExp[i])) {
-        return true
-      }
-    }
-
-    return false
-  }
-
-  function sanitizeHtml(unsafeHtml, whiteList, sanitizeFn) {
-    if (unsafeHtml.length === 0) {
-      return unsafeHtml
-    }
-
-    if (sanitizeFn && typeof sanitizeFn === 'function') {
-      return sanitizeFn(unsafeHtml)
-    }
-
-    // IE 8 and below don't support createHTMLDocument
-    if (!document.implementation || !document.implementation.createHTMLDocument) {
-      return unsafeHtml
-    }
-
-    var createdDocument = document.implementation.createHTMLDocument('sanitization')
-    createdDocument.body.innerHTML = unsafeHtml
-
-    var whitelistKeys = $.map(whiteList, function (el, i) { return i })
-    var elements = $(createdDocument.body).find('*')
-
-    for (var i = 0, len = elements.length; i < len; i++) {
-      var el = elements[i]
-      var elName = el.nodeName.toLowerCase()
-
-      if ($.inArray(elName, whitelistKeys) === -1) {
-        el.parentNode.removeChild(el)
-
-        continue
-      }
-
-      var attributeList = $.map(el.attributes, function (el) { return el })
-      var whitelistedAttributes = [].concat(whiteList['*'] || [], whiteList[elName] || [])
-
-      for (var j = 0, len2 = attributeList.length; j < len2; j++) {
-        if (!allowedAttribute(attributeList[j], whitelistedAttributes)) {
-          el.removeAttribute(attributeList[j].nodeName)
-        }
-      }
-    }
-
-    return createdDocument.body.innerHTML
-  }
-
->>>>>>> master
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> tyler
->>>>>>> master
-=======
->>>>>>> tyler
->>>>>>> master
   // TOOLTIP PUBLIC CLASS DEFINITION
   // ===============================
 
@@ -2503,32 +1274,7 @@ if (typeof jQuery === 'undefined') {
     this.init('tooltip', element, options)
   }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
   Tooltip.VERSION  = '3.3.5'
-=======
-<<<<<<< HEAD
->>>>>>> master
-  Tooltip.VERSION  = '3.3.5'
-=======
-  Tooltip.VERSION  = '3.4.1'
->>>>>>> master
-<<<<<<< HEAD
-=======
->>>>>>> tyler
->>>>>>> master
-=======
-  Tooltip.VERSION  = '3.3.5'
-=======
-<<<<<<< HEAD
-  Tooltip.VERSION  = '3.3.5'
-=======
-  Tooltip.VERSION  = '3.4.1'
->>>>>>> master
->>>>>>> tyler
->>>>>>> master
 
   Tooltip.TRANSITION_DURATION = 150
 
@@ -2545,33 +1291,7 @@ if (typeof jQuery === 'undefined') {
     viewport: {
       selector: 'body',
       padding: 0
-<<<<<<< HEAD
     }
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-    }
-=======
->>>>>>> master
-=======
-    }
-=======
->>>>>>> master
-    },
-    sanitize : true,
-    sanitizeFn : null,
-    whiteList : DefaultWhitelist
->>>>>>> master
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> tyler
->>>>>>> master
-=======
->>>>>>> tyler
->>>>>>> master
   }
 
   Tooltip.prototype.init = function (type, element, options) {
@@ -2579,31 +1299,7 @@ if (typeof jQuery === 'undefined') {
     this.type      = type
     this.$element  = $(element)
     this.options   = this.getOptions(options)
-<<<<<<< HEAD
-<<<<<<< HEAD
     this.$viewport = this.options.viewport && $($.isFunction(this.options.viewport) ? this.options.viewport.call(this, this.$element) : (this.options.viewport.selector || this.options.viewport))
-=======
-<<<<<<< HEAD
-    this.$viewport = this.options.viewport && $(document).find($.isFunction(this.options.viewport) ? this.options.viewport.call(this, this.$element) : (this.options.viewport.selector || this.options.viewport))
->>>>>>> master
-=======
-<<<<<<< HEAD
-    this.$viewport = this.options.viewport && $($.isFunction(this.options.viewport) ? this.options.viewport.call(this, this.$element) : (this.options.viewport.selector || this.options.viewport))
-=======
-    this.$viewport = this.options.viewport && $(document).find($.isFunction(this.options.viewport) ? this.options.viewport.call(this, this.$element) : (this.options.viewport.selector || this.options.viewport))
->>>>>>> master
->>>>>>> tyler
->>>>>>> master
-=======
-    this.$viewport = this.options.viewport && $($.isFunction(this.options.viewport) ? this.options.viewport.call(this, this.$element) : (this.options.viewport.selector || this.options.viewport))
-=======
-<<<<<<< HEAD
-    this.$viewport = this.options.viewport && $($.isFunction(this.options.viewport) ? this.options.viewport.call(this, this.$element) : (this.options.viewport.selector || this.options.viewport))
-=======
-    this.$viewport = this.options.viewport && $(document).find($.isFunction(this.options.viewport) ? this.options.viewport.call(this, this.$element) : (this.options.viewport.selector || this.options.viewport))
->>>>>>> master
->>>>>>> tyler
->>>>>>> master
     this.inState   = { click: false, hover: false, focus: false }
 
     if (this.$element[0] instanceof document.constructor && !this.options.selector) {
@@ -2636,38 +1332,7 @@ if (typeof jQuery === 'undefined') {
   }
 
   Tooltip.prototype.getOptions = function (options) {
-<<<<<<< HEAD
     options = $.extend({}, this.getDefaults(), this.$element.data(), options)
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-    options = $.extend({}, this.getDefaults(), this.$element.data(), options)
-=======
->>>>>>> master
-=======
-    options = $.extend({}, this.getDefaults(), this.$element.data(), options)
-=======
->>>>>>> master
-    var dataAttributes = this.$element.data()
-
-    for (var dataAttr in dataAttributes) {
-      if (dataAttributes.hasOwnProperty(dataAttr) && $.inArray(dataAttr, DISALLOWED_ATTRIBUTES) !== -1) {
-        delete dataAttributes[dataAttr]
-      }
-    }
-
-    options = $.extend({}, this.getDefaults(), dataAttributes, options)
->>>>>>> master
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> tyler
->>>>>>> master
-=======
->>>>>>> tyler
->>>>>>> master
 
     if (options.delay && typeof options.delay == 'number') {
       options.delay = {
@@ -2676,29 +1341,6 @@ if (typeof jQuery === 'undefined') {
       }
     }
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> master
-=======
->>>>>>> master
-    if (options.sanitize) {
-      options.template = sanitizeHtml(options.template, options.whiteList, options.sanitizeFn)
-    }
-
->>>>>>> master
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> tyler
->>>>>>> master
-=======
->>>>>>> tyler
->>>>>>> master
     return options
   }
 
@@ -2810,32 +1452,7 @@ if (typeof jQuery === 'undefined') {
         .addClass(placement)
         .data('bs.' + this.type, this)
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
       this.options.container ? $tip.appendTo(this.options.container) : $tip.insertAfter(this.$element)
-=======
-<<<<<<< HEAD
->>>>>>> master
-      this.options.container ? $tip.appendTo(this.options.container) : $tip.insertAfter(this.$element)
-=======
-      this.options.container ? $tip.appendTo($(document).find(this.options.container)) : $tip.insertAfter(this.$element)
->>>>>>> master
-<<<<<<< HEAD
-=======
->>>>>>> tyler
->>>>>>> master
-=======
-      this.options.container ? $tip.appendTo(this.options.container) : $tip.insertAfter(this.$element)
-=======
-<<<<<<< HEAD
-      this.options.container ? $tip.appendTo(this.options.container) : $tip.insertAfter(this.$element)
-=======
-      this.options.container ? $tip.appendTo($(document).find(this.options.container)) : $tip.insertAfter(this.$element)
->>>>>>> master
->>>>>>> tyler
->>>>>>> master
       this.$element.trigger('inserted.bs.' + this.type)
 
       var pos          = this.getPosition()
@@ -2937,39 +1554,7 @@ if (typeof jQuery === 'undefined') {
     var $tip  = this.tip()
     var title = this.getTitle()
 
-<<<<<<< HEAD
     $tip.find('.tooltip-inner')[this.options.html ? 'html' : 'text'](title)
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-    $tip.find('.tooltip-inner')[this.options.html ? 'html' : 'text'](title)
-=======
->>>>>>> master
-=======
-    $tip.find('.tooltip-inner')[this.options.html ? 'html' : 'text'](title)
-=======
->>>>>>> master
-    if (this.options.html) {
-      if (this.options.sanitize) {
-        title = sanitizeHtml(title, this.options.whiteList, this.options.sanitizeFn)
-      }
-
-      $tip.find('.tooltip-inner').html(title)
-    } else {
-      $tip.find('.tooltip-inner').text(title)
-    }
-
->>>>>>> master
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> tyler
->>>>>>> master
-=======
->>>>>>> tyler
->>>>>>> master
     $tip.removeClass('fade in top bottom left right')
   }
 
@@ -2980,39 +1565,9 @@ if (typeof jQuery === 'undefined') {
 
     function complete() {
       if (that.hoverState != 'in') $tip.detach()
-<<<<<<< HEAD
       that.$element
         .removeAttr('aria-describedby')
         .trigger('hidden.bs.' + that.type)
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
->>>>>>> master
-      that.$element
-        .removeAttr('aria-describedby')
-        .trigger('hidden.bs.' + that.type)
-=======
-<<<<<<< HEAD
->>>>>>> master
-=======
->>>>>>> master
-      if (that.$element) { // TODO: Check whether guarding this code with this `if` is really necessary.
-        that.$element
-          .removeAttr('aria-describedby')
-          .trigger('hidden.bs.' + that.type)
-      }
->>>>>>> master
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> tyler
->>>>>>> master
-=======
->>>>>>> tyler
->>>>>>> master
       callback && callback()
     }
 
@@ -3055,33 +1610,7 @@ if (typeof jQuery === 'undefined') {
       // width and height are missing in IE8, so compute them manually; see https://github.com/twbs/bootstrap/issues/14093
       elRect = $.extend({}, elRect, { width: elRect.right - elRect.left, height: elRect.bottom - elRect.top })
     }
-<<<<<<< HEAD
     var elOffset  = isBody ? { top: 0, left: 0 } : $element.offset()
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-    var elOffset  = isBody ? { top: 0, left: 0 } : $element.offset()
-=======
->>>>>>> master
-=======
-    var elOffset  = isBody ? { top: 0, left: 0 } : $element.offset()
-=======
->>>>>>> master
-    var isSvg = window.SVGElement && el instanceof window.SVGElement
-    // Avoid using $.offset() on SVGs since it gives incorrect results in jQuery 3.
-    // See https://github.com/twbs/bootstrap/issues/20280
-    var elOffset  = isBody ? { top: 0, left: 0 } : (isSvg ? null : $element.offset())
->>>>>>> master
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> tyler
->>>>>>> master
-=======
->>>>>>> tyler
->>>>>>> master
     var scroll    = { scroll: isBody ? document.documentElement.scrollTop || document.body.scrollTop : $element.scrollTop() }
     var outerDims = isBody ? { width: $(window).width(), height: $(window).height() } : null
 
@@ -3197,46 +1726,9 @@ if (typeof jQuery === 'undefined') {
       that.$tip = null
       that.$arrow = null
       that.$viewport = null
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
     })
   }
 
-=======
-      that.$element = null
-=======
->>>>>>> master
-=======
->>>>>>> master
-    })
-  }
-
-=======
-<<<<<<< HEAD
-    })
-  }
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> master
-=======
-=======
->>>>>>> master
-
-=======
-      that.$element = null
-    })
-  }
-
-  Tooltip.prototype.sanitizeHtml = function (unsafeHtml) {
-    return sanitizeHtml(unsafeHtml, this.options.whiteList, this.options.sanitizeFn)
-  }
->>>>>>> master
->>>>>>> tyler
-<<<<<<< HEAD
->>>>>>> master
-=======
->>>>>>> master
 
   // TOOLTIP PLUGIN DEFINITION
   // =========================
@@ -3270,45 +1762,10 @@ if (typeof jQuery === 'undefined') {
 }(jQuery);
 
 /* ========================================================================
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
-<<<<<<< HEAD
->>>>>>> tyler
->>>>>>> master
-=======
-=======
-<<<<<<< HEAD
->>>>>>> tyler
->>>>>>> master
  * Bootstrap: popover.js v3.3.5
  * http://getbootstrap.com/javascript/#popovers
  * ========================================================================
  * Copyright 2011-2015 Twitter, Inc.
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> master
-=======
->>>>>>> master
-=======
- * Bootstrap: popover.js v3.4.1
- * https://getbootstrap.com/docs/3.4/javascript/#popovers
- * ========================================================================
- * Copyright 2011-2019 Twitter, Inc.
->>>>>>> master
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> tyler
->>>>>>> master
-=======
->>>>>>> tyler
->>>>>>> master
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  * ======================================================================== */
 
@@ -3325,31 +1782,7 @@ if (typeof jQuery === 'undefined') {
 
   if (!$.fn.tooltip) throw new Error('Popover requires tooltip.js')
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
   Popover.VERSION  = '3.3.5'
-=======
-<<<<<<< HEAD
->>>>>>> master
-=======
-  Popover.VERSION  = '3.3.5'
-=======
-<<<<<<< HEAD
->>>>>>> master
-  Popover.VERSION  = '3.3.5'
-=======
-  Popover.VERSION  = '3.4.1'
->>>>>>> master
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> tyler
->>>>>>> master
-=======
->>>>>>> tyler
->>>>>>> master
 
   Popover.DEFAULTS = $.extend({}, $.fn.tooltip.Constructor.DEFAULTS, {
     placement: 'right',
@@ -3375,60 +1808,10 @@ if (typeof jQuery === 'undefined') {
     var title   = this.getTitle()
     var content = this.getContent()
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
-<<<<<<< HEAD
->>>>>>> tyler
->>>>>>> master
-=======
-=======
-<<<<<<< HEAD
->>>>>>> tyler
->>>>>>> master
     $tip.find('.popover-title')[this.options.html ? 'html' : 'text'](title)
     $tip.find('.popover-content').children().detach().end()[ // we use append for html objects to maintain js events
       this.options.html ? (typeof content == 'string' ? 'html' : 'append') : 'text'
     ](content)
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> master
-=======
->>>>>>> master
-=======
-    if (this.options.html) {
-      var typeContent = typeof content
-
-      if (this.options.sanitize) {
-        title = this.sanitizeHtml(title)
-
-        if (typeContent === 'string') {
-          content = this.sanitizeHtml(content)
-        }
-      }
-
-      $tip.find('.popover-title').html(title)
-      $tip.find('.popover-content').children().detach().end()[
-        typeContent === 'string' ? 'html' : 'append'
-      ](content)
-    } else {
-      $tip.find('.popover-title').text(title)
-      $tip.find('.popover-content').children().detach().end().text(content)
-    }
->>>>>>> master
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> tyler
->>>>>>> master
-=======
->>>>>>> tyler
->>>>>>> master
 
     $tip.removeClass('fade top bottom left right in')
 
@@ -3447,34 +1830,8 @@ if (typeof jQuery === 'undefined') {
 
     return $e.attr('data-content')
       || (typeof o.content == 'function' ?
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> master
             o.content.call($e[0]) :
             o.content)
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> master
-=======
->>>>>>> master
-            o.content.call($e[0]) :
-            o.content)
-=======
-        o.content.call($e[0]) :
-        o.content)
->>>>>>> master
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> tyler
->>>>>>> master
-=======
->>>>>>> tyler
->>>>>>> master
   }
 
   Popover.prototype.arrow = function () {
@@ -3514,45 +1871,10 @@ if (typeof jQuery === 'undefined') {
 }(jQuery);
 
 /* ========================================================================
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
-<<<<<<< HEAD
->>>>>>> tyler
->>>>>>> master
-=======
-=======
-<<<<<<< HEAD
->>>>>>> tyler
->>>>>>> master
  * Bootstrap: scrollspy.js v3.3.5
  * http://getbootstrap.com/javascript/#scrollspy
  * ========================================================================
  * Copyright 2011-2015 Twitter, Inc.
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> master
-=======
->>>>>>> master
-=======
- * Bootstrap: scrollspy.js v3.4.1
- * https://getbootstrap.com/docs/3.4/javascript/#scrollspy
- * ========================================================================
- * Copyright 2011-2019 Twitter, Inc.
->>>>>>> master
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> tyler
->>>>>>> master
-=======
->>>>>>> tyler
->>>>>>> master
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  * ======================================================================== */
 
@@ -3578,31 +1900,7 @@ if (typeof jQuery === 'undefined') {
     this.process()
   }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
   ScrollSpy.VERSION  = '3.3.5'
-=======
-<<<<<<< HEAD
-  ScrollSpy.VERSION  = '3.4.1'
->>>>>>> master
-=======
-<<<<<<< HEAD
-  ScrollSpy.VERSION  = '3.3.5'
-=======
-  ScrollSpy.VERSION  = '3.4.1'
->>>>>>> master
->>>>>>> tyler
->>>>>>> master
-=======
-  ScrollSpy.VERSION  = '3.3.5'
-=======
-<<<<<<< HEAD
-  ScrollSpy.VERSION  = '3.3.5'
-=======
-  ScrollSpy.VERSION  = '3.4.1'
->>>>>>> master
->>>>>>> tyler
->>>>>>> master
 
   ScrollSpy.DEFAULTS = {
     offset: 10
@@ -3746,45 +2044,10 @@ if (typeof jQuery === 'undefined') {
 }(jQuery);
 
 /* ========================================================================
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
-<<<<<<< HEAD
->>>>>>> tyler
->>>>>>> master
-=======
-=======
-<<<<<<< HEAD
->>>>>>> tyler
->>>>>>> master
  * Bootstrap: tab.js v3.3.5
  * http://getbootstrap.com/javascript/#tabs
  * ========================================================================
  * Copyright 2011-2015 Twitter, Inc.
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> master
-=======
->>>>>>> master
-=======
- * Bootstrap: tab.js v3.4.1
- * https://getbootstrap.com/docs/3.4/javascript/#tabs
- * ========================================================================
- * Copyright 2011-2019 Twitter, Inc.
->>>>>>> master
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> tyler
->>>>>>> master
-=======
->>>>>>> tyler
->>>>>>> master
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  * ======================================================================== */
 
@@ -3801,31 +2064,7 @@ if (typeof jQuery === 'undefined') {
     // jscs:enable requireDollarBeforejQueryAssignment
   }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
   Tab.VERSION = '3.3.5'
-=======
-<<<<<<< HEAD
->>>>>>> master
-=======
-  Tab.VERSION = '3.3.5'
-=======
-<<<<<<< HEAD
->>>>>>> master
-  Tab.VERSION = '3.3.5'
-=======
-  Tab.VERSION = '3.4.1'
->>>>>>> master
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> tyler
->>>>>>> master
-=======
->>>>>>> tyler
->>>>>>> master
 
   Tab.TRANSITION_DURATION = 150
 
@@ -3854,31 +2093,7 @@ if (typeof jQuery === 'undefined') {
 
     if (showEvent.isDefaultPrevented() || hideEvent.isDefaultPrevented()) return
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
     var $target = $(selector)
-=======
-<<<<<<< HEAD
->>>>>>> master
-=======
-    var $target = $(selector)
-=======
-<<<<<<< HEAD
->>>>>>> master
-    var $target = $(selector)
-=======
-    var $target = $(document).find(selector)
->>>>>>> master
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> tyler
->>>>>>> master
-=======
->>>>>>> tyler
->>>>>>> master
 
     this.activate($this.closest('li'), $ul)
     this.activate($target, $target.parent(), function () {
@@ -3903,74 +2118,15 @@ if (typeof jQuery === 'undefined') {
       $active
         .removeClass('active')
         .find('> .dropdown-menu > .active')
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
-<<<<<<< HEAD
->>>>>>> tyler
->>>>>>> master
-=======
-=======
-<<<<<<< HEAD
->>>>>>> tyler
->>>>>>> master
           .removeClass('active')
         .end()
         .find('[data-toggle="tab"]')
           .attr('aria-expanded', false)
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> master
-=======
->>>>>>> master
-=======
-        .removeClass('active')
-        .end()
-        .find('[data-toggle="tab"]')
-        .attr('aria-expanded', false)
->>>>>>> master
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> tyler
->>>>>>> master
-=======
->>>>>>> tyler
->>>>>>> master
 
       element
         .addClass('active')
         .find('[data-toggle="tab"]')
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
           .attr('aria-expanded', true)
-=======
-<<<<<<< HEAD
->>>>>>> master
-=======
-          .attr('aria-expanded', true)
-=======
-<<<<<<< HEAD
->>>>>>> master
-          .attr('aria-expanded', true)
-=======
-        .attr('aria-expanded', true)
->>>>>>> master
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> tyler
->>>>>>> master
-=======
->>>>>>> tyler
->>>>>>> master
 
       if (transition) {
         element[0].offsetWidth // reflow for transition
@@ -3982,45 +2138,10 @@ if (typeof jQuery === 'undefined') {
       if (element.parent('.dropdown-menu').length) {
         element
           .closest('li.dropdown')
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
-<<<<<<< HEAD
->>>>>>> tyler
->>>>>>> master
-=======
-=======
-<<<<<<< HEAD
->>>>>>> tyler
->>>>>>> master
             .addClass('active')
           .end()
           .find('[data-toggle="tab"]')
             .attr('aria-expanded', true)
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> master
-=======
->>>>>>> master
-=======
-          .addClass('active')
-          .end()
-          .find('[data-toggle="tab"]')
-          .attr('aria-expanded', true)
->>>>>>> master
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> tyler
->>>>>>> master
-=======
->>>>>>> tyler
->>>>>>> master
       }
 
       callback && callback()
@@ -4079,45 +2200,10 @@ if (typeof jQuery === 'undefined') {
 }(jQuery);
 
 /* ========================================================================
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
-<<<<<<< HEAD
->>>>>>> tyler
->>>>>>> master
-=======
-=======
-<<<<<<< HEAD
->>>>>>> tyler
->>>>>>> master
  * Bootstrap: affix.js v3.3.5
  * http://getbootstrap.com/javascript/#affix
  * ========================================================================
  * Copyright 2011-2015 Twitter, Inc.
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> master
-=======
->>>>>>> master
-=======
- * Bootstrap: affix.js v3.4.1
- * https://getbootstrap.com/docs/3.4/javascript/#affix
- * ========================================================================
- * Copyright 2011-2019 Twitter, Inc.
->>>>>>> master
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> tyler
->>>>>>> master
-=======
->>>>>>> tyler
->>>>>>> master
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  * ======================================================================== */
 
@@ -4131,32 +2217,7 @@ if (typeof jQuery === 'undefined') {
   var Affix = function (element, options) {
     this.options = $.extend({}, Affix.DEFAULTS, options)
 
-<<<<<<< HEAD
     this.$target = $(this.options.target)
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-    this.$target = $(this.options.target)
-=======
->>>>>>> master
-=======
-    this.$target = $(this.options.target)
-=======
->>>>>>> master
-    var target = this.options.target === Affix.DEFAULTS.target ? $(this.options.target) : $(document).find(this.options.target)
-
-    this.$target = target
->>>>>>> master
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> tyler
->>>>>>> master
-=======
->>>>>>> tyler
->>>>>>> master
       .on('scroll.bs.affix.data-api', $.proxy(this.checkPosition, this))
       .on('click.bs.affix.data-api',  $.proxy(this.checkPositionWithEventLoop, this))
 
@@ -4168,31 +2229,7 @@ if (typeof jQuery === 'undefined') {
     this.checkPosition()
   }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
   Affix.VERSION  = '3.3.5'
-=======
-<<<<<<< HEAD
-  Affix.VERSION  = '3.4.1'
->>>>>>> master
-=======
-<<<<<<< HEAD
-  Affix.VERSION  = '3.3.5'
-=======
-  Affix.VERSION  = '3.4.1'
->>>>>>> master
->>>>>>> tyler
->>>>>>> master
-=======
-  Affix.VERSION  = '3.3.5'
-=======
-<<<<<<< HEAD
-  Affix.VERSION  = '3.3.5'
-=======
-  Affix.VERSION  = '3.4.1'
->>>>>>> master
->>>>>>> tyler
->>>>>>> master
 
   Affix.RESET    = 'affix affix-top affix-bottom'
 
