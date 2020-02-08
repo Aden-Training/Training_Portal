@@ -1,16 +1,3 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
-<<<<<<< HEAD
->>>>>>> tyler
->>>>>>> master
-=======
-=======
-<<<<<<< HEAD
->>>>>>> tyler
->>>>>>> master
 .formInput{
   width: 200px;
 }
@@ -68,27 +55,12 @@ ul li a:hover{
   border-bottom-color: white;
   border-bottom-style: solid;
 }
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> master
-=======
->>>>>>> master
-=======
+
 .jumbotron{
     background-color: rgb(19, 104, 138);
     color: white;
     padding: 20px;
+    border-bottom-color: white;
+    border-bottom-style: solid;
 }
 
->>>>>>> master
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> tyler
->>>>>>> master
-=======
->>>>>>> tyler
->>>>>>> master
