@@ -1,3 +1,4 @@
+
 .formInput{
   width: 200px;
 }
@@ -151,8 +152,10 @@ ul li a:hover{
 }
 
 
-#divOffshore{
-  display:none;
+.jumbotron{
+    background-color: rgba(255, 255, 255, 0.158);
+    color: white;
+    padding: 20px;
 }
 
 .card{
