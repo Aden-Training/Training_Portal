@@ -167,3 +167,7 @@ ul li a:hover{
   background-color: #c53d3d;
   border-color: #c53d3d;
 }
+
+#divOffshore{
+  display: none;
+}
