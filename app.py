@@ -210,14 +210,25 @@ def loginbus():
 
     return render_template('loginbus.html')
 
-#Ross's stuff, can remove later
 @app.route('/findcourse', methods=["GET", "POST"])
 def findcourse():
     con = sqlite3.connect('db/database.db')
-    con.row_factory = sqlite3.Row
-    
     cur = con.cursor()
     catagory = "Offshore"
+
+    cur.execute("SELECT * FROM courses WHERE catagory = ?",[catagory])
+    course = cur.fetchall()
+
+    return render_template('findcourse.html', course = course)
+
+# #Ross's stuff, can remove later
+# @app.route('/findcourse', methods=["GET", "POST"])
+# def findcourse():
+#     con = sqlite3.connect('db/database.db')
+#     con.row_factory = sqlite3.Row
+    
+#     cur = con.cursor()
+#     catagory = "Offshore"
 
 @app.route('/removecourse/<id>', methods=["GET", "POST"])
 def removecourse(id):
@@ -278,12 +289,15 @@ def peoplebooked(coursename):
 #     #Add the shit pls ross
 
 #Ross's stuff, can remove later
-@app.route('/findcourse', methods=["GET", "POST"])
-def findcourse():
-    cur.execute("SELECT * FROM courses WHERE catagory = ?",[catagory])
-    course = cur.fetchall()
+# @app.route('/findcourse', methods=["GET", "POST"])
+# def findcourse():
+#     con = sqlite3.connect('db/database.db')
+#     cur = con.cursor()
 
-    return render_template('findcourse.html', course = course)
+#     cur.execute("SELECT * FROM courses WHERE catagory = ?",[catagory])
+#     course = cur.fetchall()
+
+#     return render_template('findcourse.html', course = course)
 
 
 if __name__ == "__main__":
