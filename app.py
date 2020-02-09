@@ -213,6 +213,8 @@ def loginbus():
 @app.route('/findcourse', methods=["GET", "POST"])
 def findcourse():
     con = sqlite3.connect('db/database.db')
+    con.row_factory = sqlite3.Row
+
     cur = con.cursor()
     catagory = "Offshore"
 
