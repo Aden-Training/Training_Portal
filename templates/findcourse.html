@@ -19,6 +19,14 @@
                 </div>
             </div>
         </div>
+        {% with messages = get_flashed_messages() %}
+        {% if messages %}
+            {% for message in messages %}
+                <h4>{{message}}</h4>
+            {% endfor %}
+        {% endif %}
+
+    {% endwith %}
         <div class="col-md-8" id="coursesTo">
             <div class="catexpand">
                 <div class="catexpandHGV" id="divHGV">
@@ -62,7 +70,9 @@
                             <div class="card-body">
                                 <h5 class="card-title">{{course["course_name"]}}</h5>
                                 <p class="card-text">{{course["description"]}}</p>
-                                <a href="#" class="btn btn-primary">Book Now!</a>
+                                <form action="/bookcourse/{{course.course_name}}" method="POST">
+                                <button type="submit" class="btn btn-primary">Book Now!</button>
+                            </form>
                             </div>
                         </div>
                     {% endfor %}

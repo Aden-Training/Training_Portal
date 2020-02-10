@@ -33,9 +33,10 @@ def requires_bus_login(f):
 
 conn = sqlite3.connect("db/database.db")
 
-conn.execute("CREATE TABLE IF NOT EXISTS customers (username TEXT, password TEXT)")
-conn.execute("CREATE TABLE IF NOT EXISTS businesses (username TEXT, password TEXT, industry TEXT)")
+conn.execute("CREATE TABLE IF NOT EXISTS customers (email TEXT, username TEXT, password TEXT)")
+conn.execute("CREATE TABLE IF NOT EXISTS businesses (email TEXT, username TEXT, password TEXT, industry TEXT)")
 conn.execute("CREATE TABLE IF NOT EXISTS courses (course_name TEXT, description TEXT, catagory TEXT, thumbnail TEXT)")
+conn.execute("CREATE TABLE IF NOT EXISTS bookings (course_name TEXT, person_booked TEXT, persons_email TEXT)")
 
 #   CUSTOMER PAGES
 
@@ -86,7 +87,7 @@ def postcourses():
         with sqlite3.connect('db/database.db') as con:
             con.execute("INSERT INTO courses VALUES (?,?,?,?)", (name, desc, cat, path))
     
-        return redirect('/businesstraining')
+        return redirect('/findcourse')
 
     return render_template('postcourse.html')
 
@@ -124,13 +125,14 @@ def coursesavailable():
 def register():
     if request.method == "POST":
         with sqlite3.connect("db/database.db") as con:
+            email = request.form['email']
             username = request.form['username']
             password = request.form['password']
 
             passwd = password.encode('utf-8')
             hashedpw = bcrypt.hashpw(passwd, bcrypt.gensalt())
 
-            con.execute("INSERT INTO customers VALUES(?,?)", (username, hashedpw))
+            con.execute("INSERT INTO customers VALUES(?,?,?)", (email, username, hashedpw))
 
             status = session['logged_in'] = True
             session['user'] = request.form['username']
@@ -167,7 +169,7 @@ def login():
 @app.route('/registerbus', methods = ["GET","POST"])
 def registerbus():
     if request.method == "POST":
-
+        email = request.form['email']
         username = request.form['username']
         password = request.form['password']
         industry = request.form['industry']
@@ -177,7 +179,7 @@ def registerbus():
         hashpw = bcrypt.hashpw(passwd, bcrypt.gensalt())
 
         with sqlite3.connect("db/database.db") as con:
-            con.execute("INSERT INTO businesses VALUES(?,?,?)",(username,hashpw,industry))
+            con.execute("INSERT INTO businesses VALUES(?,?,?,?)",(email,username,hashpw,industry))
 
             busstatus = session['bus_logged_in'] = True
             session['user'] = request.form['username']
@@ -211,6 +213,7 @@ def loginbus():
     return render_template('loginbus.html')
 
 @app.route('/findcourse', methods=["GET", "POST"])
+@requires_login
 def findcourse():
     con = sqlite3.connect('db/database.db')
     con.row_factory = sqlite3.Row
@@ -241,21 +244,31 @@ def removecourse(id):
 
         return redirect('/courses')
 
+# Creating an alternative bookcourse method
+
 @app.route('/bookcourse/<coursename>', methods=["POST","GET"])
 def bookcourse(coursename):
     if request.method == "POST":
+        con = sqlite3.connect('db/database.db')
+        cur = con.cursor()
 
         course = coursename
         user = session['user']
 
+        cur.execute("SELECT * FROM customers WHERE username = ?",[user])
+
+        cust_data = cur.fetchone()
+
+        email = cust_data[0]
 
         with sqlite3.connect('db/database.db') as con:
-            con.execute("INSERT INTO bookings VALUES (?,?)",(user,course))
+            con.execute("INSERT INTO bookings VALUES (?,?,?)",(course,user,email))
             con.commit()
 
     flash("You're Successfully booked onto %s!" % course)
 
-    return redirect('/coursesavailable')
+    return redirect('/findcourse')
+
 
 @app.route('/peoplebooked/<coursename>', methods=["GET"])
 def peoplebooked(coursename):
