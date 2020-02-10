@@ -305,77 +305,39 @@ def awardcertificate():
 
 
 def sendCertificate(recipiantEmail, pdf):
-    subject = "An email with attachment from Python"
-    body = "This is an email with attachment sent from Python"
+    subject = "Certificate for course completion"
+    body = "Please find attached the certificate proving that you completed the course"
     sender_email = "devtestross@gmail.com"
     receiver_email = recipiantEmail
     password = "DevPw2020*"
 
-    # Create a multipart message and set headers
     message = MIMEMultipart()
     message["From"] = sender_email
     message["To"] = receiver_email
     message["Subject"] = subject
 
-    # Add body to email
     message.attach(MIMEText(body, "plain"))
 
     filename = pdf
 
-    # Open PDF file in binary mode
     with open(filename, "rb") as attachment:
         part = MIMEBase("application", "octet-stream")
         part.set_payload(attachment.read())
 
-    # Encode file in ASCII characters to send by email 
     encoders.encode_base64(part)
 
-    # Add header as key/value pair to attachment part
     part.add_header(
         "Content-Disposition",
         f"attachment; filename= {filename}",
     )
 
-    # Add attachment to message and convert message to string
     message.attach(part)
     text = message.as_string()
 
-    # Log in to server using secure context and send email
     context = ssl.create_default_context()
     with smtplib.SMTP_SSL("smtp.gmail.com", 465, context=context) as server:
         server.login(sender_email, password)
         server.sendmail(sender_email, receiver_email, text)
-
-# @app.route('/')
-# def root():
-#     return render_template("index.html")
-
-
-# @app.route('/sendEmail', methods=["GET", "POST"])
-# def sendEmail():
-#     if request.method == "POST":
-#         emailAd = request.form['emailAddress']
-#         courseT = request.form['courseType']
-#         reqDay = request.form['requestedDay']
-
-#         makeEmail(emailAd, courseT, reqDay)
-
-#     return render_template("new.html")
-
-
-# def makeEmail(recEmail, courseT, reqDay):
-#     #Add the shit pls ross
-
-#Ross's stuff, can remove later
-# @app.route('/findcourse', methods=["GET", "POST"])
-# def findcourse():
-#     con = sqlite3.connect('db/database.db')
-#     cur = con.cursor()
-
-#     cur.execute("SELECT * FROM courses WHERE catagory = ?",[catagory])
-#     course = cur.fetchall()
-
-#     return render_template('findcourse.html', course = course)
 
 
 if __name__ == "__main__":
