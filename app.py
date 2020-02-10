@@ -282,6 +282,19 @@ def peoplebooked(coursename):
     return render_template('peoplebooked.html', people = people)
 
 
+@app.route('/awardcertificate', methods=["POST"])
+def awardcertificate():
+    if request.method=="POST":
+        
+        recipiantEmail = request.form['recipiantEmail']
+        certificate = request.form['PDFfile']
+
+        #DO EMAIL THING
+
+    return render_template('awardcertificate.html')
+
+
+
 
 # @app.route('/')
 # def root():
