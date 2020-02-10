@@ -22,7 +22,7 @@
             <img src="{{url_for('static', filename = 'img/adenFlame_white.png')}}" alt="imageHead" style="width:136.5px;height:109.5px;" class="headerImage">
           </a>
         </div>
-        <div class="col-md-4 col-sm-2">
+        <div class="col-md-4 col-sm-2" id="sessionDetails">
           {% if session['user'] %}
           <p>Welcome {{session['user']}}</p>
           <a href="/logout">Logout</a>

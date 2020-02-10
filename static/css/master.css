@@ -171,3 +171,7 @@ ul li a:hover{
 #divOffshore{
   display: none;
 }
+
+#sessionDetails{
+  text-align: right;
+}
