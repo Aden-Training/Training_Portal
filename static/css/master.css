@@ -43,15 +43,29 @@ p{
 .headerImg {
   display: block;
   margin: auto;
-  width: 50%; 
+  max-width: 50%; 
   margin-top: -50px;
 }
 
 /* Image on top of page */
 .topImg {
   border: 2px solid #ff4040;
+  opacity: 0.9;
 }
 
+.topImgcontent{
+  position: absolute;
+  bottom: 15px;
+  right: 30px;
+  background-image:linear-gradient(#ff4040, #f2b929);
+  color: white;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-top: 5px;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 10px 10px 5px grey;
+}
 
 .loginForm{
   text-align: center;
