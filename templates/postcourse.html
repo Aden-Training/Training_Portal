@@ -1,15 +1,23 @@
 {% extends "base.html" %}
 {% block content %}
 <div class="container">
-    <form class="form-group" action="/postcourse" method="post">
+    <form class="form-group" action="/postcourses" method="post" enctype="multipart/form-data">
         <h4>Course details</h4>
-        <p>Name</p>
+        <p>Title:</p>
+        <input type="text" name="courseTitle" class="form-control formInput" required>
         <br>
-        <input type="text" name="courseName" class="form-control formInput">
+        <p>Description:</p>
+        <input type="text" name="courseDescription" class="form-control" required>
         <br>
-        <p>Description</p>
+        <p>Category:</p>
+        <select class="form-control form-control-sm" name="courseCat" required>
+            <option>HGV</option>
+            <option>Offshore</option>
+        </select>
         <br>
-        <input type="text" name="courseDescription" class="form-control">
+        <p>Submit Image</p>
+        <input type="file" name="imageFile" required>
+        <br>
         <br>
         <button class="btn btn-default" type="submit">submit</button>
     </form>

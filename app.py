@@ -35,8 +35,7 @@ conn = sqlite3.connect("db/database.db")
 
 conn.execute("CREATE TABLE IF NOT EXISTS customers (username TEXT, password TEXT)")
 conn.execute("CREATE TABLE IF NOT EXISTS businesses (username TEXT, password TEXT, industry TEXT)")
-conn.execute("CREATE TABLE IF NOT EXISTS courses (id INTEGER PRIMARY KEY AUTOINCREMENT, business TEXT, course_name TEXT, description TEXT)")
-conn.execute("CREATE TABLE IF NOT EXISTS bookings (person_booked TEXT, course_name TEXT)")
+conn.execute("CREATE TABLE IF NOT EXISTS courses (course_name TEXT, description TEXT, catagory TEXT, thumbnail TEXT)")
 
 #   CUSTOMER PAGES
 
@@ -58,21 +57,37 @@ def bustraining():
 
 #   COURSE HANDLING
 
-@app.route('/postcourse', methods = ["GET","POST"])
-def postcourse():
+# @app.route('/postcourse', methods = ["GET","POST"])
+# def postcourse():
+#     if request.method == "POST":
+
+#         business = session['user']
+#         name = request.form['courseName']
+#         desc = request.form['courseDescription']
+
+#         with sqlite3.connect('db/database.db') as con:
+#             con.execute("INSERT INTO courses VALUES (?,?,?)", (business, name, desc))
+    
+#     return redirect('/businesstraining')
+
+@app.route('/postcourses', methods = ["POST","GET"])
+def postcourses():
     if request.method == "POST":
 
-        business = session['user']
-        name = request.form['courseName']
+        f = request.files['imageFile']
+        name = request.form['courseTitle']
         desc = request.form['courseDescription']
+        cat = request.form['courseCat']
+        #thumb = request.form['imageFile']
+
+        path = 'static/img/' + name + '.jpg'
+        f.save('static/img/' + name +'.jpg')
 
         with sqlite3.connect('db/database.db') as con:
-            con.execute("INSERT INTO courses VALUES (null,?,?,?)", (business, name, desc))
+            con.execute("INSERT INTO courses VALUES (?,?,?,?)", (name, desc, cat, path))
     
-    return redirect('/businesstraining')
+        return redirect('/businesstraining')
 
-@app.route('/postcourses')
-def postcourses():
     return render_template('postcourse.html')
 
 @app.route('/courses', methods=["GET"])
@@ -82,7 +97,10 @@ def courses():
 
     cur = con.cursor()
 
-    cur.execute("SELECT * FROM courses WHERE business = ?", [session['user']])
+    catagory = "Offshore"
+
+    cur.execute("SELECT * FROM courses WHERE catagory = ?",[catagory])
+
     courses = cur.fetchall()
 
     return render_template('courses.html', courses = courses)
@@ -192,6 +210,27 @@ def loginbus():
 
     return render_template('loginbus.html')
 
+@app.route('/findcourse', methods=["GET", "POST"])
+def findcourse():
+    con = sqlite3.connect('db/database.db')
+    con.row_factory = sqlite3.Row
+
+    cur = con.cursor()
+    catagory = "Offshore"
+
+    cur.execute("SELECT * FROM courses WHERE catagory = ?",[catagory])
+    course = cur.fetchall()
+
+    return render_template('findcourse.html', course = course)
+
+# #Ross's stuff, can remove later
+# @app.route('/findcourse', methods=["GET", "POST"])
+# def findcourse():
+#     con = sqlite3.connect('db/database.db')
+#     con.row_factory = sqlite3.Row
+    
+#     cur = con.cursor()
+#     catagory = "Offshore"
 
 @app.route('/removecourse/<id>', methods=["GET", "POST"])
 def removecourse(id):
@@ -252,10 +291,16 @@ def peoplebooked(coursename):
 #     #Add the shit pls ross
 
 #Ross's stuff, can remove later
-@app.route('/findcourse', methods=["GET", "POST"])
-def findcourse():
-    return render_template('findcourse.html')
+# @app.route('/findcourse', methods=["GET", "POST"])
+# def findcourse():
+#     con = sqlite3.connect('db/database.db')
+#     cur = con.cursor()
+
+#     cur.execute("SELECT * FROM courses WHERE catagory = ?",[catagory])
+#     course = cur.fetchall()
+
+#     return render_template('findcourse.html', course = course)
 
 
 if __name__ == "__main__":
-    app.run(host='0.0.0.0', debug=True)
+    app.run(host="0.0.0.0", debug=True)
