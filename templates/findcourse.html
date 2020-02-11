@@ -14,9 +14,10 @@
             <div class="catbar" id="catbarTo">
                 <h3>Categories</h3>
                 <div class="catlist">
-                    <button class="btn btn-primary" onclick="switchVisibleHGV()">Heavy Goods Vehicle</button>
+                    <br>
+                    <button class="btn btn-primary" onclick="switchVisibleHGV()">HGV</button> 
                     <br><br>
-                    <button class="btn btn-primary" onclick="switchVisibleOffshore()">Offshore</button>  
+                    <button class="btn btn-primary" onclick="switchVisibleOffshore()">Offshore</button> 
                 </div>
             </div>
         </div>
@@ -57,10 +58,17 @@
                     </div>
                 </div>
                 <div class="catexpandOffshore" id="divOffshore">
-                    Hello this is div 2 for Offshore
-                </div>
+                    {% for course in course %}
+                        <div class="card" style="width: 18rem;">
+                            <img width="200px" height="200px" class="card-img-top" src="{{course.thumbnail}}" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">{{course["course_name"]}}</h5>
+                                <p class="card-text">{{course["description"]}}</p>
+                                <a href="#" class="btn btn-primary">Book Now!</a>
+                            </div>
+                        </div>
+                    {% endfor %}
             </div>
-            
         </div>
     </div>
     <div class="mainresults">
