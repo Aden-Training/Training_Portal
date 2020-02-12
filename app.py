@@ -1,6 +1,9 @@
 from flask import Flask, render_template, url_for, request, redirect, session, flash
 from functools import wraps
 from email.mime.text import MIMEText
+from flask_mysqldb import MySQL
+from wtforms import Form, StringField, TextAreaField, PasswordField, validators
+from passlib.hash import sha256_crypt
 from email.mime.multipart import MIMEMultipart
 
 #import sqlite3
@@ -12,7 +15,7 @@ app = Flask(__name__)
 #app.secret_key = "lmaosecretkeylmao"
 app.config['MYSQL_HOST'] = 'localhost'
 app.config['MYSQL_USER'] = 'root'
-app.config['MYSQL_PASSWORD'] = '123456'
+#app.config['MYSQL_PASSWORD'] = '123456'
 app.config['MYSQL_DB'] = 'adentraining'
 app.config['MYSQL_DB'] = 'DictCursor'
 
@@ -22,14 +25,14 @@ mysql= MySQL(app)
 
 # Authentication Middleware
 #def requires_login(f):
-    #@wraps(f)
-    #def decorated(*args, **kwargs):
-     #   status = session.get('logged_in', False)
-      #  busstatus = session.get('bus_logged_in', False)
-       # if not status:
-        #    return redirect(url_for('.login', next=request.path))
+ #   @wraps(f)
+  #  def decorated(*args, **kwargs):
+   #     status = session.get('logged_in', False)
+    #    busstatus = session.get('bus_logged_in', False)
+     #   if not status:
+      #      return redirect(url_for('.login', next=request.path))
        # return f(*args, **kwargs)
-   # return decorated
+    #return decorated
 
 #def requires_bus_login(f):
  #   @wraps(f)
@@ -50,13 +53,15 @@ mysql= MySQL(app)
 #   CUSTOMER PAGES
 
 #@app.route('/')
-@requires_login
-def root():
-    return render_template("index.html")
-@app.route('/logout')
-def logout():
-    session.clear()
-    return redirect('/')
+#@requires_login
+#def root():
+ #  return render_template("index.html")
+#@app.route('/logout')
+#def logout():
+ #   session.clear()
+  #  return redirect('/')
+#@app.route('/
+
 
 #   BUSINESS PAGES
 
@@ -129,50 +134,37 @@ def logout():
 
     #return render_template('coursesavailable.html', courses = courses)
 
+# INDIVIDUAL CUSTOMER LOGIN AND REGISTER
 
-#@app.route('/registercust', methods = ["GET","POST"])
-#def register():
- #   if request.method == "POST":
-  #      with sqlite3.connect("db/database.db") as con:
-   #         email = request.form['email']
-     #       username = request.form['username']
-    #        password = request.form['password']
+@app.route('/registercust', methods = ["GET","POST"])
+def register():
+    form = RegisterForm(request.form)
+    if request.method == 'POST' and form.validate():
+        individualFirstname = form.individualFirstname.data
+        individualSurname = form.individualSurname.data
+        individualEmail = form.individualEmail.data
+        individualPassword = sha256_crypt.encrypt(str(form.individualPassword.data))
 
-      #      passwd = password.encode('utf-8')
-       #     hashedpw = bcrypt.hashpw(passwd, bcrypt.gensalt())
+        #create cursor
+        cur = mysql.connection.cursor()
 
-        #    con.execute("INSERT INTO customers VALUES(?,?,?)", (email, username, hashedpw))
+        cur.execute("INSERT INTO individualUser(individualFirstname, individualSurname, individualEmail, indiviualPassword) VALUES(%s, %s, %s, %s)", (individualFirstName, individualSurnamce, individualEmail, individualPassword))
 
-         #   status = session['logged_in'] = True
-          #  session['user'] = request.form['username']
+        mysql.connection.commit()
 
-           # return redirect('/')
+        cur.close()
 
-   # return render_template("register.html")
+        return redirect(url_for('login'))
+    return render_template('register.html', form=form)
 
 #@app.route('/logincust', methods = ["GET","POST"])
 #def login():
- #   if request.method == "POST":
+ #  if request.method == "POST":
+  #      email = request.form['email']
+   #     password = request.form['password']
 
-  #      username = request.form['username']
- #       password = request.form['password']
-
-  #      encodedpw = password.encode('utf-8')
-
-    #    with sqlite3.connect("db/database.db") as con:
-      #      cur = con.cursor()
-        #    cur = con.execute("SELECT * FROM customers WHERE username = ?", [username])
-
-         #   user = cur.fetchone()
-
-          #  if cur != "":
-           #     passwd = user[1]
-
-            #    if(bcrypt.checkpw(encodedpw, passwd)):
-             #       status = session['logged_in'] = True
-              #      session['user'] = request.form['username']
-               #     return redirect('/')
-   # return render_template("login.html")
+        
+    #return render_template("login.html")
 
 #   LOGGING IN businesses
 #@app.route('/registerbus', methods = ["GET","POST"])

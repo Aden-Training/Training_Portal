@@ -4,16 +4,19 @@
   <div class="loginForm">
     <h2>Register</h2>
     <form class="form-group" action="/registercust" method="post">
-      <input autocomplete="off" class="form-control formInput" type="text" name="email" value="" placeholder="Email">
-      <br>
-      <input autocomplete="off" class="form-control formInput" type="text" name="username" value="" placeholder="Username">
-      <br>
-      <input autocomplete="off" class="form-control formInput" type="password" name="password" value="" placeholder="Password">
-      <br>
-      <button autocomplete="off" type="submit" name="button" class="btn btn-default">Register</button>
-      <br>
-      <br>
-      <p>Got an account? Sign in <strong><a href="/logincust">here</a></strong> </p>
+      <div class="form-group">
+        {{render_field(form.individualFirstname, class_="form-control")}}
+      </div>
+      <div class="form-group">
+	{{render_field(form.individualSurname, class_="form-control")}}
+      </div>
+      <div class="form-group">
+	{{render_field(form.individualEmail, class_="form-control")}}
+      </div>
+      <div class="form-group">
+	{{render_field(form.individualPassword, class_="form-control")}}
+      </div>
+      <p>Gotmfmfm an account? Sign in <strong><a href="/logincust">here</a></strong> </p>
       <br>
       <p>Businesss account? Sign in <strong><a href="/registerbus">here</a></strong></p>
     </form>
