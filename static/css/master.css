@@ -51,6 +51,7 @@ p{
 .topImg {
   border: 2px solid #ff4040;
   opacity: 0.9;
+  position: relative;
 }
 
 .topImgcontent{
@@ -64,6 +65,7 @@ p{
   padding-top: 5px;
   border-radius: 8px;
   text-align: center;
+  border: 0.5px solid #000000;
   box-shadow: 10px 10px 5px grey;
 }
 
@@ -125,16 +127,17 @@ ul li a{
 h2{
 }
 
-/* NEEDS TO BE DELETED
-ul li a:hover{
-  text-decoration: none;
-  color: #896A67;
-}
-
 /* Catergory bar */
 .catbar{
   color: #000000;
-  padding-left: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 30px;
+  margin-left: 20px;
+  height: auto;
+  width: 80%;
+  background-color: #ff40405b;
+  box-shadow: 10px 10px 5px rgb(187, 187, 187);
 }
 
 .catlist{

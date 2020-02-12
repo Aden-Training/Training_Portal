@@ -17,11 +17,13 @@
             <h3 class="headerText">Aden Training</h3>
           </a>
         </div>
-        <div class="col-md-4 col-sm-2">
+        <div class="col-md-1"></div>
+        <div class="col-md-2 col-sm-2">
           <a href="https://www.adentraining.co.uk/">
             <img src="{{url_for('static', filename = 'img/adenFlame_white.png')}}" class="headerImg" style="width:136.5px;height:109.5px;">
           </a>
         </div>
+        <div class="col-md-1"></div>
         <div class="col-md-4 col-sm-2">
           {% if session['user'] %}
           <p>Welcome {{session['user']}}</p>
@@ -30,14 +32,15 @@
         </div>
       </div>
     </div>
-    <div class="navigationBar">
-      <div class="row">
-        <ul>
-          <li><a class="active" href="#home">My Account</a></li>
-          <li><a href="/findcourse">Find a course</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
+    <div class="row">
+      <div class="navigationBar">
+          <ul>
+            <li><a class="active" href="#home">My Account</a></li>
+            <li><a href="/findcourse">Find a course</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
       </div>
+    </div>
     {% block content %}
 
     {% endblock %}
