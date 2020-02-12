@@ -61,6 +61,18 @@ p{
   border-collapse: separate;
 }
 
+/* Text showing user login */
+.loginText {
+  color: #ffffff;
+  font-family: 'Raleway', sans-serif;
+  font-size: 6px;
+  font-size: 1vw;
+  text-align: right;
+  margin: 0 auto;
+  margin-top: -15px;
+  margin-right: 10px;
+}
+
 /* Image on top of page */
 .topImg {
   border: 2px solid #ff4040;
@@ -146,16 +158,14 @@ h2{
 
 /* Catergory bar */
 .catbar{
-  border: 1px solid black;
   color: #000000;
   padding-top: 10px;
-  padding-bottom: 10px;
+  padding-bottom: 20px;
   padding-left: 30px;
-  margin-left: 15px;
   margin-top: 15px;
   height: auto;
-  width: 85%;
-  background-color: #ffffff;
+  width: 90%;
+  background: rgba(242,185,41,0.3);
 }
 
 .catlist{

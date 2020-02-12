@@ -25,10 +25,12 @@
         </div>
         <div class="col-md-1"></div>
         <div class="col-md-4 col-sm-2">
-          {% if session['user'] %}
-          <p>Welcome {{session['user']}}</p>
-          <a href="/logout">Logout</a>
-          {% endif %}
+          <div class="loginText">
+            {% if session['user'] %}
+            <p>Welcome {{session['user']}}</p>
+            <a href="/logout">Logout</a>
+            {% endif %}
+          </div>
         </div>
       </div>
     </div>
