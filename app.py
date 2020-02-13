@@ -124,20 +124,21 @@ def coursesavailable():
 @app.route('/registercust', methods = ["GET","POST"])
 def register():
     if request.method == "POST":
+        email = request.form['email']
+        username = request.form['username']
+        password = request.form['password']
+
+        passwd = password.encode('utf-8')
+        hashedpw = bcrypt.hashpw(passwd, bcrypt.gensalt())
+
         with sqlite3.connect("db/database.db") as con:
-            email = request.form['email']
-            username = request.form['username']
-            password = request.form['password']
+            cur = con.cursor()
+            cur.execute("INSERT INTO customers VALUES(?,?,?)", (email, username, hashedpw))
+            con.commit();
 
-            passwd = password.encode('utf-8')
-            hashedpw = bcrypt.hashpw(passwd, bcrypt.gensalt())
-
-            con.execute("INSERT INTO customers VALUES(?,?,?)", (email, username, hashedpw))
-
-            status = session['logged_in'] = True
-            session['user'] = request.form['username']
-
-            return redirect('/')
+        status = session['logged_in'] = True
+        session['user'] = request.form['username']
+        return redirect('/')
 
     return render_template("register.html")
 
@@ -148,21 +149,25 @@ def login():
         username = request.form['username']
         password = request.form['password']
 
-        encodedpw = password.encode('utf-8')
 
+        # encodedpw = password.encode('utf-8')
+        password.encode('utf-8')
         with sqlite3.connect("db/database.db") as con:
             cur = con.cursor()
             cur = con.execute("SELECT * FROM customers WHERE username = ?", [username])
 
             user = cur.fetchone()
-
+            
             if cur != "":
-                passwd = user[1]
+                passd = user[1]
 
-                if(bcrypt.checkpw(encodedpw, passwd)):
+                passwd = passd.encode('utf-8')
+                passd.encode('utf-8')
+                if(bcrypt.checkpw(password, passd)):
                     status = session['logged_in'] = True
                     session['user'] = request.form['username']
                     return redirect('/')
+
     return render_template("login.html")
 
 #   LOGGING IN businesses
@@ -195,13 +200,11 @@ def loginbus():
         password = request.form['password']
 
         encodedpw = password.encode('utf-8')
-
         with sqlite3.connect("db/database.db") as con:
             cur = con.cursor()
             cur = con.execute("SELECT * FROM businesses WHERE username = ?", [username])
 
             user = cur.fetchone()
-
             if cur != "":
                 passwd = user[1]
 
@@ -235,11 +238,13 @@ def findcourse():
 #     cur = con.cursor()
 #     catagory = "Offshore"
 
-@app.route('/removecourse/<id>', methods=["GET", "POST"])
-def removecourse(id):
+@app.route('/removecourse/<coursename>', methods=["GET", "POST"])
+def removecourse(coursename):
     if request.method == "POST":
+
+        course = coursename
         with sqlite3.connect('db/database.db') as con:
-            con.execute("DELETE FROM courses WHERE id = ?", [id])
+            con.execute("DELETE FROM courses WHERE course_name = ?", [course])
             con.commit()
 
         return redirect('/courses')
