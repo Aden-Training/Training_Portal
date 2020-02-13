@@ -328,7 +328,7 @@ def sendCertificate(recipiantEmail, pdf):
 
     part.add_header(
         "Content-Disposition",
-        f"attachment; filename= {filename}",
+        "attachment; filename= {}".format(filename),
     )
 
     message.attach(part)
