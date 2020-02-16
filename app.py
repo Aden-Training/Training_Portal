@@ -10,14 +10,23 @@ from email.mime.multipart import MIMEMultipart
 #import bcrypt
 import random
 import smtplib, ssl
+import os
 
 app = Flask(__name__)
 #app.secret_key = "lmaosecretkeylmao"
 app.config['MYSQL_HOST'] = 'localhost'
 app.config['MYSQL_USER'] = 'root'
 #app.config['MYSQL_PASSWORD'] = '123456'
-app.config['MYSQL_DB'] = 'adentraining'
-app.config['MYSQL_DB'] = 'DictCursor'
+
+# Getting database user and password from environment variables
+# To set in linux environment (server)  its 'export DB_USER="username"'
+# export DB_PASS="password"
+
+app.config['MYSQL_DB'] = os.environ.get('DB_USER')
+app.config['MYSQL_DB'] = os.environ.get('DB_PASS')
+
+#   app.config['MYSQL_DB'] = 'adentraining'
+#   app.config['MYSQL_DB'] = 'DictCursor'
 
 #init MYSQL
 mysql= MySQL(app)
