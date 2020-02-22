@@ -6,22 +6,20 @@ from wtforms import Form, StringField, TextAreaField, PasswordField, validators
 from passlib.hash import sha256_crypt
 from email.mime.multipart import MIMEMultipart
 
-#import sqlite3
 #import bcrypt
 import random
 import smtplib, ssl
 
 app = Flask(__name__)
-#app.secret_key = "lmaosecretkeylmao"
+
+# Config MySQL
 app.config['MYSQL_HOST'] = 'localhost'
 app.config['MYSQL_USER'] = 'root'
-#app.config['MYSQL_PASSWORD'] = '123456'
+app.config['MYSQL_PASSWORD'] = '123456'
 app.config['MYSQL_DB'] = 'adentraining'
-app.config['MYSQL_DB'] = 'DictCursor'
-
+app.config['MYSQL_CURSORCLASS'] = 'DictCursor'
 #init MYSQL
 mysql= MySQL(app)
-
 
 # Authentication Middleware
 #def requires_login(f):
@@ -136,6 +134,14 @@ mysql= MySQL(app)
 
 # INDIVIDUAL CUSTOMER LOGIN AND REGISTER
 
+# REGISTER FORM
+
+class RegisterCustForm(Form):
+    individualFirstname = StringField('individualFirstname', [validators.Length(min=1, max=50)])
+    individualSurname = StringField('individualSurname', [validators.Length(min=1, max=50)])
+    individualEmail = StringField('individualEmail', [validators.Length(min=1, max=100)])
+    individualPassword = PasswordField('individualPassword', [validators.DataRequired()])
+
 @app.route('/registercust', methods = ["GET","POST"])
 def register():
     form = RegisterForm(request.form)
@@ -149,12 +155,12 @@ def register():
         cur = mysql.connection.cursor()
 
         cur.execute("INSERT INTO individualUser(individualFirstname, individualSurname, individualEmail, indiviualPassword) VALUES(%s, %s, %s, %s)", (individualFirstName, individualSurnamce, individualEmail, individualPassword))
-
+        #commit to db
         mysql.connection.commit()
-
+        # close connection
         cur.close()
 
-        return redirect(url_for('login'))
+        return redirect(url_for('register.html'))
     return render_template('register.html', form=form)
 
 #@app.route('/logincust', methods = ["GET","POST"])
@@ -318,4 +324,5 @@ def register():
 
 
 if __name__ == "__main__":
+    app.secret_key='secret123456'
     app.run(host="0.0.0.0", debug=True)

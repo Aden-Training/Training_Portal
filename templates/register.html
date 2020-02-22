@@ -3,7 +3,8 @@
 <div class="container centered">
   <div class="loginForm">
     <h2>Register</h2>
-    <form class="form-group" action="/registercust" method="post">
+    {%  from "includes/_formhelpers.html' import render_field %}
+    <form method="post" action="">
       <div class="form-group">
         {{render_field(form.individualFirstname, class_="form-control")}}
       </div>
@@ -16,7 +17,9 @@
       <div class="form-group">
 	{{render_field(form.individualPassword, class_="form-control")}}
       </div>
-      <p>Gotmfmfm an account? Sign in <strong><a href="/logincust">here</a></strong> </p>
+      <p><input type="submit" class="btn btn-primary" value="Submit"></p>
+
+      <p>Got an account? Sign in <strong><a href="/logincust">here</a></strong> </p>
       <br>
       <p>Businesss account? Sign in <strong><a href="/registerbus">here</a></strong></p>
     </form>
