@@ -3,19 +3,19 @@
 <div class="container centered">
   <div class="loginForm">
     <h2>Register</h2>
-    {%  from "includes/_formhelpers.html' import render_field %}
-    <form method="post" action="">
+    {%  from "includes/_formhelpers.html" import render_field %}
+    <form method="POST" action="">
       <div class="form-group">
         {{render_field(form.individualFirstname, class_="form-control")}}
       </div>
       <div class="form-group">
-	{{render_field(form.individualSurname, class_="form-control")}}
+	      {{render_field(form.individualSurname, class_="form-control")}}
       </div>
       <div class="form-group">
-	{{render_field(form.individualEmail, class_="form-control")}}
+	      {{render_field(form.individualEmail, class_="form-control")}}
       </div>
       <div class="form-group">
-	{{render_field(form.individualPassword, class_="form-control")}}
+	      {{render_field(form.individualPassword, class_="form-control")}}
       </div>
       <p><input type="submit" class="btn btn-primary" value="Submit"></p>
 

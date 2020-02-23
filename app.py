@@ -160,7 +160,7 @@ class RegisterCustForm(Form):
 
 @app.route('/registercust', methods = ["GET","POST"])
 def register():
-    form = RegisterForm(request.form)
+    form = RegisterCustForm(request.form)
     if request.method == 'POST' and form.validate():
         individualFirstname = form.individualFirstname.data
         individualSurname = form.individualSurname.data
