@@ -185,7 +185,7 @@ def registerbus():
 
         passwd = password.encode('utf-8')
 
-        hashpw = bcrypt.hashpw(passwd, bcrypt.gensalt())
+        hashpw = sha256_crypt.hash(passwd)
 
         with sqlite3.connect("db/database.db") as con:
             con.execute("INSERT INTO businesses VALUES(?,?,?,?)",(email,username,hashpw,industry))
@@ -212,7 +212,7 @@ def loginbus():
             if cur != "":
                 passwd = user[2]
 
-                if(bcrypt.checkpw(encodedpw, passwd)):
+                if sha256_crypt.verify(password, passwd):
                     busstatus = session['bus_logged_in'] = True
                     session['user'] = request.form['username']
                     return redirect('/businesstraining')
