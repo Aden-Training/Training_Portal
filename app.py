@@ -2,11 +2,13 @@ from flask import Flask, render_template, url_for, request, redirect, session, f
 from functools import wraps
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
+from passlib.hash import sha256_crypt
 
 import sqlite3
 import bcrypt
 import random
 import smtplib, ssl
+import sha256
 
 app = Flask(__name__)
 app.secret_key = "lmaosecretkeylmao"
@@ -126,14 +128,18 @@ def register():
     if request.method == "POST":
         email = request.form['email']
         username = request.form['username']
-        password = request.form['password']
+        password_data = request.form['password']
 
-        passwd = password.encode('utf-8')
-        hashedpw = bcrypt.hashpw(passwd, bcrypt.gensalt())
+        passwd = password_data.encode('utf-8')
+
+        # passwd = password.encode('utf-8')
+        # hashedpw = bcrypt.hashpw(passwd, bcrypt.gensalt())
+
+        password = sha256_crypt.hash(passwd)
 
         with sqlite3.connect("db/database.db") as con:
             cur = con.cursor()
-            cur.execute("INSERT INTO customers VALUES(?,?,?)", (email, username, hashedpw))
+            cur.execute("INSERT INTO customers VALUES(?,?,?)", (email, username, password))
             con.commit();
 
         status = session['logged_in'] = True
@@ -149,21 +155,19 @@ def login():
         username = request.form['username']
         password = request.form['password']
 
-
         # encodedpw = password.encode('utf-8')
-        password.encode('utf-8')
+        #password.encode('utf-8')
         with sqlite3.connect("db/database.db") as con:
             cur = con.cursor()
             cur = con.execute("SELECT * FROM customers WHERE username = ?", [username])
-
-            user = cur.fetchone()
             
             if cur != "":
-                passd = user[1]
+                user = cur.fetchone()
+                passd = user[2]
 
-                passwd = passd.encode('utf-8')
-                passd.encode('utf-8')
-                if(bcrypt.checkpw(password, passd)):
+               # passwd = passd.encode('utf-8')
+                #passd.encode('utf-8')
+                if sha256_crypt.verify(password, passd):
                     status = session['logged_in'] = True
                     session['user'] = request.form['username']
                     return redirect('/')
@@ -206,7 +210,7 @@ def loginbus():
 
             user = cur.fetchone()
             if cur != "":
-                passwd = user[1]
+                passwd = user[2]
 
                 if(bcrypt.checkpw(encodedpw, passwd)):
                     busstatus = session['bus_logged_in'] = True
