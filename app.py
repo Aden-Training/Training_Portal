@@ -16,23 +16,9 @@ app = Flask(__name__)
 # Config MySQL
 app.config['MYSQL_HOST'] = 'localhost'
 app.config['MYSQL_USER'] = 'root'
-#<<<<<<< HEAD
-app.config['MYSQL_PASSWORD'] = '123456'
+app.config['MYSQL_PASSWORD'] = '<root password>'
 app.config['MYSQL_DB'] = 'adentraining'
 app.config['MYSQL_CURSORCLASS'] = 'DictCursor'
-#=======
-
-# Getting database user and password from environment variables
-# To set in linux environment (server)  its 'export DB_USER="username"'
-# export DB_PASS="password"
-
-#app.config['MYSQL_DB'] = os.environ.get('DB_USER')
-#app.config['MYSQL_DB'] = os.environ.get('DB_PASS')
-
-#   app.config['MYSQL_DB'] = 'adentraining'
-#   app.config['MYSQL_DB'] = 'DictCursor'
-
-#>>>>>>> 3ccfadd4d1f9e266740092f5d16debe849560841
 #init MYSQL
 mysql= MySQL(app)
 
@@ -169,7 +155,7 @@ def register():
         #create cursor
         cur = mysql.connection.cursor()
 
-        cur.execute("INSERT INTO individualUser(individualFirstname, individualSurname, individualEmail, indiviualPassword) VALUES(%s, %s, %s, %s)", (individualFirstName, individualSurnamce, individualEmail, individualPassword))
+        cur.execute("INSERT INTO individualUser(individualFirstname, individualSurname, individualEmail, individualPassword) VALUES(%s, %s, %s, %s)", (individualFirstName, individualSurnamce, individualEmail, individualPassword))
         #commit to db
         mysql.connection.commit()
         # close connection
