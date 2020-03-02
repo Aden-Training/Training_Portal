@@ -21,14 +21,13 @@ app.config['MYSQL_PASSWORD'] = '123456'
 app.config['MYSQL_DB'] = 'adentraining'
 app.config['MYSQL_CURSORCLASS'] = 'DictCursor'
 #=======
-#app.config['MYSQL_PASSWORD'] = '123456'
 
 # Getting database user and password from environment variables
 # To set in linux environment (server)  its 'export DB_USER="username"'
 # export DB_PASS="password"
 
-app.config['MYSQL_DB'] = os.environ.get('DB_USER')
-app.config['MYSQL_DB'] = os.environ.get('DB_PASS')
+#app.config['MYSQL_DB'] = os.environ.get('DB_USER')
+#app.config['MYSQL_DB'] = os.environ.get('DB_PASS')
 
 #   app.config['MYSQL_DB'] = 'adentraining'
 #   app.config['MYSQL_DB'] = 'DictCursor'
@@ -176,7 +175,7 @@ def register():
         # close connection
         cur.close()
 
-        return redirect(url_for('register.html'))
+        return redirect(url_for('register'))
     return render_template('register.html', form=form)
 
 #@app.route('/logincust', methods = ["GET","POST"])
@@ -341,4 +340,4 @@ def register():
 
 if __name__ == "__main__":
     app.secret_key='secret123456'
-    app.run(host="0.0.0.0", debug=True)
+    app.run(host="0.0.0.0",  debug=True)
