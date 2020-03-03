@@ -1,3 +1,6 @@
+/* 
+-- All pages -- 
+*/
 html{
   overflow-x: hidden;
 }
@@ -11,8 +14,10 @@ html{
   display: none;
 }
 
+/* Textboxes for user input */
 .formInput{
-  width: 200px;
+  width: 100%;
+  border: 1px solid #ff4040;
 }
 
 /* Main body of page */
@@ -98,11 +103,6 @@ p{
   border-radius: 8px;
 }
 
-.loginForm{
-  text-align: center;
-  display: inline-block;
-}
-
 /* Navigation bar (burger button included) */
 .topnav {
   overflow: hidden;
@@ -110,13 +110,13 @@ p{
   width: 100%;
   margin-left: 15px;
   margin-right: 15px;
-  background-color: black;
+  background-color: #ffffff;
 }
 
 .topnav a {
   float: left;
   display: block;
-  color: white;
+  color: #ff4040;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -129,14 +129,15 @@ p{
   color: white;
 }
 
+/*
 .topnav a.active {
   background-image: linear-gradient(#ff4040, #f229bd);
   color: white;
-}
+}*/
 
 .topnav .icon {
   display: none;
-  color: #000;
+  color: #ff4040;
 }
 
 @media screen and (max-width: 600px) {
@@ -162,69 +163,60 @@ p{
 }
 /* End of navigation bar style */
 
-/* Navigation bar (OLD) 
-.navigationBar{
-  margin-top: -32px;
-  font-family: 'Raleway', sans-serif;
+h2 {
 }
 
-ul{
-  list-style-type: none;
-  margin: 0;
-  overflow: hidden;
-  background-color: #ffffff;
+/* 
+--login.html --
+ */
+.loginForm{
+  float: center;
+  margin-top: 40px;
+}
+
+/* Clickable links on page*/
+.loginLink{
+  color: #f229bd;
+}
+
+.loginLink:hover{
+  color: #f2b929;
+}
+
+.loginPersonal{
   width: 100%;
-}
-
-li{
   float: left;
-  border-right: 1.5px solid #ff4040;
 }
 
-ul li{
-  list-style-type: none;
-  display: inline-block;
+.loginBuisness{
+  width: 100%;
+  float: right;
 }
 
-li a{
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
+/* vertical line in center */
+.loginVertLine{
+  border-left: 1.5px solid #ff4040;
+  height: 210px;
+  position: absolute;
+  left: 50%;
+  margin-top: -10px;
+  top: 0;
 }
 
-li a:hover {
-  background-image: linear-gradient(#ff4040, #f2b929);
-  transition: 0.3s;
-}
-
-a{
-  color: #EFF9F0;
-}
-
-a:hover{
-  text-decoration: none;
-  color: #ffffff;
-}
-
-ul li a{
-  color: #ff4040;
-} */
-
-h2{
-}
-
+/* 
+-- findcourse.html --
+*/
 /* Catergory bar */
 .catbar{
   color: #000000;
   padding-top: 10px;
   padding-bottom: 20px;
   padding-left: 30px;
+  padding-right: 30px;
   margin-top: 15px;
   height: auto;
   width: 90%;
-  background: rgba(242,185,41,0.3);
+  background-color: #dadada80;
 }
 
 .catlist{
@@ -244,10 +236,16 @@ h2{
 /* Buttons */
 .btn{
   background-color: #ff4040;
-  border-color: #ff4040;
+  width: 100%;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 600;
 }
 
 .btn:hover{
-  background-color: #c53d3d;
-  border-color: #c53d3d;
+  background-image: linear-gradient(#ff4040, #f2b929);
+  transition: 0.3s;
+  color: white;
 }

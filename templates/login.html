@@ -2,18 +2,36 @@
 {% block content %}
 <div class="container centered">
   <div class="loginForm">
-    <h2>Login</h2>
+    <h2>Welcome</h2>
     <form class="form-group" action="/logincust" method="post">
-      <input autocomplete="off" class="form-control formInput" type="text" name="username" value="" placeholder="Username">
+      <p>Sign in to Aden Training or <strong><a class="loginLink" href="/registercust">Create an account</a></strong></p>
       <br>
-      <input autocomplete="off" class="form-control formInput" type="password" name="password" value="" placeholder="Password">
+      <div class="row">
+        <div class="col-md-5">
+          <div class="loginPersonal">
+            <input autocomplete="off" class="form-control formInput" type="text" name="username" value="" placeholder="Username">
+            <br>
+            <input autocomplete="off" class="form-control formInput" type="password" name="password" value="" placeholder="Password">
+            <br>
+            <button type="submit" name="button" class="btn btn-default">SIGN IN</button>
+          </div>
+        </div>
+        <div class="col-md-2">
+          <div class="loginVertLine"></div>
+        </div>
+        <div class="col-md-5">
+          <div class="loginBuisness">
+            <input autocomplete="off" class="form-control formInput" type="text" name="username" value="" placeholder="Business name">
+            <br>
+            <input autocomplete="off" class="form-control formInput" type="password" name="password" value="" placeholder="Password">
+            <br>
+            <button type="submit" name="button" class="btn btn-default">SIGN IN</button>
+          </div>
+        </div>
+      </div>
       <br>
-      <button type="submit" name="button" class="btn btn-default">Login</button>
       <br>
-      <br>
-      <p>Not got an account? Register <strong><a href="/registercust">here</a></strong></p>
-      <br>
-      <p>Business account? Register <strong> <a href="/registerbus">here</a> </strong> or login <strong><a href="/loginbus">here</a></strong> </p>
+      <p>Are you a business? <strong> <a class="loginLink" href="/registerbus">Create a business account</a> </strong></p>
     </form>
   </div>
 </div>
