@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <head>
     <meta charset="utf-8">
     <title>Prototype</title>
@@ -13,27 +14,43 @@
   <body>
     <div class="jumbotron">
       <div class="row">
-        <div class="col-md-4 col-sm-2">
-          <a href="https://www.adentraining.co.uk/">
-            <h3 class="headerText">Aden Training</h3>
-          </a>
+        <div class="col-md-5">
+          <div class="headerText">
+            <a href="https://www.adentraining.co.uk/">Aden Training</a>
+          </div>
         </div>
-        <div class="col-md-1"></div>
-        <div class="col-md-2 col-sm-2">
-          <a href="https://www.adentraining.co.uk/">
-            <img src="{{url_for('static', filename = 'img/adenFlame_white.png')}}" class="headerImg">
-          </a>
+        <div class="col-md-2">
+          <div class="headerImg">
+            <a href="https://www.adentraining.co.uk/">
+              <img src="{{url_for('static', filename = 'img/adenFlame_white_small.png')}}">
+            </a>
+          </div>
         </div>
-        <div class="col-md-1"></div>
-        <div class="col-md-4 col-sm-2">
-          <div class="loginText">
+        <div class="col-md-5">
+          <div class="signOutLarge">
             {% if session['user'] %}
             <p>Welcome {{session['user']}}</p>
-            <a href="/logout">Logout</a>
+            <a href="/logout">Sign out</a>
             {% endif %}
           </div>
         </div>
       </div>
+    </div>
+    <div class="row">
+      {% if session['user'] %}
+      <div class="signOutBar">
+        <div class="col-md-6">
+          <div class="signOutWelcome">
+            <p>Welcome {{session['user']}}</p>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="textSignOut">
+            <a href="/logout">Sign out</a>
+          </div>
+        </div>
+      </div>
+      {% endif %}
     </div>
     <div class="row">
       <div class="topnav" id="myTopnav">

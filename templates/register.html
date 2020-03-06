@@ -1,9 +1,11 @@
 {% extends "base.html" %}
 {% block content %}
 <div class="container centered">
-  <div class="loginForm">
-    <h2>Register</h2>
+  <div class="loginForm"> 
+    <h2>Create an account</h2>
     <form class="form-group" action="/registercust" method="post">
+      <p>Have a business? <strong><a class="loginLink" href="/registerbus">Create a buisness account</a></strong></p>
+      <br>
       <input autocomplete="off" class="form-control formInput" type="text" name="username" value="" placeholder="Username">
       <br>
       <input autocomplete="off" class="form-control formInput" type="password" name="password" value="" placeholder="Password">
@@ -11,9 +13,7 @@
       <button autocomplete="off" type="submit" name="button" class="btn btn-default">Register</button>
       <br>
       <br>
-      <p>Got an account? Sign in <strong><a href="/logincust">here</a></strong> </p>
-      <br>
-      <p>Businesss account? Sign in <strong><a href="/registerbus">here</a></strong></p>
+      <p>Already have an account? <strong><a class="loginLink" href="/logincust">Sign in</a></strong> </p>
     </form>
   </div>
 </div>

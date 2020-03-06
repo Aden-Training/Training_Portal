@@ -10,6 +10,38 @@ html{
   margin-right: 15px;
 }
 
+/* Images */ 
+img{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Main body of page */
+body{
+  background-color: #ffffff;
+  font-family: 'Raleway', sans-serif;
+}
+
+/* Paragraph */
+p{
+  color: #000000;
+}
+
+h2 {
+}
+
+/* Center images */
+.centered{
+  text-align: center;
+}
+
+/* IF SCREEN SIZE = SMALL */
+@media (max-width: 767px) {                  
+  .headerText {
+     display: none;
+  }
+}
+
 #divOffshore {
   display: none;
 }
@@ -20,21 +52,10 @@ html{
   border: 1px solid #ff4040;
 }
 
-/* Main body of page */
-body{
-  background-color: #ffffff;
-  font-family: 'Raleway', sans-serif;
-}
 
-p{
-  color: #000000;
-}
-
-.centered{
-  text-align: center;
-}
-
-/* Page header */
+/* 
+-- Page header -- 
+*/
 .jumbotron{
   background-color: #ff4040;
   border-bottom-color: #ff4040;
@@ -45,38 +66,83 @@ p{
 }
 
 /* Header text */
-.headerText{
+.headerText a{
   color: #ffffff;
-  font-family: 'Raleway', sans-serif;
-  font-size: 16px;
-  font-size: 2vw;
-  text-align: left;
-  margin: 0 auto;
-  margin-top: -15px;
-  margin-left: 10px;
+  font-size: 30px;
+  text-decoration: none;
+}
+.headerText{
+  position: relative;
+  float: left;
+  margin-top: -20px;
 }
 
-/* Header images */
+/* Header image */
 .headerImg {
-  display: block;
-  margin: auto;
-  max-width: 50%; 
-  height:auto;
+  text-align: center;
   margin-top: -40px;
-  border-collapse: separate;
+  height: auto;
 }
+
 
 /* Text showing user login */
-.loginText {
-  color: #ffffff;
-  font-family: 'Raleway', sans-serif;
-  font-size: 6px;
-  font-size: 1vw;
-  text-align: right;
-  margin: 0 auto;
-  margin-top: -15px;
-  margin-right: 10px;
+.signOutLarge{
+  margin-top: -20px;
+  width: 100%;
 }
+.signOutLarge a{
+  color: #ffffff;
+  font-size: 20px;
+  float: right;
+  text-decoration: none;
+  margin-top: -15px;
+}
+.signOutLarge p{
+  color: #ffffff;
+  font-size: 20px;
+  text-align: right;
+}
+
+/* Hide login bar for larger screens */
+.signOutBar{
+  width: 100%;
+  display: none;
+  height: 50px;
+}
+.signOutWelcome{
+  float: left;
+  margin-top: -20px;
+  margin-left: 30px;
+}
+.signOutWelcome p{
+  color: #ff4040;
+  top: -20px;
+  left: 30px
+}
+.textSignOut{
+  float: right;
+  margin-top: -20px;
+  margin-right: 30px;
+}
+.textSignOut a{
+  color: #f229bd;
+  text-decoration: none;
+}
+
+/* Show bar for small screens */
+@media screen and (max-width: 767px) {
+  .signOutBar{
+    display: block;
+  }
+  .signOutLarge{
+    display: none;
+  }
+}
+
+
+/* 
+-- Most pages --
+*/
 
 /* Image on top of page */
 .topImg {
@@ -140,7 +206,7 @@ p{
   color: #ff4040;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 767px) {
   .topnav a:not(:first-child) {display: none;}
   .topnav a.icon {
     float: right;
@@ -148,7 +214,7 @@ p{
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 767px) {
   .topnav.responsive {position: relative;}
   .topnav.responsive .icon {
     position: absolute;
@@ -163,8 +229,6 @@ p{
 }
 /* End of navigation bar style */
 
-h2 {
-}
 
 /* 
 --login.html --
