@@ -29,7 +29,7 @@
         <div class="col-md-5">
           <div class="signOutLarge">
             {% if session['user'] %}
-            <p>Welcome {{session['user']}}</p>
+            <p>Hi, {{session['user']}}</p>
             <a href="/logout">Sign out</a>
             {% endif %}
           </div>
@@ -39,12 +39,15 @@
     <div class="row">
       {% if session['user'] %}
       <div class="signOutBar">
-        <div class="col-md-6">
+        <div class="col-md-5">
           <div class="signOutWelcome">
-            <p>Welcome {{session['user']}}</p>
+            <p>Hi, {{session['user']}}</p>
           </div>
         </div>
-        <div class="col-md-6">
+        <div class="col-md-2">
+          <div class="signOutBarLine"></div>
+        </div>
+        <div class="col-md-5">
           <div class="textSignOut">
             <a href="/logout">Sign out</a>
           </div>
