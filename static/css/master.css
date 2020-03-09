@@ -227,6 +227,7 @@ h2 {
   color: #ff4040;
 }
 
+/* If mobile device, change navbar to small */
 @media screen and (max-width: 767px) {
   .topnav a:not(:first-child) {display: none;}
   .topnav a.icon {
