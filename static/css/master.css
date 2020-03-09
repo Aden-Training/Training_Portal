@@ -336,6 +336,12 @@ h2 {
   padding: 10px;
 }
 
+/* Course search bar */
+.searchBar{
+  width: 50%;
+  float: left;
+}
+
 .card{
   display: inline-block;
   margin-right: 20px;

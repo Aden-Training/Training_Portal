@@ -11,13 +11,6 @@
 <div class="coursefinder">
     <br>
     <div class="row">
-        <div class="col-md-9"></div>
-        <div class="col-md-2">
-            <input id="searchBar" class="form-control formInput" name="search" onkeyup="searchCourses()" type="text" placeholder="Search a course...">
-        </div>
-        <div class="col-md-1"></div>
-    </div>
-    <div class="row">
         <div class="col-md-3">
             <div class="catbar" id="catbarTo">
                 <h3>Categories</h3>
@@ -30,8 +23,10 @@
             </div>
         </div>
         <div class="col-md-8" id="coursesTo">
-            <div class="row" id="courseFilter">
-                <p>Add filter results section here.</p>
+            <div class="row">
+                <div class="searchBar">
+                    <input class="form-control formInput" name="search" onkeyup="searchCourses()" type="text" placeholder="Search for a course...">
+                </div>
             </div>
             <div class="catexpand">
                 <div class="catexpandHGV" id="divHGV">
