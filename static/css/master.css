@@ -353,3 +353,7 @@ h2 {
   transition: 0.3s;
   color: white;
 }
+
+#sessionDetails{
+  text-align: right;
+}

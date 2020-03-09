@@ -33,7 +33,7 @@ while(True):
             <html>
             <body>
                 <p>Hi,<br>
-                    Your certificate will need to be renewed on at {}mins past for {}. 
+                    Your certificate will need to be renewed on at {} mins past for {}. 
                     Please apply now to secure your spot.
                 </p>
             </body>

@@ -8,6 +8,12 @@ import bcrypt
 import random
 import smtplib, ssl
 
+import email, smtplib, ssl
+from email import encoders
+from email.mime.base import MIMEBase
+from email.mime.multipart import MIMEMultipart
+from email.mime.text import MIMEText
+
 app = Flask(__name__)
 app.secret_key = "lmaosecretkeylmao"
 
@@ -33,9 +39,10 @@ def requires_bus_login(f):
 
 conn = sqlite3.connect("db/database.db")
 
-conn.execute("CREATE TABLE IF NOT EXISTS customers (username TEXT, password TEXT)")
-conn.execute("CREATE TABLE IF NOT EXISTS businesses (username TEXT, password TEXT, industry TEXT)")
+conn.execute("CREATE TABLE IF NOT EXISTS customers (email TEXT, username TEXT, password TEXT)")
+conn.execute("CREATE TABLE IF NOT EXISTS businesses (email TEXT, username TEXT, password TEXT, industry TEXT)")
 conn.execute("CREATE TABLE IF NOT EXISTS courses (course_name TEXT, description TEXT, catagory TEXT, thumbnail TEXT)")
+conn.execute("CREATE TABLE IF NOT EXISTS bookings (course_name TEXT, person_booked TEXT, persons_email TEXT)")
 
 #   CUSTOMER PAGES
 
@@ -86,7 +93,7 @@ def postcourses():
         with sqlite3.connect('db/database.db') as con:
             con.execute("INSERT INTO courses VALUES (?,?,?,?)", (name, desc, cat, path))
     
-        return redirect('/businesstraining')
+        return redirect('/findcourse')
 
     return render_template('postcourse.html')
 
@@ -124,13 +131,14 @@ def coursesavailable():
 def register():
     if request.method == "POST":
         with sqlite3.connect("db/database.db") as con:
+            email = request.form['email']
             username = request.form['username']
             password = request.form['password']
 
             passwd = password.encode('utf-8')
             hashedpw = bcrypt.hashpw(passwd, bcrypt.gensalt())
 
-            con.execute("INSERT INTO customers VALUES(?,?)", (username, hashedpw))
+            con.execute("INSERT INTO customers VALUES(?,?,?)", (email, username, hashedpw))
 
             status = session['logged_in'] = True
             session['user'] = request.form['username']
@@ -167,7 +175,7 @@ def login():
 @app.route('/registerbus', methods = ["GET","POST"])
 def registerbus():
     if request.method == "POST":
-
+        email = request.form['email']
         username = request.form['username']
         password = request.form['password']
         industry = request.form['industry']
@@ -177,7 +185,7 @@ def registerbus():
         hashpw = bcrypt.hashpw(passwd, bcrypt.gensalt())
 
         with sqlite3.connect("db/database.db") as con:
-            con.execute("INSERT INTO businesses VALUES(?,?,?)",(username,hashpw,industry))
+            con.execute("INSERT INTO businesses VALUES(?,?,?,?)",(email,username,hashpw,industry))
 
             busstatus = session['bus_logged_in'] = True
             session['user'] = request.form['username']
@@ -211,6 +219,7 @@ def loginbus():
     return render_template('loginbus.html')
 
 @app.route('/findcourse', methods=["GET", "POST"])
+@requires_login
 def findcourse():
     con = sqlite3.connect('db/database.db')
     con.row_factory = sqlite3.Row
@@ -241,21 +250,31 @@ def removecourse(id):
 
         return redirect('/courses')
 
+# Creating an alternative bookcourse method
+
 @app.route('/bookcourse/<coursename>', methods=["POST","GET"])
 def bookcourse(coursename):
     if request.method == "POST":
+        con = sqlite3.connect('db/database.db')
+        cur = con.cursor()
 
         course = coursename
         user = session['user']
 
+        cur.execute("SELECT * FROM customers WHERE username = ?",[user])
+
+        cust_data = cur.fetchone()
+
+        email = cust_data[0]
 
         with sqlite3.connect('db/database.db') as con:
-            con.execute("INSERT INTO bookings VALUES (?,?)",(user,course))
+            con.execute("INSERT INTO bookings VALUES (?,?,?)",(course,user,email))
             con.commit()
 
     flash("You're Successfully booked onto %s!" % course)
 
-    return redirect('/coursesavailable')
+    return redirect('/findcourse')
+
 
 @app.route('/peoplebooked/<coursename>', methods=["GET"])
 def peoplebooked(coursename):
@@ -269,37 +288,56 @@ def peoplebooked(coursename):
     return render_template('peoplebooked.html', people = people)
 
 
+@app.route('/awardcertificate', methods=["GET", "POST"])
+def awardcertificate():
+    if request.method=="POST":
+        
+        docName = request.form['docName']
+        recipiantEmail = request.form['recipiantEmail']
+        f = request.files['PDFfile']
 
-# @app.route('/')
-# def root():
-#     return render_template("index.html")
+        path = "static/certificates/" + docName + ".pdf"
+        f.save('static/certificates/' + docName + '.pdf')
 
+        sendCertificate(recipiantEmail, path)
 
-# @app.route('/sendEmail', methods=["GET", "POST"])
-# def sendEmail():
-#     if request.method == "POST":
-#         emailAd = request.form['emailAddress']
-#         courseT = request.form['courseType']
-#         reqDay = request.form['requestedDay']
-
-#         makeEmail(emailAd, courseT, reqDay)
-
-#     return render_template("new.html")
+    return render_template('awardcertificate.html')
 
 
-# def makeEmail(recEmail, courseT, reqDay):
-#     #Add the shit pls ross
+def sendCertificate(recipiantEmail, pdf):
+    subject = "Certificate for course completion"
+    body = "Please find attached the certificate proving that you completed the course"
+    sender_email = "devtestross@gmail.com"
+    receiver_email = recipiantEmail
+    password = "DevPw2020*"
 
-#Ross's stuff, can remove later
-# @app.route('/findcourse', methods=["GET", "POST"])
-# def findcourse():
-#     con = sqlite3.connect('db/database.db')
-#     cur = con.cursor()
+    message = MIMEMultipart()
+    message["From"] = sender_email
+    message["To"] = receiver_email
+    message["Subject"] = subject
 
-#     cur.execute("SELECT * FROM courses WHERE catagory = ?",[catagory])
-#     course = cur.fetchall()
+    message.attach(MIMEText(body, "plain"))
 
-#     return render_template('findcourse.html', course = course)
+    filename = pdf
+
+    with open(filename, "rb") as attachment:
+        part = MIMEBase("application", "octet-stream")
+        part.set_payload(attachment.read())
+
+    encoders.encode_base64(part)
+
+    part.add_header(
+        "Content-Disposition",
+        "attachment; filename= {}".format(filename),
+    )
+
+    message.attach(part)
+    text = message.as_string()
+
+    context = ssl.create_default_context()
+    with smtplib.SMTP_SSL("smtp.gmail.com", 465, context=context) as server:
+        server.login(sender_email, password)
+        server.sendmail(sender_email, receiver_email, text)
 
 
 if __name__ == "__main__":
