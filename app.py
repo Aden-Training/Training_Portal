@@ -10,6 +10,12 @@ import random
 import smtplib, ssl
 import sha256
 
+import email, smtplib, ssl
+from email import encoders
+from email.mime.base import MIMEBase
+from email.mime.multipart import MIMEMultipart
+from email.mime.text import MIMEText
+
 app = Flask(__name__)
 app.secret_key = "lmaosecretkeylmao"
 
@@ -291,37 +297,56 @@ def peoplebooked(coursename):
     return render_template('peoplebooked.html', people = people)
 
 
+@app.route('/awardcertificate', methods=["GET", "POST"])
+def awardcertificate():
+    if request.method=="POST":
+        
+        docName = request.form['docName']
+        recipiantEmail = request.form['recipiantEmail']
+        f = request.files['PDFfile']
 
-# @app.route('/')
-# def root():
-#     return render_template("index.html")
+        path = "static/certificates/" + docName + ".pdf"
+        f.save('static/certificates/' + docName + '.pdf')
 
+        sendCertificate(recipiantEmail, path)
 
-# @app.route('/sendEmail', methods=["GET", "POST"])
-# def sendEmail():
-#     if request.method == "POST":
-#         emailAd = request.form['emailAddress']
-#         courseT = request.form['courseType']
-#         reqDay = request.form['requestedDay']
-
-#         makeEmail(emailAd, courseT, reqDay)
-
-#     return render_template("new.html")
+    return render_template('awardcertificate.html')
 
 
-# def makeEmail(recEmail, courseT, reqDay):
-#     #Add the shit pls ross
+def sendCertificate(recipiantEmail, pdf):
+    subject = "Certificate for course completion"
+    body = "Please find attached the certificate proving that you completed the course"
+    sender_email = "devtestross@gmail.com"
+    receiver_email = recipiantEmail
+    password = "DevPw2020*"
 
-#Ross's stuff, can remove later
-# @app.route('/findcourse', methods=["GET", "POST"])
-# def findcourse():
-#     con = sqlite3.connect('db/database.db')
-#     cur = con.cursor()
+    message = MIMEMultipart()
+    message["From"] = sender_email
+    message["To"] = receiver_email
+    message["Subject"] = subject
 
-#     cur.execute("SELECT * FROM courses WHERE catagory = ?",[catagory])
-#     course = cur.fetchall()
+    message.attach(MIMEText(body, "plain"))
 
-#     return render_template('findcourse.html', course = course)
+    filename = pdf
+
+    with open(filename, "rb") as attachment:
+        part = MIMEBase("application", "octet-stream")
+        part.set_payload(attachment.read())
+
+    encoders.encode_base64(part)
+
+    part.add_header(
+        "Content-Disposition",
+        f"attachment; filename= {filename}",
+    )
+
+    message.attach(part)
+    text = message.as_string()
+
+    context = ssl.create_default_context()
+    with smtplib.SMTP_SSL("smtp.gmail.com", 465, context=context) as server:
+        server.login(sender_email, password)
+        server.sendmail(sender_email, receiver_email, text)
 
 
 if __name__ == "__main__":

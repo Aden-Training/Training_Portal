@@ -172,11 +172,6 @@ ul li a:hover{
   display: none;
 }
 
-.coursediv{
-  padding: 30px;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  border-radius: 5px;
-  border-style: solid;
-  border-color: black;
+#sessionDetails{
+  text-align: right;
 }

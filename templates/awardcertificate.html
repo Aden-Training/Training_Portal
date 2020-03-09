@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% block content %}
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-4"></div>
+        <div class="col-md-4">
+            <form class="form-group" action="/awardcertificate" method="post" enctype="multipart/form-data">
+                <br>
+                <h4>Award Certificate</h4>
+                <br>
+                <p>Recipiant email address:</p>
+                <input type="text" name="recipiantEmail" class="form-control" required>
+                <br>
+                <p>Document name:</p>
+                <input type="text" name="docName" class="form-control" required>
+                <br>
+                <p>Attach PDF:</p>
+                <input type="file" name="PDFfile" required>
+                <br><br>
+                <button class="btn btn-default" type="submit">Submit</button>
+            </form>
+        </div>
+        <div class="col-md-4"></div>
+    </div>
+    
+</div>
+
+{% endblock %}
