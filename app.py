@@ -212,7 +212,14 @@ def login():
                 if(bcrypt.checkpw(encodedpw, passwd)):
                     status = session['logged_in'] = True
                     session['user'] = request.form['username']
+                    flash('You have now logged into an account', 'success')
                     return redirect('/')
+                else:
+                    error = 'Invalid login'
+                    return render_template('login.html', error=error)
+            else:
+                error = 'Username not found'
+                return render_template('login.html', error=error)                
     return render_template("login.html")
 
 # HOMEPAGE FOR INDIVIDUAL CUSTOMERS
