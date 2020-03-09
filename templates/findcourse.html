@@ -9,6 +9,14 @@
     </div>
 </div>
 <div class="coursefinder">
+    <br>
+    <div class="row">
+        <div class="col-md-9"></div>
+        <div class="col-md-2">
+            <input id="searchBar" class="form-control formInput" name="search" onkeyup="searchCourses()" type="text" placeholder="Search a course...">
+        </div>
+        <div class="col-md-1"></div>
+    </div>
     <div class="row">
         <div class="col-md-3">
             <div class="catbar" id="catbarTo">
@@ -67,7 +75,9 @@
                             <div class="card-body">
                                 <h5 class="card-title">{{course["course_name"]}}</h5>
                                 <p class="card-text">{{course["description"]}}</p>
-                                <a href="#" class="btn btn-primary">Book Now!</a>
+                                <form action="/bookcourse/{{course.course_name}}" method="POST">
+                                <button type="submit" class="btn btn-primary">Book Now!</button>
+                            </form>
                             </div>
                         </div>
                     {% endfor %}

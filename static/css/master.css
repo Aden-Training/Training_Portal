@@ -85,6 +85,11 @@ h2 {
   width: 100%;
   height: auto;
 }
+@media screen and (max-width: 575px) {
+  .headerImg{
+    margin-top: -20px;
+  }
+}
 
 /* Text showing user login */
 .signOutLarge{
@@ -123,7 +128,7 @@ h2 {
 }
 .textSignOut{
   float: right;
-  margin-top: -30px;
+  margin-top: -32px;
   margin-right: 15px;
 }
 .textSignOut a{
@@ -352,4 +357,8 @@ h2 {
   background-image: linear-gradient(#ff4040, #f2b929);
   transition: 0.3s;
   color: white;
+}
+
+#sessionDetails{
+  text-align: right;
 }
