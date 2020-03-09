@@ -1,9 +1,11 @@
 {% extends "base.html" %}
 {% block content %}
 <div class="row">
-    <div class="col-md-12" id="findCourse">
-        <img src="{{url_for('static', filename = 'img/banner_findCourse.png')}}" alt="imageHead" style="width:100%;height:250px;">
-        <div class="findCourseText">Find a course here</div>
+    <div class="col-md-12" id="container">
+        <img src="{{url_for('static', filename = 'img/banner_findCourse.png')}}" class="topImg" style="width:100%;height:auto;">
+        <div class="topImgcontent">
+            <div class="text" id="topImgcontent">FIND A COURSE</div>
+        </div>
     </div>
 </div>
 <div class="coursefinder">
@@ -20,6 +22,9 @@
             </div>
         </div>
         <div class="col-md-8" id="coursesTo">
+            <div class="row" id="courseFilter">
+                <p>Add filter results section here.</p>
+            </div>
             <div class="catexpand">
                 <div class="catexpandHGV" id="divHGV">
                     <div class="card" style="width: 18rem;">
@@ -68,6 +73,7 @@
                             </div>
                         </div>
                     {% endfor %}
+                </div>
             </div>
         </div>
     </div>

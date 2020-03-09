@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <head>
     <meta charset="utf-8">
     <title>Prototype</title>
     <link rel="stylesheet" href="{{url_for('static', filename = 'css/bootstrap.min.css')}}">
     <link rel="stylesheet" href="{{url_for('static', filename = 'css/master.css')}}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="../static/js/functions.js" type="text/javascript">
     </script>
     <link rel="shortcut icon" href="">
@@ -12,32 +14,59 @@
   <body>
     <div class="jumbotron">
       <div class="row">
-        <div class="col-md-4 col-sm-2">
-          <a href="https://www.adentraining.co.uk/">
-            <h3 class="headerText">Aden Training</h3>
-          </a>
+        <div class="col-md-5">
+          <div class="headerText">
+            <a href="https://www.adentraining.co.uk/">Aden Training</a>
+          </div>
         </div>
-        <div class="col-md-4 col-sm-2">
-          <a href="https://www.adentraining.co.uk/">
-            <img src="{{url_for('static', filename = 'img/adenFlame_white.png')}}" alt="imageHead" style="width:136.5px;height:109.5px;" class="headerImage">
-          </a>
+        <div class="col-md-2">
+          <div class="headerImg">
+            <a href="https://www.adentraining.co.uk/">
+              <img src="{{url_for('static', filename = 'img/adenFlame_white_small.png')}}">
+            </a>
+          </div>
         </div>
-        <div class="col-md-4 col-sm-2" id="sessionDetails">
-          {% if session['user'] %}
-          <p>Welcome {{session['user']}}</p>
-          <a href="/logout">Logout</a>
-          {% endif %}
+        <div class="col-md-5">
+          <div class="signOutLarge">
+            {% if session['user'] %}
+            <p>Hi, {{session['user']}}</p>
+            <a href="/logout">Sign out</a>
+            {% endif %}
+          </div>
         </div>
       </div>
     </div>
-    <div class="navigationBar">
-      <div class="row">
-        <ul>
-          <li><a class="active" href="#home">My Account</a></li>
-          <li><a href="/findcourse">Find a course</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
+    <div class="row">
+      {% if session['user'] %}
+      <div class="signOutBar">
+        <div class="col-md-5">
+          <div class="signOutWelcome">
+            <p>Hi, {{session['user']}}</p>
+          </div>
+        </div>
+        <div class="col-md-2">
+          <div class="signOutBarLine"></div>
+        </div>
+        <div class="col-md-5">
+          <div class="textSignOut">
+            <a href="/logout">Sign out</a>
+          </div>
+        </div>
       </div>
+      {% endif %}
+    </div>
+    <div class="row">
+      <div class="topnav" id="myTopnav">
+          <a href="#home">My Account</a>
+          <a href="/findcourse">Find a course</a>
+          <a href="#contact">Contact</a>
+          <a href="#about">About</a>
+        </a>
+        <a href="javascript:void(0);" class="icon" onclick="navbarChange()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+    </div>
     {% block content %}
 
     {% endblock %}
