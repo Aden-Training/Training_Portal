@@ -173,7 +173,7 @@ def login():
             user = cur.fetchone()
 
             if cur != "":
-                passwd = user[1]
+                passwd = user[2]
 
                 if(bcrypt.checkpw(encodedpw, passwd)):
                     status = session['logged_in'] = True
@@ -243,7 +243,7 @@ def loginbus():
             user = cur.fetchone()
 
             if cur != "":
-                passwd = user[1]
+                passwd = user[2]
 
                 if(bcrypt.checkpw(encodedpw, passwd)):
                     busstatus = session['bus_logged_in'] = True
