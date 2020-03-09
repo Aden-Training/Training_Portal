@@ -7,6 +7,7 @@ import sqlite3
 import bcrypt
 import random
 import smtplib, ssl
+import os
 
 import email, smtplib, ssl
 from email import encoders
@@ -40,7 +41,8 @@ def requires_bus_login(f):
 
 conn = sqlite3.connect("db/database.db")
 
-conn.execute("CREATE TABLE IF NOT EXISTS customers (email TEXT, username TEXT, password TEXT)")
+conn.execute("CREATE TABLE IF NOT EXISTS customers (email TEXT UNIQUE, username TEXT, password TEXT)")
+conn.execute("CREATE TABLE IF NOT EXISTS certificates(email TEXT, username TEXT, certificate TEXT)")
 conn.execute("CREATE TABLE IF NOT EXISTS businesses (email TEXT, username TEXT, password TEXT, industry TEXT)")
 conn.execute("CREATE TABLE IF NOT EXISTS courses (course_name TEXT, description TEXT, catagory TEXT, thumbnail TEXT)")
 conn.execute("CREATE TABLE IF NOT EXISTS bookings (course_name TEXT, person_booked TEXT, persons_email TEXT)")
@@ -150,6 +152,8 @@ def register():
 
             status = session['logged_in'] = True
             session['user'] = request.form['username']
+
+            os.mkdir('static/certificates/' + username +'/')
 
             return redirect('/')
 
@@ -332,14 +336,29 @@ def peoplebooked(coursename):
 def awardcertificate():
     if request.method=="POST":
         
+        email = request.form['recipiantEmail']
+
+        con = sqlite3.connect('db/database.db')
+
+        cur = con.cursor()
+
+        cur = con.execute("SELECT username FROM customers WHERE email = ?",[email])
+
+        username = cur.fetchone()[0]
+
         docName = request.form['docName']
         recipiantEmail = request.form['recipiantEmail']
         f = request.files['PDFfile']
 
-        path = "static/certificates/" + docName + ".pdf"
-        f.save('static/certificates/' + docName + '.pdf')
+        path = "static/certificates/" + username + "/" + docName + ".pdf"
 
+        with sqlite3.connect('db/database.db') as con:
+            cur = con.cursor()
+            cur.execute("INSERT into certificates VALUES (?,?,?)",(username,email,path))
+
+        f.save('static/certificates/' + username + '/' + docName + '.pdf')
         sendCertificate(recipiantEmail, path)
+        return redirect('/customerHome')
 
     return render_template('awardcertificate.html')
 
