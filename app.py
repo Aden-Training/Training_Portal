@@ -17,7 +17,8 @@ from email.mime.text import MIMEText
 app = Flask(__name__)
 app.secret_key = "lmaosecretkeylmao"
 
-#   Authentication Middleware
+#   AUTHENTICATION
+
 def requires_login(f):
     @wraps(f)
     def decorated(*args, **kwargs):
@@ -43,6 +44,7 @@ conn.execute("CREATE TABLE IF NOT EXISTS customers (email TEXT, username TEXT, p
 conn.execute("CREATE TABLE IF NOT EXISTS businesses (email TEXT, username TEXT, password TEXT, industry TEXT)")
 conn.execute("CREATE TABLE IF NOT EXISTS courses (course_name TEXT, description TEXT, catagory TEXT, thumbnail TEXT)")
 conn.execute("CREATE TABLE IF NOT EXISTS bookings (course_name TEXT, person_booked TEXT, persons_email TEXT)")
+conn.execute("CREATE TABLE IF NOT EXISTS businessEmployees (company_name TEXT, employees TEXT)")
 
 #   CUSTOMER PAGES
 
@@ -77,6 +79,9 @@ def bustraining():
     
 #     return redirect('/businesstraining')
 
+# ADMINISTRATION FEATURES
+# POST A COURSE
+
 @app.route('/postcourses', methods = ["POST","GET"])
 def postcourses():
     if request.method == "POST":
@@ -97,6 +102,8 @@ def postcourses():
 
     return render_template('postcourse.html')
 
+# COURSES AVAILABLE
+
 @app.route('/courses', methods=["GET"])
 def courses():
     con = sqlite3.connect('db/database.db')
@@ -112,7 +119,7 @@ def courses():
 
     return render_template('courses.html', courses = courses)
 
-#   LOGGING IN CUSTOMERS
+#   LOGGING IN CUSTOMERS - ADMINISTRATION
 
 @app.route('/coursesavailable', methods=["GET"])
 def coursesavailable():
@@ -126,6 +133,7 @@ def coursesavailable():
 
     return render_template('coursesavailable.html', courses = courses)
 
+# REGISTER AN INDIVIDUAL CUSTOMER
 
 @app.route('/registercust', methods = ["GET","POST"])
 def register():
@@ -146,6 +154,8 @@ def register():
             return redirect('/')
 
     return render_template("register.html")
+
+# LOGIN FOR AN INDIVIDUAL CUSTOMER
 
 @app.route('/logincust', methods = ["GET","POST"])
 def login():
@@ -171,7 +181,29 @@ def login():
                     return redirect('/')
     return render_template("login.html")
 
-#   LOGGING IN businesses
+# HOMEPAGE FOR CERTIFICATES FOR INDIVIDUAL CUSTOMERS
+
+@app.route('/customerHome', methods = ["GET"])
+@requires_login
+def customerHome():
+    user = session['user']
+
+    con = sqlite3.connect('db/database.db')
+    con.row_factory = sqlite3.Row
+
+    cur = con.cursor()
+
+    cur.execute("SELECT * FROM customers WHERE username = ?", [user])
+    
+    customers = cur.fetchone()
+
+    # Close Connection
+    cur.close()
+
+    return render_template("customerHome.html", customers = customers)
+
+#   CREATE AN ACCOUNT IN businesses
+
 @app.route('/registerbus', methods = ["GET","POST"])
 def registerbus():
     if request.method == "POST":
@@ -193,6 +225,8 @@ def registerbus():
             return redirect('/businesstraining')
 
     return render_template("registerbus.html")
+
+# LOGGING IN A BUSINESS
 
 @app.route('/loginbus', methods = ["GET","POST"])
 def loginbus():
@@ -218,6 +252,10 @@ def loginbus():
 
     return render_template('loginbus.html')
 
+# HOMEPAGE COMPANY PROFILES
+
+# FIND A COURSE
+
 @app.route('/findcourse', methods=["GET", "POST"])
 @requires_login
 def findcourse():
@@ -240,6 +278,8 @@ def findcourse():
     
 #     cur = con.cursor()
 #     catagory = "Offshore"
+
+# ADMINISTRATION FEATURES
 
 @app.route('/removecourse/<id>', methods=["GET", "POST"])
 def removecourse(id):
