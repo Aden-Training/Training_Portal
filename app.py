@@ -39,12 +39,14 @@ def requires_bus_login(f):
         return f(*args, **kwargs)
     return decorated
 
+# Connect to the database
 conn = sqlite3.connect("db/database.db")
 
+# Create tables
 conn.execute("CREATE TABLE IF NOT EXISTS customers (email TEXT UNIQUE, username TEXT, password TEXT)")
 conn.execute("CREATE TABLE IF NOT EXISTS certificates(email TEXT, username TEXT, certificate TEXT)")
 conn.execute("CREATE TABLE IF NOT EXISTS businesses (email TEXT, username TEXT, password TEXT, industry TEXT)")
-conn.execute("CREATE TABLE IF NOT EXISTS courses (course_name TEXT, description TEXT, catagory TEXT, thumbnail TEXT)")
+conn.execute("CREATE TABLE IF NOT EXISTS courses (course_name TEXT, description TEXT, category TEXT, thumbnail TEXT)")
 conn.execute("CREATE TABLE IF NOT EXISTS bookings (course_name TEXT, person_booked TEXT, persons_email TEXT)")
 conn.execute("CREATE TABLE IF NOT EXISTS businessEmployees (company_name TEXT, employees TEXT)")
 
@@ -113,15 +115,26 @@ def courses():
 
     cur = con.cursor()
 
-    catagory = "Offshore"
+    category = "Offshore"
 
-    cur.execute("SELECT * FROM courses WHERE catagory = ?",[catagory])
+    cur.execute("SELECT * FROM courses WHERE category = ?",[category])
 
     courses = cur.fetchall()
 
     return render_template('courses.html', courses = courses)
 
-#   LOGGING IN CUSTOMERS - ADMINISTRATION
+# REMOVE A COURSE
+
+@app.route('/removecourse/<id>', methods=["GET", "POST"])
+def removecourse(id):
+    if request.method == "POST":
+        with sqlite3.connect('db/database.db') as con:
+            con.execute("DELETE FROM courses WHERE id = ?", [id])
+            con.commit()
+
+        return redirect('/courses')
+
+# COURSES AVAILABLE
 
 @app.route('/coursesavailable', methods=["GET"])
 def coursesavailable():
@@ -135,6 +148,23 @@ def coursesavailable():
 
     return render_template('coursesavailable.html', courses = courses)
 
+# FIND A COURSE
+
+@app.route('/findcourse', methods=["GET", "POST"])
+@requires_login
+def findcourse():
+    con = sqlite3.connect('db/database.db')
+    con.row_factory = sqlite3.Row
+
+    cur = con.cursor()
+    catagory = "Offshore"
+
+    cur.execute("SELECT * FROM courses WHERE catagory = ?",[catagory])
+    course = cur.fetchall()
+
+    return render_template('findcourse.html', course = course)
+
+# INDIVIDUAL USER FUNCTIONALITY
 # REGISTER AN INDIVIDUAL CUSTOMER
 
 @app.route('/registercust', methods = ["GET","POST"])
@@ -150,13 +180,13 @@ def register():
 
             con.execute("INSERT INTO customers VALUES(?,?,?)", (email, username, hashedpw))
 
+            flash('You have now registered and can log in', 'success')
             status = session['logged_in'] = True
             session['user'] = request.form['username']
 
             os.mkdir('static/certificates/' + username +'/')
 
             return redirect('/')
-
     return render_template("register.html")
 
 # LOGIN FOR AN INDIVIDUAL CUSTOMER
@@ -185,7 +215,7 @@ def login():
                     return redirect('/')
     return render_template("login.html")
 
-# HOMEPAGE FOR CERTIFICATES FOR INDIVIDUAL CUSTOMERS
+# HOMEPAGE FOR INDIVIDUAL CUSTOMERS
 
 @app.route('/customerHome', methods = ["GET"])
 @requires_login
@@ -206,7 +236,8 @@ def customerHome():
 
     return render_template("customerHome.html", customers = customers)
 
-#   CREATE AN ACCOUNT IN businesses
+# BUSINESS ACCOUNT FUNCTIONALITY
+# CREATE AN ACCOUNT IN BUSINESSES
 
 @app.route('/registerbus', methods = ["GET","POST"])
 def registerbus():
@@ -230,7 +261,7 @@ def registerbus():
 
     return render_template("registerbus.html")
 
-# LOGGING IN A BUSINESS
+# LOGGING INTO A BUSINESS ACCOUNT
 
 @app.route('/loginbus', methods = ["GET","POST"])
 def loginbus():
@@ -256,44 +287,6 @@ def loginbus():
 
     return render_template('loginbus.html')
 
-# HOMEPAGE COMPANY PROFILES
-
-# FIND A COURSE
-
-@app.route('/findcourse', methods=["GET", "POST"])
-@requires_login
-def findcourse():
-    con = sqlite3.connect('db/database.db')
-    con.row_factory = sqlite3.Row
-
-    cur = con.cursor()
-    catagory = "Offshore"
-
-    cur.execute("SELECT * FROM courses WHERE catagory = ?",[catagory])
-    course = cur.fetchall()
-
-    return render_template('findcourse.html', course = course)
-
-# #Ross's stuff, can remove later
-# @app.route('/findcourse', methods=["GET", "POST"])
-# def findcourse():
-#     con = sqlite3.connect('db/database.db')
-#     con.row_factory = sqlite3.Row
-    
-#     cur = con.cursor()
-#     catagory = "Offshore"
-
-# ADMINISTRATION FEATURES
-
-@app.route('/removecourse/<id>', methods=["GET", "POST"])
-def removecourse(id):
-    if request.method == "POST":
-        with sqlite3.connect('db/database.db') as con:
-            con.execute("DELETE FROM courses WHERE id = ?", [id])
-            con.commit()
-
-        return redirect('/courses')
-
 # Creating an alternative bookcourse method
 
 @app.route('/bookcourse/<coursename>', methods=["POST","GET"])
@@ -318,7 +311,6 @@ def bookcourse(coursename):
     flash("You're Successfully booked onto %s!" % course)
 
     return redirect('/findcourse')
-
 
 @app.route('/peoplebooked/<coursename>', methods=["GET"])
 def peoplebooked(coursename):
@@ -397,7 +389,6 @@ def sendCertificate(recipiantEmail, pdf):
     with smtplib.SMTP_SSL("smtp.gmail.com", 465, context=context) as server:
         server.login(sender_email, password)
         server.sendmail(sender_email, receiver_email, text)
-
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", debug=True)
