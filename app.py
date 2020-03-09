@@ -216,10 +216,10 @@ def login():
                     return redirect('/')
                 else:
                     error = 'Invalid login'
-                    return render_template('login.html', error=error)
+                    return render_template('logincust.html', error=error)
             else:
                 error = 'Username not found'
-                return render_template('login.html', error=error)                
+                return render_template('logincust.html', error=error)                
     return render_template("login.html")
 
 # HOMEPAGE FOR INDIVIDUAL CUSTOMERS
