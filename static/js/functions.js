@@ -1,46 +1,111 @@
 function switchVisibleHGV(){
-    document.getElementById('divOffshore').style.display = 'none';
-    document.getElementById('divHGV').style.display = 'block';
+  document.getElementById('divHGV').style.display = 'block';
+  document.getElementById('divOffshore').style.display = 'none';
+  document.getElementById('divOther').style.display = 'none';
+  document.getElementById('divBespoke').style.display = 'none';
+  document.getElementById('divWorkshopSkills').style.display = 'none';
+  document.getElementById('divFirstAid').style.display = 'none';
+  document.getElementById('divForkliftAndPlant').style.display = 'none';
+  document.getElementById('divSafteyTraining').style.display = 'none';
 }
 
 function switchVisibleOffshore(){
-    document.getElementById('divHGV').style.display = 'none';
-    document.getElementById('divOffshore').style.display = 'block';
+  document.getElementById('divOffshore').style.display = 'block';
+  document.getElementById('divHGV').style.display = 'none';
+  document.getElementById('divOther').style.display = 'none';
+  document.getElementById('divBespoke').style.display = 'none';
+  document.getElementById('divWorkshopSkills').style.display = 'none';
+  document.getElementById('divFirstAid').style.display = 'none';
+  document.getElementById('divForkliftAndPlant').style.display = 'none';
+  document.getElementById('divSafteyTraining').style.display = 'none';
+}
+
+function switchVisibleSafteyTraining(){
+  document.getElementById('divSafteyTraining').style.display = 'block';
+  document.getElementById('divHGV').style.display = 'none';
+  document.getElementById('divOffshore').style.display = 'none';
+  document.getElementById('divOther').style.display = 'none';
+  document.getElementById('divBespoke').style.display = 'none';
+  document.getElementById('divWorkshopSkills').style.display = 'none';
+  document.getElementById('divFirstAid').style.display = 'none';
+  document.getElementById('divForkliftAndPlant').style.display = 'none';
+}
+
+function switchVisibleForkliftAndPlant(){
+  document.getElementById('divSafteyTraining').style.display = 'block';
+  document.getElementById('divHGV').style.display = 'none';
+  document.getElementById('divOffshore').style.display = 'none';
+  document.getElementById('divOther').style.display = 'none';
+  document.getElementById('divBespoke').style.display = 'none';
+  document.getElementById('divWorkshopSkills').style.display = 'none';
+  document.getElementById('divFirstAid').style.display = 'none';
+  document.getElementById('divForkliftAndPlant').style.display = 'none';
+}
+
+function switchVisibleFirstAid(){
+  document.getElementById('divFirstAid').style.display = 'block';
+  document.getElementById('divHGV').style.display = 'none';
+  document.getElementById('divOffshore').style.display = 'none';
+  document.getElementById('divOther').style.display = 'none';
+  document.getElementById('divBespoke').style.display = 'none';
+  document.getElementById('divWorkshopSkills').style.display = 'none';
+  document.getElementById('divSafteyTraining').style.display = 'none';
+  document.getElementById('divForkliftAndPlant').style.display = 'none';
+}
+
+function switchVisibleWorkshopSkills(){
+  document.getElementById('divWorkshopSkills').style.display = 'block';
+  document.getElementById('divHGV').style.display = 'none';
+  document.getElementById('divOffshore').style.display = 'none';
+  document.getElementById('divOther').style.display = 'none';
+  document.getElementById('divBespoke').style.display = 'none';
+  document.getElementById('divSafteytraining').style.display = 'none';
+  document.getElementById('divFirstAid').style.display = 'none';
+  document.getElementById('divForkliftAndPlant').style.display = 'none';
+}
+
+function switchVisibleBespoke(){
+  document.getElementById('divBespoke').style.display = 'block';
+  document.getElementById('divHGV').style.display = 'none';
+  document.getElementById('divOffshore').style.display = 'none';
+  document.getElementById('divOther').style.display = 'none';
+  document.getElementById('divSafteyTraining').style.display = 'none';
+  document.getElementById('divWorkshopSkills').style.display = 'none';
+  document.getElementById('divFirstAid').style.display = 'none';
+  document.getElementById('divForkliftAndPlant').style.display = 'none';
+}
+
+function switchVisibleOther(){
+  document.getElementById('divOther').style.display = 'block';
+  document.getElementById('divHGV').style.display = 'none';
+  document.getElementById('divOffshore').style.display = 'none';
+  document.getElementById('divSafteyTraining').style.display = 'none';
+  document.getElementById('divBespoke').style.display = 'none';
+  document.getElementById('divWorkshopSkills').style.display = 'none';
+  document.getElementById('divFirstAid').style.display = 'none';
+  document.getElementById('divForkliftAndPlant').style.display = 'none';
 }
 
 // Resizes navigation bar if screen is less that 600px
-function navbarChange()
-{
+function navbarChange(){
   var x = document.getElementById("myTopnav");
-  if (x.className === "topnav") 
-  {
+  if (x.className === "topnav"){
     x.className += " responsive";
-  } 
-  else
-  {
+  }else{
     x.className = "topnav";
   }
 }
 
-function searchCourses()
-{
-    
-    // document.getElementById('divHGV').style.display = 'none';
-    // document.getElementById('divOffshore').style.display = 'none';
-
+function searchCourses(){
     let search = document.getElementById('searchBar').value
     search = search.toLowerCase();
     let x = document.getElementsByClassName('card')
     let y = document.getElementsByClassName('card-title');
 
-    for(i = 0; i < x.length; i++)
-    {
-        if(!y[i].innerHTML.toLowerCase().includes(search))
-        {
+    for(i = 0; i < x.length; i++){
+        if(!y[i].innerHTML.toLowerCase().includes(search)){
             x[i].style.display="none";
-        }
-        else
-        {
+        }else{
             x[i].style.display="inline-block";
         }
     }
