@@ -159,7 +159,7 @@ def findcourse():
     cur = con.cursor()
     catagory = "Offshore"
 
-    cur.execute("SELECT * FROM courses WHERE catagory = ?",[catagory])
+    cur.execute("SELECT * FROM courses WHERE catagory = ?")
     course = cur.fetchall()
 
     return render_template('findcourse.html', course = course)
