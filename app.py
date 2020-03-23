@@ -44,9 +44,9 @@ conn = sqlite3.connect("db/database.db")
 
 # Create tables
 conn.execute("CREATE TABLE IF NOT EXISTS customers (email TEXT UNIQUE, username TEXT, password TEXT)")
-conn.execute("CREATE TABLE IF NOT EXISTS certificates(email TEXT, username TEXT, certificate TEXT)")
+conn.execute("CREATE TABLE IF NOT EXISTS certificates(email TEXT, username TEXT, certificate TEXT, path TEXT)")
 conn.execute("CREATE TABLE IF NOT EXISTS businesses (email TEXT, username TEXT, password TEXT, industry TEXT)")
-conn.execute("CREATE TABLE IF NOT EXISTS courses (course_name TEXT, description TEXT, category TEXT, thumbnail TEXT)")
+conn.execute("CREATE TABLE IF NOT EXISTS courses (course_name TEXT, description TEXT, catagory TEXT, thumbnail TEXT)")
 conn.execute("CREATE TABLE IF NOT EXISTS bookings (course_name TEXT, person_booked TEXT, persons_email TEXT)")
 conn.execute("CREATE TABLE IF NOT EXISTS businessEmployees (company_name TEXT, employees TEXT)")
 
@@ -115,9 +115,9 @@ def courses():
 
     cur = con.cursor()
 
-    category = "Offshore"
+    catagory = "Offshore"
 
-    cur.execute("SELECT * FROM courses WHERE category = ?",[category])
+    cur.execute("SELECT * FROM courses WHERE catagory = ?",[catagory])
 
     courses = cur.fetchall()
 
@@ -230,18 +230,26 @@ def customerHome():
     user = session['user']
 
     con = sqlite3.connect('db/database.db')
+    conn = sqlite3.connect('db/database.db')
+
     con.row_factory = sqlite3.Row
 
     cur = con.cursor()
 
+    curs = conn.cursor()
+
     cur.execute("SELECT * FROM customers WHERE username = ?", [user])
-    
+
+    curs.execute("SELECT certificate FROM certificates WHERE username = ?", [user])
+    certificates = curs.fetchall()
+
     customers = cur.fetchone()
 
     # Close Connection
     cur.close()
+    curs.close()
 
-    return render_template("customerHome.html", customers = customers)
+    return render_template("customerHome.html", certificates = certificates, customers = customers)
 
 # BUSINESS ACCOUNT FUNCTIONALITY
 # CREATE AN ACCOUNT IN BUSINESSES
@@ -350,10 +358,11 @@ def awardcertificate():
         f = request.files['PDFfile']
 
         path = "static/certificates/" + username + "/" + docName + ".pdf"
+        certificate = request.form['docName']
 
         with sqlite3.connect('db/database.db') as con:
             cur = con.cursor()
-            cur.execute("INSERT into certificates VALUES (?,?,?)",(username,email,path))
+            cur.execute("INSERT into certificates VALUES (?,?,?,?)",(username,email,certificate,path))
 
         f.save('static/certificates/' + username + '/' + docName + '.pdf')
         sendCertificate(recipiantEmail, path)
