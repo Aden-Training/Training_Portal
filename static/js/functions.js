@@ -96,6 +96,7 @@ function navbarChange(){
   }
 }
 
+// Search bar for courses
 function searchCourses(){
     let search = document.getElementById('searchBar').value
     search = search.toLowerCase();

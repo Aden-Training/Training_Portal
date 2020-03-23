@@ -11,42 +11,41 @@
 <div class="coursefinder">
     <br>
     <div class="row">
-        <div class="col-md-9"></div>
-        <div class="col-md-2">
-            <input id="searchBar" class="form-control formInput" name="search" onkeyup="searchCourses()" type="text" placeholder="Search a course...">
-        </div>
-        <div class="col-md-1"></div>
-    </div>
-    <div class="row">
         <div class="col-md-3">
-            <div class="catbar" id="catbarTo">
+            <div class="catbar">
                 <h3>Categories</h3>
-                <div class="catlist">
-                    <br>
-                    <button class="btn btn-primary" onclick="switchVisibleSafetyTraining()">Safety Training</button>
-                    <button class="btn btn-secondary">subCat Fire Training</button>
-                    <button class="btn btn-secondary">subCat Working at Height</button>
-                    <button class="btn btn-secondary">subCat Confined Space</button>
-                    <button class="btn btn-secondary">subCat Lifting Operations</button>
-                    <button class="btn btn-secondary">subCat Environmental</button>
-                    <br><br>
-                    <button class="btn btn-primary" onclick="switchVisibleForkliftAndPlant()">Forklift and Plan</button> 
-                    <br><br>
-                    <button class="btn btn-primary" onclick="switchVisibleFirstAid()">First Aid</button> 
-                    <br><br>
-                    <button class="btn btn-primary" onclick="switchVisibleWorkshopSkills()">Workshop Skills</button>
-                    <button class="btn btn-secondary">subCat General</button>
-                    <button class="btn btn-secondary">subCat Mechanical Joint Integrity(MJI) and Small Bore Tubing(SBT)</button> 
-                    <br><br>
-                    <button class="btn btn-primary" onclick="switchVisibleBespoke()">BESPOKE training (for businesses only)</button> 
-                    <br><br>
-                    <button class="btn btn-primary" onclick="switchVisibleOther()">Other</button>
-                </div>
+                <br>
+                <nav class="catergoryNav">
+                    <ul class="catMenu">
+                        <li><a href="" onclick="switchVisibleSafetyTraining()">Safety Training</a>
+                            <ul class="submenu">
+                                <li><a href="">Fire Training</a></li>
+                                <li><a href="">Working at Height</a></li>
+                                <li><a href="">Confined Space</a></li>
+                                <li><a href="">Lifting Operations</a></li>
+                                <li><a href="">Environmental</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="" onclick="switchVisibleForkliftAndPlant()">Forklift and Plan</a></li>
+                        <li><a href="" onclick="switchVisibleFirstAid()">First Aid</a>
+                        <li><a href="" onclick="switchVisibleWorkshopSkills()">Workshop Skills</a>
+                            <ul class="submenu">
+                                <li><a href="" >General</a></li>
+                                <li><a href="">Mechanical Joint Integrity (MJI) and Small Bore Tubing (SBT)</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="" onclick="switchVisibleBespoke()">BESPOKE training (for businesses only)</a></li>
+                        <li><a href="" onclick="switchVisibleOther()">Other</a></li>
+                    </ul>
+                  </nav>
+                <br>
             </div>
         </div>
         <div class="col-md-8" id="coursesTo">
-            <div class="row" id="courseFilter">
-                <p>Add filter results section here.</p>
+            <div class="row">
+                <div class="searchBar">
+                    <input class="form-control formInput" name="search" onkeyup="searchCourses()" type="text" placeholder="Search for a course...">
+                </div>
             </div>
             <div class="catexpand">
                 <div class="catexpandHGV" id="divHGV">
@@ -101,9 +100,7 @@
         </div>
     </div>
     <div class="mainresults">
-
     </div>
-
 </div>
 
 {% endblock %}

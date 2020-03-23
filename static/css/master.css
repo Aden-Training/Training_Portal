@@ -124,7 +124,6 @@ h2 {
 .signOutWelcome p{
   color: #ff4040;
   top: -20px;
-
 }
 .textSignOut{
   float: right;
@@ -227,6 +226,7 @@ h2 {
   color: #ff4040;
 }
 
+/* If mobile device, change navbar to small */
 @media screen and (max-width: 767px) {
   .topnav a:not(:first-child) {display: none;}
   .topnav a.icon {
@@ -248,7 +248,11 @@ h2 {
     text-align: left;
   }
 }
-/* End of navigation bar style */
+
+/* Hide navbar on pages listed below 
+#login .topnav{
+  display: none;
+}*/
 
 
 /* 
@@ -315,25 +319,87 @@ h2 {
 /* 
 -- findcourse.html --
 */
-/* Catergory bar */
+
+/* Catergory bar background */
 .catbar{
   color: #000000;
-  padding-top: 10px;
-  padding-bottom: 20px;
+  padding-top: 20px;
+  padding-bottom: 15px;
   padding-left: 30px;
   padding-right: 30px;
   margin-top: 15px;
   height: auto;
-  width: 90%;
+  width: 100%;
   background-color: #dadada80;
 }
 
-.catlist{
-  color: black;
+/* Side navigation bar for catergories */
+.catergoryNav {
+  width: 100%;
 }
 
-.catexpand{
-  padding: 10px;
+/* reset our lists to remove bullet points and padding */
+.catMenu, .submenu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* make ALL links (main and submenu) have padding and background color */
+.catMenu a {
+  display: block;
+  background-color: #ff4040;
+  text-decoration: none;
+  padding: 15px;
+  color: #ffffff;
+}
+
+/* Hover on main menu */
+.catMenu a:hover {
+  background-color: #f229bd;
+  transition: 0.3s;
+}
+
+/* when hovering over a .catMenu item,
+display the submenu inside it.
+we're changing the submenu's max-height from 0 to 200px;
+*/
+.catMenu li:hover .submenu {
+  display: block;
+  max-height: 1000px;
+}
+
+/*
+we now overwrite the background-color for .submenu links only.
+CSS reads down the page, so code at the bottom will overwrite the code at the top.
+*/
+
+.submenu a {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+/* hover behaviour for links inside .submenu */
+.submenu a:hover {
+  background-color: #f2b929;
+  color: #ffffff;
+  transition: 0.3s;
+}
+
+/* this is the initial state of all submenus.
+we set it to max-height: 0, and hide the overflowed content.
+*/
+.submenu{
+  overflow: hidden;
+  max-height: 0;
+  transition: all 0.5s ease-out;
+}
+
+/* Course search bar */
+.searchBar{
+  width: 50%;
+  float: left;
+  margin-top: 15px;
 }
 
 .card{
@@ -342,7 +408,10 @@ h2 {
   margin-top: 20px;
 }
 
-/* Buttons */
+
+/* 
+-- Buttons -- 
+*/
 .btn{
   background-color: #ff4040;
   width: 100%;
