@@ -232,15 +232,17 @@ def customerHome():
     con = sqlite3.connect('db/database.db')
     conn = sqlite3.connect('db/database.db')
 
+    conn.row_factory = sqlite3.Row
     con.row_factory = sqlite3.Row
 
     cur = con.cursor()
 
     curs = conn.cursor()
 
-    cur.execute("SELECT * FROM customers WHERE username = ?", [user])
+    cur.execute("SELECT username FROM customers WHERE username = ?", [user])
+    
 
-    curs.execute("SELECT certificate FROM certificates WHERE username = ?", [user])
+    curs.execute("SELECT * FROM certificates WHERE username = ?", [user])
     certificates = curs.fetchall()
 
     customers = cur.fetchone()
@@ -362,7 +364,7 @@ def awardcertificate():
 
         with sqlite3.connect('db/database.db') as con:
             cur = con.cursor()
-            cur.execute("INSERT into certificates VALUES (?,?,?,?)",(username,email,certificate,path))
+            cur.execute("INSERT into certificates VALUES (?,?,?,?)",(email,username,certificate,path))
 
         f.save('static/certificates/' + username + '/' + docName + '.pdf')
         sendCertificate(recipiantEmail, path)

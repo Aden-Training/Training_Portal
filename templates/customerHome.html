@@ -3,12 +3,13 @@
 <h3>Hi {{customers["username"]}}!</h3>
 <h3>Here are your certificates:</h3>
 
-{% for certificate in certificates %}
-<p><a href="">{{customers["username"]}}</a></p>
-<p>Test</p>
+{% if certificates %}
+<p>CERTIFICATES FOUND</p>
+{% endif %}
 
+{% for certificate in certificates %}
+<a href=""> <p>{{certificate["certificate"]}}</p> </a>
 {% endfor %}
 
-<a href=""></a>
 
 {% endblock %}
