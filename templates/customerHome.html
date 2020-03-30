@@ -6,9 +6,12 @@
 {% if certificates %}
 <p>CERTIFICATES FOUND</p>
 {% endif %}
-
 {% for certificate in certificates %}
-<a href=""> <p>{{certificate["certificate"]}}</p> </a>
+<form action="/downloadcertificate/{{certificate["certificate"]}}" method="POST">
+    <button type="submit">
+        <p>{{certificate["certificate"]}}</p>
+    </button>
+</form>
 {% endfor %}
 
 

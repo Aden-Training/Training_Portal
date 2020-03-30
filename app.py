@@ -1,4 +1,4 @@
-from flask import Flask, render_template, url_for, request, redirect, session, flash
+from flask import Flask, render_template, url_for, request, redirect, session, flash, send_file
 from functools import wraps
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
@@ -252,6 +252,23 @@ def customerHome():
     curs.close()
 
     return render_template("customerHome.html", certificates = certificates, customers = customers)
+
+@app.route('/downloadcertificate/<filename>', methods = ['POST'])
+def downloadcert(filename):
+    if request.method == "POST":
+        con = sqlite3.connect('db/database.db')
+        con.row_factory = sqlite3.Row
+
+        cur = con.cursor()
+
+        cur.execute("SELECT path FROM certificates WHERE certificate = ?", [filename])
+
+        download = cur.fetchone()
+
+    return send_file(download, attachment_filename="", as_attachment=True)
+
+
+
 
 # BUSINESS ACCOUNT FUNCTIONALITY
 # CREATE AN ACCOUNT IN BUSINESSES
