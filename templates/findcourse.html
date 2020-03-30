@@ -46,17 +46,16 @@
                 <div class="searchBar">
                     <input class="form-control formInput" name="search" onkeyup="searchCourses()" type="text" placeholder="Search for a course...">
                 </div>
-            </div>
-            <div class="catexpand">
-                <div class="catexpandHGV" id="divHGV">
+            </div> 
                     <div class="card" style="width: 18rem;">
                         <img width="200px" height="200px" class="card-img-top" src="{{url_for('static', filename='img/safety.jpg')}}" alt="Card image cap">
                         <div class="card-body">
                           <h5 class="card-title">Safety Training</h5>
                           <p class="card-text">Safety training courses. Choose a sub category to book.</p>
-                          <a href="#" class="btn btn-primary">Book Now!</a>
+                          <a href="#" class="btn btn-primary" onclick="">Book Now!</a>
                         </div>
                     </div>
+                
                     <div class="card" style="width: 18rem;">
                         <img width="200px" height="200px" class="card-img-top" src="{{url_for('static', filename='img/forklift.jpg')}}" alt="Card image cap">
                         <div class="card-body">
@@ -65,6 +64,7 @@
                           <a href="#" class="btn btn-primary">Book Now!</a>
                         </div>
                     </div>
+                
                     <div class="card" style="width: 18rem;">
                         <img width="200px" height="200px" class="card-img-top" src="{{url_for('static', filename='img/firstaidlogo.png')}}" alt="Card image cap">
                         <div class="card-body">
@@ -73,6 +73,7 @@
                           <a href="#" class="btn btn-primary">Book Now!</a>
                         </div>
                     </div>
+                
                     <div class="card" style="width: 18rem;">
                         <img width="200px" height="200px" class="card-img-top" src="{{url_for('static', filename='img/workshop.jpg')}}" alt="Card image cap">
                         <div class="card-body">
@@ -81,6 +82,7 @@
                           <a href="#" class="btn btn-primary">Book Now!</a>
                         </div>
                     </div>
+                
                     <div class="card" style="width: 18rem;">
                         <img width="200px" height="200px" class="card-img-top" src="{{url_for('static', filename='img/bespoke.jpg')}}" alt="Card image cap">
                         <div class="card-body">
@@ -89,16 +91,22 @@
                           <a href="#" class="btn btn-primary">Book Now!</a>
                         </div>
                     </div>
-                    <div class="card" style="width: 18rem;">
-                        <img width="200px" height="200px" class="card-img-top" src="{{url_for('static', filename='img/other.jpg')}}" alt="Card image cap">
-                        <div class="card-body">
-                          <h5 class="card-title">Other</h5>
-                          <p class="card-text">Other training courses that are not specified above</p>
-                          <a href="#" class="btn btn-primary">Book Now!</a>
-                        </div>
-                    </div>
                 </div>
                 <div class="catexpandOffshore" id="divOffshore">
+                    {% for course in course %}
+                        <div class="card" style="width: 18rem;">
+                            <img width="200px" height="200px" class="card-img-top" src="{{course.thumbnail}}" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">{{course["course_name"]}}</h5>
+                                <p class="card-text">{{course["description"]}}</p>
+                                <form action="/bookcourse/{{course.course_name}}" method="POST">
+                                <button type="submit" class="btn btn-primary">Book Now!</button>
+                            </form>
+                            </div>
+                        </div>
+                    {% endfor %}
+                </div>
+                <div id ="divSafetyTraining">
                     {% for course in course %}
                         <div class="card" style="width: 18rem;">
                             <img width="200px" height="200px" class="card-img-top" src="{{course.thumbnail}}" alt="Card image cap">
