@@ -17,7 +17,7 @@
                 <br>
                 <nav class="catergoryNav">
                     <ul class="catMenu">
-                        <li><a href="" onclick="switchVisibleSafetyTraining()">Safety Training</a>
+                        <li><a href="/findcourse/SafteyTraining">Safety Training</a>
                             <ul class="submenu">
                                 <li><a href="">Fire Training</a></li>
                                 <li><a href="">Working at Height</a></li>
@@ -26,7 +26,7 @@
                                 <li><a href="">Environmental</a></li>
                             </ul>
                         </li>
-                        <li><a href="" onclick="switchVisibleForkliftAndPlant()">Forklift and Plan</a></li>
+                        <li><a href="/findcourse/Forklift">Forklift and Plan</a></li>
                         <li><a href="" onclick="switchVisibleFirstAid()">First Aid</a>
                         <li><a href="" onclick="switchVisibleWorkshopSkills()">Workshop Skills</a>
                             <ul class="submenu">
@@ -48,7 +48,7 @@
                 </div>
             </div>
             <div class="catexpand">
-                <div class="catexpandHGV" id="divHGV">
+                <!-- <div class="catexpandHGV" id="divHGV">
                     <div class="card" style="width: 18rem;">
                         <img width="200px" height="200px" class="card-img-top" src="{{url_for('static', filename='img/forklift.jpg')}}" alt="Card image cap">
                         <div class="card-body">
@@ -81,8 +81,8 @@
                           <a href="#" class="btn btn-primary">Book Now!</a>
                         </div>
                     </div>
-                </div>
-                <div class="catexpandOffshore" id="divOffshore">
+                </div> -->
+                <div class="catexpandSafteyTraining" id="divSafteyTraining">
                     {% for course in course %}
                         <div class="card" style="width: 18rem;">
                             <img width="200px" height="200px" class="card-img-top" src="{{course.thumbnail}}" alt="Card image cap">
@@ -95,6 +95,7 @@
                             </div>
                         </div>
                     {% endfor %}
+                        
                 </div>
             </div>
         </div>

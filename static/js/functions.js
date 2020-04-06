@@ -1,29 +1,29 @@
-function switchVisibleHGV(){
-  document.getElementById('divHGV').style.display = 'block';
-  document.getElementById('divOffshore').style.display = 'none';
-  document.getElementById('divOther').style.display = 'none';
-  document.getElementById('divBespoke').style.display = 'none';
-  document.getElementById('divWorkshopSkills').style.display = 'none';
-  document.getElementById('divFirstAid').style.display = 'none';
-  document.getElementById('divForkliftAndPlant').style.display = 'none';
-  document.getElementById('divSafteyTraining').style.display = 'none';
-}
+// function switchVisibleHGV(){
+//   document.getElementById('divHGV').style.display = 'block';
+//   document.getElementById('divOffshore').style.display = 'none';
+//   document.getElementById('divOther').style.display = 'none';
+//   document.getElementById('divBespoke').style.display = 'none';
+//   document.getElementById('divWorkshopSkills').style.display = 'none';
+//   document.getElementById('divFirstAid').style.display = 'none';
+//   document.getElementById('divForkliftAndPlant').style.display = 'none';
+//   document.getElementById('divSafteyTraining').style.display = 'none';
+// }
 
-function switchVisibleOffshore(){
-  document.getElementById('divOffshore').style.display = 'block';
-  document.getElementById('divHGV').style.display = 'none';
-  document.getElementById('divOther').style.display = 'none';
-  document.getElementById('divBespoke').style.display = 'none';
-  document.getElementById('divWorkshopSkills').style.display = 'none';
-  document.getElementById('divFirstAid').style.display = 'none';
-  document.getElementById('divForkliftAndPlant').style.display = 'none';
-  document.getElementById('divSafteyTraining').style.display = 'none';
-}
+// function switchVisibleOffshore(){
+//   document.getElementById('divOffshore').style.display = 'block';
+//   document.getElementById('divHGV').style.display = 'none';
+//   document.getElementById('divOther').style.display = 'none';
+//   document.getElementById('divBespoke').style.display = 'none';
+//   document.getElementById('divWorkshopSkills').style.display = 'none';
+//   document.getElementById('divFirstAid').style.display = 'none';
+//   document.getElementById('divForkliftAndPlant').style.display = 'none';
+//   document.getElementById('divSafteyTraining').style.display = 'none';
+// }
 
 function switchVisibleSafteyTraining(){
   document.getElementById('divSafteyTraining').style.display = 'block';
-  document.getElementById('divHGV').style.display = 'none';
-  document.getElementById('divOffshore').style.display = 'none';
+  // document.getElementById('divHGV').style.display = 'none';
+  // document.getElementById('divOffshore').style.display = 'none';
   document.getElementById('divOther').style.display = 'none';
   document.getElementById('divBespoke').style.display = 'none';
   document.getElementById('divWorkshopSkills').style.display = 'none';
@@ -33,8 +33,8 @@ function switchVisibleSafteyTraining(){
 
 function switchVisibleForkliftAndPlant(){
   document.getElementById('divSafteyTraining').style.display = 'block';
-  document.getElementById('divHGV').style.display = 'none';
-  document.getElementById('divOffshore').style.display = 'none';
+  // document.getElementById('divHGV').style.display = 'none';
+  // document.getElementById('divOffshore').style.display = 'none';
   document.getElementById('divOther').style.display = 'none';
   document.getElementById('divBespoke').style.display = 'none';
   document.getElementById('divWorkshopSkills').style.display = 'none';
@@ -44,8 +44,8 @@ function switchVisibleForkliftAndPlant(){
 
 function switchVisibleFirstAid(){
   document.getElementById('divFirstAid').style.display = 'block';
-  document.getElementById('divHGV').style.display = 'none';
-  document.getElementById('divOffshore').style.display = 'none';
+  // document.getElementById('divHGV').style.display = 'none';
+  // document.getElementById('divOffshore').style.display = 'none';
   document.getElementById('divOther').style.display = 'none';
   document.getElementById('divBespoke').style.display = 'none';
   document.getElementById('divWorkshopSkills').style.display = 'none';
@@ -55,8 +55,8 @@ function switchVisibleFirstAid(){
 
 function switchVisibleWorkshopSkills(){
   document.getElementById('divWorkshopSkills').style.display = 'block';
-  document.getElementById('divHGV').style.display = 'none';
-  document.getElementById('divOffshore').style.display = 'none';
+  // document.getElementById('divHGV').style.display = 'none';
+  // document.getElementById('divOffshore').style.display = 'none';
   document.getElementById('divOther').style.display = 'none';
   document.getElementById('divBespoke').style.display = 'none';
   document.getElementById('divSafteytraining').style.display = 'none';
@@ -66,8 +66,8 @@ function switchVisibleWorkshopSkills(){
 
 function switchVisibleBespoke(){
   document.getElementById('divBespoke').style.display = 'block';
-  document.getElementById('divHGV').style.display = 'none';
-  document.getElementById('divOffshore').style.display = 'none';
+  // document.getElementById('divHGV').style.display = 'none';
+  // document.getElementById('divOffshore').style.display = 'none';
   document.getElementById('divOther').style.display = 'none';
   document.getElementById('divSafteyTraining').style.display = 'none';
   document.getElementById('divWorkshopSkills').style.display = 'none';
@@ -77,8 +77,8 @@ function switchVisibleBespoke(){
 
 function switchVisibleOther(){
   document.getElementById('divOther').style.display = 'block';
-  document.getElementById('divHGV').style.display = 'none';
-  document.getElementById('divOffshore').style.display = 'none';
+  // document.getElementById('divHGV').style.display = 'none';
+  // document.getElementById('divOffshore').style.display = 'none';
   document.getElementById('divSafteyTraining').style.display = 'none';
   document.getElementById('divBespoke').style.display = 'none';
   document.getElementById('divWorkshopSkills').style.display = 'none';

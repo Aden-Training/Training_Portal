@@ -149,15 +149,19 @@ def coursesavailable():
     return render_template('coursesavailable.html', courses = courses)
 
 # FIND A COURSE
-
-@app.route('/findcourse', methods=["GET", "POST"])
+@app.route('/findcourse')
 @requires_login
-def findcourse():
+def findcourses():
+    return render_template('findcourse.html')
+
+@app.route('/findcourse/<category>', methods=["GET", "POST"])
+@requires_login
+def findcourse(category):
     con = sqlite3.connect('db/database.db')
     con.row_factory = sqlite3.Row
 
     cur = con.cursor()
-    category = "Offshore"
+    # category = "Offshore"
 
     cur.execute("SELECT * FROM courses WHERE category = ?",[category])
     course = cur.fetchall()
