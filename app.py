@@ -93,7 +93,20 @@ def postcourses():
         f = request.files['imageFile']
         name = request.form['courseTitle']
         desc = request.form['courseDescription']
-        cat = request.form['courseCat']
+        category = request.form['courseCat']
+
+        if(category =="Safety Training"):
+            cat = "SafetyTraining"
+        if(category =="Forklift and Plant"):
+            cat = "ForkliftAndPlant"
+        if(category =="First Aid"):
+            cat = "FirstAid"
+        if(category == "Workshop Skills"):
+            cat = "WorkshopSkills"
+        if(category == "BESPOKE Training"):
+            cat = "BespokeTraining"
+        if(category == "Other"):
+            cat = "Other"
         #thumb = request.form['imageFile']
 
         path = 'static/img/' + name + '.jpg'
@@ -171,7 +184,7 @@ def findcourse(category):
 
     cur = con.cursor()
     # category = "Offshore"
-
+    
     cur.execute("SELECT * FROM courses WHERE category = ?",[category])
     course = cur.fetchall()
 
