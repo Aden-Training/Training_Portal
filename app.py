@@ -163,7 +163,7 @@ def findcourses():
 
     return render_template('findcourse.html')
 
-@app.route('/findcourse/<category>', methods=["GET", "POST"])
+@app.route('/<category>', methods=["GET", "POST"])
 @requires_login
 def findcourse(category):
     con = sqlite3.connect('db/database.db')
