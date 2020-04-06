@@ -157,9 +157,9 @@ def findcourse():
     con.row_factory = sqlite3.Row
 
     cur = con.cursor()
-    catagory = "Offshore"
+    category = "Offshore"
 
-    cur.execute("SELECT * FROM courses WHERE catagory = ?",[catagory])
+    cur.execute("SELECT * FROM courses WHERE category = ?",[category])
     course = cur.fetchall()
 
     return render_template('findcourse.html', course = course)
