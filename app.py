@@ -152,6 +152,15 @@ def coursesavailable():
 @app.route('/findcourse')
 @requires_login
 def findcourses():
+    con = sqlite3.connect('db/database.db')
+    con.row_factory = sqlite3.Row
+
+    cur = con.cursor()
+    category = "SafetyTraining"
+
+    cur.execute("SELECT * FROM courses WHERE category = ?",[category])
+    course = cur.fetchall()
+
     return render_template('findcourse.html')
 
 @app.route('/findcourse/<category>', methods=["GET", "POST"])
