@@ -1,4 +1,4 @@
-from flask import Flask, render_template, url_for, request, redirect, session, flash, send_file
+from flask import Flask, render_template, url_for, request, redirect, session, flash, send_file, send_from_directory
 from functools import wraps
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
@@ -253,19 +253,20 @@ def customerHome():
 
     return render_template("customerHome.html", certificates = certificates, customers = customers)
 
-@app.route('/downloadcertificate/<filename>', methods = ['POST'])
+@app.route('/downloadcertificate/<filename>', methods = ['POST','GET'])
 def downloadcert(filename):
     if request.method == "POST":
         con = sqlite3.connect('db/database.db')
         con.row_factory = sqlite3.Row
 
         cur = con.cursor()
-
+        filename = filename + '.pdf'
         cur.execute("SELECT path FROM certificates WHERE certificate = ?", [filename])
 
         download = cur.fetchone()
+        directory = str(download)
 
-    return send_file(download, attachment_filename="", as_attachment=True)
+        return send_from_directory(directory = directory, filename=filename)
 
 
 
@@ -376,7 +377,7 @@ def awardcertificate():
         recipiantEmail = request.form['recipiantEmail']
         f = request.files['PDFfile']
 
-        path = "static/certificates/" + username + "/" + docName + ".pdf"
+        path = "static/certificates/" + username
         certificate = request.form['docName']
 
         with sqlite3.connect('db/database.db') as con:
