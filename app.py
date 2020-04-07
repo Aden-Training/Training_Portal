@@ -98,8 +98,8 @@ def postcourses():
         subCategory = request.form['subCourseCat']
 
         cat = detectCat(category)
-        
-        if(cat == "SafetyTraining" | cat == "WorkshopSkills"):
+
+        if(cat == "SafetyTraining" or cat == "WorkshopSkills"):
             subCat = detectSubCat(subCategory)
         else:
             subCat = "Null"
@@ -183,8 +183,18 @@ def findcourse(category):
 
     cur = con.cursor()
     # category = "Offshore"
+
+    catList = ["SafetyTraining", "ForkliftAndPlant", "FirstAid", "WorkshopSkills", "BespokeTraining", "Other"]
+    subCatList = ["FireTraining", "WorkingAtHeight", "ConfinedSpace", "LiftingOperations", "Environmental", "General", "MechanicalJoint"]
+
+    for i in catList:
+        if(i == category):
+            cur.execute("SELECT * FROM courses WHERE category = ?",[category])
     
-    cur.execute("SELECT * FROM courses WHERE category = ?",[category])
+    for i in subCatList:
+        if(i == category):
+            cur.execute("SELECT * FROM courses WHERE subCat = ?",[category])
+    
     course = cur.fetchall()
 
     return render_template('findcourse.html', course = course)
@@ -424,35 +434,39 @@ def sendCertificate(recipiantEmail, pdf):
 
 def detectCat(category):
     if(category =="Safety Training"):
-        cat = "SafetyTraining"
-    if(category =="Forklift and Plant"):
-        cat = "ForkliftAndPlant"
-    if(category =="First Aid"):
-        cat = "FirstAid"
-    if(category == "Workshop Skills"):
-        cat = "WorkshopSkills"
-    if(category == "BESPOKE Training"):
-        cat = "BespokeTraining"
-    if(category == "Other"):
-        cat = "Other"
-    
-    return cat
+        catNew = "SafetyTraining"
+    elif(category =="Forklift and Plant"):
+        catNew = "ForkliftAndPlant"
+    elif(category =="First Aid"):
+        catNew = "FirstAid"
+    elif(category == "Workshop Skills"):
+        catNew = "WorkshopSkills"
+    elif(category == "BESPOKE Training"):
+        catNew = "BespokeTraining"
+    elif(category == "Other"):
+        catNew = "Other"
+    else:
+        catNew = "ERROR"
+
+    return catNew
 
 def detectSubCat(subCategory):
     if(subCategory == "Fire Training"):
-        subCat = "FireTraining"
+        subCatNew = "FireTraining"
     elif(subCategory == "Working at Height"):
-        subCat = "WorkingAtHeight"
+        subCatNew = "WorkingAtHeight"
     elif(subCategory == "Confined Space"):
-        subCat = "ConfinedSpace"
+        subCatNew = "ConfinedSpace"
     elif(subCategory == "Lifting Operations"):
-        subCat = "Lifting Operations"
+        subCatNew = "Lifting Operations"
     elif(subCategory == "Environmental"):
-        subCat = "Environmental"
+        subCatNew = "Environmental"
     elif(subCategory == "General"):
-        subCat = "General"
+        subCatNew = "General"
     elif(subCategory == "Mechanical Joint"):
-        subCat = "MechanicalJoint"
+        subCatNew = "MechanicalJoint"
+    
+    return subCatNew
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", debug=True)
