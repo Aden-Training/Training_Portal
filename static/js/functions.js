@@ -24,6 +24,9 @@ function searchCourses(){
     }
 }
 
+//If the category bar is changed, this function will check what they have selected.
+//If the user selected either safety or workshop, the approriate sub categories will
+//be shown.
 function showSubCat(){
   document.getElementById('divSubCatTitle').style.display = 'block';
 
@@ -31,9 +34,11 @@ function showSubCat(){
 
   if(inpVal == "Safety"){
     document.getElementById('divSubCatSafety').style.display = 'block';
+    document.getElementById('divSubCatWorkshop').style.display = 'none';
   }
   else if(inpVal == "Workshop"){
     document.getElementById('divSubCatWorkshop').style.display = 'block';
+    document.getElementById('divSubCatSafety').style.display = 'none';
   }
   else{
     document.getElementById('divSubCatWorkshop').style.display = 'none';

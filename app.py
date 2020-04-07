@@ -46,7 +46,8 @@ conn = sqlite3.connect("db/database.db")
 conn.execute("CREATE TABLE IF NOT EXISTS customers (email TEXT UNIQUE, username TEXT, password TEXT)")
 conn.execute("CREATE TABLE IF NOT EXISTS certificates(email TEXT, username TEXT, certificate TEXT)")
 conn.execute("CREATE TABLE IF NOT EXISTS businesses (email TEXT, username TEXT, password TEXT, industry TEXT)")
-conn.execute("CREATE TABLE IF NOT EXISTS courses (course_name TEXT, description TEXT, category TEXT, thumbnail TEXT)")
+#Ross is messing around with the below line
+conn.execute("CREATE TABLE IF NOT EXISTS courses (course_name TEXT, description TEXT, category TEXT, thumbnail TEXT, subCat TEXT)")
 conn.execute("CREATE TABLE IF NOT EXISTS bookings (course_name TEXT, person_booked TEXT, persons_email TEXT)")
 conn.execute("CREATE TABLE IF NOT EXISTS businessEmployees (company_name TEXT, employees TEXT)")
 
@@ -94,27 +95,24 @@ def postcourses():
         name = request.form['courseTitle']
         desc = request.form['courseDescription']
         category = request.form['courseCat']
+        subCategory = request.form['subCourseCat']
 
-        if(category =="Safety Training"):
-            cat = "SafetyTraining"
-        if(category =="Forklift and Plant"):
-            cat = "ForkliftAndPlant"
-        if(category =="First Aid"):
-            cat = "FirstAid"
-        if(category == "Workshop Skills"):
-            cat = "WorkshopSkills"
-        if(category == "BESPOKE Training"):
-            cat = "BespokeTraining"
-        if(category == "Other"):
-            cat = "Other"
-       
+        cat = detectCat(category)
+        
+        if(cat == "SafetyTraining" | cat == "WorkshopSkills"):
+            subCat = detectSubCat(subCategory)
+        else:
+            subCat = "Null"
+
         #thumb = request.form['imageFile']
 
         path = 'static/img/' + name + '.jpg'
         f.save('static/img/' + name +'.jpg')
 
+        
+
         with sqlite3.connect('db/database.db') as con:
-            con.execute("INSERT INTO courses VALUES (?,?,?,?)", (name, desc, cat, path))
+            con.execute("INSERT INTO courses VALUES (?,?,?,?,?)", (name, desc, cat, path, subCat))
     
         return redirect('/findcourse')
 
@@ -423,6 +421,38 @@ def sendCertificate(recipiantEmail, pdf):
     with smtplib.SMTP_SSL("smtp.gmail.com", 465, context=context) as server:
         server.login(sender_email, password)
         server.sendmail(sender_email, receiver_email, text)
+
+def detectCat(category):
+    if(category =="Safety Training"):
+        cat = "SafetyTraining"
+    if(category =="Forklift and Plant"):
+        cat = "ForkliftAndPlant"
+    if(category =="First Aid"):
+        cat = "FirstAid"
+    if(category == "Workshop Skills"):
+        cat = "WorkshopSkills"
+    if(category == "BESPOKE Training"):
+        cat = "BespokeTraining"
+    if(category == "Other"):
+        cat = "Other"
+    
+    return cat
+
+def detectSubCat(subCategory):
+    if(subCategory == "Fire Training"):
+        subCat = "FireTraining"
+    elif(subCategory == "Working at Height"):
+        subCat = "WorkingAtHeight"
+    elif(subCategory == "Confined Space"):
+        subCat = "ConfinedSpace"
+    elif(subCategory == "Lifting Operations"):
+        subCat = "Lifting Operations"
+    elif(subCategory == "Environmental"):
+        subCat = "Environmental"
+    elif(subCategory == "General"):
+        subCat = "General"
+    elif(subCategory == "Mechanical Joint"):
+        subCat = "MechanicalJoint"
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", debug=True)
