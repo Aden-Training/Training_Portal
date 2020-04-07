@@ -10,18 +10,19 @@
         <input type="text" name="courseDescription" class="form-control" required>
         <br>
         <p>Category:</p>
-        <!-- These need to have the _ cause otherwise this will not work -->
-        <select class="form-control form-control-sm" name="courseCat" required>
-            <option onclick="showSubCatSafety()">Safety Training</option>
+        <select class="form-control form-control-sm" name="courseCat" id="selectCat" onchange="showSubCat()" required>
             <option>Forklift and Plant</option>
+            <option value="Safety">Safety Training</option>
             <option>First Aid</option>
-            <option onclick="showSubCatWorkshop()">Workshop Skills</option>
+            <option value="Workshop">Workshop Skills</option>
             <option>BESPOKE Training</option>
             <option>Other</option>
         </select> 
-        <!-- <div class="subCatSafety" id="divSubCatSafety">
+        <div class="subCatTitle" id="divSubCatTitle">
             <br>
             <p>Sub-Category:</p>
+        </div>
+        <div class="subCatSafety" id="divSubCatSafety">
             <select class="form-control form-control-sm" name="subCourseCat">
                 <option>Fire_Training</option>
                 <option>Working_at_Height</option>
@@ -35,7 +36,7 @@
                 <option>General</option>
                 <option>Mechanical_Joint</option>
             </select>
-        </div> -->
+        </div>
         <br>
         <p>Submit Image</p>
         <input type="file" name="imageFile" required>

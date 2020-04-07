@@ -24,12 +24,20 @@ function searchCourses(){
     }
 }
 
-// function showSubCatSaftey(){
-//   document.getElementById('divSubCatSafety').style.display = 'block';
-//   document.getElementById('divSubCatWorkshop').style.display = 'none';
-// }
+function showSubCat(){
+  document.getElementById('divSubCatTitle').style.display = 'block';
 
-// function showSubCatWorkshop(){
-//   document.getElementById('divSubCatSafety').style.display = 'none';
-//   document.getElementById('divSubCatWorkshop').style.display = 'block';
-// }
+  var inpVal = document.getElementById('selectCat').value
+
+  if(inpVal == "Safety"){
+    document.getElementById('divSubCatSafety').style.display = 'block';
+  }
+  else if(inpVal == "Workshop"){
+    document.getElementById('divSubCatWorkshop').style.display = 'block';
+  }
+  else{
+    document.getElementById('divSubCatWorkshop').style.display = 'none';
+    document.getElementById('divSubCatSafety').style.display = 'none';
+    document.getElementById('divSubCatTitle').style.display = 'none';
+  }
+}
