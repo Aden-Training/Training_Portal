@@ -97,14 +97,42 @@ def postcourses():
         category = request.form['courseCat']
         subCategory = request.form['subCourseCat']
 
-        cat = detectCat(category)
+        # cat = detectCat(category)
 
-        if(cat == "SafetyTraining" or cat == "WorkshopSkills"):
-            subCat = detectSubCat(subCategory)
-        else:
-            subCat = "Null"
+        # if(cat == "SafetyTraining" or cat == "WorkshopSkills"):
+        #     subCat = detectSubCat(subCategory)
+        # else:
+        #     subCat = "Null"
 
         #thumb = request.form['imageFile']
+
+        if(category == "Safety"):
+            cat = "SafetyTraining"
+        if(category == "Forklift and Plant"):
+            cat = "ForkliftAndPlant"
+        if(category == "First Aid"):
+            cat = "FirstAid"
+        if(category ==  "Workshop"):
+            cat = "WorkshopSkills"
+        if(category == "BESPOKE Training"):
+            cat = "BespokeTraining"
+        if(category == "Other"):
+            cat = "Other"
+        
+        if(subCategory == "Fire Training"):
+            subCat = "FireTraining"
+        if(subCategory == "Working at Height"):
+            subCat = "WorkingAtHeight"
+        if(subCategory == "Confined Space"):
+            subCat = "ConfinedSpace"
+        if(subCategory == "Lifting Operations"):
+            subCat = "Lifting Operations"
+        if(subCategory == "Environmental"):
+            subCat = "Environmental"
+        if(subCategory == "General"):
+            subCat = "General"
+        if(subCategory == "Mechanical Joint"):
+            subCat = "MechanicalJoint"
 
         path = 'static/img/' + name + '.jpg'
         f.save('static/img/' + name +'.jpg')
@@ -185,7 +213,7 @@ def findcourse(category):
     # category = "Offshore"
 
     catList = ["SafetyTraining", "ForkliftAndPlant", "FirstAid", "WorkshopSkills", "BespokeTraining", "Other"]
-    subCatList = ["FireTraining", "WorkingAtHeight", "ConfinedSpace", "LiftingOperations", "Environmental", "General", "MechanicalJoint"]
+    subCatList = ["FireTraining", "WorkingAtHeight", "ConfinedSpace", "LiftingOperations", "Environmental", "General", "MechanicalJoint", "Null"]
 
     for i in catList:
         if(i == category):
