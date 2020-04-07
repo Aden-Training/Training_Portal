@@ -465,6 +465,8 @@ def detectSubCat(subCategory):
         subCatNew = "General"
     elif(subCategory == "Mechanical Joint"):
         subCatNew = "MechanicalJoint"
+    else:
+        subCatNew = "ERROR"
     
     return subCatNew
 
