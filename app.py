@@ -46,7 +46,6 @@ conn = sqlite3.connect("db/database.db")
 conn.execute("CREATE TABLE IF NOT EXISTS customers (email TEXT UNIQUE, username TEXT, password TEXT)")
 conn.execute("CREATE TABLE IF NOT EXISTS certificates(email TEXT, username TEXT, certificate TEXT)")
 conn.execute("CREATE TABLE IF NOT EXISTS businesses (email TEXT, username TEXT, password TEXT, industry TEXT)")
-#Ross is messing around with the below line
 conn.execute("CREATE TABLE IF NOT EXISTS courses (course_name TEXT, description TEXT, category TEXT, thumbnail TEXT, subCat TEXT)")
 conn.execute("CREATE TABLE IF NOT EXISTS bookings (course_name TEXT, person_booked TEXT, persons_email TEXT)")
 conn.execute("CREATE TABLE IF NOT EXISTS businessEmployees (company_name TEXT, employees TEXT)")
@@ -82,17 +81,15 @@ def postcourses():
         category = request.form['courseCat']
         subCategory = request.form['subCourseCat']
 
+        path = 'static/img/' + name + '.jpg'
+        f.save('static/img/' + name +'.jpg')
+
         cat = detectCat(category)
 
         if(cat == "SafetyTraining" or cat == "WorkshopSkills"):
             subCat = detectSubCat(subCategory)
         else:
             subCat = "Null"
-
-        path = 'static/img/' + name + '.jpg'
-        f.save('static/img/' + name +'.jpg')
-
-        
 
         with sqlite3.connect('db/database.db') as con:
             con.execute("INSERT INTO courses VALUES (?,?,?,?,?)", (name, desc, cat, path, subCat))
