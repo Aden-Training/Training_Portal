@@ -107,6 +107,7 @@ def postcourses():
             cat = "BespokeTraining"
         if(category == "Other"):
             cat = "Other"
+       
         #thumb = request.form['imageFile']
 
         path = 'static/img/' + name + '.jpg'
