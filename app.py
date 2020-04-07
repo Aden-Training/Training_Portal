@@ -69,21 +69,6 @@ def logout():
 def bustraining():
     return render_template('businessTraining.html')
 
-#   COURSE HANDLING
-
-# @app.route('/postcourse', methods = ["GET","POST"])
-# def postcourse():
-#     if request.method == "POST":
-
-#         business = session['user']
-#         name = request.form['courseName']
-#         desc = request.form['courseDescription']
-
-#         with sqlite3.connect('db/database.db') as con:
-#             con.execute("INSERT INTO courses VALUES (?,?,?)", (business, name, desc))
-    
-#     return redirect('/businesstraining')
-
 # ADMINISTRATION FEATURES
 # POST A COURSE
 
@@ -97,42 +82,12 @@ def postcourses():
         category = request.form['courseCat']
         subCategory = request.form['subCourseCat']
 
-        # cat = detectCat(category)
+        cat = detectCat(category)
 
-        # if(cat == "SafetyTraining" or cat == "WorkshopSkills"):
-        #     subCat = detectSubCat(subCategory)
-        # else:
-        #     subCat = "Null"
-
-        #thumb = request.form['imageFile']
-
-        if(category == "Safety"):
-            cat = "SafetyTraining"
-        if(category == "Forklift and Plant"):
-            cat = "ForkliftAndPlant"
-        if(category == "First Aid"):
-            cat = "FirstAid"
-        if(category ==  "Workshop"):
-            cat = "WorkshopSkills"
-        if(category == "BESPOKE Training"):
-            cat = "BespokeTraining"
-        if(category == "Other"):
-            cat = "Other"
-        
-        if(subCategory == "Fire Training"):
-            subCat = "FireTraining"
-        if(subCategory == "Working at Height"):
-            subCat = "WorkingAtHeight"
-        if(subCategory == "Confined Space"):
-            subCat = "ConfinedSpace"
-        if(subCategory == "Lifting Operations"):
-            subCat = "Lifting Operations"
-        if(subCategory == "Environmental"):
-            subCat = "Environmental"
-        if(subCategory == "General"):
-            subCat = "General"
-        if(subCategory == "Mechanical Joint"):
-            subCat = "MechanicalJoint"
+        if(cat == "SafetyTraining" or cat == "WorkshopSkills"):
+            subCat = detectSubCat(subCategory)
+        else:
+            subCat = "Null"
 
         path = 'static/img/' + name + '.jpg'
         f.save('static/img/' + name +'.jpg')
@@ -146,23 +101,6 @@ def postcourses():
 
     return render_template('postcourse.html')
 
-# COURSES AVAILABLE
-
-@app.route('/courses', methods=["GET"])
-def courses():
-    con = sqlite3.connect('db/database.db')
-    con.row_factory = sqlite3.Row
-
-    cur = con.cursor()
-
-    category = "Offshore"
-
-    cur.execute("SELECT * FROM courses WHERE category = ?",[category])
-
-    courses = cur.fetchall()
-
-    return render_template('courses.html', courses = courses)
-
 # REMOVE A COURSE
 
 @app.route('/removecourse/<id>', methods=["GET", "POST"])
@@ -172,21 +110,7 @@ def removecourse(id):
             con.execute("DELETE FROM courses WHERE id = ?", [id])
             con.commit()
 
-        return redirect('/courses')
-
-# COURSES AVAILABLE
-
-@app.route('/coursesavailable', methods=["GET"])
-def coursesavailable():
-    con = sqlite3.connect('db/database.db')
-    con.row_factory = sqlite3.Row
-
-    cur = con.cursor()
-
-    cur.execute("SELECT * FROM courses")
-    courses = cur.fetchall()
-
-    return render_template('coursesavailable.html', courses = courses)
+        return redirect('/courses')   
 
 # FIND A COURSE
 @app.route('/findcourse')
@@ -213,7 +137,7 @@ def findcourse(category):
     # category = "Offshore"
 
     catList = ["SafetyTraining", "ForkliftAndPlant", "FirstAid", "WorkshopSkills", "BespokeTraining", "Other"]
-    subCatList = ["FireTraining", "WorkingAtHeight", "ConfinedSpace", "LiftingOperations", "Environmental", "General", "MechanicalJoint", "Null"]
+    subCatList = ["FireTraining", "WorkingAtHeight", "ConfinedSpace", "LiftingOperations", "Environmental", "General", "MechanicalJoint"]
 
     for i in catList:
         if(i == category):
@@ -461,13 +385,13 @@ def sendCertificate(recipiantEmail, pdf):
         server.sendmail(sender_email, receiver_email, text)
 
 def detectCat(category):
-    if(category =="Safety Training"):
+    if(category =="Safety"):
         catNew = "SafetyTraining"
     elif(category =="Forklift and Plant"):
         catNew = "ForkliftAndPlant"
     elif(category =="First Aid"):
         catNew = "FirstAid"
-    elif(category == "Workshop Skills"):
+    elif(category == "Workshop"):
         catNew = "WorkshopSkills"
     elif(category == "BESPOKE Training"):
         catNew = "BespokeTraining"
