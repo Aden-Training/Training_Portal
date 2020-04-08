@@ -3,6 +3,16 @@
 <h3>Hi {{customers["username"]}}!</h3>
 <h3>Here are your certificates:</h3>
 
-<a href=""></a>
+{% if certificates %}
+<p>CERTIFICATES FOUND</p>
+{% endif %}
+{% for certificate in certificates %}
+<form action="/downloadcertificate/{{certificate["certificate"]}}" method="POST">
+    <button type="submit">
+        <p>{{certificate["certificate"]}}</p>
+    </button>
+</form>
+{% endfor %}
+
 
 {% endblock %}
