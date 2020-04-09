@@ -81,7 +81,7 @@ def postcourses():
         category = request.form['courseCat']
         subCategory = request.form['subCourseCat']
         org = session['user']
-        
+
         path = 'static/img/' + name + '.jpg'
         f.save('static/img/' + name +'.jpg')
 
@@ -340,9 +340,11 @@ def bookcourse(coursename):
 @app.route('/peoplebooked/<coursename>', methods=["GET"])
 def peoplebooked(coursename):
     con = sqlite3.connect('db/database.db')
+    con.row_factory = sqlite3.Row
+    
     cur = con.cursor()
 
-    cur.execute("SELECT person_booked FROM bookings WHERE course_name = ?", [coursename])
+    cur.execute("SELECT * FROM bookings WHERE course_name = ?", [coursename])
 
     people = cur.fetchall()
 
