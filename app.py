@@ -260,13 +260,18 @@ def downloadcert(filename):
         con.row_factory = sqlite3.Row
 
         cur = con.cursor()
-        filename = filename + '.pdf'
+        filename = filename
         cur.execute("SELECT path FROM certificates WHERE certificate = ?", [filename])
 
+        # filename = filename + '.pdf'
         download = cur.fetchone()
-        directory = str(download)
+        # look in [Username]/[Filename]
 
-        return send_from_directory(directory = directory, filename=filename)
+        directory = 'static/certificates/' + session['user'] + '/' + filename
+
+        return send_file(directory, attachment_filename=filename)
+    else:
+        return redirect('/customerHome')
 
 
 
@@ -386,9 +391,11 @@ def awardcertificate():
 
         f.save('static/certificates/' + username + '/' + docName + '.pdf')
         sendCertificate(recipiantEmail, path)
+        
         return redirect('/customerHome')
+    else:
 
-    return render_template('awardcertificate.html')
+        return render_template('awardcertificate.html')
 
 
 def sendCertificate(recipiantEmail, pdf):
