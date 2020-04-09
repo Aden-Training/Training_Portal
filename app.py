@@ -120,10 +120,10 @@ def findcourses():
     cur = con.cursor()
     category = "SafetyTraining"
 
-    cur.execute("SELECT * FROM courses WHERE category = ?",[category])
+    cur.execute("SELECT * FROM courses")
     course = cur.fetchall()
 
-    return render_template('findcourse.html')
+    return render_template('findcourse.html', course = course)
 
 @app.route('/<category>', methods=["GET", "POST"])
 @requires_login
@@ -341,7 +341,7 @@ def bookcourse(coursename):
 def peoplebooked(coursename):
     con = sqlite3.connect('db/database.db')
     con.row_factory = sqlite3.Row
-    
+
     cur = con.cursor()
 
     cur.execute("SELECT * FROM bookings WHERE course_name = ?", [coursename])
