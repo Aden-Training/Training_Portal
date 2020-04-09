@@ -1,18 +1,41 @@
 {% extends "base.html" %}
 {% block content %}
-<h3>Hi {{customers["username"]}}!</h3>
-<h3>Here are your certificates:</h3>
+<div class="row">
+    <div class="col-md-12" id="container">
+        <img src="{{url_for('static', filename = 'img/banner_customerHome.png')}}" class="topImg" style="width:100%;height:auto;">
+        <div class="topImgcontent">
+            <div class="text" id="topImgcontent">MY ACCOUNT</div>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="helloCustomer">
+        <h3>Hi {{customers["username"]}}!</h3>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-3">
+        <div class="certificateNote">
+            <h4>Welcome to your profile</h4>
+            <h4>---</h4>
+            <h5>Username: {{session['user']}} </h5>
+            <h5>Email: {{session['email']}} </h5>
+        </div>
+    </div>
+    <div class="col-md-8">
+        <div class="certificateDisplay">
+            {% if certificates %}
+            <h4>All of your certificates appear here</h4>
+            <p> -- YOU HAVE CERTIFICATES -- </p>
+            {% endif %}
+            {% for certificate in certificates %}
+            <form action="/downloadcertificate/{{certificate["certificate"]}}.pdf" method="POST">
+            <button type="submit" name="button" class="btn btn-default">{{certificate["certificate"]}}</button>
+            </form>
+        </div>
+    </div>
+</div>
 
-{% if certificates %}
-<p>CERTIFICATES FOUND</p>
-{% endif %}
-{% for certificate in certificates %}
-<form action="/downloadcertificate/{{certificate["certificate"]}}.pdf" method="POST">
-    <button type="submit">
-        <p>{{certificate["certificate"]}}</p>
-    </button>
-</form>
 {% endfor %}
-
 
 {% endblock %}

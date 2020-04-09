@@ -434,6 +434,46 @@ i{
   margin-top: 20px;
 }
 
+/*
+-- customerHome.html
+*/
+.helloCustomer{
+  color: #000000;
+  padding-top: 20px;
+  padding-bottom: 15px;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-top: 15px;
+  margin-left: 15px;
+  margin-right: 15px;
+  height: auto;
+  width: 100%;
+  background-color: #dadada80;
+}
+
+.certificateNote{
+  color: #000000;
+  padding-top: 20px;
+  padding-bottom: 15px;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-top: 15px;
+  margin-right: 15px;
+  height: auto;
+  width: 100%;
+  background-color: #dadada80;
+}
+
+.certificateDisplay{
+  padding-bottom: 15px;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-top: 15px;
+  margin-right: 15px;
+  height: auto;
+  width: 100%;
+}
+
 
 /* 
 -- Buttons -- 
