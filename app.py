@@ -307,13 +307,21 @@ def loginbus():
             user = cur.fetchone()
 
             if cur != "":
-                passwd = user[2]
+                try:
+                    passwd = user[2]
 
-                if(bcrypt.checkpw(encodedpw, passwd)):
-                    busstatus = session['bus_logged_in'] = True
-                    session['user'] = request.form['username']
-                    return redirect('/businesstraining')
+                    if(bcrypt.checkpw(encodedpw, passwd)):
+                        busstatus = session['bus_logged_in'] = True
+                        session['user'] = request.form['username']
+                        return redirect('/businesstraining')
+                except:
+                    passerror = 'Invalid login'
 
+                    return render_template('login.html', error = passerror)  
+                else:  
+                    error = 'Username not found'
+                    return render_template('login.html', error = error)
+            
     return render_template('loginbus.html')
 
 # Creating an alternative bookcourse method
