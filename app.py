@@ -193,19 +193,22 @@ def login():
             user = cur.fetchone()
 
             if cur != "":
-                passwd = user[2]
+                try:
+                    passwd = user[2]
 
-                if(bcrypt.checkpw(encodedpw, passwd)):
-                    status = session['logged_in'] = True
-                    session['user'] = request.form['username']
-                    flash('You have now logged into an account', 'success')
-                    return redirect('/')
-                else:
-                    error = 'Invalid login'
-                    return render_template('logincust.html', error=error)
-            else:
-                error = 'Username not found'
-                return render_template('logincust.html', error=error)                
+                    if(bcrypt.checkpw(encodedpw, passwd)):
+                        status = session['logged_in'] = True
+                        session['user'] = request.form['username']
+                        flash('You have now logged into an account', 'success')
+                        return redirect('/')
+                except:
+                    passerror = 'Invalid login'
+
+                    return render_template('login.html', error = passerror)  
+                else:  
+                    error = 'Username not found'
+                    return render_template('login.html', error = error)
+              
     return render_template("login.html")
 
 # HOMEPAGE FOR INDIVIDUAL CUSTOMERS
