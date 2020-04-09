@@ -332,7 +332,7 @@ def bookcourse(coursename):
             con.execute("INSERT INTO bookings VALUES (?,?,?)",(course,user,email))
             con.commit()
 
-    flash("You're Successfully booked onto %s!" % course)
+    flash("You're Successfully booked onto %s! Email confirmation has been sent." % course)
 
     return redirect('/findcourse')
 
