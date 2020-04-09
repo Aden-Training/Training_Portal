@@ -167,6 +167,7 @@ def register():
             flash('You have now registered and can log in', 'success')
             status = session['logged_in'] = True
             session['user'] = request.form['username']
+            session['email'] = request.form['email']
 
             os.mkdir('static/certificates/' + username +'/')
 
@@ -178,9 +179,20 @@ def register():
 @app.route('/logincust', methods = ["GET","POST"])
 def login():
     if request.method == "POST":
+        con = sqlite3.connect('db/database')
+        con.sqlite3.row_factory = sqlite3.Row
+
+        cur = con.cursor()
 
         username = request.form['username']
         password = request.form['password']
+
+
+        cur.execute("SELECT email FROM customers WHERE username = ?", [username])
+
+        userEmail = cur.fetchone()
+
+        session['email'] = userEmail
 
         encodedpw = password.encode('utf-8')
 
