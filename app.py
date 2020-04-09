@@ -228,11 +228,8 @@ def customerHome():
     cursor = connn.cursor()
 
     cur.execute("SELECT * FROM customers WHERE username = ?", [user])
-<<<<<<< HEAD
     
 
-=======
->>>>>>> 22151826b222dbe6ca13656698f3861fda9dac88
     curs.execute("SELECT * FROM certificates WHERE username = ?", [user])
     cursor.execute("SELECT * FROM bookings WHERE person_booked = ?", [user])
 
