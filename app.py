@@ -72,6 +72,7 @@ def bustraining():
 # POST A COURSE
 
 @app.route('/postcourses', methods = ["POST","GET"])
+@requires_bus_login
 def postcourses():
     if request.method == "POST":
 
