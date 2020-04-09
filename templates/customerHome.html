@@ -7,7 +7,7 @@
 <p>CERTIFICATES FOUND</p>
 {% endif %}
 {% for certificate in certificates %}
-<form action="/downloadcertificate/{{certificate["certificate"]}}" method="POST">
+<form action="/downloadcertificate/{{certificate["certificate"]}}.pdf" method="POST">
     <button type="submit">
         <p>{{certificate["certificate"]}}</p>
     </button>
