@@ -42,9 +42,22 @@ h2 {
   }
 }
 
-#divOffshore {
+/* #divSaftey {
+  display: none;
+} */
+
+#divSubCatTitle{
   display: none;
 }
+
+#divSubCatSafety{
+  display: none;
+}
+
+#divSubCatWorkshop{
+  display: none;
+} 
+
 
 /* Textboxes for user input */
 .formInput{
@@ -421,7 +434,10 @@ i{
   margin-top: 20px;
 }
 
-/* Buttons */
+
+/* 
+-- Buttons -- 
+*/
 .btn{
   background-color: #ff4040;
   width: 100%;

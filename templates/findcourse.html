@@ -17,25 +17,35 @@
                 <br>
                 <nav class="catergoryNav">
                     <ul class="catMenu">
+<<<<<<< HEAD
                         <li><a href="" onclick="switchVisibleSafetyTraining()">Safety Training <i class="dropDownArrow"></i></a>
+=======
+                        <li><a href="/SafetyTraining">Safety Training</a>
+>>>>>>> develop
                             <ul class="submenu">
-                                <li><a href="">Fire Training</a></li>
-                                <li><a href="">Working at Height</a></li>
-                                <li><a href="">Confined Space</a></li>
-                                <li><a href="">Lifting Operations</a></li>
-                                <li><a href="">Environmental</a></li>
+                                <li><a href="/FireTraining">Fire Training</a></li>
+                                <li><a href="/WorkingAtHeight">Working at Height</a></li>
+                                <li><a href="ConfinedSpace">Confined Space</a></li>
+                                <li><a href="/LiftingOperations">Lifting Operations</a></li>
+                                <li><a href="/Environmental">Environmental</a></li>
                             </ul>
                         </li>
+<<<<<<< HEAD
                         <li><a href="" onclick="switchVisibleForkliftAndPlant()">Forklift and Plan</a></li>
                         <li><a href="" onclick="switchVisibleFirstAid()">First Aid</a>
                         <li><a href="" onclick="switchVisibleWorkshopSkills()">Workshop Skills <i class="dropDownArrow"></i></a>
+=======
+                        <li><a href="/ForkliftAndPlant">Forklift and Plant</a></li>
+                        <li><a href="/FirstAid">First Aid</a>
+                        <li><a href="/WorkshopSkills">Workshop Skills</a>
+>>>>>>> develop
                             <ul class="submenu">
-                                <li><a href="" >General</a></li>
-                                <li><a href="">Mechanical Joint Integrity (MJI) and Small Bore Tubing (SBT)</a></li>
+                                <li><a href="/General" >General</a></li>
+                                <li><a href="/MechanicalJoint">Mechanical Joint Integrity (MJI) and Small Bore Tubing (SBT)</a></li>
                             </ul>
                         </li>
-                        <li><a href="" onclick="switchVisibleBespoke()">BESPOKE training (for businesses only)</a></li>
-                        <li><a href="" onclick="switchVisibleOther()">Other</a></li>
+                        <li><a href="/BespokeTraining">BESPOKE training (for businesses only)</a></li>
+                        <li><a href="/Other">Other</a></li>
                     </ul>
                   </nav>
                 <br>
@@ -48,7 +58,7 @@
                 </div>
             </div>
             <div class="catexpand">
-                <div class="catexpandHGV" id="divHGV">
+                <!-- <div class="catexpandHGV" id="divHGV">
                     <div class="card" style="width: 18rem;">
                         <img width="200px" height="200px" class="card-img-top" src="{{url_for('static', filename='img/forklift.jpg')}}" alt="Card image cap">
                         <div class="card-body">
@@ -81,8 +91,8 @@
                           <a href="#" class="btn btn-primary">Book Now!</a>
                         </div>
                     </div>
-                </div>
-                <div class="catexpandOffshore" id="divOffshore">
+                </div> -->
+                <div class="catexpandSafteyTraining" id="divSafteyTraining">
                     {% for course in course %}
                         <div class="card" style="width: 18rem;">
                             <img width="200px" height="200px" class="card-img-top" src="{{course.thumbnail}}" alt="Card image cap">
@@ -95,6 +105,7 @@
                             </div>
                         </div>
                     {% endfor %}
+                    
                 </div>
             </div>
         </div>

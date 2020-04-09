@@ -10,10 +10,33 @@
         <input type="text" name="courseDescription" class="form-control" required>
         <br>
         <p>Category:</p>
-        <select class="form-control form-control-sm" name="courseCat" required>
-            <option>HGV</option>
-            <option>Offshore</option>
-        </select>
+        <select class="form-control form-control-sm" name="courseCat" id="selectCat" onchange="showSubCat()" required>
+            <option>Forklift and Plant</option>
+            <option value="Safety">Safety Training</option>
+            <option>First Aid</option>
+            <option value="Workshop">Workshop Skills</option>
+            <option>BESPOKE Training</option>
+            <option>Other</option>
+        </select> 
+        <div class="subCatTitle" id="divSubCatTitle">
+            <br>
+            <p>Sub-Category:</p>
+        </div>
+        <div class="subCatSafety" id="divSubCatSafety">
+            <select class="form-control form-control-sm" name="subCourseCat">
+                <option>Fire Training</option>
+                <option>Working at Height</option>
+                <option>Confined Space</option>
+                <option>Lifting Operations</option>
+                <option>Environmental</option>
+            </select>
+        </div>
+        <div class="subCatWorkshop" id="divSubCatWorkshop">
+            <select class="form-control form-control-sm" name="subCourseCat">
+                <option>General</option>
+                <option>Mechanical Joint</option>
+            </select>
+        </div>
         <br>
         <p>Submit Image</p>
         <input type="file" name="imageFile" required>

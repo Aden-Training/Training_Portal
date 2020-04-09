@@ -57,7 +57,7 @@
     </div>
     <div class="row">
       <div class="topnav" id="myTopnav">
-          <a href="#home">My Account</a>
+          <a href="/customerHome">My Account</a>
           <a href="/findcourse">Find a course</a>
           <a href="#contact">Contact</a>
           <a href="#about">About</a>
@@ -66,6 +66,7 @@
           <i class="fa fa-bars"></i>
         </a>
       </div>
+      {% include 'includes/_messages.html' %}
     </div>
     {% block content %}
 
