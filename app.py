@@ -46,7 +46,7 @@ conn = sqlite3.connect("db/database.db")
 conn.execute("CREATE TABLE IF NOT EXISTS customers (email TEXT UNIQUE, username TEXT, password TEXT)")
 conn.execute("CREATE TABLE IF NOT EXISTS certificates(email TEXT, username TEXT, certificate TEXT, path TEXT)")
 conn.execute("CREATE TABLE IF NOT EXISTS businesses (email TEXT, username TEXT, password TEXT, industry TEXT)")
-conn.execute("CREATE TABLE IF NOT EXISTS courses (course_name TEXT, description TEXT, category TEXT, thumbnail TEXT, subCat TEXT)")
+conn.execute("CREATE TABLE IF NOT EXISTS courses (course_name TEXT, description TEXT, category TEXT, thumbnail TEXT, subCat TEXT, org TEXT)")
 conn.execute("CREATE TABLE IF NOT EXISTS bookings (course_name TEXT, person_booked TEXT, persons_email TEXT)")
 conn.execute("CREATE TABLE IF NOT EXISTS businessEmployees (company_name TEXT, employees TEXT)")
 
@@ -80,7 +80,8 @@ def postcourses():
         desc = request.form['courseDescription']
         category = request.form['courseCat']
         subCategory = request.form['subCourseCat']
-
+        org = session['user']
+        
         path = 'static/img/' + name + '.jpg'
         f.save('static/img/' + name +'.jpg')
 
@@ -92,9 +93,9 @@ def postcourses():
             subCat = "Null"
 
         with sqlite3.connect('db/database.db') as con:
-            con.execute("INSERT INTO courses VALUES (?,?,?,?,?)", (name, desc, cat, path, subCat))
+            con.execute("INSERT INTO courses VALUES (?,?,?,?,?,?)", (name, desc, cat, path, subCat, org))
     
-        return redirect('/findcourse')
+        return redirect('/businesstraining')
 
     return render_template('postcourse.html')
 
@@ -349,6 +350,7 @@ def peoplebooked(coursename):
 
 
 @app.route('/awardcertificate', methods=["GET", "POST"])
+@requires_bus_login
 def awardcertificate():
     if request.method=="POST":
         
@@ -374,9 +376,9 @@ def awardcertificate():
             cur.execute("INSERT into certificates VALUES (?,?,?,?)",(email,username,certificate,path))
 
         f.save('static/certificates/' + username + '/' + docName + '.pdf')
-        sendCertificate(recipiantEmail, path)
+        # sendCertificate(recipiantEmail, path)
         
-        return redirect('/customerHome')
+        return redirect('/businesstraining')
     else:
 
         return render_template('awardcertificate.html')
@@ -454,6 +456,20 @@ def detectSubCat(subCategory):
         subCatNew = "ERROR"
     
     return subCatNew
+
+@app.route('/courses')
+@requires_bus_login
+def courses():
+    con = sqlite3.connect('db/database.db')
+    con.row_factory = sqlite3.Row
+
+    cur = con.cursor()
+
+    cur.execute("SELECT * FROM courses WHERE org = ?", [session['user']])
+
+    courses = cur.fetchall()
+
+    return render_template('courses.html', courses = courses)
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", debug=True)
