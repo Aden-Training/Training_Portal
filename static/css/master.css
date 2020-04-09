@@ -395,6 +395,19 @@ we set it to max-height: 0, and hide the overflowed content.
   transition: all 0.5s ease-out;
 }
 
+/* Drop down menu arrow */
+i{
+  border: solid #ffffff;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  float: right;
+  padding: 5px;
+}
+.dropDownArrow{
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+
 /* Course search bar */
 .searchBar{
   width: 50%;
