@@ -39,7 +39,14 @@ def requires_bus_login(f):
         return f(*args, **kwargs)
     return decorated
 
-# Connect to the database
+def requires_admin(f):
+    @wraps(f)
+    def decorated(*args, **kwargs):
+        adminstatus = session.get('admin_logged_in', False)
+        if not adminstatus:
+            return redirect(url_for('.loginbus', next=request.path))
+        return f(*args, **kwargs)
+    return decorated
 conn = sqlite3.connect("db/database.db")
 
 # Create tables
@@ -49,6 +56,8 @@ conn.execute("CREATE TABLE IF NOT EXISTS businesses (email TEXT, username TEXT, 
 conn.execute("CREATE TABLE IF NOT EXISTS courses (course_name TEXT, description TEXT, category TEXT, thumbnail TEXT, subCat TEXT, org TEXT)")
 conn.execute("CREATE TABLE IF NOT EXISTS bookings (course_name TEXT, person_booked TEXT, persons_email TEXT)")
 conn.execute("CREATE TABLE IF NOT EXISTS businessEmployees (company_name TEXT, employees TEXT)")
+
+conn.execute("CREATE TABLE IF NOT EXISTS admin (email TEXT, username TEXT, password TEXT)")
 
 #   CUSTOMER PAGES
 
@@ -72,7 +81,7 @@ def bustraining():
 # POST A COURSE
 
 @app.route('/postcourses', methods = ["POST","GET"])
-@requires_bus_login
+@requires_admin
 def postcourses():
     if request.method == "POST":
 
@@ -323,6 +332,42 @@ def loginbus():
                     return render_template('login.html', error = error)
             
     return render_template('loginbus.html')
+
+# Login admin
+@app.route('/loginadmin', methods=["GET","POST"])
+def loginadmin():
+    if request.method == "POST":
+        username = request.form['username']
+        password = request.form['password']
+
+        encodedpw = password.encode('utf-8')
+
+        with sqlite3.connect("db/database.db") as con:
+            cur = con.cursor()
+            cur = con.execute("SELECT * FROM admin WHERE username = ?", [username])
+
+            user = cur.fetchone()
+
+            if cur != "":
+                try:
+                    passwd = user[2]
+                    adminstatus = session['admin_logged_in'] = True
+                    session['user'] = request.form['username']
+                    return redirect('/adminpage')
+                except:
+                    passerror = 'Invalid login'
+
+                    return render_template('login.html', error = passerror)  
+                else:  
+                    error = 'Username not found'
+                    return render_template('login.html', error = error)
+            
+    return render_template('adminlogin.html')
+
+@app.route('/adminpage', methods=["GET"])
+@requires_admin
+def adminpage():
+    return render_template('adminhome.html')
 
 # Creating an alternative bookcourse method
 
