@@ -32,9 +32,12 @@
             <form action="/downloadcertificate/{{certificate["certificate"]}}.pdf" method="POST">
             <button type="submit" name="button" class="btn btn-default">{{certificate["certificate"]}}</button>
             </form>
+            {% endfor %}
         </div>
     </div>
 </div>
+{% for courses in courses %}
+<h5>{{courses["course_name"]}}</h5>
 
 {% endfor %}
 
