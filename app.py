@@ -178,6 +178,7 @@ def register():
             flash('You have now registered and can log in', 'success')
             status = session['logged_in'] = True
             session['user'] = request.form['username']
+            session['email'] = request.form['email']
 
             os.mkdir('static/certificates/' + username +'/')
 
@@ -229,18 +230,22 @@ def customerHome():
 
     con = sqlite3.connect('db/database.db')
     conn = sqlite3.connect('db/database.db')
+    connn = sqlite3.connect('db/database.db')
 
+    connn.row_factory = sqlite3.Row
     conn.row_factory = sqlite3.Row
     con.row_factory = sqlite3.Row
 
     cur = con.cursor()
 
     curs = conn.cursor()
+    cursor = connn.cursor()
 
-    cur.execute("SELECT username FROM customers WHERE username = ?", [user])
-    
-
+    cur.execute("SELECT * FROM customers WHERE username = ?", [user])
     curs.execute("SELECT * FROM certificates WHERE username = ?", [user])
+    cursor.execute("SELECT * FROM bookings WHERE person_booked = ?", [user])
+
+    courses = cursor.fetchall()
     certificates = curs.fetchall()
 
     customers = cur.fetchone()
@@ -248,8 +253,9 @@ def customerHome():
     # Close Connection
     cur.close()
     curs.close()
-
-    return render_template("customerHome.html", certificates = certificates, customers = customers)
+    cursor.close()
+    
+    return render_template("customerHome.html", certificates = certificates, customers = customers, courses=courses)
 
 @app.route('/downloadcertificate/<filename>', methods = ['POST','GET'])
 def downloadcert(filename):
@@ -437,7 +443,11 @@ def awardcertificate():
         f.save('static/certificates/' + username + '/' + docName + '.pdf')
         # sendCertificate(recipiantEmail, path)
         
+<<<<<<< HEAD
         return redirect('/businesstraining')
+=======
+        return render_template('/customerHome')
+>>>>>>> design
     else:
 
         return render_template('awardcertificate.html')

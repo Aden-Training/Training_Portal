@@ -408,6 +408,19 @@ we set it to max-height: 0, and hide the overflowed content.
   transition: all 0.5s ease-out;
 }
 
+/* Drop down menu arrow */
+i{
+  border: solid #ffffff;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  float: right;
+  padding: 5px;
+}
+.dropDownArrow{
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+
 /* Course search bar */
 .searchBar{
   width: 50%;
@@ -419,6 +432,46 @@ we set it to max-height: 0, and hide the overflowed content.
   display: inline-block;
   margin-right: 20px;
   margin-top: 20px;
+}
+
+/*
+-- customerHome.html
+*/
+.helloCustomer{
+  color: #000000;
+  padding-top: 20px;
+  padding-bottom: 15px;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-top: 15px;
+  margin-left: 15px;
+  margin-right: 15px;
+  height: auto;
+  width: 100%;
+  background-color: #dadada80;
+}
+
+.certificateNote{
+  color: #000000;
+  padding-top: 20px;
+  padding-bottom: 15px;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-top: 15px;
+  margin-right: 15px;
+  height: auto;
+  width: 100%;
+  background-color: #dadada80;
+}
+
+.certificateDisplay{
+  padding-bottom: 15px;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-top: 15px;
+  margin-right: 15px;
+  height: auto;
+  width: 100%;
 }
 
 
