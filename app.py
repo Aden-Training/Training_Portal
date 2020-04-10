@@ -242,6 +242,8 @@ def customerHome():
     cursor = connn.cursor()
 
     cur.execute("SELECT * FROM customers WHERE username = ?", [user])
+    
+
     curs.execute("SELECT * FROM certificates WHERE username = ?", [user])
     cursor.execute("SELECT * FROM bookings WHERE person_booked = ?", [user])
 
@@ -444,7 +446,11 @@ def awardcertificate():
         # sendCertificate(recipiantEmail, path)
         
 <<<<<<< HEAD
+<<<<<<< HEAD
         return redirect('/businesstraining')
+=======
+        return render_template('/customerHome')
+>>>>>>> design
 =======
         return render_template('/customerHome')
 >>>>>>> design
