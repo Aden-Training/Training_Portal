@@ -445,15 +445,7 @@ def awardcertificate():
         f.save('static/certificates/' + username + '/' + docName + '.pdf')
         # sendCertificate(recipiantEmail, path)
         
-<<<<<<< HEAD
-<<<<<<< HEAD
-        return redirect('/businesstraining')
-=======
         return render_template('/customerHome')
->>>>>>> design
-=======
-        return render_template('/customerHome')
->>>>>>> design
     else:
 
         return render_template('awardcertificate.html')
