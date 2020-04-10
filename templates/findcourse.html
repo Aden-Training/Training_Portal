@@ -87,8 +87,10 @@
                         <div class="card" style="width: 18rem;">
                             <img width="200px" height="200px" class="card-img-top" src="{{course.thumbnail}}" alt="Card image cap">
                             <div class="card-body">
+                                <h6 class="card-title">Company: {{course["org"]}}</h6>
                                 <h5 class="card-title">{{course["course_name"]}}</h5>
                                 <p class="card-text">{{course["description"]}}</p>
+                                
                                 <form action="/bookcourse/{{course.course_name}}" method="POST">
                                 <button type="submit" class="btn btn-primary">Book Now!</button>
                             </form>

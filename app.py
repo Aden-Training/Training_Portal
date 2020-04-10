@@ -39,16 +39,25 @@ def requires_bus_login(f):
         return f(*args, **kwargs)
     return decorated
 
-# Connect to the database
+def requires_admin(f):
+    @wraps(f)
+    def decorated(*args, **kwargs):
+        adminstatus = session.get('admin_logged_in', False)
+        if not adminstatus:
+            return redirect(url_for('.loginbus', next=request.path))
+        return f(*args, **kwargs)
+    return decorated
 conn = sqlite3.connect("db/database.db")
 
 # Create tables
 conn.execute("CREATE TABLE IF NOT EXISTS customers (email TEXT UNIQUE, username TEXT, password TEXT)")
 conn.execute("CREATE TABLE IF NOT EXISTS certificates(email TEXT, username TEXT, certificate TEXT, path TEXT)")
 conn.execute("CREATE TABLE IF NOT EXISTS businesses (email TEXT, username TEXT, password TEXT, industry TEXT)")
-conn.execute("CREATE TABLE IF NOT EXISTS courses (course_name TEXT, description TEXT, category TEXT, thumbnail TEXT, subCat TEXT)")
+conn.execute("CREATE TABLE IF NOT EXISTS courses (course_name TEXT, description TEXT, category TEXT, thumbnail TEXT, subCat TEXT, org TEXT)")
 conn.execute("CREATE TABLE IF NOT EXISTS bookings (course_name TEXT, person_booked TEXT, persons_email TEXT)")
 conn.execute("CREATE TABLE IF NOT EXISTS businessEmployees (company_name TEXT, employees TEXT)")
+
+conn.execute("CREATE TABLE IF NOT EXISTS admin (email TEXT, username TEXT, password TEXT)")
 
 #   CUSTOMER PAGES
 
@@ -72,6 +81,7 @@ def bustraining():
 # POST A COURSE
 
 @app.route('/postcourses', methods = ["POST","GET"])
+@requires_admin
 def postcourses():
     if request.method == "POST":
 
@@ -80,6 +90,7 @@ def postcourses():
         desc = request.form['courseDescription']
         category = request.form['courseCat']
         subCategory = request.form['subCourseCat']
+        org = session['user']
 
         path = 'static/img/' + name + '.jpg'
         f.save('static/img/' + name +'.jpg')
@@ -92,9 +103,9 @@ def postcourses():
             subCat = "Null"
 
         with sqlite3.connect('db/database.db') as con:
-            con.execute("INSERT INTO courses VALUES (?,?,?,?,?)", (name, desc, cat, path, subCat))
+            con.execute("INSERT INTO courses VALUES (?,?,?,?,?,?)", (name, desc, cat, path, subCat, org))
     
-        return redirect('/findcourse')
+        return redirect('/businesstraining')
 
     return render_template('postcourse.html')
 
@@ -119,10 +130,10 @@ def findcourses():
     cur = con.cursor()
     category = "SafetyTraining"
 
-    cur.execute("SELECT * FROM courses WHERE category = ?",[category])
+    cur.execute("SELECT * FROM courses")
     course = cur.fetchall()
 
-    return render_template('findcourse.html')
+    return render_template('findcourse.html', course = course)
 
 @app.route('/<category>', methods=["GET", "POST"])
 @requires_login
@@ -192,19 +203,22 @@ def login():
             user = cur.fetchone()
 
             if cur != "":
-                passwd = user[2]
+                try:
+                    passwd = user[2]
 
-                if(bcrypt.checkpw(encodedpw, passwd)):
-                    status = session['logged_in'] = True
-                    session['user'] = request.form['username']
-                    flash('You have now logged into an account', 'success')
-                    return redirect('/')
-                else:
-                    error = 'Invalid login'
-                    return render_template('logincust.html', error=error)
-            else:
-                error = 'Username not found'
-                return render_template('logincust.html', error=error)                
+                    if(bcrypt.checkpw(encodedpw, passwd)):
+                        status = session['logged_in'] = True
+                        session['user'] = request.form['username']
+                        flash('You have now logged into an account', 'success')
+                        return redirect('/customerHome')
+                except:
+                    passerror = 'Invalid login'
+
+                    return render_template('login.html', error = passerror)  
+                else:  
+                    error = 'Username not found'
+                    return render_template('login.html', error = error)
+              
     return render_template("login.html")
 
 # HOMEPAGE FOR INDIVIDUAL CUSTOMERS
@@ -310,14 +324,58 @@ def loginbus():
             user = cur.fetchone()
 
             if cur != "":
-                passwd = user[2]
+                try:
+                    passwd = user[2]
 
-                if(bcrypt.checkpw(encodedpw, passwd)):
-                    busstatus = session['bus_logged_in'] = True
-                    session['user'] = request.form['username']
-                    return redirect('/businesstraining')
+                    if(bcrypt.checkpw(encodedpw, passwd)):
+                        busstatus = session['bus_logged_in'] = True
+                        session['user'] = request.form['username']
+                        return redirect('/businesstraining')
+                except:
+                    passerror = 'Invalid login'
 
+                    return render_template('login.html', error = passerror)  
+                else:  
+                    error = 'Username not found'
+                    return render_template('login.html', error = error)
+            
     return render_template('loginbus.html')
+
+# Login admin
+@app.route('/loginadmin', methods=["GET","POST"])
+def loginadmin():
+    if request.method == "POST":
+        username = request.form['username']
+        password = request.form['password']
+
+        encodedpw = password.encode('utf-8')
+
+        with sqlite3.connect("db/database.db") as con:
+            cur = con.cursor()
+            cur = con.execute("SELECT * FROM admin WHERE username = ?", [username])
+
+            user = cur.fetchone()
+
+            if cur != "":
+                try:
+                    passwd = user[2]
+                    adminstatus = session['admin_logged_in'] = True
+                    session['user'] = request.form['username']
+                    return redirect('/adminpage')
+                except:
+                    passerror = 'Invalid login'
+
+                    return render_template('login.html', error = passerror)  
+                else:  
+                    error = 'Username not found'
+                    return render_template('login.html', error = error)
+            
+    return render_template('adminlogin.html')
+
+@app.route('/adminpage', methods=["GET"])
+@requires_admin
+def adminpage():
+    return render_template('adminhome.html')
 
 # Creating an alternative bookcourse method
 
@@ -347,9 +405,11 @@ def bookcourse(coursename):
 @app.route('/peoplebooked/<coursename>', methods=["GET"])
 def peoplebooked(coursename):
     con = sqlite3.connect('db/database.db')
+    con.row_factory = sqlite3.Row
+
     cur = con.cursor()
 
-    cur.execute("SELECT person_booked FROM bookings WHERE course_name = ?", [coursename])
+    cur.execute("SELECT * FROM bookings WHERE course_name = ?", [coursename])
 
     people = cur.fetchall()
 
@@ -357,6 +417,7 @@ def peoplebooked(coursename):
 
 
 @app.route('/awardcertificate', methods=["GET", "POST"])
+@requires_bus_login
 def awardcertificate():
     if request.method=="POST":
         
@@ -382,7 +443,7 @@ def awardcertificate():
             cur.execute("INSERT into certificates VALUES (?,?,?,?)",(email,username,certificate,path))
 
         f.save('static/certificates/' + username + '/' + docName + '.pdf')
-        sendCertificate(recipiantEmail, path)
+        # sendCertificate(recipiantEmail, path)
         
         return render_template('/customerHome')
     else:
@@ -462,6 +523,20 @@ def detectSubCat(subCategory):
         subCatNew = "ERROR"
     
     return subCatNew
+
+@app.route('/courses')
+@requires_bus_login
+def courses():
+    con = sqlite3.connect('db/database.db')
+    con.row_factory = sqlite3.Row
+
+    cur = con.cursor()
+
+    cur.execute("SELECT * FROM courses WHERE org = ?", [session['user']])
+
+    courses = cur.fetchall()
+
+    return render_template('courses.html', courses = courses)
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", debug=True)
