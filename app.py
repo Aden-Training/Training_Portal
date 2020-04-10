@@ -417,7 +417,7 @@ def peoplebooked(coursename):
 
 
 @app.route('/awardcertificate', methods=["GET", "POST"])
-@requires_bus_login
+@requires_admin
 def awardcertificate():
     if request.method=="POST":
         
