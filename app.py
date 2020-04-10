@@ -179,20 +179,10 @@ def register():
 @app.route('/logincust', methods = ["GET","POST"])
 def login():
     if request.method == "POST":
-        con = sqlite3.connect('db/database')
-        con.sqlite3.row_factory = sqlite3.Row
-
         cur = con.cursor()
 
         username = request.form['username']
         password = request.form['password']
-
-
-        cur.execute("SELECT email FROM customers WHERE username = ?", [username])
-
-        userEmail = cur.fetchone()
-
-        session['email'] = userEmail
 
         encodedpw = password.encode('utf-8')
 
@@ -235,7 +225,7 @@ def customerHome():
 
     curs = conn.cursor()
 
-    cur.execute("SELECT username FROM customers WHERE username = ?", [user])
+    cur.execute("SELECT * FROM customers WHERE username = ?", [user])
     
 
     curs.execute("SELECT * FROM certificates WHERE username = ?", [user])
