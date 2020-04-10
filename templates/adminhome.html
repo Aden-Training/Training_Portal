@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="row">
+    <div class="container">
+        <div class="adminHome">
+            <h2>Welcome {{session['user']}}</h2>
+            <h4>Administration Home for Aden Training</h4>
+            <br>
+            <div class="links">
+                <h4><a class="adminLink" href="/postcourses">Post a course</a></h4>
+                <h4>-----</h4>
+                <h4><a class="adminLink" href="/removecourses">Remove a course</a></h4>
+                <h4>-----</h4>
+                <h4><a class="adminLink" href="/awardcertificate">Award a certificate</a></h4>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

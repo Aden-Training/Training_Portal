@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block content %}
+<br>
+<br>
+<div class="row">
+    <div class="container centered">
+        <div class="adminLogin">
+            <h2>Welcome</h2>
+            <p>Sign in to Aden Training as an administrator</p>
+            <br>
+            <form action="/loginadmin" method="post">
+                <input autocomplete="off" class="form-control formInput" type="text" name="username" value="" placeholder="Username">
+                <br>
+                <input autocomplete="off" class="form-control formInput" type="password" name="password" value="" placeholder="Password">
+                <br>
+                <button type="submit" name="button" class="btn btn-default">Sign in</button>
+            </form>
+        </div>
+    </div>
+</div>
+{% endblock %}
