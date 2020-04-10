@@ -209,7 +209,7 @@ def login():
                         status = session['logged_in'] = True
                         session['user'] = request.form['username']
                         flash('You have now logged into an account', 'success')
-                        return redirect('/')
+                        return redirect('/customerHome')
                 except:
                     passerror = 'Invalid login'
 
