@@ -475,6 +475,45 @@ i{
 }
 
 
+/*
+-- adminlogin.html --
+*/
+.loginAdmin{
+  width: 50%;
+  float: center;
+}
+
+
+/*
+-- adminhome.html --
+*/
+.adminHome{
+  color: #000000;
+  padding-top: 20px;
+  padding-bottom: 15px;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-top: 15px;
+  margin-right: 15px;
+  height: auto;
+  width: 100%;
+  text-align: center;
+  background-color: #dadada80;
+}
+
+/* Clickable links on page*/
+.adminLink{
+  color: #f229bd;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.adminLink:hover{
+  color: #f2b929;
+  text-decoration: none;
+  font-weight: bold;
+}
+
 /* 
 -- Buttons -- 
 */
