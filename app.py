@@ -574,10 +574,70 @@ def listemployees():
     return render_template('employees.html', employees = employees)
 
 
-# @app.route('/addemployeeform', methods = ["GET","POST"])
-# def addemployees():
-#     if request.method=="POST":
+@app.route('/addemployeeform', methods = ["GET","POST"])
+def addemployees():
+    if request.method=="POST":
+        email = request.form['email']
+        username = request.form['username']
+        org = session['user']
 
+        con = sqlite3.connect('db/database.db')
+
+        cur = con.cursor()
+
+        cur.execute("SELECT * FROM customers WHERE email = ?", [email])
+        con.close()
+        if cur != "":
+            with sqlite3.connect("db/database.db") as conn:
+                conn.execute("INSERT INTO employees VALUES(?,?,?)", (email, username, org))
+            return redirect('/listemployees')
+        else:
+            return render_template('addemployees.html')
+    
+    if request.method=="GET":
+        return render_template('addemployees.html')
+
+@app.route('/removeemployee', methods = ["GET","POST"])
+def removemployee():
+    if request.method=="POST":
+        email = request.form['email']
+        username = request.form['username']
+        org = session['user']
+
+        con = sqlite3.connect('db/database.db')
+
+        cur = con.cursor()
+
+        cur.execute("SELECT * FROM customers WHERE email = ?", [email])
+        con.close()
+        if cur != "":
+            with sqlite3.connect("db/database.db") as conn:
+                conn.execute("DELETE FROM employees WHERE email = ?", [email])
+            return redirect('/listemployees')
+        else:
+            return render_template('removeemployee.html')
+    
+    if request.method=="GET":
+        return render_template('removeemployee.html')
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", debug=True)
+
+
+
+            # if cur != "":
+            #     try:
+            #         passwd = user[2]
+
+            #         if(bcrypt.checkpw(encodedpw, passwd)):
+            #             status = session['logged_in'] = True
+            #             session['user'] = request.form['username']
+            #             flash('You have now logged into an account', 'success')
+            #             return redirect('/customerHome')
+            #     except:
+            #         passerror = 'Invalid login'
+
+            #         return render_template('login.html', error = passerror)  
+            #     else:  
+            #         error = 'Username not found'
+            #         return render_template('login.html', error = error)

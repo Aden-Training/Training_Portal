@@ -1,7 +1,13 @@
 {% extends "base.html" %}
 {% block content %}
+<h2>Your employees</h2>
+<br>
 {% for employees in employees %}
+<div class="container">
     <h3>{{employees["username"]}}</h3>
-    <h5>{{employes["email"]}}</h5>
+    <h5>{{employees["email"]}}</h5>
+    <br>
+    <br>
+</div>
 {% endfor %}
 {% endblock %}
