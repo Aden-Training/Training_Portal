@@ -1,0 +1,7 @@
+{% extends "base.html" %}
+{% block content %}
+{% for employees in employees %}
+    <h3>{{employees["username"]}}</h3>
+    <h5>{{employes["email"]}}</h5>
+{% endfor %}
+{% endblock %}

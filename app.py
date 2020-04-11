@@ -58,6 +58,8 @@ conn.execute("CREATE TABLE IF NOT EXISTS bookings (course_name TEXT, person_book
 conn.execute("CREATE TABLE IF NOT EXISTS businessEmployees (company_name TEXT, employees TEXT)")
 
 conn.execute("CREATE TABLE IF NOT EXISTS admin (email TEXT, username TEXT, password TEXT)")
+conn.execute("CREATE TABLE IF NOT EXISTS employees (email TEXT, username TEXT, org TEXT)")
+
 
 #   CUSTOMER PAGES
 
@@ -182,7 +184,7 @@ def register():
 
             os.mkdir('static/certificates/' + username +'/')
 
-            return redirect('/')
+            return redirect('/customerHome')
     return render_template("register.html")
 
 # LOGIN FOR AN INDIVIDUAL CUSTOMER
@@ -537,6 +539,45 @@ def courses():
     courses = cur.fetchall()
 
     return render_template('courses.html', courses = courses)
+
+
+@app.route('/changepassword', methods = ["GET","POST"])
+def changepass():
+    if request.method == "POST":
+        user = session['user']
+        password = request.form['newpass']
+
+        password = password.encode('utf-8')
+        passhash = bcrypt.hashpw(password, bcrypt.gensalt())
+
+        with sqlite3.connect('db/database.db') as con:
+            con.execute("UPDATE customers SET password = ? WHERE username = ?", (passhash, session['user']))
+        
+        msg = "Password successfully changed!"
+
+        return redirect('/customerHome')
+    else:
+        return render_template('changepass.html')
+
+
+@app.route('/listemployees', methods = ["GET"])
+def listemployees():
+    con = sqlite3.connect('db/database.db')
+    con.row_factory = sqlite3.Row
+
+    cur = con.cursor()
+
+    cur.execute("SELECT * FROM employees WHERE org = ?", [session['user']])
+
+    employees = cur.fetchall()
+
+    return render_template('employees.html', employees = employees)
+
+
+# @app.route('/addemployeeform', methods = ["GET","POST"])
+# def addemployees():
+#     if request.method=="POST":
+
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", debug=True)
