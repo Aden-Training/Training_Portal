@@ -44,7 +44,7 @@ def requires_admin(f):
     def decorated(*args, **kwargs):
         adminstatus = session.get('admin_logged_in', False)
         if not adminstatus:
-            return redirect(url_for('.loginbus', next=request.path))
+            return redirect(url_for('.loginadmin', next=request.path))
         return f(*args, **kwargs)
     return decorated
 conn = sqlite3.connect("db/database.db")
@@ -53,7 +53,7 @@ conn = sqlite3.connect("db/database.db")
 conn.execute("CREATE TABLE IF NOT EXISTS customers (email TEXT UNIQUE, username TEXT, password TEXT)")
 conn.execute("CREATE TABLE IF NOT EXISTS certificates(email TEXT, username TEXT, certificate TEXT, path TEXT)")
 conn.execute("CREATE TABLE IF NOT EXISTS businesses (email TEXT, username TEXT, password TEXT, industry TEXT)")
-conn.execute("CREATE TABLE IF NOT EXISTS courses (course_name TEXT, description TEXT, category TEXT, thumbnail TEXT, subCat TEXT, org TEXT)")
+conn.execute("CREATE TABLE IF NOT EXISTS courses (id INTEGER PRIMARY KEY AUTOINCREMENT, course_name TEXT, description TEXT, category TEXT, thumbnail TEXT, subCat TEXT, org TEXT)")
 conn.execute("CREATE TABLE IF NOT EXISTS bookings (course_name TEXT, person_booked TEXT, persons_email TEXT)")
 conn.execute("CREATE TABLE IF NOT EXISTS businessEmployees (company_name TEXT, employees TEXT)")
 
@@ -105,7 +105,7 @@ def postcourses():
             subCat = "Null"
 
         with sqlite3.connect('db/database.db') as con:
-            con.execute("INSERT INTO courses VALUES (?,?,?,?,?,?)", (name, desc, cat, path, subCat, org))
+            con.execute("INSERT INTO courses VALUES (NULL,?,?,?,?,?,?)", (name, desc, cat, path, subCat, org))
     
         return redirect('/businesstraining')
 
@@ -113,14 +113,26 @@ def postcourses():
 
 # REMOVE A COURSE
 
-@app.route('/removecourse/<id>', methods=["GET", "POST"])
+@app.route('/removecourses')
+def removecourses():
+        con = sqlite3.connect('db/database.db')
+        con.row_factory = sqlite3.Row
+
+        cur = con.cursor()
+
+        cur.execute("SELECT * FROM courses")
+
+        courses = cur.fetchall()
+
+        return render_template('removecourses.html', courses = courses)
+
+@app.route('/removecourse/<id>', methods=["POST"])
 def removecourse(id):
     if request.method == "POST":
         with sqlite3.connect('db/database.db') as con:
             con.execute("DELETE FROM courses WHERE id = ?", [id])
             con.commit()
-
-        return redirect('/courses')   
+    return redirect('/removecourses')
 
 # FIND A COURSE
 @app.route('/findcourse')
