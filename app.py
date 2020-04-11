@@ -88,11 +88,11 @@ def postcourses():
     if request.method == "POST":
 
         f = request.files['imageFile']
+        org = request.form['org']
         name = request.form['courseTitle']
         desc = request.form['courseDescription']
         category = request.form['courseCat']
         subCategory = request.form['subCourseCat']
-        org = session['user']
 
         path = 'static/img/' + name + '.jpg'
         f.save('static/img/' + name +'.jpg')
