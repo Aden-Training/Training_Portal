@@ -317,12 +317,18 @@ def loginbus():
 def bookcourse(coursename):
     if request.method == "POST":
         con = sqlite3.connect('db/database.db')
+        con.row_factory = sqlite3.Row
+
         cur = con.cursor()
+        curs = con.cursor()
 
         course = coursename
         user = session['user']
 
         cur.execute("SELECT * FROM customers WHERE username = ?",[user])
+        curs.execute("SELECT email FROM admin WHERE username = andy")
+
+        adminemail = curs.fetchone()
 
         cust_data = cur.fetchone()
 
@@ -331,9 +337,9 @@ def bookcourse(coursename):
         with sqlite3.connect('db/database.db') as con:
             con.execute("INSERT INTO bookings VALUES (?,?,?)",(course,user,email))
             con.commit()
-
+        
         #sendConfirmation(course, recipiantEmail, recipiantName, officeEmail)
-        sendConfirmation(coursename, )
+        sendConfirmation(coursename, email, user, adminemail)
 
     flash("You're Successfully booked onto %s! Email confirmation has been sent." % course)
 
