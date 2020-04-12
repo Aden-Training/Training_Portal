@@ -11,7 +11,7 @@
                 <br>
                 <p>Recipiant email address:</p>
                 
-                <select id="customers" class="form-control">
+                <select name="recipiantEmail" id="recipiantEmail" class="form-control">
                     {% for customers in customers %}
                         <option value="{{customers.email}}">{{customers["email"]}}</option>
                     {% endfor %}

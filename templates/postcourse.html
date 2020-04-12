@@ -4,7 +4,7 @@
     <form class="form-group" action="/postcourses" method="post" enctype="multipart/form-data">
         <h4>Course details</h4>
         <p>Company: </p>
-        <select class="form-control form-control" id="companies">
+        <select name="org" class="form-control form-control" id="companies">
             {% for companies in companies %}
                 <option value="{{companies.username}}">{{companies["username"]}}</option>
             {% endfor %}

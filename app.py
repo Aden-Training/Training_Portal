@@ -107,7 +107,7 @@ def postcourses():
         with sqlite3.connect('db/database.db') as con:
             con.execute("INSERT INTO courses VALUES (NULL,?,?,?,?,?,?)", (name, desc, cat, path, subCat, org))
     
-        return redirect('/businesstraining')
+        return redirect('/adminpage')
 
     con = sqlite3.connect('db/database.db')
     con.row_factory = sqlite3.Row
@@ -212,7 +212,7 @@ def register():
 @app.route('/logincust', methods = ["GET","POST"])
 def login():
     if request.method == "POST":
-
+        session.clear()
         username = request.form['username']
         password = request.form['password']
 
@@ -323,10 +323,7 @@ def registerbus():
         with sqlite3.connect("db/database.db") as con:
             con.execute("INSERT INTO businesses VALUES(?,?,?,?)",(email,username,hashpw,industry))
 
-            busstatus = session['bus_logged_in'] = True
-            session['user'] = request.form['username']
-
-            return redirect('/businesstraining')
+            return redirect('/adminpage')
 
     return render_template("registerbus.html")
 
@@ -335,6 +332,7 @@ def registerbus():
 @app.route('/loginbus', methods = ["GET","POST"])
 def loginbus():
     if request.method == "POST":
+        session.clear()
         username = request.form['username']
         password = request.form['password']
 
@@ -368,6 +366,7 @@ def loginbus():
 @app.route('/loginadmin', methods=["GET","POST"])
 def loginadmin():
     if request.method == "POST":
+        session.clear()
         username = request.form['username']
         password = request.form['password']
 
@@ -455,7 +454,6 @@ def awardcertificate():
         username = cur.fetchone()[0]
 
         docName = request.form['docName']
-        recipiantEmail = request.form['recipiantEmail']
         f = request.files['PDFfile']
 
         path = "static/certificates/" + username
@@ -468,7 +466,7 @@ def awardcertificate():
         f.save('static/certificates/' + username + '/' + docName + '.pdf')
         # sendCertificate(recipiantEmail, path)
         
-        return render_template('/customerHome')
+        return redirect('/adminpage')
     else:
         con = sqlite3.connect('db/database.db')
         con.row_factory = sqlite3.Row
@@ -581,7 +579,7 @@ def changepass():
 
         with sqlite3.connect('db/database.db') as con:
             con.execute("UPDATE customers SET password = ? WHERE username = ?", (passhash, session['user']))
-        
+            con.execute("UPDATE businesses SET password = ? WHERE username = ?", (passhash, session['user']))
         msg = "Password successfully changed!"
 
         return redirect('/customerHome')
