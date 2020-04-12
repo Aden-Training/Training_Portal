@@ -580,6 +580,7 @@ def changepass():
         with sqlite3.connect('db/database.db') as con:
             con.execute("UPDATE customers SET password = ? WHERE username = ?", (passhash, session['user']))
             con.execute("UPDATE businesses SET password = ? WHERE username = ?", (passhash, session['user']))
+            con.execute("UPDATE admin SET password = ? WHERE username = ?", (passhash, session['user']))
         msg = "Password successfully changed!"
 
         return redirect('/customerHome')
