@@ -312,7 +312,6 @@ def downloadcert(filename):
 @requires_admin
 def registerbus():
     if request.method == "POST":
-        session.clear()
         email = request.form['email']
         username = request.form['username']
         password = request.form['password']
