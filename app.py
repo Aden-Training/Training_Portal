@@ -417,14 +417,14 @@ def sendCertificate(recipiantEmail, pdf):
         server.login(sender_email, password)
         server.sendmail(sender_email, receiver_email, text)
 
-def sendConfirmation(course, recipiantEmail, recipiantName):
+def sendConfirmation(course, recipiantEmail, recipiantName, officeEmail):
     port = 465
     smtp_server = "smtp.gmail.com"
 
     #Email to cusotmer
     senderEmail = "devtestross@gmail.com"
     password = "DevPw2020*"
-    officeEmail = "40317736@live.napier.ac.uk"
+    #officeEmail = "40317736@live.napier.ac.uk"
 
     message = MIMEMultipart("alternative")
     message["Subject"] = "Application Awaiting Confirmation"
