@@ -1,15 +1,62 @@
 {% extends "base.html" %}
 {% block content %}
-<div class="container">
-    <h2>Home</h2>
-    <h4>Welcome {{session['user']}}</h4>
-
-    <h4><a href="/addemployeeform">Add an employee</a></h4>
-    <h4><a href="/removeemployee">Remove an employee</a></h4>
-    <h4><a href="/listemployees">Your employees</a></h4>
-    <h4><a href="/courses">Your courses</a></h4>
-    <br>
-    <h4>-----</h4>
-    <h4><a href="/changepassword">Change Password</a></h4>
+    <div class="row">
+        <div class="adminHomeMsg">
+            <h2>Welcome {{session['user']}}</h2>
+            <h4>Business Home for {{session['user']}}</h4>
+        </div>
+    </div>
+    <div class="adminHome">
+        <div class="row">
+            <div class="col-md-2">
+                <div class="AdminContainer">
+                    <img src="{{url_for('static', filename = 'img/photo_of_man.jpg')}}" class="adminImg" style="width:100%;height:auto;">
+                    <a href="/addemployeeform"><button class="contBtn" href="/addemployeeform">Add <br> Employee</button></a>
+                    <br>
+                    <br>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="AdminContainer">
+                    <img src="{{url_for('static', filename = 'img/remove_course.jpg')}}" class="adminImg" style="width:100%;height:auto;">
+                    <a href="/removeemployee"><button class="contBtn" href="/removeemployee">Remove an Employee</button></a>
+                    <br>
+                    <br>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="AdminContainer">
+                    <img src="{{url_for('static', filename = 'img/man_leaning_table.jpg')}}" class="adminImg" style="width:100%;height:auto;">
+                    <a href="/listemployees"><button class="contBtn" href="/listemployees">Your <br> Employees</button></a>
+                    <br>
+                    <br>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="AdminContainer">
+                    <img src="{{url_for('static', filename = 'img/courses.jpg')}}" class="adminImg" style="width:100%;height:auto;">
+                    <a href="/courses"><button class="contBtn" href="/registerbus">Your <br> courses</button></a>
+                    <br>
+                    <br>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="AdminContainer">
+                    <img src="{{url_for('static', filename = 'img/password.jpg')}}" class="adminImg" style="width:100%;height:auto;">
+                    <a href="/changepassword"><button class="contBtn">Change <br> password</button></a>
+                    <br>
+                    <br>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="AdminContainer">
+                    <img src="{{url_for('static', filename = 'img/email.jpg')}}" class="adminImg" style="width:100%;height:auto;">
+                    <a href="/changeemail"><button class="contBtn" href="/changeemail">Change <br> Email</button></a>
+                    <br>
+                    <br>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 {% endblock %}

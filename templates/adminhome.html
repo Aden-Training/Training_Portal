@@ -9,11 +9,10 @@
 </div>
 <div class="adminHome">
     <div class="row">
-        <div class="col-md-1"></div>
         <div class="col-md-2">
             <div class="AdminContainer">
                 <img src="{{url_for('static', filename = 'img/post_course.jpg')}}" class="adminImg" style="width:100%;height:auto;">
-                <button class="contBtn" href="/postcourses">Post a course</button>
+                <a href="/postcourses"><button class="contBtn" href="/postcourses">Post a course</button></a>
                 <br>
                 <br>
             </div>
@@ -21,7 +20,7 @@
         <div class="col-md-2">
             <div class="AdminContainer">
                 <img src="{{url_for('static', filename = 'img/remove_course.jpg')}}" class="adminImg" style="width:100%;height:auto;">
-                <button class="contBtn" href="/removecourses">Remove a course</button>
+                <a href="/removecourses"><button class="contBtn" href="/removecourses">Remove a course</button></a>
                 <br>
                 <br>
             </div>
@@ -29,7 +28,7 @@
         <div class="col-md-2">
             <div class="AdminContainer">
                 <img src="{{url_for('static', filename = 'img/certificate.jpg')}}" class="adminImg" style="width:100%;height:auto;">
-                <button class="contBtn" href="/awardcertificate">Award a certificate</button>
+                <a href="/awardcertificate"><button class="contBtn" href="/awardcertificate">Award a certificate</button></a>
                 <br>
                 <br>
             </div>
@@ -37,7 +36,7 @@
         <div class="col-md-2">
             <div class="AdminContainer">
                 <img src="{{url_for('static', filename = 'img/business.jpg')}}" class="adminImg" style="width:100%;height:auto;">
-                <button class="contBtn" href="/registerbus">Add a business</button>
+                <a href="/registerbus"><button class="contBtn" href="/registerbus">Add a business</button></a>
                 <br>
                 <br>
             </div>
@@ -45,12 +44,19 @@
         <div class="col-md-2">
             <div class="AdminContainer">
                 <img src="{{url_for('static', filename = 'img/password.jpg')}}" class="adminImg" style="width:100%;height:auto;">
-                <button class="contBtn" href="/changepassword">Change password</button>
+                <a href="/changepassword"><button class="contBtn" href="/changepassword">Change password</button></a>
                 <br>
                 <br>
             </div>
         </div>
-        <div class="col-md-1"></div>
+        <div class="col-md-2">
+            <div class="AdminContainer">
+                <img src="{{url_for('static', filename = 'img/email.jpg')}}" class="adminImg" style="width:100%;height:auto;">
+                <a href="/changeemail"><button class="contBtn" href="/changeemail">Change Email</button></a>
+                <br>
+                <br>
+            </div>
+        </div>
     </div>
 </div>
 
