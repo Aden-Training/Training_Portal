@@ -405,12 +405,18 @@ def adminpage():
 def bookcourse(coursename):
     if request.method == "POST":
         con = sqlite3.connect('db/database.db')
+        con.row_factory = sqlite3.Row
+
         cur = con.cursor()
+        curs = con.cursor()
 
         course = coursename
         user = session['user']
 
         cur.execute("SELECT * FROM customers WHERE username = ?",[user])
+        curs.execute("SELECT email FROM admin WHERE username = andy")
+
+        adminemail = curs.fetchone()
 
         cust_data = cur.fetchone()
 
@@ -419,8 +425,11 @@ def bookcourse(coursename):
         with sqlite3.connect('db/database.db') as con:
             con.execute("INSERT INTO bookings VALUES (?,?,?)",(course,user,email))
             con.commit()
+        
+        #sendConfirmation(course, recipiantEmail, recipiantName, officeEmail)
+        sendConfirmation(coursename, email, user, adminemail)
 
-    flash("You're Successfully booked onto %s!" % course)
+    flash("You're Successfully booked onto %s! Email confirmation has been sent." % course)
 
     return redirect('/findcourse')
 
@@ -514,6 +523,65 @@ def sendCertificate(recipiantEmail, pdf):
     with smtplib.SMTP_SSL("smtp.gmail.com", 465, context=context) as server:
         server.login(sender_email, password)
         server.sendmail(sender_email, receiver_email, text)
+
+def sendConfirmation(course, recipiantEmail, recipiantName, officeEmail):
+    port = 465
+    smtp_server = "smtp.gmail.com"
+
+    #Email to cusotmer
+    senderEmail = "devtestross@gmail.com"
+    password = "DevPw2020*"
+    #officeEmail = "40317736@live.napier.ac.uk"
+
+    message = MIMEMultipart("alternative")
+    message["Subject"] = "Application Awaiting Confirmation"
+    message["From"] = senderEmail
+    message["To"] = recipiantEmail
+
+    html = """\
+        <html>
+        <body>
+            <p>Hi {},<br>
+                You requested training for {}.
+                Plese wait for confirmation.
+            </p>
+        </body>
+        </html>
+    """.format(recipiantName, course)
+
+    part1 = MIMEText(html, "html")
+    message.attach(part1)
+
+    context = ssl.create_default_context()
+    with smtplib.SMTP_SSL(smtp_server, port, context=context) as server:
+        server.login(senderEmail, password)
+        server.sendmail(senderEmail, recipiantEmail, message.as_string())
+    
+    #Email to office
+    message = MIMEMultipart("alternative")
+    message["Subject"] = "Application Notification"
+    message["From"] = senderEmail
+    message["To"] = officeEmail
+
+    html = """\
+        <html>
+        <body>
+            <p>Hi, <br>
+                {} requested training for {}.
+                Please contact them to confirm this at {}.
+            </p>
+        </body>
+        </html>
+    """.format(recipiantName, course, recipiantEmail)
+
+    part1 = MIMEText(html, "html")
+    message.attach(part1)
+
+    context = ssl.create_default_context()
+    with smtplib.SMTP_SSL(smtp_server, port, context=context) as server:
+        server.login(senderEmail, password)
+        server.sendmail(senderEmail, officeEmail, message.as_string())
+
 
 def detectCat(category):
     if(category =="Safety"):

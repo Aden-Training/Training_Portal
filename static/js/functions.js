@@ -12,14 +12,14 @@ function navbarChange(){
 function searchCourses(){
     let search = document.getElementById('searchBar').value
     search = search.toLowerCase();
-    let x = document.getElementsByClassName('card')
-    let y = document.getElementsByClassName('card-title');
+    let course = document.getElementsByClassName('card')
+    let title = document.getElementsByClassName('card-title');
 
-    for(i = 0; i < x.length; i++){
-        if(!y[i].innerHTML.toLowerCase().includes(search)){
-            x[i].style.display="none";
+    for(i = 0; i < course.length; i++){
+        if(!title[i].innerHTML.toLowerCase().includes(search)){
+            course[i].style.display="none";
         }else{
-            x[i].style.display="inline-block";
+            course[i].style.display="inline-block";
         }
     }
 }
