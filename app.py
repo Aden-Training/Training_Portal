@@ -340,6 +340,7 @@ def bookcourse(coursename):
         
         #sendConfirmation(course, recipiantEmail, recipiantName, officeEmail)
         sendConfirmation(coursename, email, user, adminemail)
+        sendConfirmationOffice(coursename, email, user, adminemail)
 
     flash("You're Successfully booked onto %s! Email confirmation has been sent." % course)
 
@@ -426,7 +427,7 @@ def sendCertificate(recipiantEmail, pdf):
         server.login(sender_email, password)
         server.sendmail(sender_email, receiver_email, text)
 
-def sendConfirmation(course, recipiantEmail, recipiantName, officeEmail):
+def sendConfirmation(course, recipiantEmail, recipiantName):
     port = 465
     smtp_server = "smtp.gmail.com"
 
@@ -459,7 +460,15 @@ def sendConfirmation(course, recipiantEmail, recipiantName, officeEmail):
         server.login(senderEmail, password)
         server.sendmail(senderEmail, recipiantEmail, message.as_string())
     
+def sendConfirmationOffice(course, recipiantEmail, recipiantName, officeEmail):
     #Email to office
+    port = 465
+    smtp_server = "smtp.gmail.com"
+
+    #Email to cusotmer
+    senderEmail = "devtestross@gmail.com"
+    password = "DevPw2020*"
+
     message = MIMEMultipart("alternative")
     message["Subject"] = "Application Notification"
     message["From"] = senderEmail
