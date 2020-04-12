@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="container centered">
+  <div class="loginForm">
+    <h2>Remove an employee</h2>
+    <br>
+    <form class="form-group" action="/removeemployee" method="post">
+        <select name="username" class="form-control formInput" id="employees">
+          {% for employees in employees %}
+              <option value="{{employees.username}}">{{employees["username"]}}</option>
+          {% endfor %}
+        </select>
+        <br>
+        <button type="submit" name="button" class="btn btn-default">Add employee</button>
+    </form>
+  </div>
+</div>
+<!-- 
+<select class="form-control form-control" id="companies">
+  {% for companies in companies %}
+      <option value="{{companies.username}}">{{companies["username"]}}</option>
+  {% endfor %}
+</select> -->
+
+{% endblock %}

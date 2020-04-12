@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="container centered">
+  <div class="loginForm">
+    <h2>Add an employee</h2>
+    <br>
+    <form class="form-group" action="/addemployeeform" method="post">
+      <select name="username" class="form-control formInput" id="employees">
+        {% for customer in customer %}
+          <option value="{{customer.username}}">{{customer["username"]}}</option>
+        {% endfor %}
+      </select>
+      <br>
+        <input class="form-control formInput" required type="text" name="email" id="" placeholder="Email">
+        <br>
+        <button type="submit" name="button" class="btn btn-default">Add employee</button>
+    </form>
+  </div>
+</div>
+
+{% endblock %}
