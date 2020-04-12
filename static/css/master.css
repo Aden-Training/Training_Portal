@@ -487,7 +487,7 @@ i{
 /*
 -- adminhome.html --
 */
-.adminHome{
+.adminHomeMsg{
   color: #000000;
   padding-top: 20px;
   padding-bottom: 15px;
@@ -495,10 +495,54 @@ i{
   padding-right: 30px;
   margin-top: 15px;
   margin-right: 15px;
+  margin-left: 15px;
   height: auto;
   width: 100%;
   text-align: center;
   background-color: #dadada80;
+}
+
+.adminHome{
+  color: #000000;
+  margin-top: 15px;
+  margin-right: 15px;
+  margin-left: 15px;
+  height: auto;
+  width: 100%;
+  text-align: center;
+}
+
+.AdminContainer{
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+}
+
+.AdminContainer img{
+  width: 100%;
+  height: auto;
+}
+
+.AdminContainer .contBtn{
+  position: absolute;
+  bottom: 20%;
+  left: 50%;
+  transform: translate(-50%, 150%);
+  -ms-transform: translate(-50%, 50%);
+  background-color: #ff4040;
+  color: white;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+  width: 100%;
+  height: auto;
+}
+.AdminContainer .contBtn:hover{
+  background-image: linear-gradient(#ff4040, #f2b929);
+  transition: 0.3s;
+  color: white;
 }
 
 /* Clickable links on page*/
