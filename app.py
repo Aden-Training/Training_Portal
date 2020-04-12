@@ -551,7 +551,7 @@ def sendConfirmation(course, recipiantEmail, recipiantName):
         <body>
             <p>Hi {},<br>
                 You requested training for {}.
-                Plese wait for confirmation.
+                Please wait for confirmation.
             </p>
         </body>
         </html>
