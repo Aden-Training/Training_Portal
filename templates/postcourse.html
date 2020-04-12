@@ -4,7 +4,11 @@
     <form class="form-group" action="/postcourses" method="post" enctype="multipart/form-data">
         <h4>Course details</h4>
         <p>Company: </p>
-        <input type="text" name="org" class="form-control formInput" required>
+        <select class="form-control formInput" id="companies">
+            {% for companies in companies %}
+                <option value="{{companies.username}}">{{companies["username"]}}</option>
+            {% endfor %}
+        </select>
         <br>
         <p>Title:</p>
         <input type="text" name="courseTitle" class="form-control formInput" required>

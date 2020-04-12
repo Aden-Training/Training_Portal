@@ -109,7 +109,15 @@ def postcourses():
     
         return redirect('/businesstraining')
 
-    return render_template('postcourse.html')
+    con = sqlite3.connect('db/database.db')
+    con.row_factory = sqlite3.Row
+    cur = con.cursor()
+
+    cur.execute("SELECT * FROM businesses")
+
+    companies = cur.fetchall()
+
+    return render_template('postcourse.html', companies = companies)
 
 # REMOVE A COURSE
 
@@ -461,8 +469,16 @@ def awardcertificate():
         
         return render_template('/customerHome')
     else:
+        con = sqlite3.connect('db/database.db')
+        con.row_factory = sqlite3.Row
 
-        return render_template('awardcertificate.html')
+        cur = con.cursor()
+
+        cur.execute("SELECT * FROM customers")
+
+        customers = cur.fetchall()
+
+        return render_template('awardcertificate.html', customers = customers)
 
 
 def sendCertificate(recipiantEmail, pdf):
