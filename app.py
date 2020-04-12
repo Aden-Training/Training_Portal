@@ -405,7 +405,7 @@ def adminpage():
 def bookcourse(coursename):
     if request.method == "POST":
         con = sqlite3.connect('db/database.db')
-        con.row_factory = sqlite3.Row
+        # con.row_factory = sqlite3.Row
 
         cur = con.cursor()
         curs = con.cursor()
@@ -414,7 +414,7 @@ def bookcourse(coursename):
         user = session['user']
 
         cur.execute("SELECT * FROM customers WHERE username = ?",[user])
-        curs.execute("SELECT email FROM admin WHERE username = andy")
+        curs.execute("SELECT email FROM admin WHERE username = 'andy'")
 
         adminemail = curs.fetchone()
 
@@ -426,10 +426,15 @@ def bookcourse(coursename):
             con.execute("INSERT INTO bookings VALUES (?,?,?)",(course,user,email))
             con.commit()
         
-        #sendConfirmation(course, recipiantEmail, recipiantName, officeEmail)
-        sendConfirmation(coursename, email, user, adminemail)
+        aEmail = str(adminemail)
 
-    flash("You're Successfully booked onto %s! Email confirmation has been sent." % course)
+        try:
+            sendConfirmation(coursename, email, user, aEmail)
+            return redirect('/customerHome')
+        except:
+            return redirect('/customerHome')
+
+        flash("You're Successfully booked onto %s! Email confirmation has been sent." % course)
 
     return redirect('/findcourse')
 

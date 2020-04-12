@@ -8,11 +8,11 @@ smtp_server = "smtp.gmail.com"
 #Enter your address
 senderEmail = "devtestross@gmail.com"  
 #Enter receiver address
-receiverEmail = "rosscameronclarkbell@gmail.com"  
+receiverEmail = "Tylerpower1551@gmail.com"  
 #Need to maybe store the hashed password in the databse to store it and not enter every time
 password = "DevPw2020*" 
 #Office Email for Andrew (change to andrew's point of contact)
-officeEmail = "40317736@live.napier.ac.uk"
+officeEmail = "tpower1551@gmail.com"
 
 #This info will be taken from the applicatoin
 applicantName = "Ross"
