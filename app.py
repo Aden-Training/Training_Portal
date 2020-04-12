@@ -427,9 +427,12 @@ def bookcourse(coursename):
             con.commit()
         
         aEmail = str(adminemail)
+        aLen = len(aEmail) - 3
+        aEmail = aEmail[2:aLen]
 
         try:
-            sendConfirmation(coursename, email, user, aEmail)
+            sendConfirmation(coursename, email, user)
+            sendConfirmationOffice(coursename, email, user, aEmail)
             return redirect('/customerHome')
         except:
             return redirect('/customerHome')
@@ -529,7 +532,7 @@ def sendCertificate(recipiantEmail, pdf):
         server.login(sender_email, password)
         server.sendmail(sender_email, receiver_email, text)
 
-def sendConfirmation(course, recipiantEmail, recipiantName, officeEmail):
+def sendConfirmation(course, recipiantEmail, recipiantName):
     port = 465
     smtp_server = "smtp.gmail.com"
 
@@ -561,8 +564,17 @@ def sendConfirmation(course, recipiantEmail, recipiantName, officeEmail):
     with smtplib.SMTP_SSL(smtp_server, port, context=context) as server:
         server.login(senderEmail, password)
         server.sendmail(senderEmail, recipiantEmail, message.as_string())
-    
+
+
+def sendConfirmationOffice(course, recipiantEmail, recipiantName, officeEmail):
     #Email to office
+    port = 465
+    smtp_server = "smtp.gmail.com"
+
+    #Email to cusotmer
+    senderEmail = "devtestross@gmail.com"
+    password = "DevPw2020*"
+
     message = MIMEMultipart("alternative")
     message["Subject"] = "Application Notification"
     message["From"] = senderEmail
