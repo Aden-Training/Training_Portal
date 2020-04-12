@@ -187,6 +187,7 @@ def findcourse(category):
 @app.route('/registercust', methods = ["GET","POST"])
 def register():
     if request.method == "POST":
+        session.clear()
         with sqlite3.connect("db/database.db") as con:
             email = request.form['email']
             username = request.form['username']
@@ -311,6 +312,7 @@ def downloadcert(filename):
 @requires_admin
 def registerbus():
     if request.method == "POST":
+        session.clear()
         email = request.form['email']
         username = request.form['username']
         password = request.form['password']
