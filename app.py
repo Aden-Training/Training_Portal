@@ -650,22 +650,3 @@ def removemployee():
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", debug=True)
-
-
-
-            # if cur != "":
-            #     try:
-            #         passwd = user[2]
-
-            #         if(bcrypt.checkpw(encodedpw, passwd)):
-            #             status = session['logged_in'] = True
-            #             session['user'] = request.form['username']
-            #             flash('You have now logged into an account', 'success')
-            #             return redirect('/customerHome')
-            #     except:
-            #         passerror = 'Invalid login'
-
-            #         return render_template('login.html', error = passerror)  
-            #     else:  
-            #         error = 'Username not found'
-            #         return render_template('login.html', error = error)
