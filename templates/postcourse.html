@@ -4,7 +4,7 @@
     <form class="form-group" action="/postcourses" method="post" enctype="multipart/form-data">
         <h4>Course details</h4>
         <p>Company: </p>
-        <select class="form-control formInput" id="companies">
+        <select class="form-control form-control" id="companies">
             {% for companies in companies %}
                 <option value="{{companies.username}}">{{companies["username"]}}</option>
             {% endfor %}
@@ -14,7 +14,7 @@
         <input type="text" name="courseTitle" class="form-control formInput" required>
         <br>
         <p>Description:</p>
-        <input type="text" name="courseDescription" class="form-control" required>
+        <input type="text" name="courseDescription" class="form-control formInput" required>
         <br>
         <p>Category:</p>
         <select class="form-control form-control-sm" name="courseCat" id="selectCat" onchange="showSubCat()" required>

@@ -50,7 +50,7 @@ def requires_admin(f):
 conn = sqlite3.connect("db/database.db")
 
 # Create tables
-conn.execute("CREATE TABLE IF NOT EXISTS customers (email TEXT UNIQUE, username TEXT, password TEXT)")
+conn.execute("CREATE TABLE IF NOT EXISTS customers (email TEXT UNIQUE, username TEXT, password TEXT, organisation TEXT)")
 conn.execute("CREATE TABLE IF NOT EXISTS certificates(email TEXT, username TEXT, certificate TEXT, path TEXT)")
 conn.execute("CREATE TABLE IF NOT EXISTS businesses (email TEXT, username TEXT, password TEXT, industry TEXT)")
 conn.execute("CREATE TABLE IF NOT EXISTS courses (id INTEGER PRIMARY KEY AUTOINCREMENT, course_name TEXT, description TEXT, category TEXT, thumbnail TEXT, subCat TEXT, org TEXT)")
@@ -195,7 +195,7 @@ def register():
             passwd = password.encode('utf-8')
             hashedpw = bcrypt.hashpw(passwd, bcrypt.gensalt())
 
-            con.execute("INSERT INTO customers VALUES(?,?,?)", (email, username, hashedpw))
+            con.execute("INSERT INTO customers VALUES(?,?,?,NULL)", (email, username, hashedpw))
 
             flash('You have now registered and can log in', 'success')
             status = session['logged_in'] = True
@@ -308,6 +308,7 @@ def downloadcert(filename):
 # CREATE AN ACCOUNT IN BUSINESSES
 
 @app.route('/registerbus', methods = ["GET","POST"])
+@requires_admin
 def registerbus():
     if request.method == "POST":
         email = request.form['email']
@@ -613,22 +614,31 @@ def addemployees():
 
         cur = con.cursor()
 
-        cur.execute("SELECT * FROM customers WHERE email = ?", [email])
+        cur.execute("SELECT * FROM customers WHERE username = ?", [username])
         con.close()
         if cur != "":
             with sqlite3.connect("db/database.db") as conn:
                 conn.execute("INSERT INTO employees VALUES(?,?,?)", (email, username, org))
+                conn.execute("UPDATE customers SET organisation = ? WHERE email = ?", (org, email) )
             return redirect('/listemployees')
         else:
             return render_template('addemployees.html')
     
-    if request.method=="GET":
-        return render_template('addemployees.html')
+    else:
+        con = sqlite3.connect('db/database.db')
+        con.row_factory = sqlite3.Row
+        cur = con.cursor()
+
+        cur.execute("SELECT * FROM customers")
+
+        customer = cur.fetchall()
+
+        return render_template('addemployees.html', customer = customer)
 
 @app.route('/removeemployee', methods = ["GET","POST"])
 def removemployee():
     if request.method=="POST":
-        email = request.form['email']
+        # email = request.form['email']
         username = request.form['username']
         org = session['user']
 
@@ -636,17 +646,26 @@ def removemployee():
 
         cur = con.cursor()
 
-        cur.execute("SELECT * FROM customers WHERE email = ?", [email])
+        cur.execute("SELECT * FROM customers WHERE username = ? AND organisation = ?", [username, session['user']])
         con.close()
+
         if cur != "":
             with sqlite3.connect("db/database.db") as conn:
-                conn.execute("DELETE FROM employees WHERE email = ?", [email])
+                conn.execute("DELETE FROM employees WHERE username = ? AND org = ?", [username, session['user']])
+                conn.execute("UPDATE customers SET organisation = NULL WHERE username = ?", [username])
             return redirect('/listemployees')
         else:
             return render_template('removeemployee.html')
     
-    if request.method=="GET":
-        return render_template('removeemployee.html')
+    else:
+        con = sqlite3.connect('db/database.db')
+        con.row_factory = sqlite3.Row
+        cur = con.cursor()
+        cur.execute("SELECT * FROM employees WHERE org = ?", [session['user']])
+
+        employees = cur.fetchall()
+
+        return render_template('removeemployee.html', employees = employees)
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", debug=True)
