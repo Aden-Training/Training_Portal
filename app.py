@@ -51,7 +51,7 @@ conn = sqlite3.connect("db/database.db")
 
 # Create tables
 conn.execute("CREATE TABLE IF NOT EXISTS customers (email TEXT UNIQUE, username TEXT, password TEXT, organisation TEXT)")
-conn.execute("CREATE TABLE IF NOT EXISTS certificates(email TEXT, username TEXT, certificate TEXT, path TEXT)")
+conn.execute("CREATE TABLE IF NOT EXISTS certificates(email TEXT, username TEXT, certificate TEXT, path TEXT, organisation TEXT)")
 conn.execute("CREATE TABLE IF NOT EXISTS businesses (email TEXT, username TEXT, password TEXT, industry TEXT)")
 conn.execute("CREATE TABLE IF NOT EXISTS courses (id INTEGER PRIMARY KEY AUTOINCREMENT, course_name TEXT, description TEXT, category TEXT, thumbnail TEXT, subCat TEXT, org TEXT)")
 conn.execute("CREATE TABLE IF NOT EXISTS bookings (course_name TEXT, person_booked TEXT, persons_email TEXT)")
@@ -461,6 +461,7 @@ def awardcertificate():
     if request.method=="POST":
         
         email = request.form['recipiantEmail']
+        organisation = request.form['company']
 
         con = sqlite3.connect('db/database.db')
 
@@ -478,7 +479,7 @@ def awardcertificate():
 
         with sqlite3.connect('db/database.db') as con:
             cur = con.cursor()
-            cur.execute("INSERT into certificates VALUES (?,?,?,?)",(email,username,certificate,path))
+            cur.execute("INSERT into certificates VALUES (?,?,?,?,?)",(email,username,certificate,path, organisation))
 
         f.save('static/certificates/' + username + '/' + docName + '.pdf')
         # sendCertificate(recipiantEmail, path)
@@ -489,12 +490,15 @@ def awardcertificate():
         con.row_factory = sqlite3.Row
 
         cur = con.cursor()
+        curs = con.cursor()
 
         cur.execute("SELECT * FROM customers")
+        curs.execute("SELECT * FROM businesses")
 
+        companies = curs.fetchall()
         customers = cur.fetchall()
 
-        return render_template('awardcertificate.html', customers = customers)
+        return render_template('awardcertificate.html', customers = customers, companies = companies)
 
 
 def sendCertificate(recipiantEmail, pdf):
@@ -551,7 +555,7 @@ def sendConfirmation(course, recipiantEmail, recipiantName):
         <body>
             <p>Hi {},<br>
                 You requested training for {}.
-                Plese wait for confirmation.
+                Please wait for confirmation.
             </p>
         </body>
         </html>
@@ -672,6 +676,23 @@ def changepass():
     else:
         return render_template('changepass.html')
 
+@app.route('/changeemail', methods = ["GET","POST"])
+def changeemail():
+    if request.method == "POST":
+        user = session['user']
+        email = request.form['newemail']
+
+        email = email.encode('utf-8')
+
+        with sqlite3.connect('db/database.db') as con:
+            con.execute("UPDATE customers SET email = ? WHERE username = ?", (email, session['user']))
+            con.execute("UPDATE businesses SET email = ? WHERE username = ?", (email, session['user']))
+            con.execute("UPDATE admin SET email = ? WHERE username = ?", (email, session['user']))
+        msg = "Email successfully changed!"
+
+        return redirect('/customerHome')
+    else:
+        return render_template('changeemail.html')
 
 @app.route('/listemployees', methods = ["GET"])
 def listemployees():
@@ -686,6 +707,20 @@ def listemployees():
 
     return render_template('employees.html', employees = employees)
 
+
+@app.route('/employeecert/<username>')
+@requires_bus_login
+def employeecert(username):
+    con = sqlite3.connect('db/database.db')
+    con.row_factory = sqlite3.Row
+
+    cur = con.cursor()
+
+    cur.execute("SELECT * FROM certificates WHERE username = ? AND organisation = ?", [username, session['user']])
+
+    certs = cur.fetchall()
+
+    return render_template('employeecert.html', certs = certs)
 
 @app.route('/addemployeeform', methods = ["GET","POST"])
 def addemployees():

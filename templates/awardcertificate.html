@@ -20,6 +20,13 @@
                 <p>Document name:</p>
                 <input type="text" name="docName" class="form-control" required>
                 <br>
+
+                <select name="company" id="recipiantEmail" class="form-control">
+                    {% for companies in companies %}
+                        <option value="{{companies.username}}">{{companies["username"]}}</option>
+                    {% endfor %}
+                </select>
+
                 <p>Attach PDF:</p>
                 <input type="file" name="PDFfile" required>
                 <br><br>

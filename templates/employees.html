@@ -4,8 +4,9 @@
 <br>
 {% for employees in employees %}
 <div class="container">
-    <h3>{{employees["username"]}}</h3>
-    <h5>{{employees["email"]}}</h5>
+    <h5>{{employees["username"]}}</h5>
+    <p>{{employees["email"]}}</p>
+    <p><a href="/employeecert/{{employees.username}}">Employees Certificates</a></p>
     <br>
     <br>
 </div>
