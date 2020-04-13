@@ -382,9 +382,11 @@ def loginadmin():
             if cur != "":
                 try:
                     passwd = user[2]
-                    adminstatus = session['admin_logged_in'] = True
-                    session['user'] = request.form['username']
-                    return redirect('/adminpage')
+                    #The below line wasn't there and was just letting people log in I think
+                    if(bcrypt.checkpw(encodedpw, passwd)):
+                        adminstatus = session['admin_logged_in'] = True
+                        session['user'] = request.form['username']
+                        return redirect('/adminpage')
                 except:
                     passerror = 'Invalid login'
 
@@ -415,7 +417,7 @@ def bookcourse(coursename):
         user = session['user']
 
         cur.execute("SELECT * FROM customers WHERE username = ?",[user])
-        curs.execute("SELECT email FROM admin WHERE username = 'andy'")
+        curs.execute("SELECT email FROM admin WHERE username = 'AdenTraining'")
 
         adminemail = curs.fetchone()
 
@@ -544,7 +546,6 @@ def sendConfirmation(course, recipiantEmail, recipiantName):
     #Email to cusotmer
     senderEmail = "devtestross@gmail.com"
     password = "DevPw2020*"
-    #officeEmail = "40317736@live.napier.ac.uk"
 
     message = MIMEMultipart("alternative")
     message["Subject"] = "Application Awaiting Confirmation"
