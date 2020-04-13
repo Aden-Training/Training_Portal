@@ -431,7 +431,7 @@ def bookcourse(coursename):
         
         aEmail = str(adminemail)
         aLen = len(aEmail) - 3
-        aEmail = aEmail[2:aLen]
+        aEmail = aEmail[3:aLen]
 
         try:
             sendConfirmation(coursename, email, user)
