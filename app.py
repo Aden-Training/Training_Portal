@@ -106,7 +106,7 @@ def postcourses():
 
         with sqlite3.connect('db/database.db') as con:
             con.execute("INSERT INTO courses VALUES (NULL,?,?,?,?,?,?)", (name, desc, cat, path, subCat, org))
-    
+
         return redirect('/adminpage')
 
     con = sqlite3.connect('db/database.db')
@@ -172,11 +172,11 @@ def findcourse(category):
     for i in catList:
         if(i == category):
             cur.execute("SELECT * FROM courses WHERE category = ?",[category])
-    
+
     for i in subCatList:
         if(i == category):
             cur.execute("SELECT * FROM courses WHERE subCat = ?",[category])
-    
+
     course = cur.fetchall()
 
     return render_template('findcourse.html', course = course)
@@ -237,11 +237,11 @@ def login():
                 except:
                     passerror = 'Invalid login'
 
-                    return render_template('login.html', error = passerror)  
-                else:  
+                    return render_template('login.html', error = passerror)
+                else:
                     error = 'Username not found'
                     return render_template('login.html', error = error)
-              
+
     return render_template("login.html")
 
 # HOMEPAGE FOR INDIVIDUAL CUSTOMERS
@@ -265,7 +265,7 @@ def customerHome():
     cursor = connn.cursor()
 
     cur.execute("SELECT * FROM customers WHERE username = ?", [user])
-    
+
 
     curs.execute("SELECT * FROM certificates WHERE username = ?", [user])
     cursor.execute("SELECT * FROM bookings WHERE person_booked = ?", [user])
@@ -279,7 +279,7 @@ def customerHome():
     cur.close()
     curs.close()
     cursor.close()
-    
+
     return render_template("customerHome.html", certificates = certificates, customers = customers, courses=courses)
 
 @app.route('/downloadcertificate/<filename>', methods = ['POST','GET'])
@@ -302,6 +302,25 @@ def downloadcert(filename):
     else:
         return redirect('/customerHome')
 
+@app.route('/downloadcertificate/<employee>/<filename>', methods= ['POST','GET'])
+def downloadempcert(employee,filename):
+    if request.method == "POST":
+        con = sqlite3.connect('db/database.db')
+        con.row_factory = sqlite3.Row
+
+        cur = con.cursor()
+        filename = filename
+        cur.execute("SELECT path FROM certificates WHERE certificate = ?", [filename])
+
+        # filename = filename + '.pdf'
+        download = cur.fetchone()
+        # look in [Username]/[Filename]
+
+        directory = 'static/certificates/' + employee + '/' + filename
+
+        return send_file(directory, attachment_filename=filename)
+    else:
+        return redirect('/customerHome')
 
 
 
@@ -356,11 +375,11 @@ def loginbus():
                 except:
                     passerror = 'Invalid login'
 
-                    return render_template('login.html', error = passerror)  
-                else:  
+                    return render_template('login.html', error = passerror)
+                else:
                     error = 'Username not found'
                     return render_template('login.html', error = error)
-            
+
     return render_template('loginbus.html')
 
 # Login admin
@@ -390,11 +409,11 @@ def loginadmin():
                 except:
                     passerror = 'Invalid login'
 
-                    return render_template('login.html', error = passerror)  
-                else:  
+                    return render_template('login.html', error = passerror)
+                else:
                     error = 'Username not found'
                     return render_template('login.html', error = error)
-            
+
     return render_template('adminlogin.html')
 
 @app.route('/adminpage', methods=["GET"])
@@ -428,7 +447,7 @@ def bookcourse(coursename):
         with sqlite3.connect('db/database.db') as con:
             con.execute("INSERT INTO bookings VALUES (?,?,?)",(course,user,email))
             con.commit()
-        
+
         aEmail = str(adminemail)
         aLen = len(aEmail) - 3
         aEmail = aEmail[3:aLen]
@@ -462,7 +481,7 @@ def peoplebooked(coursename):
 @requires_admin
 def awardcertificate():
     if request.method=="POST":
-        
+
         email = request.form['recipiantEmail']
         organisation = request.form['company']
 
@@ -486,7 +505,7 @@ def awardcertificate():
 
         f.save('static/certificates/' + username + '/' + docName + '.pdf')
         # sendCertificate(recipiantEmail, path)
-        
+
         return redirect('/adminpage')
     else:
         con = sqlite3.connect('db/database.db')
@@ -641,7 +660,7 @@ def detectSubCat(subCategory):
         subCatNew = "MechanicalJoint"
     else:
         subCatNew = "ERROR"
-    
+
     return subCatNew
 
 @app.route('/courses')
@@ -686,10 +705,15 @@ def changeemail():
 
         email = email.encode('utf-8')
 
+        aEmail = str(email)
+        aLen = len(aEmail) - 1
+        aEmail = aEmail[2:aLen]
+
+
         with sqlite3.connect('db/database.db') as con:
-            con.execute("UPDATE customers SET email = ? WHERE username = ?", (email, session['user']))
-            con.execute("UPDATE businesses SET email = ? WHERE username = ?", (email, session['user']))
-            con.execute("UPDATE admin SET email = ? WHERE username = ?", (email, session['user']))
+            con.execute("UPDATE customers SET email = ? WHERE username = ?", (aEmail, session['user']))
+            con.execute("UPDATE businesses SET email = ? WHERE username = ?", (aEmail, session['user']))
+            con.execute("UPDATE admin SET email = ? WHERE username = ?", (aEmail, session['user']))
         msg = "Email successfully changed!"
 
         return redirect('/customerHome')
@@ -744,7 +768,7 @@ def addemployees():
             return redirect('/listemployees')
         else:
             return render_template('addemployees.html')
-    
+
     else:
         con = sqlite3.connect('db/database.db')
         con.row_factory = sqlite3.Row
@@ -777,7 +801,7 @@ def removemployee():
             return redirect('/listemployees')
         else:
             return render_template('removeemployee.html')
-    
+
     else:
         con = sqlite3.connect('db/database.db')
         con.row_factory = sqlite3.Row

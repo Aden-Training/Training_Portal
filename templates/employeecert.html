@@ -4,7 +4,7 @@
 <br>
     <div class="container">
         {% for certs in certs %}
-        <form action="/downloadcertificate/{{certs["certificate"]}}.pdf" method="POST">
+        <form action="/downloadcertificate/{{certs["username"]}}/{{certs["certificate"]}}.pdf" method="POST">
             <button type="submit" name="button" class="btn btn-default">{{certs["certificate"]}}</button>
         </form>
         <br>
