@@ -20,7 +20,7 @@ colorama==0.4.3
 constantly==15.1.0
 contextlib2==0.6.0.post1
 cryptography==2.9.2
-deluge==2.0.4.dev38
+deluge==2.1.0
 distlib==0.3.1
 distro==1.5.0
 docopt==0.6.2
